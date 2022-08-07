@@ -1,0 +1,14 @@
+-- 기본 설치
+npx degit ParkYoungWoong/vue3-webpack-template#eslint vue3-test
+npm i  --> node_modules 설치
+
+-- export 'createElementBlock' (imported as '_createElementBlock') was not found in 'vue' 오류 뜰때
+vue 다시 설치하면 된다고함
+npm i vue@next
+
+-- git 저장소 지정
+git remote add origin https://github.com/seunghuibaek/vuetest1.git
+    : pull -- 원격저장소 내용 pull
+git pull origin main --allow-unrelated-histories
+    : 로컬 저장소에 push한 내용을 원격 저장소에 반영
+git push -u origin master

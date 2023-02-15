@@ -26,4 +26,10 @@ export default {
       width: 120px;
     }
   }
+  h3 {
+    font-size: 32px;
+    & + img {
+      width: 240px;
+    }
+  }
 </style>

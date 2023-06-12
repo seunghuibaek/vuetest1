@@ -100,3 +100,31 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
   }
 }
 ```
+
+
+전송 URL : https://tbnpg.settlebank.co.kr/card/BillkeyPayAction.do
+
+DB에서 호출하는 데이터
+PG_AUTH_KEY
+PGID
+PGPW
+
+일반 결제 정보
+POid - ORDERNO : P_OID
+PAmt - ORDERAMOUNT : 금액(,제외)
+t_PMname - 팝콘티비 : 한글명
+t_PUname - ORDERID : 결제자
+PEname - PopkonTV : 결제시 영문가맹점명
+PNoteUrl - notiurl : url
+PNextPUrl - returnurl :실패 화면처리
+PCancPUrl - cancelurl : 결제창을 닫은 경우 화면처리
+t_PNoti - etcparam : 회원사에서 이용할 수 있는 여유필드
+t_PGoods - ITEMNAME : 상품명
+PPhone - 결제자 연락처
+t_PBname - 팝콘티비 :/가상계좌입금시 고객통장에 찍힐 통장인자명
+PEmail - USEREMAIL : 결제자 e-mail
+PUserid - ORDERID : 사용자 ID
+
+신용카드 결제시 사용
+PCardType : 카드결제 타입 [ 3: 앱카드 전용 결제 ] / 6: 현대카드 페이샷
+PChainUserId : 현대카드 페이샷 고객 키값

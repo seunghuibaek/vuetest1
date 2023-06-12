@@ -101,30 +101,6 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
 }
 ```
 
-
-전송 URL : https://tbnpg.settlebank.co.kr/card/BillkeyPayAction.do
-
-DB에서 호출하는 데이터
-PG_AUTH_KEY
-PGID
-PGPW
-
-일반 결제 정보
-POid - ORDERNO : P_OID
-PAmt - ORDERAMOUNT : 금액(,제외)
-t_PMname - 팝콘티비 : 한글명
-t_PUname - ORDERID : 결제자
-PEname - PopkonTV : 결제시 영문가맹점명
-PNoteUrl - notiurl : url
-PNextPUrl - returnurl :실패 화면처리
-PCancPUrl - cancelurl : 결제창을 닫은 경우 화면처리
-t_PNoti - etcparam : 회원사에서 이용할 수 있는 여유필드
-t_PGoods - ITEMNAME : 상품명
-PPhone - 결제자 연락처
-t_PBname - 팝콘티비 :/가상계좌입금시 고객통장에 찍힐 통장인자명
-PEmail - USEREMAIL : 결제자 e-mail
-PUserid - ORDERID : 사용자 ID
-
-신용카드 결제시 사용
-PCardType : 카드결제 타입 [ 3: 앱카드 전용 결제 ] / 6: 현대카드 페이샷
-PChainUserId : 현대카드 페이샷 고객 키값
+(https://auth.mobilians.co.kr/에서 울 서버로 요청오는데, MW에서 500 에러 내네요
+m.popkontv.com/mobilCheck/cert/okurl.asp 500 나네요.
+수집 값 : Jun 12 17:07:58 cache1 STON/ACCESS/m.popkontv.com: 2023-06-12 17:07:57 114.141.28.35 POST /mobilCheck/cert/okurl.asp - 443 - 118.235.2.9 Mozilla/5.0+(Linux;+Android+13;+SM-F711N+Build/TP1A.220624.014;+wv)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Version/4.0+Chrome/114.0.5735.60+Mobile+Safari/537.36+APP_POPKON 500 2233 16 https://auth.mobilians.co.kr/ Bypass+TLS1.2+https - TCP_CLIENT_REFRESH_MISS - 416360554 1923 16 c -)

@@ -128,3 +128,15 @@ Function fnSmsData(msg, mName, subject, phone)
     SET xmlHttp = Nothing
     fnSmsData = result
 End Function
+
+function chrbyte(str)
+    for i=1 to len(str)
+        charat=mid(str, i, 1)
+        if asc(charat)>0 andasc(charat)<255 then
+            wLen=wLen+1
+        else
+            wLen=wLen+2
+        end if
+    next
+    response.write wLen
+end function

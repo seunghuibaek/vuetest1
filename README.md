@@ -101,6 +101,17 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
 }
 ```
 
-(https://auth.mobilians.co.kr/에서 울 서버로 요청오는데, MW에서 500 에러 내네요
-m.popkontv.com/mobilCheck/cert/okurl.asp 500 나네요.
-수집 값 : Jun 12 17:07:58 cache1 STON/ACCESS/m.popkontv.com: 2023-06-12 17:07:57 114.141.28.35 POST /mobilCheck/cert/okurl.asp - 443 - 118.235.2.9 Mozilla/5.0+(Linux;+Android+13;+SM-F711N+Build/TP1A.220624.014;+wv)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Version/4.0+Chrome/114.0.5735.60+Mobile+Safari/537.36+APP_POPKON 500 2233 16 https://auth.mobilians.co.kr/ Bypass+TLS1.2+https - TCP_CLIENT_REFRESH_MISS - 416360554 1923 16 c -)
+--최종 로그인일시 를 365일로 변경
+UPDATE B_MEMBER.dbo.memberPublic
+SET loginDate=CONVERT(VARCHAR(10),DATEADD(DAY,-365,GETDATE()),121)
+WHERE signId = '회원아이디' AND parnterCode = '파트너사코드'
+
+--Agent실행일과 loginDate 날짜 차이가 365일에 해당하는 회원 > 개인정보 분리 & loginAfterYear=1변경
+EXEC B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001
+오후 04:58
+
+
+테스트 계정의 logindate 를 변경해서  오늘 기준 365일 이전 
+B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001 를 실행하면 휴면으로 해당 아이디가 변경됩니다.
+해보세요
+오후 04:59

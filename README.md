@@ -100,43 +100,12 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
   }
 }
 ```
-Function fnSmsData(msg, mName, subject, phone)
-    api_url = "https://message.ppurio.com/api/send_utf8_text.php"  ' UTF-8 인코딩과 TEXT 응답용 호출 페이지
-    userid = "dgm0109"                          ' [필수] 뿌리오 아이디
-    'callback = "0312193854"                    ' [필수] 발신번호 - 숫자만
-    ' 뿌리오에 기존 등록번호가 4개가 초과 되어 번호가 바뀌거나 추가되는 경우 인증 필요함(뿌리오 홈페이지에 서류 추가 등록)
-    callback = "0318988866"
-    'phone = ""                            ' [필수] 수신번호 - 여러명일 경우 |로 구분 "010********|010********|010********"
-    msg = Server.URLEncode(msg) ' [필수] 문자내용 - 이름(names)값이 있다면 [*이름*]가 치환되서 발송됨
-    names = Server.URLEncode(mName)          ' [선택] 이름 - 여러명일 경우 |로 구분 "홍길동|이순신|김철수"
-    appdate = ""                  ' [선택] 예약발송 (현재시간 기준 10분이후 예약가능)
-    subject = Server.URLEncode(subject)        ' [선택] 제목 (30byte)
-    'echoe "userid="&userid&"&callback="&callback&"&phone="&phone&"&msg="&msg&"&names="&names&"&appdate="&appdate&"&subject="&subject
-    Dim xmlHttp, result
-    SET xmlHttp = Server.CreateObject("Microsoft.XMLHTTP")
-    'SET xmlHttp = Server.CreateObject("Msxml2.XMLHTTP.3.0") '위 xmlhttp객체를 못찾거나 IIS7.0일 경우 아래 코드를 사용
-    xmlHttp.open "POST", api_url, False
-    xmlHttp.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
-    xmlHttp.setRequestHeader "Accept-Language","ko"
-    xmlHttp.send "userid="&userid&"&callback="&callback&"&phone="&phone&"&msg="&msg&"&names="&names&"&appdate="&appdate&"&subject="&subject
+회원 데이터 항목 중 CI 값은 DB에 기록하지 않도록 변경이 필요합니다.
 
-    if xmlHttp.status = 200 then
-        result = xmlHttp.responseText
-    Else
-        result = "server_error"
-    End if
-    SET xmlHttp = Nothing
-    fnSmsData = result
-End Function
+이에 CI값 전달하는 부분을 빈문자열로 치환해서 SP 호출되도록 수정되어야 합니다.
 
-function chrbyte(str)
-    for i=1 to len(str)
-        charat=mid(str, i, 1)
-        if asc(charat)>0 andasc(charat)<255 then
-            wLen=wLen+1
-        else
-            wLen=wLen+2
-        end if
-    next
-    response.write wLen
-end function
+대상 SP는 아래 3개입니다. SP명세서도 첨부합니다.
+
+USP_Add_NewMmbrProcess_002
+JBN_WEB_CertifyInfoSave_phone
+JBN_WEB_CertifyInfoSave_ipin

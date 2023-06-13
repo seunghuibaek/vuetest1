@@ -114,3 +114,12 @@ JBN_WEB_CertifyInfoSave_ipin
 USP_GetList_BrdcChtnDclrList_002
 USP_Mod_NbkkRfmProcess_004
 USP_Mod_NbkkRfmHndoprProcess_003
+
+
+sendNumber = Trim(oJSON.data("SNDN"))
+receiveNumber = Trim(oJSON.data("RCVN"))
+receiveText = Trim(oJSON.data("TXT"))
+TID = Trim(oJSON.data("TID"))
+
+/AS/monitor/nabankSms.asp
+

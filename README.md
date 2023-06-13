@@ -100,18 +100,31 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
   }
 }
 ```
+Function fnSmsData(msg, mName, subject, phone)
+    api_url = "https://message.ppurio.com/api/send_utf8_text.php"  ' UTF-8 인코딩과 TEXT 응답용 호출 페이지
+    userid = "dgm0109"                          ' [필수] 뿌리오 아이디
+    'callback = "0312193854"                    ' [필수] 발신번호 - 숫자만
+    ' 뿌리오에 기존 등록번호가 4개가 초과 되어 번호가 바뀌거나 추가되는 경우 인증 필요함(뿌리오 홈페이지에 서류 추가 등록)
+    callback = "0318988866"
+    'phone = ""                            ' [필수] 수신번호 - 여러명일 경우 |로 구분 "010********|010********|010********"
+    msg = Server.URLEncode(msg) ' [필수] 문자내용 - 이름(names)값이 있다면 [*이름*]가 치환되서 발송됨
+    names = Server.URLEncode(mName)          ' [선택] 이름 - 여러명일 경우 |로 구분 "홍길동|이순신|김철수"
+    appdate = ""                  ' [선택] 예약발송 (현재시간 기준 10분이후 예약가능)
+    subject = Server.URLEncode(subject)        ' [선택] 제목 (30byte)
+    'echoe "userid="&userid&"&callback="&callback&"&phone="&phone&"&msg="&msg&"&names="&names&"&appdate="&appdate&"&subject="&subject
+    Dim xmlHttp, result
+    SET xmlHttp = Server.CreateObject("Microsoft.XMLHTTP")
+    'SET xmlHttp = Server.CreateObject("Msxml2.XMLHTTP.3.0") '위 xmlhttp객체를 못찾거나 IIS7.0일 경우 아래 코드를 사용
+    xmlHttp.open "POST", api_url, False
+    xmlHttp.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+    xmlHttp.setRequestHeader "Accept-Language","ko"
+    xmlHttp.send "userid="&userid&"&callback="&callback&"&phone="&phone&"&msg="&msg&"&names="&names&"&appdate="&appdate&"&subject="&subject
 
---최종 로그인일시 를 365일로 변경
-UPDATE B_MEMBER.dbo.memberPublic
-SET loginDate=CONVERT(VARCHAR(10),DATEADD(DAY,-365,GETDATE()),121)
-WHERE signId = '회원아이디' AND parnterCode = '파트너사코드'
-
---Agent실행일과 loginDate 날짜 차이가 365일에 해당하는 회원 > 개인정보 분리 & loginAfterYear=1변경
-EXEC B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001
-오후 04:58
-
-
-테스트 계정의 logindate 를 변경해서  오늘 기준 365일 이전 
-B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001 를 실행하면 휴면으로 해당 아이디가 변경됩니다.
-해보세요
-오후 04:59
+    if xmlHttp.status = 200 then
+        result = xmlHttp.responseText
+    Else
+        result = "server_error"
+    End if
+    SET xmlHttp = Nothing
+    fnSmsData = result
+End Function

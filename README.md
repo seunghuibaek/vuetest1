@@ -123,3 +123,9 @@ TID = Trim(oJSON.data("TID"))
 
 /AS/monitor/nabankSms.asp
 
+USP_GetList_BrdcChtnDclrList_002
+sndMsg  partnerCode
+P-00001(봉봉이_)에 대한 방송 신고가 3회 접수되었습니다.	P-00001
+P-00001(222dev)에 대한 방송 신고가 3회 접수되었습니다.	P-00001
+P-00001(프론트웹팀02)에 대한 방송 신고가 3회 접수되었습니다.	P-00001
+

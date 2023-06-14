@@ -100,6 +100,10 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
   }
 }
 ```
+
+ppknwebsvcacc : 6~pD$R(LH>}j9+wn
+ppknapisvcacc : )dQGcX<?F6F{ncy!
+
 회원 데이터 항목 중 CI 값은 DB에 기록하지 않도록 변경이 필요합니다.
 
 이에 CI값 전달하는 부분을 빈문자열로 치환해서 SP 호출되도록 수정되어야 합니다.

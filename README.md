@@ -136,3 +136,5 @@ P-00001(프론트웹팀02)에 대한 방송 신고가 3회 접수되었습니다
 /AS/monitor/nabankSms.asp
 
 USP_Mod_NbkkRfmHndoprProcess_003
+
+naSchCastList.asp

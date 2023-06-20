@@ -150,6 +150,8 @@ naSchCastList.asp
  - 점수기준 : (일반 팝콘(30%)*30%)*40 + (럭셔리 팝콘(30%)*30%)*40 + (이벤트 팝콘(30%)*30%)*40 + (추천 수(10%)*10%)*40 + 보너스점수(골드로즈 팝콘 (30%)*30%)*40
 AS/svmonitor/serverMod.asp
 
+SC_ST : C (채팅서버)
+        L (영상서버)
 -- 채팅서버
 192.168.1.16
 [B_CHATDATA].dbo.[USP_Mod_chatServerStatus]

@@ -149,3 +149,9 @@ naSchCastList.asp
  - 6월 랭킹이벤트와 점수기준 같으나 럭셔리 팝콘 종류만 변경
  - 점수기준 : (일반 팝콘(30%)*30%)*40 + (럭셔리 팝콘(30%)*30%)*40 + (이벤트 팝콘(30%)*30%)*40 + (추천 수(10%)*10%)*40 + 보너스점수(골드로즈 팝콘 (30%)*30%)*40
 AS/svmonitor/serverMod.asp
+
+-- 채팅서버
+192.168.1.16
+[B_CHATDATA].dbo.[USP_Mod_chatServerStatus]
+-- 영상서버
+[B_CASTDATA].dbo.[USP_Mod_liveServerStatus]

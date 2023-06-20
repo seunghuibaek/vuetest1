@@ -157,3 +157,15 @@ SC_ST : C (채팅서버)
 [B_CHATDATA].dbo.[USP_Mod_chatServerStatus]
 -- 영상서버
 [B_CASTDATA].dbo.[USP_Mod_liveServerStatus]
+
+채팅
+fromNum = "0262385000"
+fromMsg = "[팝콘모니터] 채팅서버["&pk&"] "& isServicetxt &" 변경됐습니다." 
+Call sendSMSKT("01094597918", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'허재원
+Call sendSMSKT("01056437222", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'고경섭
+Call sendSMSKT("01090959021", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'김민순
+영상
+fromNum = "0262385000"
+fromMsg = "[팝콘모니터] 영상서버["&pk&"] "& isServicetxt &" 변경됐습니다." 
+Call sendSMSKT("01094597918", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'허재원
+Call sendSMSKT("01056437222", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'고경섭

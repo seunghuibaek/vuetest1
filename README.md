@@ -181,3 +181,6 @@ ch/setup/fan/management_04_01.asp
 
 [기대결과]
 성별의 경우 '-' 처리 되어야함
+
+dev ip : 118.129.153.93 (방송/회원(28))
+B_MEMBER.dbo.HYM_fanGroupInfo 

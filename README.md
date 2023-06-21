@@ -189,3 +189,6 @@ CJB_PopkonTV_Exchange_Apply_Select
 CJB_PopkonTV_Exchange_Apply_Select
 
 USP_GetList_BrdcChtnDclrList_002
+
+
+AS/member/nasignAliveCheck.asp

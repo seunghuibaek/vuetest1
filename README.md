@@ -169,3 +169,15 @@ fromNum = "0262385000"
 fromMsg = "[팝콘모니터] 영상서버["&pk&"] "& isServicetxt &" 변경됐습니다." 
 Call sendSMSKT("01094597918", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'허재원
 Call sendSMSKT("01056437222", Replace(fromNum,"-",""), fromMsg, Left(SERVER_NAME,16))'고경섭
+
+ch/setup/fan/management_04_01.asp
+
+[재현절차]
+- dev서버
+- 열혈팬 리스트 중 휴면회원 有
+
+1. 마이채널 > 관리 > 팬 관리
+2. 팬리스트 확인 > 팬 리스트 중 휴면회원 확인
+
+[기대결과]
+성별의 경우 '-' 처리 되어야함

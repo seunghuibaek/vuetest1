@@ -184,3 +184,6 @@ ch/setup/fan/management_04_01.asp
 
 dev ip : 118.129.153.93 (방송/회원(28))
 B_MEMBER.dbo.HYM_fanGroupInfo 
+CJB_PopkonTV_Exchange_Apply_Select
+
+CJB_PopkonTV_Exchange_Apply_Select

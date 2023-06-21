@@ -187,3 +187,5 @@ B_MEMBER.dbo.HYM_fanGroupInfo
 CJB_PopkonTV_Exchange_Apply_Select
 
 CJB_PopkonTV_Exchange_Apply_Select
+
+�대� �쒕쾭 �ㅻ쪟媛� 諛쒖깮�덇린 �뚮Ц�� �섏씠吏�瑜� �쒖떆�� �� �놁뒿�덈떎.

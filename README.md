@@ -197,3 +197,13 @@ MW
 날짜: 2023년 6월 19일 월요일 오후 5:23:15
 
 USP_Get_OldCluvMmbrLoginChck_002
+
+
+
+"인스턴스 이동 
+Connection String 변경 필요
+기존 PPKNMMBRINQR -> 변경후 PPKNMMBR"
+
+
+
+

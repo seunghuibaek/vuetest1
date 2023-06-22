@@ -205,5 +205,14 @@ Connection String 변경 필요
 기존 PPKNMMBRINQR -> 변경후 PPKNMMBR"
 
 
+ <font face="Arial" size=2>
+<p>Microsoft OLE DB Provider for SQL Server</font> <font face="Arial" size=2>오류 '80040e09'</font>
+<p>
+<font face="Arial" size=2>개체 'memberPublic', 데이터베이스 'DrmncyMmbr', 스키마 'dbo'에 대한 SELECT 권한이 거부되었습니다.</font>
+<p>
+<font face="Arial" size=2>/config/ssi/function_site.ssi</font><font face="Arial" size=2>, 줄 483</font> 
 
+[B_MEMBER].[dbo].[JBN_WEB_DubInfoUseCheck]
+
+192.168.1.28
 

@@ -236,3 +236,4 @@ Connection String 변경 필요
 69    \\192.168.0.4\popkontv    액세스 거부
 99    \\192.168.0.99\popkontv    액세스 거부
 
+?bmNowDate=2023-07-01%2003:50:00&bmMaxDate=2024

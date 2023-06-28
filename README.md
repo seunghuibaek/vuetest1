@@ -204,31 +204,19 @@ ch/setup/fan/management_04_01.asp
 
 ?bmNowDate=2023-07-01%2003:50:00&bmMaxDate=2024
 
-<!-- POPKONTV Google analytic 4 TAG -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4391KKZ1EB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+PC
+커밋: 878d4171d697032e332c84d0fa20f0f80bb1356d [878d417]
+상위 항목: 0fdcb84db9
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 6월 27일 화요일 오후 5:27:58
+커밋한 사람: 백승희
+BestMc 최종 등록_6
 
-  gtag('config', 'G-4391KKZ1EB');
-</script>
+커밋: 29f3ca8d1a2b502bf30306a30a20df1fd04dd5b2 [29f3ca8]
+상위 항목: d170187842
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 6월 27일 화요일 오후 5:27:21
+커밋한 사람: 백승희
+BestMc 최종 등록_6
 
-리뉴얼 진행 중인 팝콘티비 웹 서비스 구간 상 레거시 팝콘티비 서비스와 다르게 GA4 기반 트래킹 코드를 이용한 서비스 이용자 추적을 진행하고자 함.
-* 현재 리뉴얼 서비스 상 GA 미 작동. GA4 운영을 통한 웹/모바일앱 통합 트래킹 진행(모바이 앱의 경우 GA 및 외부 서비스-디파이너리 동시 이용.
-
-GA4 서비스 코드 정보는 하단 댓글을 통한 코드 정보 확인 요청.
-
-- 설치 구간
-<head> 구간 상 설치 요청
-
-
---------------------------------------------------- 6/26
-
-현재 레거시 팝콘서비스 상 구글 애널리틱스 스크립트의 경우 GA2 기반 스크립트로
-7월 1일자 GA4 하위 서비스 스크립트 호출 중지에 따라 아래 요청 드린 스크립트를 현 레거시 팝콘티비에 반영될 수 있도록 코드 수정 요청 드립니다.
-
-현재 레거시 상 탑재된 스크립트의 경우(GA 2,3 / G Tag) GA4 기반에서 테그정보 기반으로
-신호는 호출하여 받고 있는 중 입니다. 서비스 종료로 인해 수신 불가 발생 전 사전 교체를 하고자 합니다.
 

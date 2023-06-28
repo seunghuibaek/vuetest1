@@ -179,40 +179,6 @@ ch/setup/fan/management_04_01.asp
 1. 마이채널 > 관리 > 팬 관리
 2. 팬리스트 확인 > 팬 리스트 중 휴면회원 확인
 
-[기대결과]
-성별의 경우 '-' 처리 되어야함
-
-dev ip : 118.129.153.93 (방송/회원(28))
-B_MEMBER.dbo.HYM_fanGroupInfo 
-CJB_PopkonTV_Exchange_Apply_Select
-
-CJB_PopkonTV_Exchange_Apply_Select
-
-USP_GetList_BrdcChtnDclrList_002
-PW
-커밋: 637dd8e6443d37c68821cab28f472becd8ecde72 [637dd8e]
-날짜: 2023년 6월 19일 월요일 오후 4:40:45
-MW
-커밋: 5aa6810cbcb3bc077624b7e81e6135268ff3c01a [5aa6810]
-날짜: 2023년 6월 19일 월요일 오후 5:23:15
-
-USP_Get_OldCluvMmbrLoginChck_002
-
-
-
-"인스턴스 이동 
-Connection String 변경 필요
-기존 PPKNMMBRINQR -> 변경후 PPKNMMBR"
-
-
- <font face="Arial" size=2>
-<p>Microsoft OLE DB Provider for SQL Server</font> <font face="Arial" size=2>오류 '80040e09'</font>
-<p>
-<font face="Arial" size=2>개체 'memberPublic', 데이터베이스 'DrmncyMmbr', 스키마 'dbo'에 대한 SELECT 권한이 거부되었습니다.</font>
-<p>
-<font face="Arial" size=2>/config/ssi/function_site.ssi</font><font face="Arial" size=2>, 줄 483</font> 
-
-[B_MEMBER].[dbo].[JBN_WEB_DubInfoUseCheck]
 
 192.168.1.28
 
@@ -238,6 +204,8 @@ Connection String 변경 필요
 
 ?bmNowDate=2023-07-01%2003:50:00&bmMaxDate=2024
 
+<!-- POPKONTV Google analytic 4 TAG -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4391KKZ1EB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

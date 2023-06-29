@@ -220,3 +220,4 @@ BestMc 최종 등록_6
 BestMc 최종 등록_6
 
 
+https://www.jetbrains.com/ko-kr/idea/download/?section=windows

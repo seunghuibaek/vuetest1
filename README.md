@@ -222,3 +222,14 @@ BestMc 최종 등록_6
 
 https://www.jetbrains.com/ko-kr/idea/download/?section=windows
 https://sys1.popkontv.kr:9002/AS/member/nasignAliveCheck.asp
+
+
+
+vod 선택
+https://sys1.popkontv.kr:9002/AS/recVod/naMcVodWatchOnOff.asp
+	2736628
+->
+	tzVodPath = 0x00afcb58 L"https://media2.popkontv.hscdn.com/CAST_VOD/P-00001/q/qa/McXC6i7NXECrrw8jAwbI7B9tTB2BfTu2CZ2TmnH8jvB2FRHTjPJzrO2Bup7lDIoj5RF%2Emp4"
+
+
+McXC6i7NXECrrw8jAwbI7B9tTB2BfTu2CZ2TmnH8jvB2FRHTjPJzrO2Bup7lDIoj5RF.mp4

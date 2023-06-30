@@ -221,3 +221,4 @@ BestMc 최종 등록_6
 
 
 https://www.jetbrains.com/ko-kr/idea/download/?section=windows
+https://sys1.popkontv.kr:9002/AS/member/nasignAliveCheck.asp

@@ -251,3 +251,4 @@ USP_GetList_CashPrchsNewStlrEvntForBckofcSys_001
 
 coin\coin_buy.asp
 
+USP_Get_YyVipRwrdEvnt_001

@@ -204,51 +204,17 @@ ch/setup/fan/management_04_01.asp
 
 ?bmNowDate=2023-07-01%2003:50:00&bmMaxDate=2024
 
-PC
-커밋: 878d4171d697032e332c84d0fa20f0f80bb1356d [878d417]
-상위 항목: 0fdcb84db9
-작성자: 백승희 <sh.back@theenm.com>
-날짜: 2023년 6월 27일 화요일 오후 5:27:58
-커밋한 사람: 백승희
-BestMc 최종 등록_6
+--최종 로그인일시 를 365일로 변경
+UPDATE B_MEMBER.dbo.memberPublic
+SET loginDate=CONVERT(VARCHAR(10),DATEADD(DAY,-365,GETDATE()),121)
+WHERE signId = '회원아이디' AND parnterCode = '파트너사코드'
 
-커밋: 29f3ca8d1a2b502bf30306a30a20df1fd04dd5b2 [29f3ca8]
-상위 항목: d170187842
-작성자: 백승희 <sh.back@theenm.com>
-날짜: 2023년 6월 27일 화요일 오후 5:27:21
-커밋한 사람: 백승희
-BestMc 최종 등록_6
+--Agent실행일과 loginDate 날짜 차이가 365일에 해당하는 회원 > 개인정보 분리 & loginAfterYear=1변경
+EXEC B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001
+오후 04:58
 
 
-https://www.jetbrains.com/ko-kr/idea/download/?section=windows
-https://sys1.popkontv.kr:9002/AS/member/nasignAliveCheck.asp
-
-
-
-vod 선택
-https://sys1.popkontv.kr:9002/AS/recVod/naMcVodWatchOnOff.asp
-	2736628
-->
-	tzVodPath = 0x00afcb58 L"https://media2.popkontv.hscdn.com/CAST_VOD/P-00001/q/qa/McXC6i7NXECrrw8jAwbI7B9tTB2BfTu2CZ2TmnH8jvB2FRHTjPJzrO2Bup7lDIoj5RF%2Emp4"
-
-
-McXC6i7NXECrrw8jAwbI7B9tTB2BfTu2CZ2TmnH8jvB2FRHTjPJzrO2Bup7lDIoj5RF.mp4
-
-
-
-https://media2.popkontv.hscdn.com/CAST_VOD/P-00001/q/qa/McXC6i7NXECrrw8jAwbI7B9tTB2BfTu2CZ2TmnH8jvB2FRHTjPJzrO2Bup7lDIoj5RF.mp4
-
-
-
-
-https://media2.popkontv.hscdn.com/CAST_VOD/P-00001/q/qa/ExyrTgjAQYuKjiAI2FWg3Enj1gtw7IZW5SVjyvI27Yj2BPjOqPJWfUsOMwaV8nExvj.mp4
-
-
-
-D:\WEB_SERVICE\castFileSchedule\recVod\recVodCopy.asp
-
-USP_GetList_CashPrchsNewStlrEvntForBckofcSys_001
-
-coin\coin_buy.asp
-
-USP_Get_YyVipRwrdEvnt_001
+테스트 계정의 logindate 를 변경해서  오늘 기준 365일 이전 
+B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001 를 실행하면 휴면으로 해당 아이디가 변경됩니다.
+해보세요
+오후 04:59

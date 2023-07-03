@@ -242,3 +242,8 @@ https://media2.popkontv.hscdn.com/CAST_VOD/P-00001/q/qa/McXC6i7NXECrrw8jAwbI7B9t
 
 
 https://media2.popkontv.hscdn.com/CAST_VOD/P-00001/q/qa/ExyrTgjAQYuKjiAI2FWg3Enj1gtw7IZW5SVjyvI27Yj2BPjOqPJWfUsOMwaV8nExvj.mp4
+
+
+
+D:\WEB_SERVICE\castFileSchedule\recVod\recVodCopy.asp
+

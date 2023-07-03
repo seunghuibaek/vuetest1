@@ -249,4 +249,5 @@ D:\WEB_SERVICE\castFileSchedule\recVod\recVodCopy.asp
 
 USP_GetList_CashPrchsNewStlrEvntForBckofcSys_001
 
+coin\coin_buy.asp
 

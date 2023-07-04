@@ -238,3 +238,6 @@ B_MEMBER.dbo.USP_GetListOAuthSvcSplr
   AND M.isserviceclose = 0  
  ORDER BY pk_code DESC  
 
+
+ JBN_WEB_memberPublicSearch
+

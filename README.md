@@ -225,3 +225,5 @@ DECLARE @rtn int
 EXEC @rtn = usp_UpdatePrice -0.1, 'CE', @cnt OUTPUT
 
 SELECT @cnt AS 업데이트, @rtn AS 오류
+
+B_MEMBER.dbo.USP_GetListOAuthSvcSplr 

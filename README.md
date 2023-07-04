@@ -228,6 +228,13 @@ SELECT @cnt AS 업데이트, @rtn AS 오류
 
 B_MEMBER.dbo.USP_GetListOAuthSvcSplr 
 
-
-AS\member\authServiceList.asp
+ SELECT TOP 1  
+  M.*, ISNULL(P.pFileName, '') AS 'pFileName',ISNULL(C.SVC_SE_CD,0) as SVC_SE_CD  
+ FROM [B_MEMBER].dbo.memberPublic M WITH(NOLOCK)  
+  INNER JOIN memberPage P WITH(NOLOCK) ON M.signId = P.signID  AND M.partnerCode = P.partnerCode  
+  Left Outer Join [OAUTH_USR] as C on M.signId=C.MMBRI  
+ WHERE M.signId = 'bluewar111'
+  AND M.partnercode = 'P-00001'
+  AND M.isserviceclose = 0  
+ ORDER BY pk_code DESC  
 

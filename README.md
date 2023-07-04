@@ -218,3 +218,10 @@ EXEC B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001
 B_MEMBER.dbo.UAP_Add_PrsninfoSprt_001 를 실행하면 휴면으로 해당 아이디가 변경됩니다.
 해보세요
 오후 04:59
+
+
+DECLARE @cnt int
+DECLARE @rtn int
+EXEC @rtn = usp_UpdatePrice -0.1, 'CE', @cnt OUTPUT
+
+SELECT @cnt AS 업데이트, @rtn AS 오류

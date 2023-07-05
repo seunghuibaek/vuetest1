@@ -241,3 +241,10 @@ B_MEMBER.dbo.USP_GetListOAuthSvcSplr
 
  JBN_WEB_memberPublicSearch
 
+
+ https://devw.popkontv.com/event/202307Reward/?t=15012985
+
+ ' 선물 팝콘 갯 수 100% 기준 14,512,985 hCnt
+    ' 선물 팝콘 갯 수 초과 기준 15,204,079 oCnt 
+ 
+

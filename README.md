@@ -248,3 +248,8 @@ B_MEMBER.dbo.USP_GetListOAuthSvcSplr
     ' 선물 팝콘 갯 수 초과 기준 15,204,079 oCnt 
  
 
+ [B_BOARD].[dbo].[JBN_WEB_serviceCounsel_List] 
+ 118.129.153.82
+ 192.168.1.82
+
+ categoryTitle

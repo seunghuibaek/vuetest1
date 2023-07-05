@@ -206,7 +206,9 @@ ch/setup/fan/management_04_01.asp
 
 --최종 로그인일시 를 365일로 변경
 UPDATE B_MEMBER.dbo.memberPublic
-SET loginDate=CONVERT(VARCHAR(10),DATEADD(DAY,-365,GETDATE()),121)
+SET loginDate=CONVERT(VARCHAR(10),DATEADD(DAY,-365,GETDATE()),121),
+	passModiAfter = 0,
+	passModiDate = CONVERT(VARCHAR(10),DATEADD(DAY,-120,GETDATE()),121)
 WHERE signId = '회원아이디' AND parnterCode = '파트너사코드'
 
 --Agent실행일과 loginDate 날짜 차이가 365일에 해당하는 회원 > 개인정보 분리 & loginAfterYear=1변경

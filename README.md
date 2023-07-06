@@ -255,3 +255,22 @@ B_MEMBER.dbo.USP_GetListOAuthSvcSplr
  192.168.1.82
 
  categoryTitle
+
+
+
+ SELECT top 100 * FROM [B_MANAGER].[dbo].[castLogSum] with(nolock)
+  where signid = 'bluewar111'
+  order by pk_code desc
+
+  update [B_MANAGER].[dbo].[castLogSum] set registDateCode = '20230705095445'
+  where pk_code = 7607895 and signid = 'bluewar111'
+
+  update [B_MANAGER].[dbo].[castLogSum] set premiumGiftCoin = 5000
+  where pk_code = 7607895 and signid = 'bluewar111'
+  
+update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
+  where pk_code = 7607895 and signid = 'bluewar111'
+
+  update [B_MANAGER].[dbo].[castLogSum] set vodGiftCoin = 15000
+  where pk_code = 7607895 and signid = 'bluewar111'
+

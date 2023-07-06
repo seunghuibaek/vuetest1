@@ -274,3 +274,6 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
   update [B_MANAGER].[dbo].[castLogSum] set vodGiftCoin = 15000
   where pk_code = 7607895 and signid = 'bluewar111'
 
+
+
+$('#chatArea').append('<div style="position:absolute;bottom:20px;left:auto;right:0;width:296px;height:200px;z-index:1000" id="enterevt"><img src="' + imgurl + '"><div style="position:absolute;bottom:3px;width:291px;text-align:right;font-size:14px"><span style="font-size:18px;color:orange">' + data.nickName + '</span>님이 들어오셨습니다.</div></div>');

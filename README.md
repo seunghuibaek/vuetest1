@@ -278,3 +278,5 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
 방송자 : koo0309
 신고자 : dhlehdrkwk
 대상 : 01024016590
+
+https://stagew.popkontv.com/live/live_view.asp?castId=aaaaa0204&castPartnerCode=P-00117

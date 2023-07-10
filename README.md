@@ -280,3 +280,6 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
 대상 : 01024016590
 
 https://stagew.popkontv.com/live/live_view.asp?castId=aaaaa0204&castPartnerCode=P-00117
+
+
+suspendRecordIFile.asp

@@ -283,7 +283,11 @@ KJH_CheckCompanyPGInfo
 https://gitlab.theenm.com/Develop1/popkondp.git
 
 
-8ck*(8H$L7R{#{B^
+체 연동 관련 URL변경으로 인해 팝콘TV ok캐시백 연동 작업을 요청 드립니다.
 
-wEL%_FTmeTc2q%en
+https://pg.aronhub.com/docs/ocb_use.asp
+연동 방법의 경우 위 URL 참고해주시기 바랍니다.
+
+*OCB : 통신URL 변경 후 사용가능 
+ - https://api.aronhub.com/api/ocb/PocbStart.asp
 

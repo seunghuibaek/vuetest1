@@ -280,3 +280,4 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
 - 개인정보_암호_키 컬럼명: StlbnkPrsninfoPsswrdKey, StlbnkVrAcunt010PrsninfoPsswrdKey
 
 KJH_CheckCompanyPGInfo
+https://gitlab.theenm.com/Develop1/popkondp.git

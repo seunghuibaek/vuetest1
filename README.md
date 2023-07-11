@@ -275,25 +275,6 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
   where pk_code = 7607895 and signid = 'bluewar111'
 
 
-방송자 : koo0309
-신고자 : dhlehdrkwk
-대상 : 01024016590
+- 삭제 컬럼명: SatBankVrAcuntPwd, StlbnkVrAcunt010Pwd
 
-https://stagew.popkontv.com/live/live_view.asp?castId=aaaaa0204&castPartnerCode=P-00117
-
-PC
-커밋: 7a2ac71fe3581b401acaa65fd580df7583afe9d7 [7a2ac71]
-상위 항목: 644df7bfec
-작성자: DESKTOP-DHJHS13\THE E&M <sh.back@theenm.com>
-날짜: 2023년 7월 6일 목요일 오후 4:25:22
-커밋한 사람: DESKTOP-DHJHS13\THE E&M
-커밋 날짜: 2023년 7월 10일 월요일 오후 1:09:49
-0
-
-커밋: 422657416bed127c570a18a1efebb690116d0269 [4226574]
-상위 항목: 6798949fdf
-작성자: 백승희 <sh.back@theenm.com>
-날짜: 2023년 7월 5일 수요일 오후 1:12:58
-커밋한 사람: 백승희
-커밋 날짜: 2023년 7월 10일 월요일 오후 1:17:40
-
+- 개인정보_암호_키 컬럼명: StlbnkPrsninfoPsswrdKey, StlbnkVrAcunt010PrsninfoPsswrdKey

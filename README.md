@@ -292,3 +292,6 @@ https://pg.aronhub.com/docs/ocb_use.asp
  - https://api.aronhub.com/api/ocb/PocbStart.asp
 SID : 90588615 
 연동 작업 부탁드립니다.
+
+
+https://www.popkontv.com/item/ocb/return_buy_ocb.asp?USER_ID=bluewar111&USER_IP=175.196.87.168&ITEM_NAME=FULL%20VIEW%207%20DAY&ITEM_CODE=AB-0001&AMOUNT=1100&ITEM_COUNT=0&ORDER_ID=M-20230711144451667-2246C07B&SID=90588615&USERID=bluewar111&PAYPOINT=1000&EVENTPOINT=0&REPLYCODE=000000&MCTTRNO=20230711144459

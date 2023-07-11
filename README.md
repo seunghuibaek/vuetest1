@@ -290,4 +290,5 @@ https://pg.aronhub.com/docs/ocb_use.asp
 
 *OCB : 통신URL 변경 후 사용가능 
  - https://api.aronhub.com/api/ocb/PocbStart.asp
-
+SID : 90588615 
+연동 작업 부탁드립니다.

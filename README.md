@@ -281,3 +281,6 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
 
 KJH_CheckCompanyPGInfo
 https://gitlab.theenm.com/Develop1/popkondp.git
+
+
+8ck*(8H$L7R{#{B^

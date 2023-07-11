@@ -278,3 +278,5 @@ update [B_MANAGER].[dbo].[castLogSum] set liveGiftCoin = 15000
 - 삭제 컬럼명: SatBankVrAcuntPwd, StlbnkVrAcunt010Pwd
 
 - 개인정보_암호_키 컬럼명: StlbnkPrsninfoPsswrdKey, StlbnkVrAcunt010PrsninfoPsswrdKey
+
+KJH_CheckCompanyPGInfo

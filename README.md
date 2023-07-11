@@ -295,3 +295,8 @@ SID : 90588615
 
 
 https://www.popkontv.com/item/ocb/return_buy_ocb.asp?USER_ID=bluewar111&USER_IP=175.196.87.168&ITEM_NAME=FULL%20VIEW%207%20DAY&ITEM_CODE=AB-0001&AMOUNT=1100&ITEM_COUNT=0&ORDER_ID=M-20230711144451667-2246C07B&SID=90588615&USERID=bluewar111&PAYPOINT=1000&EVENTPOINT=0&REPLYCODE=000000&MCTTRNO=20230711144459
+
+개발기 서비스DB user 비번변경 관련 아래 서버 확인 부탁드립니다.
+[클라이언트: 114.141.29.108]
+
+2023-07-11 15:21:45.230 Logon Login failed for user 'ppknwebsvcacc'. 원인: 암호가 제공된 로그인의 암호와 일치하지 않습니다. [클라이언트: 114.141.29.108]

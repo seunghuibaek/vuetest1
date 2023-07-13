@@ -303,3 +303,13 @@ https://www.popkontv.com/item/ocb/return_buy_ocb.asp?USER_ID=bluewar111&USER_IP=
 
 호출 API : 5.1 [검색-VOD] VOD 목록 (castData/naSchCateVodList_new.asp)
 호출값 : {"SC_GP":1,"SC_IA":1,"SC_PC":"P-00001","SC_PN":1,"SC_SCTE":0,"SC_SS":"팝콘","SC_STYP":1}
+
+
+ 1) URL : https://api.aronhub.com/api/ocb/PocbCancel.asp
+    2) 방식 : POST
+    3) 파라미터 : (*) 필수 항목
+        - (*) SID : 고객사코드
+        - (*) TXNO : OCB 거래번호
+    4) 결과(브라우저 출력)
+        - 취소성공 : 000000, 취소실패 : 000000 을 제외한 값(실패 오류 코드값)
+        - 

@@ -300,3 +300,6 @@ https://www.popkontv.com/item/ocb/return_buy_ocb.asp?USER_ID=bluewar111&USER_IP=
 [클라이언트: 114.141.29.108]
 
 2023-07-11 15:21:45.230 Logon Login failed for user 'ppknwebsvcacc'. 원인: 암호가 제공된 로그인의 암호와 일치하지 않습니다. [클라이언트: 114.141.29.108]
+
+호출 API : 5.1 [검색-VOD] VOD 목록 (castData/naSchCateVodList_new.asp)
+호출값 : {"SC_GP":1,"SC_IA":1,"SC_PC":"P-00001","SC_PN":1,"SC_SCTE":0,"SC_SS":"팝콘","SC_STYP":1}

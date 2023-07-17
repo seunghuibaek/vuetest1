@@ -313,3 +313,5 @@ https://www.popkontv.com/item/ocb/return_buy_ocb.asp?USER_ID=bluewar111&USER_IP=
     4) 결과(브라우저 출력)
         - 취소성공 : 000000, 취소실패 : 000000 을 제외한 값(실패 오류 코드값)
         - 
+
+The server principal "sadmusr" is not able to access the database "ZDBMNGR" under the current security context.

@@ -322,3 +322,11 @@ M-20230717111308410-EF4E450A
 
 댓글/답글 삭제 : /castData/cateVodCommentDel.asp [5-11]
 목록 : /castData/castVodCommentList.asp [5-10]
+
+- 답글 클릭 시 : /castData/cateVodCommentList.asp [5-10]
+전달 파라미터 : {"SC_CC":"20536","SC_PC":"P-00001","SC_PN":1,"SC_RF":"46341","SC_ST":2,"SC_STYP":0}
+에러 : callbackId: VOD_COMMENT_LIST / decodeResponse : 500
+
+- 삭제 클릭 시 : /castData/cateVodCommentDel.asp [5-11]
+전달 파라미터 : {"SC_CK":"46338","SC_PC":"P-00001","SC_SI":"popaos5","SC_SP":"0xF76A56933DD7E3CDE5B60B0E0FC4DFFB98DE897E1B689B765634620AC6E2357E"}
+에러 : callbackId: VOD_COMMENT_DELETE / decodeResponse : 500

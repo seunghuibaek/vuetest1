@@ -315,3 +315,6 @@ https://www.popkontv.com/item/ocb/return_buy_ocb.asp?USER_ID=bluewar111&USER_IP=
         - 
 
 The server principal "sadmusr" is not able to access the database "ZDBMNGR" under the current security context.
+
+M-20230717103339810-93EC9698
+M-20230717111308410-EF4E450A

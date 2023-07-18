@@ -318,3 +318,6 @@ The server principal "sadmusr" is not able to access the database "ZDBMNGR" unde
 
 M-20230717103339810-93EC9698
 M-20230717111308410-EF4E450A
+
+댓글/답글 삭제 : /castData/cateVodCommentDel.asp [5-11]
+목록 : /castData/castVodCommentList.asp [5-10]

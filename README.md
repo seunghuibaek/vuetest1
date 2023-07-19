@@ -347,3 +347,6 @@ https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
 [B_CASTDATA].[dbo].[USP_Add_RcntBrdcInfo_002]
 연결된 서버 '192.168.1.16,9190'의 OLE DB 공급자 'MSOLEDBSQL'에 테이블 'B_CHATDATA'.'dbo'.'chatFilterText'이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.
 
+
+[B_MEMBER].[dbo].[CJB_PopkonTV_member_nickname_Banned_check]
+192.168.1.93,9190

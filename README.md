@@ -361,3 +361,11 @@ EXEC [B_MANAGER].[dbo].[LHY_castLogSumCancel_memberSearch_DDD]
 192.168.1.93,9190
 연결된 서버 "192.168.1.6,9190"의 OLE DB 공급자 "MSOLEDBSQL"에 테이블 ""B_CASTDATA"."dbo"."castHistory""이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.
 ErrCol : -1
+
+http://devsys.popkontv.kr:9001/castData/castlist.asp
+<font face="Arial" size=2>
+2|chatLogger_dev  | <p>Microsoft OLE DB Provider for SQL Server</font> <font face="Arial" size=2>���� '80040e21'</font>
+2|chatLogger_dev  | <p>
+2|chatLogger_dev  | <font face="Arial" size=2>���� �� OLE DB �۾��� �ϴ� ���� ������ �߻����ϴ�. �� OLE DB ���� ���� ������ Ȯ���� ���ʽÿ�. �Ϸ�� �۾��� �����ϴ�.</font>
+2|chatLogger_dev  | <p>
+2|chatLogger_dev  | <font face="Arial" size=2>/castData/castlist.asp</font><font face="Arial" size=2>, �� 30</font>

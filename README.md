@@ -332,46 +332,12 @@ M-20230717111308410-EF4E450A
 에러 : callbackId: VOD_COMMENT_DELETE / decodeResponse : 500
 
 
+실서버 
+7월 18일
 M-20230717111856030-41CFB3D6
+7월 19일
+3건
 
-
-https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
- <font face="Arial" size=2>
-<p>Microsoft OLE DB Provider for SQL Server</font> <font face="Arial" size=2>오류 '80040e14'</font>
-<p>
-<font face="Arial" size=2>연결된 서버 &quot;192.168.1.16,9190&quot;의 OLE DB 공급자 &quot;MSOLEDBSQL&quot;에 테이블 &quot;&quot;B_CHATDATA&quot;.&quot;dbo&quot;.&quot;chatFilterText&quot;&quot;이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.</font>
-<p>
-<font face="Arial" size=2>/AS/castData/castMemberData.asp</font><font face="Arial" size=2>, 줄 341</font> 
-
-118.129.153.93,9190
-[B_CASTDATA].[dbo].[USP_Add_RcntBrdcInfo_002]
-연결된 서버 '192.168.1.16,9190'의 OLE DB 공급자 'MSOLEDBSQL'에 테이블 'B_CHATDATA'.'dbo'.'chatFilterText'이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.
-
-
-[B_MEMBER].[dbo].[CJB_PopkonTV_member_nickname_Banned_check]
-192.168.1.93,9190
-
-https://devw.popkontv.com/mypage/exchg_form.asp
-여러 단계 OLE DB 작업을 하는 동안 오류가 발생했습니다. 각 OLE DB 상태 값이 있으면 확인해 보십시오. 완료된 작업이 없습니다.
-EXEC [B_MANAGER].[dbo].[LHY_castLogSumCancel_memberSearch_DDD] 
-192.168.1.93,9190
-
-
-[B_CASTDATA].[dbo].[PJH_LATEST_CAST_INFO_SEARCH]
-192.168.1.93,9190
-연결된 서버 "192.168.1.6,9190"의 OLE DB 공급자 "MSOLEDBSQL"에 테이블 ""B_CASTDATA"."dbo"."castHistory""이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.
-ErrCol : -1
-
-http://devsys.popkontv.kr:9001/castData/castlist.asp
-<font face="Arial" size=2>
-2|chatLogger_dev  | <p>Microsoft OLE DB Provider for SQL Server</font> <font face="Arial" size=2>���� '80040e21'</font>
-2|chatLogger_dev  | <p>
-2|chatLogger_dev  | <font face="Arial" size=2>���� �� OLE DB �۾��� �ϴ� ���� ������ �߻����ϴ�. �� OLE DB ���� ���� ������ Ȯ���� ���ʽÿ�. �Ϸ�� �۾��� �����ϴ�.</font>
-2|chatLogger_dev  | <p>
-2|chatLogger_dev  | <font face="Arial" size=2>/castData/castlist.asp</font><font face="Arial" size=2>, �� 30</font>
-
-[B_CASTDATA].[dbo].[USP_GetList_WhlBrdcList_001]
-192.168.1.80,9190
-
-[B_MEMBER].[dbo].[SSM_HYM_memberPage_partnerDefaultData]
-192.168.1.89,9190
+테스트 서버 7월 17일
+M-20230717103339810-93EC9698
+M-20230717111308410-EF4E450A

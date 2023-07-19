@@ -350,3 +350,7 @@ https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
 
 [B_MEMBER].[dbo].[CJB_PopkonTV_member_nickname_Banned_check]
 192.168.1.93,9190
+
+여러 단계 OLE DB 작업을 하는 동안 오류가 발생했습니다. 각 OLE DB 상태 값이 있으면 확인해 보십시오. 완료된 작업이 없습니다.
+EXEC [B_MANAGER].[dbo].[LHY_castLogSumCancel_memberSearch_DDD] 
+192.168.1.93,9190

@@ -355,3 +355,9 @@ https://devw.popkontv.com/mypage/exchg_form.asp
 여러 단계 OLE DB 작업을 하는 동안 오류가 발생했습니다. 각 OLE DB 상태 값이 있으면 확인해 보십시오. 완료된 작업이 없습니다.
 EXEC [B_MANAGER].[dbo].[LHY_castLogSumCancel_memberSearch_DDD] 
 192.168.1.93,9190
+
+
+[B_CASTDATA].[dbo].[PJH_LATEST_CAST_INFO_SEARCH]
+192.168.1.93,9190
+연결된 서버 "192.168.1.6,9190"의 OLE DB 공급자 "MSOLEDBSQL"에 테이블 ""B_CASTDATA"."dbo"."castHistory""이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.
+ErrCol : -1

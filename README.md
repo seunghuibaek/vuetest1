@@ -342,3 +342,8 @@ https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
 <font face="Arial" size=2>연결된 서버 &quot;192.168.1.16,9190&quot;의 OLE DB 공급자 &quot;MSOLEDBSQL&quot;에 테이블 &quot;&quot;B_CHATDATA&quot;.&quot;dbo&quot;.&quot;chatFilterText&quot;&quot;이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.</font>
 <p>
 <font face="Arial" size=2>/AS/castData/castMemberData.asp</font><font face="Arial" size=2>, 줄 341</font> 
+
+118.129.153.93,9190
+[B_CASTDATA].[dbo].[USP_Add_RcntBrdcInfo_002]
+연결된 서버 '192.168.1.16,9190'의 OLE DB 공급자 'MSOLEDBSQL'에 테이블 'B_CHATDATA'.'dbo'.'chatFilterText'이(가) 없습니다. 테이블이 존재하지 않거나 현재 사용자에게 해당 테이블에 대한 사용 권한이 없습니다.
+

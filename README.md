@@ -372,3 +372,6 @@ http://devsys.popkontv.kr:9001/castData/castlist.asp
 
 [B_CASTDATA].[dbo].[USP_GetList_WhlBrdcList_001]
 192.168.1.80,9190
+
+[B_MEMBER].[dbo].[SSM_HYM_memberPage_partnerDefaultData]
+192.168.1.89,9190

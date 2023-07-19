@@ -369,3 +369,6 @@ http://devsys.popkontv.kr:9001/castData/castlist.asp
 2|chatLogger_dev  | <font face="Arial" size=2>���� �� OLE DB �۾��� �ϴ� ���� ������ �߻����ϴ�. �� OLE DB ���� ���� ������ Ȯ���� ���ʽÿ�. �Ϸ�� �۾��� �����ϴ�.</font>
 2|chatLogger_dev  | <p>
 2|chatLogger_dev  | <font face="Arial" size=2>/castData/castlist.asp</font><font face="Arial" size=2>, �� 30</font>
+
+[B_CASTDATA].[dbo].[USP_GetList_WhlBrdcList_001]
+192.168.1.80,9190

@@ -332,12 +332,9 @@ M-20230717111308410-EF4E450A
 에러 : callbackId: VOD_COMMENT_DELETE / decodeResponse : 500
 
 
-실서버 
-7월 18일
-M-20230717111856030-41CFB3D6
-7월 19일
-3건
+Set objXMLHTTP = CreateObject("MSXML2.ServerXMLHTTP.3.0")
 
-테스트 서버 7월 17일
-M-20230717103339810-93EC9698
-M-20230717111308410-EF4E450A
+    objXMLHTTP.open "GET", Url, false
+    objXMLHTTP.send()
+
+    If objXMLHTTP.Status = 200 Then 

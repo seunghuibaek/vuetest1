@@ -331,10 +331,18 @@ M-20230717111308410-EF4E450A
 전달 파라미터 : {"SC_CK":"46338","SC_PC":"P-00001","SC_SI":"popaos5","SC_SP":"0xF76A56933DD7E3CDE5B60B0E0FC4DFFB98DE897E1B689B765634620AC6E2357E"}
 에러 : callbackId: VOD_COMMENT_DELETE / decodeResponse : 500
 
+USP_Add_sessionCount_001
 
-Set objXMLHTTP = CreateObject("MSXML2.ServerXMLHTTP.3.0")
 
-    objXMLHTTP.open "GET", Url, false
-    objXMLHTTP.send()
 
-    If objXMLHTTP.Status = 200 Then 
+Instance Name
+
+개발기 사설IP
+
+상용 사설IP
+
+PPKNARCHV
+
+192.168.1.6
+
+192.168.1.79

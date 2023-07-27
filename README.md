@@ -336,3 +336,8 @@ JBN_MANAGER_memberSignStatusInit
 JBN_memberSignStatus_Update_statusType
 SSM_memberSignStatus_search
 SSM_memberSignStatus_signAliveCheck
+
+https://www.googletagmanager.com/gtm.js?   GTM-T8B5P2
+
+https://www.googletagmanager.com/gtag/js?id=G-4391KKZ1EB
+

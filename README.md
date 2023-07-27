@@ -1,7 +1,4 @@
-https://www.googletagmanager.com/gtag/js?id=G-42MLB56KCE&l=dataLayer&cx=c
-https://www.googletagmanager.com/gtm.js?id=GTM-T8B5P2
-[G-4391KKZ1EB](https://www.googletagmanager.com/gtag/js?id=UA-61915671-2&l=dataLayer&cx=c)
-https://www.googletagmanager.com/gtag/js?id=UA-61915671-1&l=dataLayer&cx=c
+https://devceluvm.celuvtv.co.kr/Default.asp
 
 # Vue3 템플릿 with Webpack
 

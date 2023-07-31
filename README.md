@@ -1,4 +1,4 @@
-https://devceluvm.celuvtv.co.kr/Default.asp
+[B_MEMBER].[dbo].[JBN_memberSignStatus_Update_statusType]
 
 # Vue3 템플릿 with Webpack
 

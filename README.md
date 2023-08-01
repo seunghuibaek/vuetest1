@@ -1,4 +1,4 @@
-[B_MEMBER].[dbo].[JBN_memberSignStatus_Update_statusType]
+YHS_PgDataLog_Insert
 
 # Vue3 템플릿 with Webpack
 

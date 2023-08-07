@@ -1,14 +1,5 @@
-SSM_virtualBank_insert          @MOBILE_NUMBER
-JBN_MANAGER_saaa                @MOBILE_NUMBER
-KJH_galaxiaTMoney_insert        @MOBILE_NUMBER
-SSM_galaxiaBank_insert          @MOBILE_NUMBER
-SSM_galaxiaCard_insert          @MOBILE_NUMBER
-SSM_galaxiaPhone_insert         @MOBILE_NUMBER
-SSM_virtualBank_insertLvl
-SSM_galaxiaTicket_insert
-YHS_Phone_Payment_Info_InsertLvl
-YHS_Phone_Payment_Info_Insert
-
+www.popkontv.com/live/live_check.asp
+www.popkontv.com//json/liveApi_hls.asp
 
 
 # Vue3 템플릿 with Webpack

@@ -1,18 +1,14 @@
-"Instance
-Name"	"Database
-Name"	Object Type	"Schema
-Name"	Object Name	사용여부	DB팀의견
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	SSM_virtualBank_insert	O or X	호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	JBN_MANAGER_saaa		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	KJH_galaxiaTMoney_insert		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	SSM_galaxiaBank_insert		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	SSM_galaxiaCard_insert		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	SSM_galaxiaPhone_insert		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	SSM_virtualBank_insertLvl		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	SSM_galaxiaTicket_insert		호출 0회. 미사용으로 보임
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	YHS_Phone_Payment_Info_InsertLvl		사용중
-PPKNPAYINFO	B_ACCOUNT	Stored Procedure	dbo	YHS_Phone_Payment_Info_Insert		사용중
-![image](https://github.com/seunghuibaek/vuetest1/assets/88815589/60fd9d74-a504-46c1-a571-e987e0e2a78f)
+SSM_virtualBank_insert          @MOBILE_NUMBER
+JBN_MANAGER_saaa                @MOBILE_NUMBER
+KJH_galaxiaTMoney_insert        @MOBILE_NUMBER
+SSM_galaxiaBank_insert          @MOBILE_NUMBER
+SSM_galaxiaCard_insert          @MOBILE_NUMBER
+SSM_galaxiaPhone_insert         @MOBILE_NUMBER
+SSM_virtualBank_insertLvl
+SSM_galaxiaTicket_insert
+YHS_Phone_Payment_Info_InsertLvl
+YHS_Phone_Payment_Info_Insert
+
 
 
 # Vue3 템플릿 with Webpack

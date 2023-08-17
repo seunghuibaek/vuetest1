@@ -3,6 +3,27 @@ USP_GetList_RnkgEvntSmmResult_001
 USP_GetList_RnkgEvntImag_001
 USP_GetList_RnkgEvntSmmTgtBnsCashGuds_001
 
+RANK
+EvntSeq - 이벤트_순번
+Mmbri - 회원아이디
+nickName
+PrtsCd,- 파트너사_코드
+TtlScor - 토탈점수
+GnrlCashGudsScor - 일반 팝콘 점수
+GnrlCashGudsTariff - 일반 팝콘 적용 요율
+LxryCashGudsScor - 럭셔리 팝콘 점수
+LxryCashGudsTariff - 럭셔리 팝콘 적용 요율
+EvntCashGudsScor - 이벤트 팝콘 점수
+EvntCashGudsTariff - 이벤트 팝콘 적용 요율
+RcmnScor - 추천 점수
+RE.RcmnTariff - 추전 적용 요율
+BnsScor 보너스 점수
+BrdcHhMinScor - 방송시간 점수 (차후 적용될지 몰라 사전 적용 현재 사용X)
+BrdcHhMinTariff - 방송시간 요율 (차후 적용될지 몰라 사전 적용 현재 사용X)
+pFileName,
+pTitle
+castStatus
+castStartDateCode
 
 
 

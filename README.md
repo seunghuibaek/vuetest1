@@ -25,6 +25,15 @@ pTitle
 castStatus
 castStartDateCode
 
+JBN_WEB_CoinAccount
+JBN_WEB_coinAccount_channel
+JBN_WEB_CoinItemAccount 
+JBN_WEB_coinItemAccount_Cancel
+JBN_WEB_LCoinItemAccount
+JBN_WEB_LCoinItemAccount_cancel
+JBN_coinAccountLog_Insert
+
+
 
 
 # Vue3 템플릿 with Webpack

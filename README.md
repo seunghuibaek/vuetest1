@@ -46,6 +46,15 @@ JBN_WEB_LCoinItemAccount_cancel
 JBN_coinAccountLog_Insert
 
 
+                                        PW                  MW              API
+JBN_WEB_CoinAccount                     49                  18(SSM_GalaxiaPhone_insert(폰결제), JTW_GalaxiaBank_insert(무통장),JTW_GalaxiaCard_insert)              4(결제시 코인지급 SP. 모든 결제시)
+JBN_WEB_coinAccount_channel                                                 1(SSM_partnerPoint_insert)
+JBN_WEB_CoinItemAccount                 25                  17              3
+JBN_WEB_coinItemAccount_Cancel
+JBN_WEB_LCoinItemAccount                28                  17(JTW_GalaxiaTicket_insert,JTW_GalaxiaBank_insert,SSM_GalaxiaPhone_insert,KJH_GalaxiaTMoney_insert)              3(인앱결제(JBN_inAppPurchaseAOS_insert, JBN_inAppPurchaseIOS_insert))
+JBN_WEB_LCoinItemAccount_cancel
+JBN_coinAccountLog_Insert               3                   3(랜딩페이지를 통한 가입시 무료 팝콘 지급)         
+
 
 
 # Vue3 템플릿 with Webpack

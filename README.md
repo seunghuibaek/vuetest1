@@ -1,3 +1,8 @@
+/AS/recVod/naVodMain.asp [4-1] VOD 메인 방송목록
+/AS/castData/cateGrpVodList.asp [5-6] VOD 카테고리 데이터 목록(신규)
+/AS/recVod/naMcGrpList.asp [4-2] VOD-개인방송 방송자목록
+
+
 USP_Get_RnkgEvntExpsrEnnc_001
 USP_GetList_RnkgEvntSmmResult_001
 USP_GetList_RnkgEvntImag_001

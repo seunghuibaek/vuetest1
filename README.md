@@ -1,3 +1,10 @@
+118.129.153.82(게시판,관리자/AD(9)
+exec USP_Get_PrtsSvcSiteInfo_002 @partnerCode = 'P-00074'
+SITE_PC_URL
+SITE_MOBILE_URL
+
+
+
 /AS/recVod/naVodMain.asp [4-1] VOD 메인 방송목록
 /AS/castData/cateGrpVodList.asp [5-6] VOD 카테고리 데이터 목록(신규)  요거
   [B_VOD].[dbo].[LHY_cateGrpVodList]   118.129.153.88,9190

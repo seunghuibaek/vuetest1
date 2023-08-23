@@ -1,3 +1,6 @@
+![image](https://github.com/seunghuibaek/vuetest1/assets/88815589/7891b73b-9ef9-479e-b6c7-eff0720e77e9)
+
+
 /AS/castData/lbaVodStdInfo.asp
 
 PPKNVODINFO

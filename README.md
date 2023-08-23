@@ -1,6 +1,10 @@
-{"SC_PC":"P-00001","SC_IA":"0","SC_GP":"0","SC_CT":"9","SC_STYP":"1","SC_PN":"1","SC_PS":"20"}
+/AS/castData/lbaVodView.asp
+SC_CK : vod 번호
+{"SC_CK":"17063"}
+
 
 /AS/castData/lbaVodList.asp
+{"SC_PC":"P-00001","SC_IA":"0","SC_GP":"0","SC_CT":"9","SC_STYP":"1","SC_PN":"1","SC_PS":"20"}
 
 SC_PC : 파트너코드
 SC_IA : 성인여부 (0 또는 1)

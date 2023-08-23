@@ -1,3 +1,5 @@
+{"SC_PC":"P-00001","SC_IA":"0","SC_GP":"0","SC_CT":"9","SC_STYP":"1","SC_PN":"1","SC_PS":"20"}
+
 /AS/castData/lbaVodList.asp
 
 SC_PC : 파트너코드

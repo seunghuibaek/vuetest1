@@ -1,3 +1,16 @@
+PPKNVODINFO
+192.168.1.91
+192.168.1.14
+
+B_VOD
+USP_GetList_PrtsVodStdrInfo_001		파트너사_VOD_기준_정보 조회합니다.
+
+USP_GetList_PrtsVodList_001		파트너사_VOD_목록 조회합니다.
+
+USP_Get_PrtsVodListDtl_001		파트너사_VOD_목록_상세 조회합니다.
+
+
+
 118.129.153.82(게시판,관리자/AD(9)
 exec USP_Get_PrtsSvcSiteInfo_002 @partnerCode = 'P-00074'
 SITE_PC_URL

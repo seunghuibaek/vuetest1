@@ -1,3 +1,5 @@
+/AS/castData/lbaVodStdInfo.asp
+
 PPKNVODINFO
 192.168.1.91
 192.168.1.14

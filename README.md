@@ -1,3 +1,6 @@
+https://pic.popkontv.com/BOARD_FILE/ranking/이벤트코드/파트너코드/파일명
+
+
 /AS/castData/lbaVodView.asp
 SC_CK : vod 번호
 {"SC_CK":"17063"}

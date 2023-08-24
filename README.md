@@ -1,6 +1,8 @@
 /AS/castData/lbaVodView.asp
 SC_CK : vod 번호
 {"SC_CK":"17063"}
+rstCode, rstMsg
+vodInfoView
 
 pk_code : [PK] 순번코드
 vodTitle : 부제목/작품명
@@ -21,6 +23,8 @@ NextVodSeq : 다음 vod 순번
 
 /AS/castData/lbaVodList.asp
 {"SC_PC":"P-00001","SC_IA":"0","SC_GP":"0","SC_CT":"9","SC_STYP":"1","SC_PN":"1","SC_PS":"20"}
+rstCode, rstMsg, totalCnt
+cateVodList
 
 SC_PC(char(7)) : 파트너코드
 SC_IA(bit) : 성인여부 (0 또는 1)
@@ -50,6 +54,8 @@ totCnt : 게시물 총 카운트
 
 /AS/castData/lbaVodStdInfo.asp   SC_PC: 파트너코드
 SC_PC(char(7)) : 파트너사 코드
+rstCode, rstMsg
+cateVodStdrInfo
 
 groupCode : 그룹코드
 cateCode : 카테고리

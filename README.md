@@ -2,20 +2,62 @@
 SC_CK : vod 번호
 {"SC_CK":"17063"}
 
+pk_code : [PK] 순번코드
+vodTitle : 부제목/작품명
+vodThumnail : 썸네일 전체경로
+vodFileName : 영상 파일명
+isAdult : [IX]성인컨텐츠여부(0:비성인,1:성인)
+viewCnt : [IX]조회수
+goodCnt : [IX]추천수
+bCnt
+bookmarkCnt
+runMinite : 플레이시간(단위:분)
+partnerCode : 파트너코드
+cast_SignID
+cast_PartnerCode
+BforVodSeq : 이전 vod 순번
+NextVodSeq : 다음 vod 순번
+
 
 /AS/castData/lbaVodList.asp
 {"SC_PC":"P-00001","SC_IA":"0","SC_GP":"0","SC_CT":"9","SC_STYP":"1","SC_PN":"1","SC_PS":"20"}
 
-SC_PC : 파트너코드
-SC_IA : 성인여부 (0 또는 1)
-SC_GP : 그룹코드(정수형)
-SC_CT : 카테고리(정수형)
-SC_STYP : 정렬(0:랜덤, 1:최신순, 2:조회순, 3:추천순)
-SC_PN : 페이지 번호
-SC_PS : 노출 페이지 수
+SC_PC(char(7)) : 파트너코드
+SC_IA(bit) : 성인여부 (0 또는 1)
+SC_GP(int) : 그룹코드(정수형)
+SC_CT(int) : 카테고리(정수형)
+SC_STYP(tinyint) : 정렬(0:랜덤, 1:최신순, 2:조회순, 3:추천순)
+SC_PN(smallint) : 페이지 번호
+SC_PS(int) : 페이지당 row 수
+
+rounum : 게시글 순번
+pk_code : [PK] 순번코드
+vodTitle : 부제목/작품명
+vodThumnail : 썸네일 전체경로
+vodFileName : 영상 파일명
+vod_isAdult : [IX]성인컨텐츠여부(0:비성인,1:성인)
+viewCnt : [IX]조회수
+goodCnt : [IX]추천수
+bCnt : 
+bookmarkCnt : 
+runMinite : 플레이시간(단위:분)
+vod_groupCode : 영상 그룹코드
+vod_category : [IX]방송 카테고리 코드
+cast_partnerCode : 파트너코드(현재 null로 들어가있음)
+cast_SignID : 방송자 아이디(현재 null로 들어가있음)
+totCnt : 게시물 총 카운트
 
 
 /AS/castData/lbaVodStdInfo.asp   SC_PC: 파트너코드
+SC_PC(char(7)) : 파트너사 코드
+
+groupCode : 그룹코드
+cateCode : 카테고리
+groupName : 그룹명
+cateName : 카테고리 명
+ownerName : 원작자/게시자명
+isService : [IX]서비스여부(0:중지,1:실행)
+isAdult : [IX]성인컨텐츠여부(0:비성인,1:성인)
 
 
 PPKNVODINFO

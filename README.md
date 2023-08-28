@@ -1,3 +1,18 @@
+영상 주소
+API 서버 : /AS/castData/naCastWatchOnOff.asp
+[B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]
+118.129.153.80,9190
+뒤에 주소는 아래 api를 통해 가져옴
+http://oauth2.popkontv.com/oauth/wowza/token
+
+채팅서버
+API 서버 : /AS/castData/naCastWatchOnOff.asp
+[B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]
+에서 영상 주소와 같은 필드(castAddress)에서 정보 호출
+
+rtmp://live.popkontv.hscdn.com/pop_cast31|mondol_P-00001_20230828141518|https://gw.popkontv.kr:1920
+
+채팅 서버
 [B_CASTDATA].[dbo].[USP_GetList_CastInfoForWeb_003]
 118.129.153.80,9190
 

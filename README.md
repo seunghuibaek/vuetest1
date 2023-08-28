@@ -3,6 +3,7 @@ API 서버 : /AS/castData/naCastWatchOnOff.asp
 [B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]
 118.129.153.80,9190
 뒤에 주소는 아래 api를 통해 가져옴
+https://live-popkontv.hscdn.com/pop_cast27/cis100400_P-00001_20230828120448/chunklist_w1028098176.m3u8?%24Ozw1OS9ESEAVDQsNDgsTDRMMDwsQDAwtPElCQBUMCwsoFSgrFUxFJ1TbRQ%3D%3D%24
 http://oauth2.popkontv.com/oauth/wowza/token
 
 채팅서버

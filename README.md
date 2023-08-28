@@ -1,3 +1,7 @@
+[B_CASTDATA].[dbo].[USP_GetList_CastInfoForWeb_003]
+118.129.153.80,9190
+
+
 http://vod2.popkontv.hscdn.com/CAST_VOD/POPCAST_CATE_VOD/group_19/cate_1 이 URL 인데 group_19 까지는 동일하고 cate_ 이부분은 설정한 카테고리에 따라 갈립니다
 
 https://pic.popkontv.com/BOARD_FILE/ranking/이벤트코드/파트너코드/파일명

@@ -1,3 +1,6 @@
+28, B_CASTDATA.dbo.JBN_JSON_IscastRecordFileList / pk_code, signId, partnerCode
+28, B_CASTDATA.dbo.JBN_WEB_MycastRecordFileDel / pkcode, signId, parterCode, @return=0
+
 
 USP_Get_PrtsSvcSiteInfo_002
 

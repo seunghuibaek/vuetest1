@@ -1,3 +1,8 @@
+
+USP_Get_PrtsSvcSiteInfo_002
+
+USP_GetList_IntgLoginTgtPrtsList_002
+
 영상 주소
 API 서버 : /AS/castData/naCastWatchOnOff.asp
 [B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]

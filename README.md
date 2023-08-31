@@ -1,6 +1,21 @@
-28, B_CASTDATA.dbo.JBN_JSON_IscastRecordFileList / pk_code, signId, partnerCode
-28, B_CASTDATA.dbo.JBN_WEB_MycastRecordFileDel / pkcode, signId, parterCode, @return=0
+live
+영상 클릭 -> 로그인 체크 / 성인여부 체크 -> 방송 존재여부, 팬클럽 및 유료방송 여부 체크, 미성연자 체크
+live_view
+영상 정보 로딩 -> 방송정보 확인 - 방송 정보가 없는 경우 live 페이지로 이동
+                                - realroom : 3. 성인방송이 아닌 경우 "팬클럽 방송 및 유료 방송은 모바일 APP 및 PC 응용프로그램을 통해 시청해주시기 바랍니다." 문구 노출 후 live 페이지로 이동
+                                  로그인 체크 - 로그인 페이지로 이동
+                                  "팬클럽 방송 및 유료 방송은 모바일 APP 및 PC 응용프로그램을 통해 시청해주시기 바랍니다." 문구 노출 후 live 페이지로 이동
 
+                                - realRoom : 4. 
+                                    로그인 체크 - 로그인 페이지로 이동
+                                - realRoom : 5.
+                                    미인증 회원 - 인증 페이지로 이동
+                                - 그 외
+                                    비밀번호 필요 여부
+                                        열혈팬의 경우 비밀번호 팝업에 secret_check 클래스 추가
+                                        일반방 시크릿 모드 안내 팝업 안띄움
+                                        비밀번호 입력 체크
+                                            제한인원 체크. 제한인원이 초과 된 경우 풀방입장권 아이템 구매 필요 팝업 노출
 
 USP_Get_PrtsSvcSiteInfo_002
 

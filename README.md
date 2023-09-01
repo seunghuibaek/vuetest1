@@ -1,3 +1,6 @@
+https://sys1.popkontv.kr:9002
+https://stagesys.popkontv.com:9002/
+
 WEB
 방송진입
 1. 로그인체크, 인증체크

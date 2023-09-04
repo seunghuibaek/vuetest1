@@ -1,3 +1,15 @@
+100020	통합_로그인_앱스토어_IOS_앱_버전	IntgLoginAppstorIosAppVer
+100021	통합_로그인_앱스토어_안내_URL	IntgLoginAppstorGuidanceUrl
+100023	통합_로그인_구글플레이_안내_URL	IntgLoginGglplyGuidanceUrl
+100025	통합_로그인_원스토어_안드로이드_앱_심사_버전	IntgLoginOnestorAndrdAppInspVer
+100026	통합_로그인_원스토어_안드로이드_앱_심사_진행_여부	IntgLoginOnestorAosAppInspPrgrYn
+100027	통합_로그인_원스토어_안내_URL	IntgLoginOnestorGuidanceUrl
+100029	통합_로그인_안드로이드_수동_다운로드_앱_버전	IntgLoginAndrdHndoprDwnlAppVer
+100030	통합_로그인_안드로이드_앱_수동_다운로드_URL	IntgLoginAndrdAppHndoprDwnlUrl
+![image](https://github.com/seunghuibaek/vuetest1/assets/88815589/cd325c06-d2bb-4ec5-8354-0ee32d06abcb)
+
+
+
 https://sys1.popkontv.kr:9002
 https://stagesys.popkontv.com:9002/
 

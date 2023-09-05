@@ -9,6 +9,7 @@
 ![image](https://github.com/seunghuibaek/vuetest1/assets/88815589/cd325c06-d2bb-4ec5-8354-0ee32d06abcb)
 
 
+해당 결제로그인정보 유효시간이 만료...
 
 https://sys1.popkontv.kr:9002
 https://stagesys.popkontv.com:9002/

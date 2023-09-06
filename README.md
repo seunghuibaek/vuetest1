@@ -1,4 +1,7 @@
 http://aspapi.popkontv.com/api/aesencrypt.asp
+[B_COMPANY].[dbo].[USP_GetList_IntgLoginTgtPrtsList_001]
+118.129.153.82,9190
+
 
 # Vue3 템플릿 with Webpack
 

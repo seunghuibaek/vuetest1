@@ -1,3 +1,6 @@
+EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @signId = 'ecol83', @PartnerCode = 'P-00001'
+EXEC [B_MEMBER].[dbo].[USP_Get_BrdcrSvcLvl_002] @vchMmbri='yes222', @chrPrtsCd='P-00117', @intLvlSeCd='10002'
+
 http://aspapi.popkontv.com/api/aesencrypt.asp
 [B_COMPANY].[dbo].[USP_GetList_IntgLoginTgtPrtsList_001]
 118.129.153.82,9190

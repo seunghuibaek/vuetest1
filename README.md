@@ -1,3 +1,13 @@
+닉네임에 GREENPOL POPKONMC POLICE 단어가 포함되는 경우
+    사용할 수 없는 닉네임 입니다
+부적절한 단어가 포함된 경우
+    닉네임에 부적절한 단어를 포함할 수 없습니다.
+공백이 포함 된 경우
+    닉네임에 공백을 포함할 수 없습니다.
+이 외에
+    닉네임으로 사용할 수 없습니다
+
+
 /AS/castData/naCastWatchOnOff.asp
 /AS/recVod/naMcVodWatchOnOff_guest.asp
 /AS/recVod/naMcVodWatchOnOff.asp

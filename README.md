@@ -1,3 +1,12 @@
+/AS/castData/naCastWatchOnOff.asp
+/AS/recVod/naMcVodWatchOnOff_guest.asp
+/AS/recVod/naMcVodWatchOnOff.asp
+/AS/castData/naReWatchOn.asp
+/AS/program/naPgExe.asp
+
+/AS/program/loginPartnerList.asp
+
+
 EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @signId = 'ecol83', @PartnerCode = 'P-00001'
 EXEC [B_MEMBER].[dbo].[USP_Get_BrdcrSvcLvl_002] @vchMmbri='yes222', @chrPrtsCd='P-00117', @intLvlSeCd='10002'
 

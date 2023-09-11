@@ -1,11 +1,15 @@
-닉네임에 GREENPOL POPKONMC POLICE 단어가 포함되는 경우
-    사용할 수 없는 닉네임 입니다
-부적절한 단어가 포함된 경우
-    닉네임에 부적절한 단어를 포함할 수 없습니다.
-공백이 포함 된 경우
-    닉네임에 공백을 포함할 수 없습니다.
-이 외에
-    닉네임으로 사용할 수 없습니다
+----------- Request ---------------------
+ URL:https://api.popkontv.kr:9002/AS/program/naPGexe.asp
+ PARAMS:["SC_EP": "15", "SC_PC": "P-00001"]
+-----------------------------------------
+2023-09-11 10:12:59.863 [Debug] [main] [ConnectionManager.swift:190] responseForRequest(urlRequest:needAuthentication:count:code:showNetworkError:complete:) > 
+⏱ Response Time = 0.15688598155975342 / sec
+2023-09-11 10:12:59.881 [Debug] [main] [ConnectionManager.swift:140] post(url:params:code:showErrorMsg:showNetworkMsg:complete:) > 
+----------- Response --------------------
+ URL:https://api.popkontv.kr:9002/AS/program/naPGexe.asp
+ PARAMS:["SC_EP": "15", "SC_PC": "P-00001"] 
+- Result -
+ {"rst" : {"rstCode" : "0","rstMsg" : "SUCCESS"},"ver" : {"pcVer" : "", "androidVer" : "", "iphoneVer" : "1.0.001", "updateVer" : "", "isUpdate" : "0", "svrName_kor" : "팝콘티비" },"svcAddr" : {"update_xml" : "","update_app" : "","p_web" : "www.popkontv.com","m_web" : "m.popkontv.com","json_url" : "sys1.popkontv.kr","json_port" : "9002","json_isSsl" : "1","json_sslport" : "9002", "rec_cast" : "rtmp:\/\/114.31.51.66\/pop_vod","rec_watch" : "rtmp:\/\/live.popkontv.hscdn.com\/pop_vod8","rec_castStart" : "http:\/\/114.31.51.66:1935\/popcon\/setBroadCastStart","rec_castEnd" : "http:\/\/114.31.51.66:1935\/popcon\/setBroadCastStop","pcReayAd_url" : ""},"adLocDataSet":{"corpCode" : "1","isCastTxt" : "0","isStartVod" : "1","isMidVod" : "0","isStartImg" : "1","isEndImg" : "1","StartVodTimeSec" : "30"},"adExeImgData":[{"adCode":"M_APP_OPEN_2023bestMC_IOS", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/SIOS\/23_bestMC_491871.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/event\/bestmc\/", "adImgIsLink":"1", "adImgTitle":"2023 \uBCA0\uC2A4\uD2B8MC \uAC1C\uD3B8 ", "adType":"0", "signId":"", "partnerCode":""},{"adCode":"M_APP_OPEN_01_smishing_IOS", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/SIOS\/2306_smishing_491871.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/event\/smishing\/", "adImgIsLink":"1", "adImgTitle":"\uC2A4\uBBF8\uC2F1 \uC608\uBC29 \uCEA0\uD398\uC778", "adType":"0", "signId":"", "partnerCode":""},{"adCode":"M_APP_OPEN_01_202203_join_IOS", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/SIOS\/2302_join_491871.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/join\/join_form_new.asp", "adImgIsLink":"1", "adImgTitle":"3\uC6D4 \uC2E0\uADDC\uAC00\uC785 \uB9AC\uC6CC\uB4DC \uC774\uBCA4\uD2B8", "adType":"0", "signId":"", "partnerCode":""}],"adEndImgData":[{"adCode":"M_APP_CLOSE_01_2023bestMC", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/E\/bestMC_end_385_486.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/event\/bestmc\/", "adImgIsLink":"1", "adImgTitle":"2023 \uBCA0\uC2A4\uD2B8MC \uAC1C\uD3B8"}],"adBlankImgData":[],"categoryAdult":[{"label" : "전체", "code" : "0"},{"label" : "개인", "code" : "10"},{"label" : "신인", "code" : "11"},{"label" : "19+", "code" : "20"},{"label" : "커머스", "code" : "30"},{"label" : "스포츠", "code" : "14"},{"label" : "게임", "code" : "16"},{"label" : "음악", "code" : "13"},{"label" : "영화", "code" : "12"}],"categoryTeen":[{"label" : "전체", "code" : "0"},{"label" : "개인", "code" : "10"},{"label" : "신인", "code" : "11"},{"label" : "커머스", "code" : "30"},{"label" : "스포츠", "code" : "14"},{"label" : "게임", "code" : "16"},{"label" : "음악", "code" : "13"},{"label" : "영화", "code" : "12"},{"label" : "19+", "code" : "20"}],"categoryCast":[{"label" : "개인", "code" : "10"},{"label" : "스포츠", "code" : "14"},{"label" : "게임", "code" : "16"},{"label" : "음악", "code" : "13"},{"label" : "영화", "code" : "12"},{"label" : "커머스", "code" : "30"},{"label" : "19+", "code" : "20"}],"VODcategory":[{"label":"HOT CLIP", "code":"1"}],"UI_Type":"1","isCast":"1","isNomalUserCast":"1","timeTxt":"2023\uB144 9\uC6D4 11(\uC6D4) 11:00~13:00","naCastAppName":"","isCastLinkMarket":"0","coinName":"팝콘"} 
 
 
 /AS/castData/naCastWatchOnOff.asp

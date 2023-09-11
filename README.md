@@ -4,7 +4,17 @@
 /AS/castData/naReWatchOn.asp
 /AS/program/naPgExe.asp
 
-/AS/program/loginPartnerList.asp
+/AS/program/loginPartnerList.asp   loginAppse = Trim(oJSON.data("SC_IA"))    어플리케이션_구분 :: [1: RINK, 2: RINK PLUS]
+
+
+Path	AttributeNm
+15	린크_플러스_앱스토어_기업_프로그램
+16	린크_앱스토어
+17	린크_구글플레이
+18	린크_플러스_원스토어
+19	린크_플러스_갤럭시스토어
+20	린크_플러스_안드로이드_수동_다운로드_앱
+
 
 15	린크_플러스_앱스토어_기업_프로그램
 16	린크_앱스토어

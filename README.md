@@ -6,6 +6,14 @@
 
 /AS/program/loginPartnerList.asp
 
+15	린크_플러스_앱스토어_기업_프로그램
+16	린크_앱스토어
+17	린크_구글플레이
+18	린크_플러스_원스토어
+19	린크_플러스_갤럭시스토어
+20	린크_플러스_안드로이드_수동_다운로드_앱
+
+
 
 EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @signId = 'ecol83', @PartnerCode = 'P-00001'
 EXEC [B_MEMBER].[dbo].[USP_Get_BrdcrSvcLvl_002] @vchMmbri='yes222', @chrPrtsCd='P-00117', @intLvlSeCd='10002'

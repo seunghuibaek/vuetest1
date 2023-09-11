@@ -1,3 +1,5 @@
+{"flag":"recom", "ccode":"dlvtown8849-20230911150646", "msg":"\uCE74\uC778ii(01024297580)님이 추천해 주셨습니다.", "signId":"01024297580", "partnerCode":"P-00001"}
+
 ----------- Request ---------------------
  URL:https://api.popkontv.kr:9002/AS/program/naPGexe.asp
  PARAMS:["SC_EP": "15", "SC_PC": "P-00001"]

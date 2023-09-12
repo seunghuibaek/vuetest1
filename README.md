@@ -1,3 +1,10 @@
+Microsoft OLE DB Provider for SQL Server 오류 '80040e10'
+
+Procedure or function 'JBN_WEB_memberPage_Search' expects parameter '@signID', which was not supplied.
+
+/ch/config/ssi/function/function_site_ANSI.ssi, 줄 846
+
+
 exec sp_cursoropen @p1 output,N'EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @SIGNID = ''rndkaehd1340'', @PartnerCode = ''P-00001''',@p3 output,@P4 output,@p5 output
 select @p1, @p3, @P4, @p5
 go

@@ -1,10 +1,44 @@
-if isxmlAsync  then			
+'# xmlHttp_sendPush
+	private Function xmlHttp_send(sendUrl, params, method)			
+		on error resume next		
+		dim timeout
+		timeout = 1000*5
+		Dim xmlHTTP		
+		if isxmlAsync  then			
 			Set xmlHTTP = Server.CreateObject("Microsoft.XMLHTTP") 			
 		else
 			Set xmlHTTP = Server.CreateObject("MSXML2.ServerXMLHTTP") 
 			xmlHTTP.setTimeouts timeout, timeout, timeout, timeout
 		end if
-  
+		if method = "POST" then
+			xmlHTTP.Open "POST", sendUrl, isxmlAsync
+			xmlHTTP.SetRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+			xmlHTTP.Send params
+		else
+			xmlHTTP.Open "GET", sendUrl&"?"&params, isxmlAsync	
+			xmlHTTP.Send 
+		end if
+		
+		if err.number <> 0 then
+			status = "2"
+			statusMsg = "xml err : "&err.description
+			xmlHttp_send = ""
+			set xmlHTTP = nothing
+			exit function
+		end if
+		if not isxmlAsync  then
+			if xmlHTTP.status <> 200 then
+				status = "3"
+				statusMsg = "xml status : "& xmlHTTP.status
+				xmlHttp_send = ""
+				set xmlHTTP = nothing
+				exit function
+			end if
+			xmlHttp_send = xmlHTTP.ResponseText
+		end if
+		xmlStatus = true
+		set xmlHTTP = nothing
+	End Function  
 
 Microsoft OLE DB Provider for SQL Server 오류 '80040e10'
 

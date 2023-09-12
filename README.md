@@ -1,3 +1,11 @@
+if isxmlAsync  then			
+			Set xmlHTTP = Server.CreateObject("Microsoft.XMLHTTP") 			
+		else
+			Set xmlHTTP = Server.CreateObject("MSXML2.ServerXMLHTTP") 
+			xmlHTTP.setTimeouts timeout, timeout, timeout, timeout
+		end if
+  
+
 Microsoft OLE DB Provider for SQL Server 오류 '80040e10'
 
 Procedure or function 'JBN_WEB_memberPage_Search' expects parameter '@signID', which was not supplied.

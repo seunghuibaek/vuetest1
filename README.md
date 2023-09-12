@@ -1,3 +1,12 @@
+exec sp_cursoropen @p1 output,N'EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @SIGNID = ''rndkaehd1340'', @PartnerCode = ''P-00001''',@p3 output,@P4 output,@p5 output
+select @p1, @p3, @P4, @p5
+go
+
+531번 세션에서 2023-09-12 16:00:32.203 시간에 아래 쿼리를 수행
+<두번째 실행>
+EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @SIGNID = 'rndkaehd1340', @PartnerCode = 'P-00001'
+
+
 {"flag":"recom", "ccode":"dlvtown8849-20230911150646", "msg":"\uCE74\uC778ii(01024297580)님이 추천해 주셨습니다.", "signId":"01024297580", "partnerCode":"P-00001"}
 
 ----------- Request ---------------------

@@ -1,111 +1,11 @@
-'# xmlHttp_sendPush
-	private Function xmlHttp_send(sendUrl, params, method)			
-		on error resume next		
-		dim timeout
-		timeout = 1000*5
-		Dim xmlHTTP		
-		if isxmlAsync  then			
-			Set xmlHTTP = Server.CreateObject("Microsoft.XMLHTTP") 			
-		else
-			Set xmlHTTP = Server.CreateObject("MSXML2.ServerXMLHTTP") 
-			xmlHTTP.setTimeouts timeout, timeout, timeout, timeout
-		end if
-		if method = "POST" then
-			xmlHTTP.Open "POST", sendUrl, isxmlAsync
-			xmlHTTP.SetRequestHeader "Content-Type", "application/x-www-form-urlencoded"
-			xmlHTTP.Send params
-		else
-			xmlHTTP.Open "GET", sendUrl&"?"&params, isxmlAsync	
-			xmlHTTP.Send 
-		end if
-		
-		if err.number <> 0 then
-			status = "2"
-			statusMsg = "xml err : "&err.description
-			xmlHttp_send = ""
-			set xmlHTTP = nothing
-			exit function
-		end if
-		if not isxmlAsync  then
-			if xmlHTTP.status <> 200 then
-				status = "3"
-				statusMsg = "xml status : "& xmlHTTP.status
-				xmlHttp_send = ""
-				set xmlHTTP = nothing
-				exit function
-			end if
-			xmlHttp_send = xmlHTTP.ResponseText
-		end if
-		xmlStatus = true
-		set xmlHTTP = nothing
-	End Function  
-
-Microsoft OLE DB Provider for SQL Server 오류 '80040e10'
-
-Procedure or function 'JBN_WEB_memberPage_Search' expects parameter '@signID', which was not supplied.
-
-/ch/config/ssi/function/function_site_ANSI.ssi, 줄 846
+172.17.11.52
+121.134.158.29
 
 
-exec sp_cursoropen @p1 output,N'EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @SIGNID = ''rndkaehd1340'', @PartnerCode = ''P-00001''',@p3 output,@P4 output,@p5 output
-select @p1, @p3, @P4, @p5
-go
-
-531번 세션에서 2023-09-12 16:00:32.203 시간에 아래 쿼리를 수행
-<두번째 실행>
-EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @SIGNID = 'rndkaehd1340', @PartnerCode = 'P-00001'
-
-
-{"flag":"recom", "ccode":"dlvtown8849-20230911150646", "msg":"\uCE74\uC778ii(01024297580)님이 추천해 주셨습니다.", "signId":"01024297580", "partnerCode":"P-00001"}
-
------------ Request ---------------------
- URL:https://api.popkontv.kr:9002/AS/program/naPGexe.asp
- PARAMS:["SC_EP": "15", "SC_PC": "P-00001"]
------------------------------------------
-2023-09-11 10:12:59.863 [Debug] [main] [ConnectionManager.swift:190] responseForRequest(urlRequest:needAuthentication:count:code:showNetworkError:complete:) > 
-⏱ Response Time = 0.15688598155975342 / sec
-2023-09-11 10:12:59.881 [Debug] [main] [ConnectionManager.swift:140] post(url:params:code:showErrorMsg:showNetworkMsg:complete:) > 
------------ Response --------------------
- URL:https://api.popkontv.kr:9002/AS/program/naPGexe.asp
- PARAMS:["SC_EP": "15", "SC_PC": "P-00001"] 
-- Result -
- {"rst" : {"rstCode" : "0","rstMsg" : "SUCCESS"},"ver" : {"pcVer" : "", "androidVer" : "", "iphoneVer" : "1.0.001", "updateVer" : "", "isUpdate" : "0", "svrName_kor" : "팝콘티비" },"svcAddr" : {"update_xml" : "","update_app" : "","p_web" : "www.popkontv.com","m_web" : "m.popkontv.com","json_url" : "sys1.popkontv.kr","json_port" : "9002","json_isSsl" : "1","json_sslport" : "9002", "rec_cast" : "rtmp:\/\/114.31.51.66\/pop_vod","rec_watch" : "rtmp:\/\/live.popkontv.hscdn.com\/pop_vod8","rec_castStart" : "http:\/\/114.31.51.66:1935\/popcon\/setBroadCastStart","rec_castEnd" : "http:\/\/114.31.51.66:1935\/popcon\/setBroadCastStop","pcReayAd_url" : ""},"adLocDataSet":{"corpCode" : "1","isCastTxt" : "0","isStartVod" : "1","isMidVod" : "0","isStartImg" : "1","isEndImg" : "1","StartVodTimeSec" : "30"},"adExeImgData":[{"adCode":"M_APP_OPEN_2023bestMC_IOS", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/SIOS\/23_bestMC_491871.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/event\/bestmc\/", "adImgIsLink":"1", "adImgTitle":"2023 \uBCA0\uC2A4\uD2B8MC \uAC1C\uD3B8 ", "adType":"0", "signId":"", "partnerCode":""},{"adCode":"M_APP_OPEN_01_smishing_IOS", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/SIOS\/2306_smishing_491871.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/event\/smishing\/", "adImgIsLink":"1", "adImgTitle":"\uC2A4\uBBF8\uC2F1 \uC608\uBC29 \uCEA0\uD398\uC778", "adType":"0", "signId":"", "partnerCode":""},{"adCode":"M_APP_OPEN_01_202203_join_IOS", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/SIOS\/2302_join_491871.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/join\/join_form_new.asp", "adImgIsLink":"1", "adImgTitle":"3\uC6D4 \uC2E0\uADDC\uAC00\uC785 \uB9AC\uC6CC\uB4DC \uC774\uBCA4\uD2B8", "adType":"0", "signId":"", "partnerCode":""}],"adEndImgData":[{"adCode":"M_APP_CLOSE_01_2023bestMC", "adImgUrl":"https:\/\/pic.popkontv.com\/bAD\/popkontv\/E\/bestMC_end_385_486.png", "adImgLinkUrl":"https:\/\/m.popkontv.com\/event\/bestmc\/", "adImgIsLink":"1", "adImgTitle":"2023 \uBCA0\uC2A4\uD2B8MC \uAC1C\uD3B8"}],"adBlankImgData":[],"categoryAdult":[{"label" : "전체", "code" : "0"},{"label" : "개인", "code" : "10"},{"label" : "신인", "code" : "11"},{"label" : "19+", "code" : "20"},{"label" : "커머스", "code" : "30"},{"label" : "스포츠", "code" : "14"},{"label" : "게임", "code" : "16"},{"label" : "음악", "code" : "13"},{"label" : "영화", "code" : "12"}],"categoryTeen":[{"label" : "전체", "code" : "0"},{"label" : "개인", "code" : "10"},{"label" : "신인", "code" : "11"},{"label" : "커머스", "code" : "30"},{"label" : "스포츠", "code" : "14"},{"label" : "게임", "code" : "16"},{"label" : "음악", "code" : "13"},{"label" : "영화", "code" : "12"},{"label" : "19+", "code" : "20"}],"categoryCast":[{"label" : "개인", "code" : "10"},{"label" : "스포츠", "code" : "14"},{"label" : "게임", "code" : "16"},{"label" : "음악", "code" : "13"},{"label" : "영화", "code" : "12"},{"label" : "커머스", "code" : "30"},{"label" : "19+", "code" : "20"}],"VODcategory":[{"label":"HOT CLIP", "code":"1"}],"UI_Type":"1","isCast":"1","isNomalUserCast":"1","timeTxt":"2023\uB144 9\uC6D4 11(\uC6D4) 11:00~13:00","naCastAppName":"","isCastLinkMarket":"0","coinName":"팝콘"} 
-
-
-/AS/castData/naCastWatchOnOff.asp
-/AS/recVod/naMcVodWatchOnOff_guest.asp
-/AS/recVod/naMcVodWatchOnOff.asp
-/AS/castData/naReWatchOn.asp
-/AS/program/naPgExe.asp
-
-/AS/program/loginPartnerList.asp   loginAppse = Trim(oJSON.data("SC_IA"))    어플리케이션_구분 :: [1: RINK, 2: RINK PLUS]
-
-
-Path	AttributeNm
-15	린크_플러스_앱스토어_기업_프로그램
-16	린크_앱스토어
-17	린크_구글플레이
-18	린크_플러스_원스토어
-19	린크_플러스_갤럭시스토어
-20	린크_플러스_안드로이드_수동_다운로드_앱
-
-
-15	린크_플러스_앱스토어_기업_프로그램
-16	린크_앱스토어
-17	린크_구글플레이
-18	린크_플러스_원스토어
-19	린크_플러스_갤럭시스토어
-20	린크_플러스_안드로이드_수동_다운로드_앱
-
-
-
-EXEC [B_MEMBER].[dbo].[JBN_WEB_memberPage_Search] @signId = 'ecol83', @PartnerCode = 'P-00001'
-EXEC [B_MEMBER].[dbo].[USP_Get_BrdcrSvcLvl_002] @vchMmbri='yes222', @chrPrtsCd='P-00117', @intLvlSeCd='10002'
-
-http://aspapi.popkontv.com/api/aesencrypt.asp
-[B_COMPANY].[dbo].[USP_GetList_IntgLoginTgtPrtsList_001]
-118.129.153.82,9190
-
+114.141.29.100
+114.141.29.101
+114.141.29.109
+114.31.50.115
 
 # Vue3 템플릿 with Webpack
 

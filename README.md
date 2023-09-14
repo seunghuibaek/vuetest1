@@ -1,3 +1,32 @@
+100032	린크_대상_여부	RnkTgtYn
+100033	린크_앱스토어_버전	RnkAppstorVer
+100034	린크_앱스토어_다운로드_URL	RnkAppstorDwnlUrl
+100035	린크_구글플레이_버전	RnkGglplyVer
+100036	린크_구글플레이_다운로드_URL	RnkGglplyDwnlUrl
+100037	린크_플러스_대상_여부	RnkPlusTgtYn
+100038	린크_플러스_앱스토어_기업_프로그램_버전	RnkPlusAppstorEntrPgmVer
+100039	린크_플러스_앱스토어_기업_프로그램_다운로드_URL	RnkPlusAppstorEntrPgmDwnlUrl
+100040	린크_플러스_원스토어_버전	RnkPlusOnestorVer
+100041	린크_플러스_원스토어_다운로드_URL	RnkPlusOnestorDwnlUrl
+100042	린크_플러스_원스토어_심사_진행_여부	RnkPlusOnestorInspPrgrYn
+100043	린크_플러스_원스토어_심사_버전	RnkPlusOnestorInspVer
+100044	린크_플러스_갤럭시스토어_버전	RnkPlusGlxstorVer
+100045	린크_플러스_갤럭시스토어_다운로드_URL	RnkPlusGlxstorDwnlUrl
+100046	린크_플러스_갤럭시스토어_심사_진행_여부	RnkPlusGlxstorInspPrgrYn
+100047	린크_플러스_갤럭시스토어_심사_버전	RnkPlusGlxstorInspVer
+100048	린크_플러스_안드로이드_수동_다운로드_앱_버전	RnkPlusAndrdPssivDwnlAppVer
+100049	린크_플러스_안드로이드_앱_수동_다운로드_URL	RnkPlusAndrdAppPssivDwnlUrl
+
+
+15	린크_플러스_앱스토어_기업_프로그램
+16	린크_앱스토어
+17	린크_구글플레이
+18	린크_플러스_원스토어
+19	린크_플러스_갤럭시스토어
+20	린크_플러스_안드로이드_수동_다운로드_앱
+
+
+
 172.17.11.52
 121.134.158.29
 

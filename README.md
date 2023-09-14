@@ -1,3 +1,7 @@
+[B_VOD].[dbo].[LHY_WEB_vodCategory_Listrandom]
+118.129.153.91,9190
+
+
 100032	린크_대상_여부	RnkTgtYn
 100033	린크_앱스토어_버전	RnkAppstorVer
 100034	린크_앱스토어_다운로드_URL	RnkAppstorDwnlUrl

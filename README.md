@@ -1,3 +1,4 @@
+https://devsys.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp
 
 현재 유료방송 진행할수 있는 회원이 아닙니다. 방송진행가능 기준을 확인하시길 바랍니다.
 

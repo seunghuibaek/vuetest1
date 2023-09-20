@@ -1,10 +1,16 @@
-https://devw.popkontv.com/event/202309Chuseok/?ed=2023-09-19%2000:00:00
+PC
+커밋: 3bc28c2d7ff4a5488444049a81939c9b4eaf6f62 [3bc28c2]
+상위 항목: 26df2a9640
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 9월 20일 수요일 오전 9:44:37
+커밋한 사람: 백승희
 
-
-https://devsys.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp
-
-현재 유료방송 진행할수 있는 회원이 아닙니다. 방송진행가능 기준을 확인하시길 바랍니다.
-
+MW
+커밋: e41e364d22183fe8dcbcefc84ac73c2b632d1aca [e41e364]
+상위 항목: 6187d90501
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 9월 20일 수요일 오전 9:38:22
+커밋한 사람: 백승희
 
 [B_VOD].[dbo].[LHY_WEB_vodCategory_Listrandom]
 118.129.153.91,9190

@@ -1,3 +1,19 @@
+Dim retValue
+	with objCmd
+		Call cmdPramDel(objCmd)
+		retValue = 0
+		.commandText = "[B_MEMBER].[dbo].[USP_Get_ChnlgSvcMmbriCnfirm]"
+		.commandType = &H0004
+		.activeConnection = OLEDB_171
+		.Parameters.Append .CreateParameter("RETURNVALUE", adInteger, adParamReturnValue)
+		.Parameters.Append .CreateParameter("@vchSignId", adVarChar, adParamInput, 25)
+		.Parameters("@vchSignId") = blockMem
+		Set cmdRs = .execute()
+		retValue = .parameters("RETURNVALUE")
+		
+	End with
+ 
+
 PC
 커밋: 3bc28c2d7ff4a5488444049a81939c9b4eaf6f62 [3bc28c2]
 상위 항목: 26df2a9640

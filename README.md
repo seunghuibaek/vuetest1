@@ -1,15 +1,19 @@
-<system.webServer>
-  ...
+꿀잼라이브 SP
+[B_CASTDATA].[dbo].[USP_GetList_RealTimeCastRankForWeb_003]
+118.129.153.80,9190
 
-  <httpProtocol>
-    <customHeaders>
-      <add name="X-Frame-Options" value="sameorigin" />
-    </customHeaders>
-  </httpProtocol>
+CastOnLists 
+추가조회 필드
+pAdultFileName(방송자 성인 썸네일이 있니)
+isAdult
 
-  ...
-</system.webServer>
+팝콘 주간랭킹 SP
+변경이 필요한 프로시저
+[B_CASTDATA].[dbo].[USP_GetList_WkMlyRnkg_003]
+B_CASTDATA.dbo.castOnData(VW_CastOnLists)
+118.129.153.93,9190
 
+-----------------------
 
 
 PC

@@ -1,3 +1,5 @@
+http://devadmin.theenm.com:8888/
+
 118.129.153.86,9190
 SSM_castBookMark_execute_D_DD      팝콘 sp
 JBN_JSON_castBookMark_enrollment    api 서버에서 사용하는 sp

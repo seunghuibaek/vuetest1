@@ -1,6 +1,6 @@
-꿀잼라이브 SP
-[B_CASTDATA].[dbo].[USP_GetList_RealTimeCastRankForWeb_003]
-118.129.153.80,9190
+118.129.153.86,9190
+SSM_castBookMark_execute_D_DD      팝콘 sp
+JBN_JSON_castBookMark_enrollment    api 서버에서 사용하는 sp
 
 CastOnLists 
 추가조회 필드

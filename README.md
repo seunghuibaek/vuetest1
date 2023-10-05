@@ -1,4 +1,9 @@
-http://devadmin.theenm.com:8888/
+NO	서비스	개발 도메인	IP	스테이지 도메인	IP
+1	팝콘라이브	popkonlivet.rink.kr	114.141.29.155	popkonlives.rink.kr	118.129.153.137
+2	핫독티비	hotdogtvt.rink.kr	114.141.29.155	hotdogtvs.rink.kr	118.129.153.137
+3	남자티비	njtvt.rink.kr	114.141.29.155	njtvts.rink.kr	118.129.153.137
+4	아재티비	ajaetvt.rink.kr	114.141.29.155	ajaetvs.rink.kr	118.129.153.137
+
 
 118.129.153.86,9190
 SSM_castBookMark_execute_D_DD      팝콘 sp

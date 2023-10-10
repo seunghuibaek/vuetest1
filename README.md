@@ -1,3 +1,7 @@
+
+exec [LJC_WEB_giftLimitCheck] 'popaos1', 'P-00001'  
+
+
 popaos1
 
 USP_Mod_GnrlCashGudsPymnt_002

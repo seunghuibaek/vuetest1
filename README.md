@@ -1,6 +1,26 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-exec [LJC_WEB_giftLimitCheck] 'popaos1', 'P-00001'  
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDTpx8sjVzRAUgER8Kp5ZTcXu58MGKvsi4",
+    authDomain: "popkon-dev.firebaseapp.com",
+    projectId: "popkon-dev",
+    storageBucket: "popkon-dev.appspot.com",
+    messagingSenderId: "102042640657",
+    appId: "1:102042640657:web:9e92cb9629ff2f8d21ecb0",
+    measurementId: "G-BJ50HVEYYM"
+  };
 
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 popaos1
 

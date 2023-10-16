@@ -1,4 +1,4 @@
-
+현재 진행 중인 이벤트가 없습니다.
 JBN_MANAGER_doRemoveReqLogInsert 
 
 <script type="module">

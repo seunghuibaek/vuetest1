@@ -1,3 +1,6 @@
+/as/castData/naCastWatchOnOff.asp       시청
+/as/member/naCoinStatus.asp         GC
+
 JBN_WEB_MyPage_coinMemberData
 
 JBN_MANAGER_doRemoveReqLogInsert 

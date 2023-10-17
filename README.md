@@ -1,3 +1,13 @@
+JBN_JSON_recordFileItemCheck
+
+
+"recFileBytes 레코드셋 추가
+% 만료_회원 저장 용량 초과 방송 저장 파일(삭제 대상) 목록만 조회"
+
+itemLimitRecordList.asp
+
+
+
 /as/castData/naCastWatchOnOff.asp       시청
 /as/member/naCoinStatus.asp         GC
 

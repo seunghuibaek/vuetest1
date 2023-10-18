@@ -1,4 +1,15 @@
-USP_Get_RnkgEvntExpsrEnnc_001
+If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then
+
+Function DateTime2Str( argDateTime, argFormat )
+    DateTime2Str = argFormat
+    DateTime2Str = Replace( DateTime2Str, "yyyy", Year( argDateTime ) )
+    DateTime2Str = Replace( DateTime2Str, "yy", Right( Year( argDateTime ), 2 ) )
+    DateTime2Str = Replace( DateTime2Str, "mm", Right("0"&Month( argDateTime ),2) )
+    DateTime2Str = Replace( DateTime2Str, "dd", Right("0"&Day( argDateTime ),2) )
+    DateTime2Str = Replace( DateTime2Str, "hh24", Right("0"&Hour( argDateTime ),2) )
+    DateTime2Str = Replace( DateTime2Str, "mi", Right("0"&Minute( argDateTime ),2) )
+    DateTime2Str = Replace( DateTime2Str, "ss", Right("0"&Second( argDateTime ),2) )
+End Function
 
 
 "recFileBytes 레코드셋 추가

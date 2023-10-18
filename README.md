@@ -1,4 +1,4 @@
-JBN_JSON_recordFileItemCheck
+USP_Get_RnkgEvntExpsrEnnc_001
 
 
 "recFileBytes 레코드셋 추가

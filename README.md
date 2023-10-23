@@ -1,3 +1,5 @@
+https://chrome.google.com/webstore/detail/set-character-encoding/bpojelgakakmcfmjfilgdlmhefphglae
+
 Function HttpFileExist(sUrl)
     Dim oHttp
 

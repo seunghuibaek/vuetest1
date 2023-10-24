@@ -1,3 +1,6 @@
+0e03d2c8-f2c8-4058-8a6f-9211ce960758
+
+
 {"rst":{"rstCode" : "9","rstMsg" : "정상적으로 휴면 해제 처리되었습니다."},"signOn" : {"memberSex" : "","isAdult" : "","nickName" : "","memberType" : "","pFileName" : "","accountLevel" : "","pwdCode" : "0xB6DB17DACDC92661BBBC7D0ED19DA2D1F0BB4E169BB21823EFB4BC2FD6B2E74E","isNameCheck" : "0","levelUp" : "0","svcLvl" : ""},"memberBlockCheck" : {"isBlock" : "0","isLoginBlock" : "0","blockRegDate" : "","blockDate" : "","blockMemo" : ""}}
 
 If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then

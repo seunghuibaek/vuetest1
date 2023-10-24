@@ -1,23 +1,5 @@
-https://chrome.google.com/webstore/detail/set-character-encoding/bpojelgakakmcfmjfilgdlmhefphglae
-
-Function HttpFileExist(sUrl)
-    Dim oHttp
-
-    set oHttp = Server.CreateObject("MSXML2.ServerXMLHTTP")
-    oHttp.Open "GET", sUrl, False
-
-    oHttp.setRequestHeader "If-Modified-Since", DateToHTTPDate(DateAdd("h", -1, Now))
-    oHttp.Send ""
-
-    If oHttp.status < 400 Then
-        HttpFileExist = True
-    Else
-        HttpFileExist = False
-    End If
-
-    Set oHttp = Nothing
-End Function
-
+USP_Mod_MmbrLoginProcessEncpt_002  sns
+        USP_Mod_MmbrLoginProcess_002  일반
 
 If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then
 

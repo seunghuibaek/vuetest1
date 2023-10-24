@@ -1,5 +1,5 @@
-USP_Mod_MmbrLoginProcessEncpt_002  sns
-        USP_Mod_MmbrLoginProcess_002  일반
+k9656133219943231024
+n9618134513827230410
 
 If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then
 

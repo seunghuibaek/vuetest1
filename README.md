@@ -1,7 +1,19 @@
-0e03d2c8-f2c8-4058-8a6f-9211ce960758
+팝콘 MW
+커밋: ed0e9084d1a0bfbbd7b6af7e5c2aa89aac341c2b [ed0e908]
+상위 항목: 513b936b14
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 10월 25일 수요일 오후 1:13:01
+커밋한 사람: 백승희
+랭킹이벤트 추가_1
 
+팝콘 PW
+커밋: 73391e241899ee1f8650b6a28846f3f400b1adfe [73391e2]
+상위 항목: 029a2363df
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 10월 25일 수요일 오전 11:49:14
+커밋한 사람: 백승희
+랭킹이벤트 페이지 최초 추가_1
 
-{"rst":{"rstCode" : "9","rstMsg" : "정상적으로 휴면 해제 처리되었습니다."},"signOn" : {"memberSex" : "","isAdult" : "","nickName" : "","memberType" : "","pFileName" : "","accountLevel" : "","pwdCode" : "0xB6DB17DACDC92661BBBC7D0ED19DA2D1F0BB4E169BB21823EFB4BC2FD6B2E74E","isNameCheck" : "0","levelUp" : "0","svcLvl" : ""},"memberBlockCheck" : {"isBlock" : "0","isLoginBlock" : "0","blockRegDate" : "","blockDate" : "","blockMemo" : ""}}
 
 If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then
 

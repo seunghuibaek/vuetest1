@@ -1,19 +1,5 @@
-팝콘 MW
-커밋: ed0e9084d1a0bfbbd7b6af7e5c2aa89aac341c2b [ed0e908]
-상위 항목: 513b936b14
-작성자: 백승희 <sh.back@theenm.com>
-날짜: 2023년 10월 25일 수요일 오후 1:13:01
-커밋한 사람: 백승희
-랭킹이벤트 추가_1
-
-팝콘 PW
-커밋: 73391e241899ee1f8650b6a28846f3f400b1adfe [73391e2]
-상위 항목: 029a2363df
-작성자: 백승희 <sh.back@theenm.com>
-날짜: 2023년 10월 25일 수요일 오전 11:49:14
-커밋한 사람: 백승희
-랭킹이벤트 페이지 최초 추가_1
-
+회원가입 처리를 할 수 없습니다.[error]
+https://www.popkontv.com/join/join_form_simple.asp
 
 If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then
 

@@ -1,59 +1,13 @@
-회원가입 처리를 할 수 없습니다.[error]
-https://www.popkontv.com/join/join_form_simple.asp
-
-If DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) >= "2022/06/06 00:00:00" And DateTime2Str( Now, "yyyy/mm/dd hh24:mi:ss" ) <= "2022/06/08 12:00:00" Then
-
-Function DateTime2Str( argDateTime, argFormat )
-    DateTime2Str = argFormat
-    DateTime2Str = Replace( DateTime2Str, "yyyy", Year( argDateTime ) )
-    DateTime2Str = Replace( DateTime2Str, "yy", Right( Year( argDateTime ), 2 ) )
-    DateTime2Str = Replace( DateTime2Str, "mm", Right("0"&Month( argDateTime ),2) )
-    DateTime2Str = Replace( DateTime2Str, "dd", Right("0"&Day( argDateTime ),2) )
-    DateTime2Str = Replace( DateTime2Str, "hh24", Right("0"&Hour( argDateTime ),2) )
-    DateTime2Str = Replace( DateTime2Str, "mi", Right("0"&Minute( argDateTime ),2) )
-    DateTime2Str = Replace( DateTime2Str, "ss", Right("0"&Second( argDateTime ),2) )
-End Function
-
-
-"recFileBytes 레코드셋 추가
-% 만료_회원 저장 용량 초과 방송 저장 파일(삭제 대상) 목록만 조회"
-
-itemLimitRecordList.asp
-
-
-
-/as/castData/naCastWatchOnOff.asp       시청
-/as/member/naCoinStatus.asp         GC
-
-JBN_WEB_MyPage_coinMemberData
-
-JBN_MANAGER_doRemoveReqLogInsert 
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDTpx8sjVzRAUgER8Kp5ZTcXu58MGKvsi4",
-    authDomain: "popkon-dev.firebaseapp.com",
-    projectId: "popkon-dev",
-    storageBucket: "popkon-dev.appspot.com",
-    messagingSenderId: "102042640657",
-    appId: "1:102042640657:web:9e92cb9629ff2f8d21ecb0",
-    measurementId: "G-BJ50HVEYYM"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-popaos1
+* End Point : http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService
+    * 오퍼레이션 명 : getRestDeInfo
+    * 서비스 인증키(Encoding) : xkJ%2FsNO5OIR7lueDX834DnuvsqFzdsaQ8FaiU9zhIsDV8KTgxKBWzXE6uKJyrhsEIceRwt%2BjCp%2Bkt1xnop27Gw%3D%3D
+    * 서비스 인증키(Decoding) : xkJ/sNO5OIR7lueDX834DnuvsqFzdsaQ8FaiU9zhIsDV8KTgxKBWzXE6uKJyrhsEIceRwt+jCp+kt1xnop27Gw==
+    * 요청 파라미터 
+        - solYear : 년도 yyyy 4자리 숫자
+        - pageNo : 페이징 번호
+    * API 호출 샘플 URL
+        - 2023년 공휴일 1페이지 : https://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo?serviceKey=xkJ%2FsNO5OIR7lueDX834DnuvsqFzdsaQ8FaiU9zhIsDV8KTgxKBWzXE6uKJyrhsEIceRwt%2BjCp%2Bkt1xnop27Gw%3D%3D&solYear=2023&pageNo=1
+        - 2023년 공휴일 2페이지 : https://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo?serviceKey=xkJ%2FsNO5OIR7lueDX834DnuvsqFzdsaQ8FaiU9zhIsDV8KTgxKBWzXE6uKJyrhsEIceRwt%2BjCp%2Bkt1xnop27Gw%3D%3D&solYear=2023&pageNo=2
 
 USP_Mod_GnrlCashGudsPymnt_002
 USP_Mod_GnrlCashGudsPymntForChnlg_002

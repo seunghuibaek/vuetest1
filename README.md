@@ -1,3 +1,8 @@
+USP_Add_HldyExcng_By_OpenAPI
+
+
+
+
 * End Point : http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService
     * 오퍼레이션 명 : getRestDeInfo
     * 서비스 인증키(Encoding) : xkJ%2FsNO5OIR7lueDX834DnuvsqFzdsaQ8FaiU9zhIsDV8KTgxKBWzXE6uKJyrhsEIceRwt%2BjCp%2Bkt1xnop27Gw%3D%3D

@@ -1,3 +1,5 @@
+http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp
+
 B_MEMBER.dbo.SSM_HYM_memberPage_partnerDefaultData_DD  -> B_MEMBER.dbo.SSM_HYM_memberPage_partnerDefaultData
 
 /api/holidayInfo.asp

@@ -1,3 +1,8 @@
+Sever Url : http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp
+Data : ENC=S&VOD=rtmp%3A%2F%2Flive%2Dpopkontv%2Ehscdn%2Ecom%2Fpop%5Fcast20%2Fpopaos8%5FP%2D00001%5F20231031090730&SITE=popcontv&ID=bluewar111&IP=211%2E234%2E181%2E9&NIC=&WMSPUBPOINT=&PLAYER=ZWOWZA
+Result : rtmp://live-popkontv.hscdn.com/pop_cast20/popaos8_P-00001_20231031090730?%24PDIz7wQIANXNy83OzMvOzMzR0NPMze38CQIA1czLy%2BjV6OvVzeQTAJtE%24
+
+
 http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp
 
 B_MEMBER.dbo.SSM_HYM_memberPage_partnerDefaultData_DD  -> B_MEMBER.dbo.SSM_HYM_memberPage_partnerDefaultData

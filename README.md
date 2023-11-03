@@ -1,3 +1,15 @@
+jinjinURL:https://m.popkontv.com/Popkon/Proc/buyBankProc.asp
+jinjinURL:https://pg.settlebank.co.kr/bank/MbNewBankAction.do
+jinjinURL:https://pg.settlebank.co.kr/bank/page/optionEdit.do
+jinjinURL:about:blank
+jinjinURL:https://www.bankpay.or.kr:7443/MobilePayMO.do
+jinjinURL:https://www.bankpay.or.kr:7443/MobilePayMO.do#
+jinjinURL:https://bankpaypg.page.link/?link=https://eftpay.bankpay.or.kr?callbackfunc%3Dhttp%3A%2F%2Fmobile.bankpay.or.kr%2FRequestBankpay.do%26approve_no%3D20000253%26serial_no%3D0001145%26amount%3D2200%26hd_ep_type%3DSECUCERT%26firm_name%3D%ED%8C%9D%EC%BD%98%ED%8B%B0%EB%B9%84%26receipt_yn%3DN%26user_key%3D%26title%3D%26service_order%3DSE%26sbp_service_use%3DY%26sbp_tab_first%3DY%26fixed_bank_code%3D%26callbackparam1%3D873512%26returnURL%3D%26method%3DPOST%26container_deposit%3D%26&apn=com.kftc.bankpay.android&isi=398456030&ibi=kr.or.kftc.bankpaypg&ius=kftc-bankpay&efr=1
+jinjinURL:https://pg.settlebank.co.kr/bank/page/receive.do
+jinjinURL:https://pg.settlebank.co.kr/bank/page/complete.do
+jinjinURL:https://m.popkontv.com/popkon/settleBank/GetPayParamResult.asp
+jinjinURL:https://m.popkontv.com/popkon/popkon_buy.asp
+
 118.129.153.90 개발서버 아이피
 
 B_ACCOUNT.dob.USP_GetList_NbkkRfmInqrForBckofcSys_003

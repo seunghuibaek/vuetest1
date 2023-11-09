@@ -1,5 +1,39 @@
+https://docs.google.com/document/d/17BEn9OKQtrxbaoEPWVwC6odAPP5WmzlnLzExWGBVHfw/edit
+⠀<settings xmlns="http://maven.apache.org/settings/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
-⠀
+  <proxies>    
+  </proxies>
+  <servers>	
+    <server>
+      <id>enm_repo</id>
+      <username>admin</username>
+      <password>enmadmin123#@!</password>
+    </server>  
+    <server>
+      <id>enm_public</id>
+      <username>enm_public</username>
+      <password>enm_public123!@#</password>
+    </server>     
+  </servers>  
+  <mirrors>
+    <mirror>
+      <id>enm_repo</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://114.141.29.145:15200/repository/maven-public/</url>
+    </mirror>  
+    <mirror>
+      <id>enm_public</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://114.141.29.145:15200/repository/maven-public/</url>
+    </mirror>   
+  </mirrors>  
+  <profiles>
+  </profiles>
+</settings>
+
+
 
 jinjinURL:https://m.popkontv.com/Popkon/Proc/buyBankProc.asp
 jinjinURL:https://pg.settlebank.co.kr/bank/MbNewBankAction.do

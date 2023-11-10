@@ -1,3 +1,5 @@
+http://bts.popkontv.kr/issues/11132
+
 settings_enm.xml
 https://docs.google.com/document/d/17BEn9OKQtrxbaoEPWVwC6odAPP5WmzlnLzExWGBVHfw/edit
 ⠀<settings xmlns="http://maven.apache.org/settings/1.0.0" 

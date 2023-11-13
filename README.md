@@ -1,3 +1,11 @@
+https://gw.popkontv.kr/api/joinRoom : {"ccode":"pms3720-20231112231110", "signId":"zxcvbnm0103", "nickName":"\uD06C\uB77C\uC6B4", "memberSex":"1", "signPath":"7", "partnerCode":"P-00138", "accountLevel":"0", "fanLevel":"4", "bmkcnt":"", "fanList":[], "isGifter":"0", "sFanLevel":"1", "sSvcLevel":"4", "SvcLevelViewYn":"N", "chatBubbleCd":"", "isSecret":"0", "avatarURL":"", "avatarGIFURL":""} Err**
+**
+
+https://gw.popkontv.kr/api/joinRoom : {"ccode":"dhj100-20231112220504", "signId":"ciki0997", "nickName":"ACE\u2665", "memberSex":"1", "signPath":"7", "partnerCode":"P-00001", "accountLevel":"0", "fanLevel":"4", "bmkcnt":"", "fanList":[], "isGifter":"0", "sFanLevel":"1", "sSvcLevel":"22", "SvcLevelViewYn":"N", "chatBubbleCd":"", "isSecret":"0", "avatarURL":"", "avatarGIFURL":""} Err
+
+https://gw.popkontv.kr/api/joinRoom : {"ccode":"sjsj9090-20231112200458", "signId":"ebate79", "nickName":"\uC801\uC0C9\uC218\uBC30\uC790", "memberSex":"0", "signPath":"8", "partnerCode":"P-00108", "accountLevel":"0", "fanLevel":"0", "bmkcnt":"", "fanList":[], "isGifter":"1", "sFanLevel":"8", "sSvcLevel":"23", "SvcLevelViewYn":"Y", "chatBubbleCd":"", "isSecret":"0", "avatarURL":"", "avatarGIFURL":""} Err
+
+
 http://bts.popkontv.kr/issues/11132
 
 settings_enm.xml

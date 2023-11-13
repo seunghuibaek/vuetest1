@@ -1,3 +1,8 @@
+118.129.153.93,9190 개발서버 - 방송/회원
+192.168.1.93,9190
+[B_MEMBER].[dbo].[SSM_memberSignStatus_signAliveCheck]
+
+
 https://gw.popkontv.kr/api/joinRoom : {"ccode":"pms3720-20231112231110", "signId":"zxcvbnm0103", "nickName":"\uD06C\uB77C\uC6B4", "memberSex":"1", "signPath":"7", "partnerCode":"P-00138", "accountLevel":"0", "fanLevel":"4", "bmkcnt":"", "fanList":[], "isGifter":"0", "sFanLevel":"1", "sSvcLevel":"4", "SvcLevelViewYn":"N", "chatBubbleCd":"", "isSecret":"0", "avatarURL":"", "avatarGIFURL":""} Err**
 **
 

@@ -1,3 +1,9 @@
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-16T09:09:24,533 ERROR [restartedMain] o.s.b.SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCacheConfig.StandaloneRedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.profiles.active' in value "${spring.profiles.active}"
+
+
+
 118.129.153.93,9190 개발서버 - 방송/회원
 192.168.1.93,9190
 [B_MEMBER].[dbo].[SSM_memberSignStatus_signAliveCheck]

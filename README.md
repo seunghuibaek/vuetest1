@@ -1,3 +1,13 @@
+USP_Get_PrtsSvcSiteInfo_002
+
+select top 10 SITE_PC_URL, SITE_MOBILE_URL from partnerSiteData  with(nolock) 
+where SITE_PARTNER_CODE IN ('P-00095','P-00108', 'P-00023','P-00097','P-00074')
+order by 1 desc
+
+
+
+
+
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2023-11-16T09:09:24,533 ERROR [restartedMain] o.s.b.SpringApplication: Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCacheConfig.StandaloneRedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.profiles.active' in value "${spring.profiles.active}"

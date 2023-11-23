@@ -1,3 +1,13 @@
+118.129.153.93 DEV
+[B_MEMBER].[dbo].[JBN_WEB_memberPublicSearch]
+partnercode = 'P-00001'
+signID = 'qas53'
+pFileName
+defaultProfile
+
+
+
+
 https://thumb.popcast.co.kr/POPCAST_THUMB/sys_Thumb/P-00001/defaultProfile.png
 
 

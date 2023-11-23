@@ -1,5 +1,10 @@
+https://thumb.popcast.co.kr/POPCAST_THUMB/sys_Thumb/P-00001/defaultProfile.png
+
+
 http://bts.popkontv.kr/issues/10891
 
+파일명이 데이터로 넘어온 경우
+파일명 중에 defaultProfile 포함된
 0:etc, 1:Android, 2:iPhone, 3:iPhone Enterprise(flex), 4:PC P/G, 5:PC WEB, 6:mobile WEB, 7:native andriod, 8:native iPhone, 9:신규PC, 12:맥 PC, 13:IOS VOD, 14:AOS VOD, 15: iPhone Enterprise New, 16: native iPhone New, 17: android store, 18: android one store, 19: 린크플러스 갤럭시스토어, 20: 린크플러스 안드로이드 수동 다운로드 앱
 
 

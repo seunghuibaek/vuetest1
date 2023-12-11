@@ -1,6 +1,19 @@
+
+
 192.168.1.24
 B_ACCOUNT.dbo.autoAccount
 
+결제 정보 기록
+                핸드폰
+                [B_ACCOUNT].[dbo].[YHS_Phone_Payment_Info_Insert]
+                신용카드
+                [B_ACCOUNT].[dbo].[YHS_Credit_Payment_Info_InsertLvl]
+                
+코인 지급
+                [B_COIN].[dbo].[YHS_WEB_CoinAccount]
+자동 충전 로그 기록
+                [B_ACCOUNT].[dbo].[LJC_autoAccount_Log_insert]
+                
 [B_ACCOUNT].[dbo].[LJC_autoAccount_request_list]
 popkontv.com/coin/settleBank/AutoPay.asp
 

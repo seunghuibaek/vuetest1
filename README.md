@@ -1,6 +1,10 @@
 192.168.1.24
 B_ACCOUNT.dbo.autoAccount
 
+[B_ACCOUNT].[dbo].[LJC_autoAccount_request_list]
+popkontv.com/coin/settleBank/AutoPay.asp
+
+
 https://theenmgw.daouoffice.com/app/board/13286/post/365266/?
 
 [000002] [2023/11/24 11:09:21][INFR] : [CWebQuery::GetCallWebSite][CALL WEB] sURL : https://sys1.ajaetv.com:9002/AS/webPage/callWeb.asp?data=13eIw3f1/Uf/G8KpwzurNUwUnG5UuRhhcMBwfk3Cwp%2BJjjvqoAKP%2BiLLfgyJVMh1wiGe4ER6WgPVFoccPYpWE8lloyOPn98eNEeGraCRWgGqZarKof4fgBquteqIIy5IoZmoN2DXNwrFzLCGfaGL5hFeRRswCb5/mwxafRObuSzH%2BVYXo5MevtsjrpNjZqkYjR%2BfqoBHpO70hpiNHw5haw==&key=321&v=2, param : {"SC_SI":"bluewarajaetv","SC_SP":"0xB569E33BDD8F950C8D0511EFD47166B75C78D27E04A00ACCABDAA96945A46B52","SC_PC":"P-00095","SC_RPAT":"9","SC_WCP":"10"}  

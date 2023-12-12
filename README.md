@@ -1,3 +1,15 @@
+https://gw.settlebank.co.kr/Lgcy/card/BillkeyAction.do
+
+postJSONData = "PVersion=0001&PCommand=REQPAY" & _
+            "&PMid=" & payment.PGID & _
+            "&POid=" & order_no & _
+            "&PAmt=" & accountAmount & _
+            "&PBillkey=" & bill_key & _
+            "&PGoods=" & product_name & _
+            "&PUname=" & signId & _
+            "&PUserid=" & signId & _
+            "&PNoti="
+
 192.168.1.24 결제/코인
 
   [B_ACCOUNT].[dbo].[LJC_autoAccount_request_list]

@@ -1,3 +1,5 @@
+https://sys1.popkontv.kr:9002/json/helperinfo.asp?key=c1d6HbyX9Wwqusp238rsqA%3D%3D
+
 https://gw.settlebank.co.kr/Lgcy/card/BillkeyAction.do
 
 postJSONData = "PVersion=0001&PCommand=REQPAY" & _

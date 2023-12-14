@@ -1,3 +1,5 @@
+https://sys1.popkontv.kr:9002/helper/transKey.asp?SI=devtest9&PC=P-00001
+
 https://www.popkontv.com/live/view?castId=lol555&partnerCode=P-00001
 
 https://sys1.popkontv.kr:9002/json/helperinfo.asp?key=c1d6HbyX9Wwqusp238rsqA%3D%3D

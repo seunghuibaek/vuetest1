@@ -1,3 +1,6 @@
+
+PVtransDt <!-- 가상계좌입금마감일 : 가상계좌에서만 사용합니다 예)20120101235959  -->
+
 https://sys1.popkontv.kr:9002/helper/transKey.asp?SI=devtest9&PC=P-00001
 
 https://www.popkontv.com/live/view?castId=lol555&partnerCode=P-00001

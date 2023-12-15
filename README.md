@@ -1,5 +1,10 @@
+https://sys1.popkontv.kr:9002/AS/recVod/naMcVodWatchOnOff.asp
 
-{"data":"3BvHLCMxE9Q+DY4qvIQr+mCbBt+Yxz0v3jZbuuKEA6sTmlt1yHE1dAXDpv6AIdpHPwtlRXYC/Zp4xZn8KC6OJe2eoaF+jxfioOoyDdqn/fMYqFGI8nL8fz6g6ciN5TO3xaSGlHQZCbPPdRWaNBx2UH47VYOQKHYjpc4Gd+dgVLaWDQkwxXJPNGYqKQe2ux9KD7U0piMVvhuJPgimCh/0cUjuIhYnjzRnuAW+AKWyW1EY7UsTQeerC2YTBhtntBlr/AXsZLoC4PwoR3mYaqBe26/N/nU/R8h2tiHlXFYEOV4GktvnR9REW6L0kEjZmNcd9ETkfNQ6Xycxt04q7MwzMcuMq9mrZQIO8UNSfIW/vIo8zabZDk8iM1EuIMbUNMYOtzl/AK17HM4CaQTcPdVZOPuTlTAElXShUWiE7tDIhpCnIU5pXv+gROBIoIST1kEgowjl02iDkFiUZBZu9PH8UkKV0TEOPRppg0T5s35p7vYtbTStDoz0yg0e/WCrCAwNYs3l5gdcoD4X3zHRAFq2LvlUPUBCSTHvrSRDcuNQP5tIIwrMpKmfYvVopxzGxYmTts6kfmigRkWr1/A0T4SGVsI8TAejufBsc3BJy6hQe4UZsivF5xmOhu92hfCXCtoJWyU+vCBLqFCrxYZKn+8yWa1xloewXFhrLlqBhRe/euqO4yh3mYIclMeSIYY1FRr4EYXROBtINwW9Ex14Beuqy4tqRm8jxr3s8LjIg/trYgjR2O1NVBP5en016B/aZB3QUy6R0MuM1NNVua35xQtVsumRjT/5mDP4L+hoXV1Wnt3d4DMdpFVdugVk22QgAWc/DfAwMf8anjvuylxZ8hoAWI4HLxlyjug/kzxnCXQ/PC+X88cXyWWbsONId7yDSUsBlp8Sx/IHzZOM0N7XDQTQ8lk3or0R07SvXrZaZ6gBR9gTrqXw8DzUfv8RivOLr2bPcPxqBvEotrPhjR3j2JmpmXVJNmiOAZdCPuSPsLJUXhVvxMlBWv7hAzxhr6N7iKCaAyu+qTU6+yEUOvOz2rloAfdNxIobuXYDyLf+yshZ0YjD0MauyconOYOPkZgPELT2zffyFo9El7WIZ/hBanfdLqtFnQN4p1mFo6/QPY2ufJw=","key":601, "v":2}
+
+{"rst":{"rstCode" : "0","rstMsg" : "SUCEESS"},
+"vodWatch":{"needCoin":"", "vodPath":"https:\/\/media2.popkontv.hscdn.com\/CAST_VOD\/P-00001\/t\/to\/",
+"playerType":"1", "vIsAdultSet":"0"}}
+
 
 {"data":"8MuGTArlAx937Qia5zE/oClG9jYDEZQRfbWXOWA8FpRyz7xpfcoE08TFEayvPO5h","key":528, "v":1}
 

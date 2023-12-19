@@ -1,3 +1,6 @@
+점검 이후 14일 부터 불특정 사용자로부터 naAdultMain.asp 에서 500에러가 250건 이상 발생하고 있습니다.
+2023-12-19 10:16:51 114.141.28.45 POST /AS/castData/naAdultMain.asp - 9002 - 223.32.190.185
+
 bluewar111-20231017112040
 
 v=2&data=rqx8xYSBb0JB68ok%2Bm1xdnOVwQwAXtfBCShOi0lDcJzx5IPc/L3uHdj8hItViYW2eO1DUH%2BI6XHPZ2M0frUJPZOsayiGIkyKc4oLzgmJnL6zWqzAdkWDg34L1a57WwUNQUXfrH3GdPRJWp3j0n3V%2BfE%2BIDBahy9cV0MarV8c3ldNHShWGsdXgJq1z0j0Uxst4fibjh6Nq34o8t8oAeRUTkEBdWLdOHrVvEft9vqWlXuUfmN9TXnJgqhcmXZ%2BGxsbQMTmahAyAymizi75S0eBCjso5ig/XS6v7AZDWINFwGo=&key=276

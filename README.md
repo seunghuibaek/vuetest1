@@ -1,3 +1,14 @@
+
+아이템 구매 성공시 
+CoinName - 골드로즈, 향수, 구두, 고급핸드백, 골드바, ...
+CoinValue - 300, 500, 700, 1000, 1500, ...
+CoinName + CoinValue + 개를 구매하셨습니다.
+
+코인 구매
+SERVICE_COIN_NAME - 팝콘
+itemCount - 300, 500, 700, 1000, 1500, ...
+SERVICE_COIN_NAME + itemCount + 개를 구매하셨습니다.
+
 점검 이후 14일 부터 불특정 사용자로부터 naAdultMain.asp 에서 500에러가 250건 이상 발생하고 있습니다.
 2023-12-19 10:16:51 114.141.28.45 POST /AS/castData/naAdultMain.asp - 9002 - 223.32.190.185
 

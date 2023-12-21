@@ -1,3 +1,8 @@
+[B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]
+192.168.1.80
+
+
+
 https://devsys.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp 
 
 {"SC_AS":1,"SC_CPC":"P-00001","SC_CSI":"popaos7","SC_CT":0,"SC_CTYP":0,"SC_EP":7,"SC_ISCR":0,"SC_PC":"P-00001","SC_PCC":"popaos7-20231221165555","SC_PK":"","SC_SI":"popaos1","SC_SP":"0xFF794AFC2C094ADD967B34E4E062D1D3419B8EB2301C6596B7B90A83D1A85709","SC_VER":"7.1.01"}

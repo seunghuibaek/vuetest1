@@ -1,6 +1,14 @@
-[B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]
-192.168.1.80
+팝콘
+연예
+http://news.mk.co.kr/cp/popcon/mbnstar.xml
+스포츠
+http://news.mk.co.kr/cp/popcon/sports.xml
 
+셀럽
+엔터
+http://www.theceluv.com/popcon/enter.xml
+연예
+http://www.theceluv.com/popcon/star.xml
 
 
 https://devsys.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp 

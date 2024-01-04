@@ -1,3 +1,5 @@
+http://localsys.popkontv.kr:9003/AS/webPage/callWeb.asp?data=58PmBVi8aELLdyuTQLj%2FFFWI%2Fsc0vQKknRS7tt1ncOXXDQ5YsIsJwnrfrSOjv%2BniIiq6BRkf4LDPt4B7%2Bf%2FGTSigT66Q8yXi1O3A7B8PlWhMngNDsLIQ7U8dUmAkPd5SD2vyNENfwLzDC3UVEtwiW8rSb6jdhLCr7zD1Ly95jXUQ4c8C4bldE0kVt6YedJRvyJjYW2DGNMxQTayPk0iK34m5OOIbLs4NLTPp8kVHippjMpXs%2Bq5LoOLHSVki1QBrOQyj5lNPOnMxU6Xb712wYQ%3D%3D&key=305&v=1&key=185&v=1
+
 팝콘
 연예
 http://news.mk.co.kr/cp/popcon/mbnstar.xml

@@ -1,6 +1,5 @@
 exec USP_Add_PunshMmbrObjctnRqst_001 'zsws1464', 'P-00001', 24103, 24202, '제목입니다3','내용입니다3'
 
-
 exec USP_Add_PunshMmbrObjctnRqst_001 'polipark', 'P-00001', 24103, 24202, '제목입니다3','내용입니다3'
 
 PPKNBRD 192.168.1.82

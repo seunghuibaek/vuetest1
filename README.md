@@ -1,3 +1,9 @@
+PPKNBRD 192.168.1.82
+[B_BOARD].[dbo].[USP_Add_PunshMmbrObjctnRqst_001]
+select * from PunshMmbrObjctnRqst with(nolock) order by 1 desc
+
+
+
 2flaywd87Eo7OD8I/E9JkTrsaww/3SvxUhrFAetqXyCTD7PJDTxV1aQ/OzrHL1z9W5BJNUFjQUK9Syu2dle4QXN7l0QHyFK8mVVssJb2sDUGDQyZjNXiY+bKSozRkMsHPmwF8pbFuY62rP1StP9IkrdLI9J7vSYJEMEij+StX4BSnJQ300PWZcj1THS9WsHAE7wVxC1dWvhZLDdj5aZUrclq9WL//qPnu6Tkq5KxyOx3N7svNkqEBChtPcq6+I3IosbPkg+RkhOMSyTwvWXeyxUPyEPPdrW/HlIMfDuxSHHMt2GgKGZQzzD5jzkESTRgVGYe09T8oF6G9LLO3avSBmV+9ZyDa8Wnxs0tTOVTBIXPxW1m1ULqqa1zNBlGIvfS
 
 

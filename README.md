@@ -1,4 +1,13 @@
+dbo.JBN_WEB_serviceCounsel_List
+
+118.129.153.82
+[B_BOARD].[dbo].USP_Get_PunshMmbrObjctnRqstDtl_001
+
+
+
 192.168.1.82
+
+
 [B_BOARD].[dbo].[USP_Get_PunshMmbrObjctnRqstDtl_001]
 
 exec USP_Add_PunshMmbrObjctnRqst_001 'zsws1464', 'P-00001', 24103, 24202, '제목입니다3','내용입니다3'

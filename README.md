@@ -1,3 +1,13 @@
+팝콘 
+작성자: yr.shin <yr.shin@theenm.com>
+날짜: 2020년 7월 23일 목요일 오후 4:55:43
+커밋한 사람: yr.shin
+
+sys1
+작성자: 백승희 <sh.back@theenm.com>
+날짜: 2023년 12월 14일 목요일 오전 10:24:57
+
+
 declare @result int;
 exec @result = USP_Get_MmbrPunshTypeCnfirm_001 'frontweb119', 'P-00001', 24101, 24102
 select @result

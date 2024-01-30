@@ -1,28 +1,15 @@
-커밋: ce0eb56f50152c0e3c0a0e6b67fb841f8db95fa9 [ce0eb56]
-상위 항목: b1b942e19e
-작성자: sh.back <sh.back@theenm.com>
-날짜: 2024년 1월 25일 목요일 오후 4:50:56
-커밋한 사람: sh.back
-커밋 날짜: 2024년 1월 26일 금요일 오전 10:00:59
-
-
-팝콘 
-작성자: yr.shin <yr.shin@theenm.com>
-날짜: 2020년 7월 23일 목요일 오후 4:55:43
-커밋한 사람: yr.shin
-
-sys1
-작성자: 백승희 <sh.back@theenm.com>
-날짜: 2023년 12월 14일 목요일 오전 10:24:57
-
-
-declare @result int;
-exec @result = USP_Get_MmbrPunshTypeCnfirm_001 'frontweb119', 'P-00001', 24101, 24102
-select @result
-
-declare @result int;
-exec @result = USP_Get_MmbrPunshTypeCnfirm_001 'frontweb119', 'P-00001', 24104, 24202
-select @result
+Function DateTime2Str( argDateTime, argFormat )
+        DateTime2Str = argFormat
+        DateTime2Str = Replace( DateTime2Str, "yyyy", Year( argDateTime ) )
+        DateTime2Str = Replace( DateTime2Str, "yy", Right( Year( argDateTime ), 2 ) )
+        DateTime2Str = Replace( DateTime2Str, "mm", Right("0"&Month( argDateTime ),2) )
+        DateTime2Str = Replace( DateTime2Str, "dd", Right("0"&Day( argDateTime ),2) )
+        DateTime2Str = Replace( DateTime2Str, "hh24", Right("0"&Hour( argDateTime ),2) )
+        DateTime2Str = Replace( DateTime2Str, "mi", Right("0"&Minute( argDateTime ),2) )
+        DateTime2Str = Replace( DateTime2Str, "ss", Right("0"&Second( argDateTime ),2) )
+    End Function
+nd = DateTime2Str( Now(), "yyyy-mm-dd hh24:mi:ss" )
+    
 
 
 HYSERVERMASTER / 201928j94qJQ==^@%&

@@ -10,6 +10,8 @@ Function DateTime2Str( argDateTime, argFormat )
     End Function
 nd = DateTime2Str( Now(), "yyyy-mm-dd hh24:mi:ss" )
     
+{"data":"mICrU7IEJBfr0j4yQF4fYv/bG+bQXiHYr4Zp5z4whHjOQSep7Us4DhAxn6mprvWl7tdkE3riHz6dvyvtQAi+hcvpt0ROtQZVt+jBrk5Gwd0=","key":445, "v":2}
+
 
 
 HYSERVERMASTER / 201928j94qJQ==^@%&

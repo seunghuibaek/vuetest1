@@ -1,3 +1,11 @@
+https://sys1.popkontv.kr:9002/AS/castData/castSetWaitTime.asp, strQuery : data=601UQM3MijjuzGjfnPd9DDe2fjfJi/1IA7xa9NmG1xCSrr3dLicTl2OL%2BbKLtSrmoSLU71vYe%2BL4pGdQwaeYyrTujAzwwgzO8MLzqxw0Zt%2B18aXUeqqXo5fRWbF9X3g6cJxn3b8415ab1kcwL0mMCfRAybglE0UGrPBXkQBvUdippjmmnodl9K1xGXcwCh7p&key=918&v=2  
+
+
+https://sys1.popkontv.kr:9002/AS/castData/castSetWaitTime.asp,
+ res : {"rst" : {"rstCode" : "1","rstMsg" : "error"}}
+
+
+
 https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
 요청값 : {"SC_CAD":"rtmp://live-popkontv.hscdn.com/pop_cast20|popaos7_P-00001_20240206133200","SC_CET":0,"SC_CLN":1,"SC_CR":"720x1280","SC_CSQ":"","SC_CST":0,"SC_PC":"P-00001","SC_PCC":"popaos7-20240206133200","SC_SI":"popaos7","SC_SP":"0x9144AF24F1ADD5E63AB8CB02F2175A13F5B5D00A9E4F800DCE6C054129691D0D","SC_WTM":0}
 

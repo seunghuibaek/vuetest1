@@ -1,3 +1,13 @@
+https://sys1.popkontv.kr:9002/AS/castData/castOnData.asp, strQuery : data=3BNoSdA9GdWSg7ooXIDRoGmnDPrQI/cN1YYwPGf2Gx1nQ%2BipgmSeB7b0kpUQGvoSgoYBRghKi/vvzrSQM01rrCguaV%2BAK4bhSeiC/faznBguPdzrR8zbqBdo%2BzvstwnUrKDJCrciQUdO5cFuaOypagtIsWHPcoccCluv7e2w6laQTWX2fcHSmuFa54oNXsdSSrMs9makagFATpOznL01cVkETAgxcmq4gsBMxyptrWTtbdpIcoqU9Y4zkdfKyyYxwzWqFPf9zCtZ6dUvE7Nr6yCBPCsDxlMJok57Prp53YPGVRQD/NseLtyDb0SFhKxzFGgCFbU7eqokdKhdcpzTAA==&key=855&v=2
+오후 01:40
+
+
+https://sys1.popkontv.kr:9002/AS/castData/castOnData.asp,
+
+이시욱
+ res : {"castOnData":{"rstCode" : "0","rstMsg" : "SUCCESS","chatServerUrl" : ""}}
+
+
 https://sys1.popkontv.kr:9002/AS/castData/castSetWaitTime.asp, strQuery : data=601UQM3MijjuzGjfnPd9DDe2fjfJi/1IA7xa9NmG1xCSrr3dLicTl2OL%2BbKLtSrmoSLU71vYe%2BL4pGdQwaeYyrTujAzwwgzO8MLzqxw0Zt%2B18aXUeqqXo5fRWbF9X3g6cJxn3b8415ab1kcwL0mMCfRAybglE0UGrPBXkQBvUdippjmmnodl9K1xGXcwCh7p&key=918&v=2  
 
 

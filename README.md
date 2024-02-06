@@ -1,3 +1,6 @@
+https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+요청값 : {"SC_CAD":"rtmp://live-popkontv.hscdn.com/pop_cast20|popaos7_P-00001_20240206133200","SC_CET":0,"SC_CLN":1,"SC_CR":"720x1280","SC_CSQ":"","SC_CST":0,"SC_PC":"P-00001","SC_PCC":"popaos7-20240206133200","SC_SI":"popaos7","SC_SP":"0x9144AF24F1ADD5E63AB8CB02F2175A13F5B5D00A9E4F800DCE6C054129691D0D","SC_WTM":0}
+
 Function DateTime2Str( argDateTime, argFormat )
         DateTime2Str = argFormat
         DateTime2Str = Replace( DateTime2Str, "yyyy", Year( argDateTime ) )

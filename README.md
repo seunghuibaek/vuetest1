@@ -1,4 +1,9 @@
 B_LOG.dbo.JBN_memberSignLog_Insert
+/AS/member/naSignOn.asp    회원 로그인
+/AS/member/naSignOnCast.asp   회원 로그인(방송용)
+/AS/member/signOnSNS.asp    회원 로그인(SNS)
+/AS/member/signOnWeb.asp   웹에서의 응용프로그램 실행시 로그인 (자동 로그인) (플렉스)
+
 
 
 https://sys1.popkontv.kr:9002/AS/castData/castOnData.asp,

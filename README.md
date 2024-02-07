@@ -1,3 +1,5 @@
+JBN_memberSignLog_Insert
+
 JBN_memberSignLog_Insert 
 
 B_LOG.dbo.JBN_memberSignLog_Insert

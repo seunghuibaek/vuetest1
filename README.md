@@ -1,5 +1,4 @@
-https://sys1.popkontv.kr:9002/AS/castData/castOnData.asp, strQuery : data=3BNoSdA9GdWSg7ooXIDRoGmnDPrQI/cN1YYwPGf2Gx1nQ%2BipgmSeB7b0kpUQGvoSgoYBRghKi/vvzrSQM01rrCguaV%2BAK4bhSeiC/faznBguPdzrR8zbqBdo%2BzvstwnUrKDJCrciQUdO5cFuaOypagtIsWHPcoccCluv7e2w6laQTWX2fcHSmuFa54oNXsdSSrMs9makagFATpOznL01cVkETAgxcmq4gsBMxyptrWTtbdpIcoqU9Y4zkdfKyyYxwzWqFPf9zCtZ6dUvE7Nr6yCBPCsDxlMJok57Prp53YPGVRQD/NseLtyDb0SFhKxzFGgCFbU7eqokdKhdcpzTAA==&key=855&v=2
-오후 01:40
+B_LOG.dbo.JBN_memberSignLog_Insert
 
 
 https://sys1.popkontv.kr:9002/AS/castData/castOnData.asp,

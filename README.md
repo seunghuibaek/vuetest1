@@ -1,3 +1,5 @@
+JBN_memberSignLog_Insert 
+
 B_LOG.dbo.JBN_memberSignLog_Insert
 /AS/member/naSignOn.asp    회원 로그인
 /AS/member/naSignOnCast.asp   회원 로그인(방송용)

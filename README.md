@@ -1,3 +1,103 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-02-11 12:03:44
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken X-FORWARDED-FOR
+2024-02-11 12:03:30 192.168.1.119 POST /as/castData/naReWatchOn.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 500 0 0 2 118.129.153.136
+2024-02-11 12:13:42 192.168.1.119 POST /AS/castData/naLiveMain.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 500 0 0 1 211.116.31.245
+2024-02-11 12:13:42 192.168.1.119 POST /AS/bAD/mMainTopAD.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 500 0 0 1 211.116.31.245
+2024-02-11 12:13:59 192.168.1.119 POST /as/castData/naCastWatchOnOff_guest.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 314 118.129.153.136
+2024-02-11 12:13:59 192.168.1.119 POST /as/member/naCoinStatus.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 21 118.129.153.136
+2024-02-11 12:13:59 192.168.1.119 POST /as/member/memberItem.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 21 118.129.153.136
+2024-02-11 12:14:00 192.168.1.119 POST /as/castData/partnerName.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 10 118.129.153.136
+2024-02-11 12:14:00 192.168.1.119 POST /as/member/signOnWeb.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 49 118.129.153.136
+2024-02-11 12:34:19 192.168.1.119 POST /as/castData/naReWatchOn.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.48 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 500 0 0 2 118.129.153.136
+2024-02-11 12:55:15 192.168.1.119 POST /AS/member/nasignAliveCheck.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 500 0 0 368 117.55.143.136
+
+
+
+
+
+
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-02-13 00:15:22
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken X-FORWARDED-FOR
+2024-02-13 00:15:15 192.168.1.119 POST /AS/member/naSignOn.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 715 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 99 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/bAD/mMainTopAD.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 64 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 88 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 63 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 69 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 60 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 74 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/member/naCoinStatus.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 93 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/paper/paperNewCnt.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 88 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/member/levelData.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 84 211.224.57.149
+2024-02-13 00:15:16 192.168.1.119 POST /AS/push/pushOnOff.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 161 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 74 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 93 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 80 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/push/pushOnOffEvent.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 95 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/member/pwdExpireCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 122 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/push/pushOnOff.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 107 211.224.57.149
+2024-02-13 00:15:17 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F936N+Build/UP1A.231005.007) - 200 0 0 121 211.224.57.149
+2024-02-13 00:37:33 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 200 0 0 554 117.55.143.136
+2024-02-13 00:37:33 192.168.1.119 POST /AS/castData/naReWatchOn.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 200 0 0 428 117.55.143.136
+2024-02-13 00:47:04 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 70 175.112.179.76
+2024-02-13 00:47:05 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 84 175.112.179.76
+2024-02-13 00:47:05 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 130 175.112.179.76
+2024-02-13 00:47:05 192.168.1.119 POST /AS/castData/naReWatchOn.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 150 175.112.179.76
+2024-02-13 00:47:08 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 88 175.112.179.76
+2024-02-13 00:47:10 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 61 175.112.179.76
+2024-02-13 00:47:10 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 50 175.112.179.76
+2024-02-13 00:47:10 192.168.1.119 POST /AS/castData/castTopFanChk.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 92 175.112.179.76
+2024-02-13 00:47:10 192.168.1.119 POST /AS/member/memberBlockCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 132 175.112.179.76
+2024-02-13 00:47:11 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 70 175.112.179.76
+2024-02-13 00:47:12 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 778 175.112.179.76
+2024-02-13 00:47:12 192.168.1.119 POST /AS/castData/partnerName.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 51 175.112.179.76
+2024-02-13 00:47:12 192.168.1.119 POST /AS/member/mcLevelData.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 105 175.112.179.76
+2024-02-13 00:47:12 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 81 175.112.179.76
+2024-02-13 00:47:13 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 118 175.112.179.76
+2024-02-13 00:47:13 192.168.1.119 POST /AS/member/naBmkData.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 91 175.112.179.76
+2024-02-13 00:47:13 192.168.1.119 POST /AS/member/levelFanData.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 122 175.112.179.76
+2024-02-13 00:48:10 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 62 175.112.179.76
+2024-02-13 00:48:10 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 75 175.112.179.76
+2024-02-13 00:48:12 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 38 175.112.179.76
+2024-02-13 00:48:12 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 60 175.112.179.76
+2024-02-13 00:48:13 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 77 175.112.179.76
+2024-02-13 00:48:13 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 47 175.112.179.76
+2024-02-13 00:48:12 192.168.1.119 POST /AS/member/memberBlockCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 75 175.112.179.76
+2024-02-13 00:48:13 192.168.1.119 POST /AS/castData/castTopFanChk.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 103 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/castData/partnerName.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 13 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/member/mcLevelData.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 60 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 68 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 65 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 560 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/member/naBmkData.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 85 175.112.179.76
+2024-02-13 00:48:14 192.168.1.119 POST /AS/member/levelFanData.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 43 175.112.179.76
+2024-02-13 00:49:36 192.168.1.119 POST /AS/member/fanRankSch.asp - 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 130 175.112.179.76
+2024-02-13 00:52:05 192.168.1.119 POST /AS/member/fanRankSch.asp - 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 80 175.112.179.76
+2024-02-13 00:53:28 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 57 175.112.179.76
+2024-02-13 00:53:28 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 70 175.112.179.76
+2024-02-13 00:53:28 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 48 175.112.179.76
+2024-02-13 00:53:30 192.168.1.119 POST /AS/castData/naViewCastList.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 59 175.112.179.76
+2024-02-13 00:53:34 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 70 175.112.179.76
+2024-02-13 00:53:34 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 78 175.112.179.76
+2024-02-13 00:53:34 192.168.1.119 POST /AS/member/memberBlockCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 95 175.112.179.76
+2024-02-13 00:53:34 192.168.1.119 POST /AS/castData/castTopFanChk.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 68 175.112.179.76
+2024-02-13 00:53:36 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 89 175.112.179.76
+2024-02-13 00:53:36 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 727 175.112.179.76
+2024-02-13 00:53:36 192.168.1.119 POST /AS/castData/partnerName.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 14 175.112.179.76
+2024-02-13 00:53:37 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 64 175.112.179.76
+2024-02-13 00:53:37 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 59 175.112.179.76
+2024-02-13 00:53:37 192.168.1.119 POST /AS/member/levelFanData.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 88 175.112.179.76
+2024-02-13 00:53:37 192.168.1.119 POST /AS/member/naBmkData.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 75 175.112.179.76
+2024-02-13 00:53:36 192.168.1.119 POST /AS/member/mcLevelData.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 75 175.112.179.76
+2024-02-13 00:53:55 192.168.1.119 POST /AS/member/nasignAliveCheck.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 55 175.112.179.76
+2024-02-13 00:53:55 192.168.1.119 POST /AS/castData/naCastWatchOnOff.asp - 9001 - 192.168.1.41 Dalvik/2.1.0+(Linux;+U;+Android+13;+SM-G986N+Build/TP1A.220624.014) - 200 0 0 75 175.112.179.76
+
+
+
 JBN_memberSignLog_Insert
 
 JBN_memberSignLog_Insert 

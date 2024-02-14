@@ -1,26 +1,4 @@
-#Software: Microsoft Internet Information Services 10.0
-#Version: 1.0
-#Date: 2024-02-11 12:03:44
-#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken X-FORWARDED-FOR
-2024-02-11 12:03:30 192.168.1.119 POST /as/castData/naReWatchOn.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 500 0 0 2 118.129.153.136
-2024-02-11 12:13:42 192.168.1.119 POST /AS/castData/naLiveMain.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 500 0 0 1 211.116.31.245
-2024-02-11 12:13:42 192.168.1.119 POST /AS/bAD/mMainTopAD.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.48 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 500 0 0 1 211.116.31.245
-2024-02-11 12:13:59 192.168.1.119 POST /as/castData/naCastWatchOnOff_guest.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 314 118.129.153.136
-2024-02-11 12:13:59 192.168.1.119 POST /as/member/naCoinStatus.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 21 118.129.153.136
-2024-02-11 12:13:59 192.168.1.119 POST /as/member/memberItem.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 21 118.129.153.136
-2024-02-11 12:14:00 192.168.1.119 POST /as/castData/partnerName.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 10 118.129.153.136
-2024-02-11 12:14:00 192.168.1.119 POST /as/member/signOnWeb.asp - 9001 - 192.168.1.34 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 200 0 0 49 118.129.153.136
-2024-02-11 12:34:19 192.168.1.119 POST /as/castData/naReWatchOn.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.48 Mozilla/4.0+(compatible;+Win32;+WinHttp.WinHttpRequest.5) - 500 0 0 2 118.129.153.136
-2024-02-11 12:55:15 192.168.1.119 POST /AS/member/nasignAliveCheck.asp |-|ASP_0148|서버_사용량이_많음 9001 - 192.168.1.34 Dalvik/2.1.0+(Linux;+U;+Android+14;+SM-F711N+Build/UP1A.231005.007) - 500 0 0 368 117.55.143.136
-
-
-
-
-
-
-
-
-
+k6085092010880240214
 
 JBN_memberSignLog_Insert
 

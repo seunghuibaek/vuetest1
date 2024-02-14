@@ -1,4 +1,21 @@
-rtmp://live.popkontv.hscdn.com/pop_cast34|tnxkfrkd_P-00001_20240214152141|https://gw.popkontv.kr:1920
+URL:https://sys1.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp
+
+ PARAMS:["SC_PCC": "dlsp0415-20240214132229", "SC_CTYP": "0", "SC_VER": "7.0.001", "SC_SP": "0xD42840C99AB97D86DFCB48332A48C48B6D6826D2DA1BB9D2A660C6709477BFD2", "SC_SK": "8FC47B0D-FA2F-44A4-882F-9F3287D4417E", "SC_CT": "0", "SC_PC": "P-00001", "SC_EP": "3", "SC_SI": "popios2", "SC_CPC": "P-00117", "SC_CSI": "dlsp0415"] 
+- Result -
+ {"rst":{"rstCode" : "0","error" : "","rstMsg" : "SUCEESS"},"castWatch":{"accountLevel":"0", "fanLevel":"4", "fanLevelName":"\uB4F1\uAE09\uC5C6\uC74C", "needCoin":"", "coin":"0", "castAddress":"rtmp:\/\/live.popkontv.hscdn.com\/pop_cast25?%24PTg2MSY7PzcMBAIEBgIEAwYDCAUDBgQkM0A5NwwDAgIfDB8iDDwTPifSRQ%3D%3D%24|dlsp0415_P-00117_20240214132229|https:\/\/gw.popkontv.kr:1920", "isUpdate":"0", "vTK":"", "isJoint":"False","playerType":"1","category":"10"}} 
+
+
+
+ URL:https://sys1.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp
+
+ PARAMS:["SC_CPC": "P-00117", "SC_SP": "0xD42840C99AB97D86DFCB48332A48C48B6D6826D2DA1BB9D2A660C6709477BFD2", "SC_SI": "popios2", "SC_PCC": "dlsp0415-20240214132229", "SC_SK": "6B56A58F-F136-4B26-90CE-9852B39D6B1C", "SC_PC": "P-00001", "SC_EP": "6", "SC_CTYP": "0", "SC_CT": "0", "SC_CSI": "dlsp0415", "SC_VER": "7.0.001"] 
+- Result -
+ {"rst":{"rstCode" : "0","error" : "","rstMsg" : "SUCEESS"},"castWatch":{"accountLevel":"0", "fanLevel":"4", "fanLevelName":"\uB4F1\uAE09\uC5C6\uC74C", "needCoin":"", "coin":"0", "castAddress":"http:\/\/27.102.104.66\/pop_cast25?%24PT44Ojs0m7C0rIF5d3l7d3l4e3h9en15eZmota6sgXh3d5SBlJeBvLmvjEdH%24|dlsp0415_P-00117_20240214132229|https:\/\/gw.popkontv.kr:1920", "isUpdate":"0", "vTK":"", "isJoint":"False","playerType":"1","category":"10"}}
+
+
+
+
+--------------------------------------------------
 
 
 ["SC_SI":"k6085092010880240214","SC_SC":"2","SC_SK":"1356426907"

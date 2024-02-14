@@ -1,3 +1,6 @@
+rtmp://live.popkontv.hscdn.com/pop_cast34|tnxkfrkd_P-00001_20240214152141|https://gw.popkontv.kr:1920
+
+
 ["SC_SI":"k6085092010880240214","SC_SC":"2","SC_SK":"1356426907"
 ](https://stagesys.popkontv.com:9002/AS/webPage/callWeb.asp?data=0FLtJZ23U2bD1eCkGPSPJeQInHBktV6x2njW4vhpeYeMCwpaF8GR2oK5%2BIEfoQni6R4%2BqL2/3oGCGe9RfBCY1jV22qhvTUoo2SDyAvP9r%2BpFfCpAbLrHQbtH5wAFD3NYcN2uzmwcPDWpXQAy8DzXlt5b7ETVDTEVAFsm4ayKPWaYfulTeEATBXlzuLGh%2BV46&key=498&v=2)
 

@@ -1,3 +1,6 @@
+http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp
+
+
 {"rst":{"rstCode" : "0","error" : "","rstMsg" : "SUCEESS"},"castWatch":{"accountLevel":"0", "fanLevel":"0", "fanLevelName":"VIP", "needCoin":"", "coin":"841769", "castAddress":"http:\/\/180.182.63.30\/pop_cast20?%24NYidoZluZmRmaGRmZWhlamltZmaGlaKbmW5lZGSBboGEbnWBnpU0Qg%3D%3D%24|popaos7_P-00001_20240214161424|https:\/\/dev.popkontv.kr:1920", "isUpdate":"0", "vTK":"", "isJoint":"False","playerType":"1","category":"12", "castAddressApp":"http:\/\/180.182.63.30\/pop_cast20?%24NYidoZluZmRmaGRmZWhlamltZmaGlaKbmW5lZGSBboGEbnqHaKs0Qg%3D%3D%24|popaos7_P-00001_20240214161424|https:\/\/dev.popkontv.kr:1920"}}
 
 

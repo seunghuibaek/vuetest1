@@ -1,3 +1,5 @@
+http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp?ENC=S&VOD=rtmp%3A%2F%2Flive%2Dpopkontv%2Ehscdn%2Ecom%2Fpop%5Fcast20%2Fbluewar131%5FP%2D00001%5F20240
+
 http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp
 
 

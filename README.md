@@ -1,4 +1,22 @@
-http://theenm-guard.hscdn.com/ZWMS/ZWMSTicketPublisher/ZWMSTicketPublisherServer2.asp^^ENC=S&VOD=rtmp%3A%2F%2Flive%2Dpopkontv%2Ehscdn%2Ecom%2Fpop%5Fcast20%2Fbluewar131%5FP%2D00001%5F20240215144102&SITE=popcontv&ID=01024297580&IP=%3A%3A1&NIC=&WMSPUBPOINT=&PLAYER=ZWOWZA
+Mobile
+ENC=S&
+VOD=rtmp%3A%2F%2Flive%2Dpopkontv%2Ehscdn%2Ecom%2Fpop%5Fcast20%2Fbluewar131%5FP%2D00001%5F20240215144102&
+SITE=popcontv&
+ID=01024297580&
+IP=%3A%3A1&
+NIC=&
+WMSPUBPOINT=&
+PLAYER=ZWOWZA
+
+PC
+ENC=S&
+VOD=rtmp%3A%2F%2Flive%2Dpopkontv%2Ehscdn%2Ecom%2Fpop%5Fcast20%2Fbluewar131%5FP%2D00001%5F20240215144102&
+SITE=popcontv&
+ID=01024297580&
+IP=%3A%3A1&
+NIC=&
+WMSPUBPOINT=&
+PLAYER=ZWOWZA
 
 
 

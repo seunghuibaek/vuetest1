@@ -1,3 +1,90 @@
+https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp
+
+{
+  "SC_CT": 0,
+  "SC_SCT": "",
+  "SC_SCTE": "0",
+  "SC_PN": 1,
+  "SC_STYP": "2",
+  "SC_IA": "1",
+  "SC_EP": "9",
+  "SC_PC": "P-00001",
+  "SC_CLT": "0",
+  "SC_IAS": 0
+}
+
+{
+  "rst": {
+    "rstCode": "0",
+    "pageNum": "1",
+    "totalPageNum": "1",
+    "totalListNum": "1",
+    "rstMsg": "SUCCESS"
+  },
+  "liveList": [
+    {
+      "castCode": "librestilo-20240216085201",
+      "castSignId": "librestilo",
+      "watchCnt": "0",
+      "castTitle": "aabb24",
+      "isPrivate": "1",
+      "limitNumber": "410",
+      "category": "20",
+      "castPath": "9",
+      "castPartnerCode": "P-00001",
+      "castType": "0",
+      "nickName": "\uD558\uD558\uD558",
+      "tiketCoin": "0",
+      "pFileName": "https:\/\/thumb.popcast.co.kr\/POPCAST_THUMB\/sys_Thumb\/P-00001\/20\/7.jpg",
+      "castOS": "window",
+      "castListNum": "0",
+      "castStartDate": "20240216085201",
+      "isAdult": "1",
+      "mFileName": "",
+      "listDecorateType": "0",
+      "anniversaryImg": "",
+      "brdcrLvl": "116",
+      "isCastShare": "N",
+      "memberType": "0"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
+
+{
+  "SC_CT": "1",
+  "SC_SI": "librestilo",
+  "SC_PC": "P-00001",
+  "SC_SP": "0xBAB302587F78ABC13D93B96AF9E93695A81D0145BA9E377319856D708FBCC4F0",
+  "SC_CAT": "aabb24",
+  "SC_ADT": "1",
+  "SC_IPVT": "1",
+  "SC_PK": "1123",
+  "SC_LMN": "410",
+  "SC_CTE": "20",
+  "SC_CAPT": "9",
+  "SC_CTYP": "0",
+  "SC_TKC": "0",
+  "SC_COS": "window",
+  "SC_CLT": "0",
+  "SC_IJ": "0",
+  "SC_ICS": "N"
+}
+
+
+
+
+
+
+
 Mobile
 ENC=S&
 VOD=rtmp%3A%2F%2Flive%2Dpopkontv%2Ehscdn%2Ecom%2Fpop%5Fcast20%2Fbluewar131%5FP%2D00001%5F20240215144102&

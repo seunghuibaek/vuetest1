@@ -1,60 +1,48 @@
-https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp
-
+변경전
 {
-  "SC_CT": 0,
-  "SC_SCT": "",
-  "SC_SCTE": "0",
-  "SC_PN": 1,
-  "SC_STYP": "2",
-  "SC_IA": "1",
-  "SC_EP": "9",
-  "SC_PC": "P-00001",
-  "SC_CLT": "0",
-  "SC_IAS": 0
+"rst":{
+"rstCode":"0",
+"error":"",
+"rstMsg":"SUCEESS"
+},
+"castWatch":{
+"accountLevel":"0",
+"fanLevel":"4",
+"fanLevelName":"등급없음",
+"needCoin":"",
+"coin":"0",
+"castAddress":"http://101.202.25.58/pop_cast20?%24PD4%2FOjw4OjoLICQc8enn6evn6ejt6Ojp7urtCRglHhzx6OfnBPEEB%2FEL6ukct0k%3D%24|bluewar131_P-00001_20240216111629|https://dev.popkontv.kr:1920",
+"isUpdate":"0",
+"vTK":"",
+"isJoint":"False",
+"playerType":"1",
+"category":"10"
 }
-
-{
-  "rst": {
-    "rstCode": "0",
-    "pageNum": "1",
-    "totalPageNum": "1",
-    "totalListNum": "1",
-    "rstMsg": "SUCCESS"
-  },
-  "liveList": [
-    {
-      "castCode": "librestilo-20240216085201",
-      "castSignId": "librestilo",
-      "watchCnt": "0",
-      "castTitle": "aabb24",
-      "isPrivate": "1",
-      "limitNumber": "410",
-      "category": "20",
-      "castPath": "9",
-      "castPartnerCode": "P-00001",
-      "castType": "0",
-      "nickName": "\uD558\uD558\uD558",
-      "tiketCoin": "0",
-      "pFileName": "https:\/\/thumb.popcast.co.kr\/POPCAST_THUMB\/sys_Thumb\/P-00001\/20\/7.jpg",
-      "castOS": "window",
-      "castListNum": "0",
-      "castStartDate": "20240216085201",
-      "isAdult": "1",
-      "mFileName": "",
-      "listDecorateType": "0",
-      "anniversaryImg": "",
-      "brdcrLvl": "116",
-      "isCastShare": "N",
-      "memberType": "0"
-    }
-  ]
 }
 
 
-
-
-
-
+변경 후
+{
+"rst":{
+"rstCode":"0",
+"error":"",
+"rstMsg":"SUCEESS"
+},
+"castWatch":{
+"accountLevel":"0",
+"fanLevel":"4",
+"fanLevelName":"등급없음",
+"needCoin":"",
+"coin":"0",
+"castAddress":"http://27.102.104.66/pop_cast20?%24OIugpJxxaWdpa2dpaG1oaGlvbG6JmKWenHFoZ2eEcYSHcZl8fX43Qg%3D%3D%24|bluewar131_P-00001_20240216111629|https://dev.popkontv.kr:1920",
+"isUpdate":"0",
+"vTK":"",
+"isJoint":"False",
+"playerType":"1",
+"category":"10",
+"castAddressApp":"rtmp://live-popkontv.hscdn.com/pop_cast20?%24OIugpJxxaWdpa2dpaG1oaGlvbG6JmKWenHFoZ2eEcYSHcX2upo03Qg%3D%3D%24|bluewar131_P-00001_20240216111629|https://dev.popkontv.kr:1920"
+}
+}
 
 
 https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp

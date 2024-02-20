@@ -1,3 +1,9 @@
+https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
+
+{"SC_ADT":0,"SC_CAPT":7,"SC_CAT":"","SC_CLT":10,"SC_COS":"android","SC_CT":0,"SC_CTE":0,"SC_CTYP":0,"SC_FLV":0,"SC_ICS":"","SC_IPVT":0,"SC_LMN":0,"SC_PC":"P-00001","SC_PK":"","SC_SI":"popaos7","SC_SP":"0x9144AF24F1ADD5E63AB8CB02F2175A13F5B5D00A9E4F800DCE6C054129691D0D","SC_TKC":0}
+
+
+
 변경전
 {
 "rst":{

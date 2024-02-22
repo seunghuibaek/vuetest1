@@ -1,3 +1,5 @@
+개체 'syssessions', 데이터베이스 'msdb', 스키마 'dbo'에 대한 SELECT 권한이 거부되었습니다.
+
 
 https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
 {

@@ -1,4 +1,20 @@
-[B_POPKONTV_MONTH_EVENT].[dbo].[USP_Get_BnsCashGudsApndPymntEvnt_001]
+
+https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+{
+  "SC_PCC": "librestilo-20240222145943",
+  "SC_SI": "librestilo",
+  "SC_PC": "P-00001",
+  "SC_CST": "2",
+  "SC_CET": "2",
+  "SC_SP": "0xBAB302587F78ABC13D93B96AF9E93695A81D0145BA9E377319856D708FBCC4F0",
+  "SC_CLN": "1",
+  "SC_CSQ": "",
+  "SC_WTM": "0",
+  "SC_CR": "w1280h720e1",
+  "SC_EB": "PCP32bit"
+}
+
+
 
 192.168.1.28
 

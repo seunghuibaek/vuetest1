@@ -5,6 +5,12 @@ FindIdPwResModel(rst=ResultModel(rstCode=0, rstMsg=조회가 완료 되었습니
 
 
 https://devsys.popkontv.kr:9002/AS/member/findidpwd.asp
+
+{"SC_DI":"MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=","SC_ID":"19840131","SC_MN":"오지훈","SC_PC":"P-00001","SC_RC":"id","SC_SE":1}
+FindIdPwResModel(rst=ResultModel(rstCode=0, rstMsg=조회가 완료 되었습니다., signId=, snscode=0, snsname=))
+
+
+https://devsys.popkontv.kr:9002/AS/member/findidpwd.asp
 {"SC_DI":"MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=","SC_ID":"19840131","SC_MN":"오지훈","SC_PC":"P-00001","SC_RC":0,"SC_SE":1}
 
 개체 'syssessions', 데이터베이스 'msdb', 스키마 'dbo'에 대한 SELECT 권한이 거부되었습니다.

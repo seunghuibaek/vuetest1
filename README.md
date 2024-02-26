@@ -1,3 +1,20 @@
+Cert Test CertSignUpFragment CertifyComplete gender male, socialno 19840131, pnum : 01045119328, di : MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=, ci : awLIPFk8ac9GcErBmtur1c7L278WJSjG9McxmdraXoaOtz6XYwtd9kU34I4A7xoGY+jt/2In/INClH2JukUFlw==, name 오지훈
+ 
+
+https://devsys.popkontv.kr:9002/AS/member/findidpwd.asp
+{"SC_DI":"MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=","SC_ID":"19840131","SC_MN":"오지훈","SC_PC":"P-00001","SC_RC":"id","SC_SE":1}
+FindIdPwResModel(rst=ResultModel(rstCode=0, rstMsg=조회가 완료 되었습니다., signId=, snscode=0, snsname=))
+
+https://devsys.popkontv.kr:9002/AS/member/registMember.asp
+{"SC_AEM":"","SC_AID":"189993731","SC_ANK":"","SC_EM":"","SC_EP":7,"SC_ISA":1,"SC_NK":"popaos99","SC_PC":"P-00001","SC_PID":"utm_source=google-play&utm_medium=organic","SC_PN":"01045119328","SC_SCD":3,"SC_SI":"","SC_SP":""}
+SignUpResModel(rst=ResultModel(rstCode=0, rstMsg=회원가입이 정상적으로 처리되었습니다., signId=n2270094829703240226, signPwd=0x448AB02B742F1751AF57ED2541A6683D76510519387658921FB511305EAB5C03))
+
+https://devsys.popkontv.kr:9002/AS/member/nameCertChk.asp
+{"SC_CI":"awLIPFk8ac9GcErBmtur1c7L278WJSjG9McxmdraXoaOtz6XYwtd9kU34I4A7xoGY+jt/2In/INClH2JukUFlw==","SC_DI":"MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=","SC_ID":"19840131","SC_MN":"오지훈","SC_PC":"P-00001","SC_PN":"01045119328","SC_SE":1,"SC_SI":""}
+CertResModel(rst=ResultModel(rstCode=0, rstMsg=회원가입이 정상적으로 처리되었습니다., bonusCoinCount=0))
+
+--------------------------------------------------------------------------
+
 https://devsys.popkontv.kr:9002/AS/member/findidpwd.asp
 
 {"SC_DI":"MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=","SC_ID":"19840131","SC_MN":"오지훈","SC_PC":"P-00001","SC_RC":"id","SC_SE":1}

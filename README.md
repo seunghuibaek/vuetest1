@@ -1,3 +1,7 @@
+https://down.popcast.co.kr/beta/popkonTV_2.0_plus_v9.31.001.apk
+
+https://down.popcast.co.kr/beta/rink.apk
+
 Cert Test CertSignUpFragment CertifyComplete gender male, socialno 19840131, pnum : 01045119328, di : MC0GCCqGSIb3DQIJAyEApCmBKiv5Hauu3GUqO22EFN4kt+Zw9gBWf+F6LJbXTlY=, ci : awLIPFk8ac9GcErBmtur1c7L278WJSjG9McxmdraXoaOtz6XYwtd9kU34I4A7xoGY+jt/2In/INClH2JukUFlw==, name 오지훈
  
 

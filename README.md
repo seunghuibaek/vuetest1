@@ -1,3 +1,1098 @@
+<!--#include virtual="/ssi/global/page_init.ssi"-->
+<!--#include virtual="/ssi/function/aes_func.ssi"-->
+<!--#Include Virtual="/ssi/function/domainallow.ssi"-->
+<!--#Include Virtual="/ssi/function/ZonePlayerUtils.asp"-->
+<!--#include virtual="/ssi/function/chatUtil.asp"-->
+<%
+'에러 무시 활성
+'On Error Resume Next
+
+'#### 2016.09.13
+'#### SSM
+'#### /castData/naCastWatchOnOff.asp
+
+'--# 서비스 점검체크
+'# IS_SERVER_SERVICE
+'> true:서비스실행, false:서비스 점검
+'# 수동전체 점검체크
+If Not IS_SERVER_SERVICE Then
+	Call resultJsonSet("E","서비스 정기점검중 입니다.")
+End If
+'//
+
+'--# server value
+Dim castAddress
+Dim accountLevel
+Dim fanLevel
+Dim fanLevelName
+Dim groupLevelNm
+Dim fanLevelGiftCoin
+Dim castFanLevel
+Dim needCoin
+Dim coin
+Dim chatServerType
+Dim castAddressArr
+Dim chatAddress
+Dim memberSex
+Dim nickName
+Dim castCastType
+Dim isUpdate
+Dim vTK
+Dim isAdultCheck
+Dim castisAdult
+Dim castcategory
+Dim isJoint
+Dim itemlist
+Dim isGifter
+Dim groupLevelNm_0
+Dim groupLevelNm_1
+Dim groupLevelNm_2
+Dim groupLevelNm_3
+castAddress = ""
+accountLevel = ""
+fanLevel = ""
+fanLevelName = ""
+groupLevelNm = ""
+fanLevelGiftCoin = ""
+castFanLevel = 4
+needCoin = ""
+coin = ""
+chatServerType = ""
+castAddressArr = ""
+chatAddress = ""
+memberSex = ""
+nickName = ""
+castCastType = ""
+isUpdate = 0
+vTK = ""
+isAdultCheck = 0
+isJoint = 0
+itemlist = ""
+isGifter = 0
+groupLevelNm_0 = "VIP"
+groupLevelNm_1 = "다이아몬드"
+groupLevelNm_2 = "골드"
+groupLevelNm_3 = "실버"
+Dim playerType	'0' : ExoPlayer, '1': VXGPlayer
+'//
+
+'--# Request
+'# data
+Dim Data, oJSON
+dim key
+dim aesver
+Data = Trim(Request.form("data"))
+key = Trim(Request.form("key"))
+aesver = Trim(Request.form("v"))
+Data = aesvalidate(Data, key, aesver)
+Set oJSON = new aspJSON
+oJSON.loadJSON(data)
+'# request
+Dim signId
+Dim signPwd
+Dim partnerCode
+Dim cast_signId
+Dim cast_partnerCode
+Dim commandType
+Dim castCode
+Dim castType
+Dim exePath
+Dim password
+Dim version
+Dim androidStore
+Dim isSecret
+signId = Trim(oJSON.data("SC_SI"))
+signPwd = Trim(oJSON.data("SC_SP"))
+partnerCode = Trim(oJSON.data("SC_PC"))
+cast_signId = Trim(oJSON.data("SC_CSI"))
+cast_partnerCode = Trim(oJSON.data("SC_CPC"))
+commandType = Trim(oJSON.data("SC_CT"))
+castCode = Trim(oJSON.data("SC_PCC"))
+castType = Trim(oJSON.data("SC_CTYP"))
+exePath = Trim(oJSON.data("SC_EP"))
+password = Trim(oJSON.data("SC_PK"))
+version = Trim(oJSON.data("SC_VER"))
+androidStore = Trim(oJSON.data("SC_AS"))
+isSecret = Trim(oJSON.data("SC_ISCR"))
+Set oJSON = nothing
+'//
+
+'--# Request Check
+'# signId
+If Not paramChk_signId(signId) Then
+	Call resultJsonSet("1","SC_SI")
+End If
+'# signPwd
+If Not isStringLen(signPwd,4,255) Then
+	call resultJsonSet("1","SC_SP")
+End If
+'# partnerCode
+If Not paramChk_partnerCode(partnerCode) Then
+	Call resultJsonSet("1","SC_PC")
+Else
+	partnerCode = UCase(partnerCode)
+End If
+'# cast_signId
+If Not paramChk_signId(cast_signId) Then
+	Call resultJsonSet("1","SC_CSI")
+End If
+'# cast_partnerCode
+If Not paramChk_partnerCode(cast_partnerCode) Then
+	Call resultJsonSet("1","SC_CPC")
+Else
+	cast_partnerCode = UCase(cast_partnerCode)
+End If
+'# commandType(0:방송시청,1:방송시청종료)
+If not paramChk_bit(commandType) then
+	Call resultJsonSet("1","SC_CT")
+Else
+	commandType = CInt(commandType)
+End if
+'# castCode
+If Not paramChk_castCode(castCode) Then
+	Call resultJsonSet("1","SC_PCC")
+End If
+'# castType
+If Not paramChk_smallInt(castType) then
+	call resultJsonSet("1","SC_CTYP")
+Else
+	castType = CInt(castType)
+End If
+If castType < 0 Or castType > 8 Then
+	call resultJsonSet("1","SC_CTYP")
+End if
+'# exePath (0:etc, 1:Android, 2:iPhone, 3:iPhone Enterprise(flex), 4:PC P/G, 5:PC WEB, 6:mobile WEB, 7:native andriod, 8:native iPhone, 9:신규PC, 12:맥 PC) 
+'# exePath 추가 (15: 통합 로그인 앱스토어 기업 프로그램 IOS 앱, 16: 통합 로그인 앱스토어 IOS 앱, 17: 통합 로그인 구글플레이 안드로이드 앱, 18: 통합 로그인 원스토어 안드로이드 앱)
+If Not paramChk_path(exePath) Then
+	Call resultJsonSet("1", "SC_EP")
+Else
+	exePath = CInt(exePath)
+End If
+'# version
+If Not IsNumeric(Replace(version,".","")) Then
+	Call resultJsonSet("1","SC_VER")
+End If
+'#password'
+if len(password) > 10 then
+	call resultJsonSet("E1","비밀번호가 일치하지 않습니다.")
+end if
+'--# 방송자와 시청자 동일 아이디 시청 불가
+If lcase(signId) = lcase(cast_signId) and partnerCode = cast_partnerCode then
+	call resultJsonSet("1","시청할 수 없는 방송입니다.")
+End if
+
+'# androidStore (0:googleplay, 1:OneStore)'
+if androidStore = "" then
+	androidStore = 0
+end if
+If Not isNumKey(androidStore) Then
+	Call resultJsonSet("1", "SC_AS")
+Else
+	androidStore = CInt(androidStore)
+End If
+
+'# isSecret(0:시크릿모드 끔,1:켬)
+If not paramChk_bit(isSecret) then
+	isSecret = 0	
+Else
+	isSecret = CInt(isSecret)
+End if
+'// 
+
+'--# 파트너사 정보
+Call PAGE_INIT(partnerCode)
+'//
+'# 파트너 점검체크
+If Not IS_SERVER_SERVICE Then
+	Call resultJsonSet("E","서비스 정기점검중 입니다.")
+End if
+
+'--# 회원로그인정보 확인 (true:성공, false:실패)
+if Not idPwdCheck(signId, signPwd, partnerCode) Then
+	call resultJsonSet("E2","IPC")
+End If
+'//
+
+'--# ADO open
+Dim objCmd, cmdRtnCode, cmdRs
+Set objCmd = server.CreateObject("ADODB.COMMAND")
+'//
+
+'--# 방송시청 권한 설정
+'# accountLevel (0:일반시청자, 1:방송자, 2:매니저, 3:운영자, 4:관리자)
+with objCmd
+	Call cmdPramDel(objCmd)
+	cmdRtnCode = ""
+	.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step1_LisenceCheck]"
+	.commandType = &H0004
+	.activeConnection = OLEDB_CTICAST9
+	.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+	.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+	.Parameters.Append .CreateParameter("@cast_partnerCode", adVarChar, adParamInput,7)
+	.Parameters.Append .CreateParameter("@watch_partnerCode", adVarChar, adParamInput,7)
+	.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 10)
+	.Parameters("@cast_signId") = cast_signId
+	.Parameters("@watch_signId") = signId
+	.Parameters("@cast_partnerCode") = cast_partnerCode
+	.Parameters("@watch_partnerCode") = partnerCode
+	.Parameters("@return") = 0
+	.execute()
+	accountLevel = .parameters("@return")
+End With
+'// 
+
+'--# 방송자/운영자 파트너별 제한
+If accountLevel = 3 Or accountLevel = 4 Then
+	If cast_partnerCode <> partnerCode and partnerCode <> "P-00001" then
+		call resultJsonSet("E3","해당 아이디는 방송시청이 불가능 합니다.")
+	End if
+End if
+'//
+'--# 버전업데이트 심의상태 여부 (0:정상서비스상태, 1:버전업데이트심의상태)
+if exePath = 7 Or exePath = 18 Or exePath = 19 then
+	Select Case exePath
+		Case 7
+			isUpdate = IS_AOS_SIMSA
+			' 심사용 버전 있을 경우 해당 버전과 일치 하지 않으면 심사중 해제
+			if not isnull(NATIVE_ANDROID_VERSION_SIMSA) and NATIVE_ANDROID_VERSION_SIMSA <> "" and NATIVE_ANDROID_VERSION_SIMSA <> version then
+				isUpdate = 0
+			end if
+		
+		Case 18
+			isUpdate = RnkPlusOnestorInspPrgrYn
+			If Not IsNull(RnkPlusOnestorInspVer) And RnkPlusOnestorInspVer <> "" And RnkPlusOnestorInspVer <> version Then
+				isUpdate = 0
+			End If
+		Case 19
+			isUpdate = RnkPlusGlxstorInspPrgrYn
+			If Not IsNull(RnkPlusGlxstorInspVer) And RnkPlusGlxstorInspVer <> "" And RnkPlusGlxstorInspVer <> version Then
+				isUpdate = 0
+			End If
+	End Select
+	'if partnerCode = "P-00001" and (version = "4.0.3" or version = "4.0.4") then
+	''	isUpdate = 0
+	'end if
+elseif exePath = 8 then
+	isUpdate = IS_IOS_SIMSA
+end if
+'//
+
+'--# 시청신호처리
+'# commandType (0:방송시청, 1:방송시청종료)
+If commandType = 0 Then
+	'--# 프로그램 버전체크
+	Select Case exePath
+	'# android
+	Case 1
+		If not versionCompare(version, ANDROID_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# IOS
+	Case 2
+		If not versionCompare(version, IOS_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# IOSE
+	Case 3
+		If not versionCompare(version, IOSE_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# PC
+	Case 4
+		If not versionCompare(version, PC_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# native Android
+	Case 7
+		If not versionCompare(version, NATIVE_ANDROID_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# native iPhone
+	Case 8
+		If not versionCompare(version, NATIVE_IPHONE_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# PC NEW
+	Case 9
+		Dim objRs, cmdTxt
+		Set objRs = server.CreateObject("ADODB.RECORDSET")
+		' 플레이어 정보는 P-00001로 통일
+		cmdTxt = "EXEC [B_COMPANY].[dbo].[USP_Get_PrtsSvcSiteInfo_002] @partnerCode='P-00001'"
+		objRs.open cmdTxt, OLEDB_CAST4, 1
+		If Not objRs.eof Then	
+			PC_WIN_VERSION = trim(objRs("PC_WIN_VERSION"))
+		End If 
+		objRs.close
+		set objRs = nothing
+		
+		If not versionCompare(version, PC_WIN_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# PC NEW
+	Case 12
+		If not versionCompare(version, PC_MAC_VERSION) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# IOSE NEW / 린크_플러스_앱스토어_기업_프로그램
+	Case 15
+		If not versionCompare(version, RnkPlusAppstorEntrPgmVer) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# native iPhone NEW / 린크_앱스토어
+	Case 16
+		If not versionCompare(version, RnkAppstorVer) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# AOS 구글플레이 NEW / 린크_구글플레이
+	Case 17
+		If not versionCompare(version, RnkGglplyVer) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# AOS 원스토어 NEW / 린크_플러스_원스토어
+	Case 18
+		If not versionCompare(version, RnkPlusOnestorVer) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# 린크_플러스_갤럭시스토어
+	Case 19
+		If not versionCompare(version, RnkPlusGlxstorVer) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	'# 린크_플러스_안드로이드_수동_다운로드_앱
+	Case 20
+		If not versionCompare(version, RnkPlusAndrdPssivDwnlAppVer) Then
+			call resultJsonSet("V","프로그램 업데이트가 필요합니다. 프로그램을 새로 다운받아 설치하시기 바랍니다.")
+		End If
+	End Select
+	'//
+	
+	'--# 로그인 차단확인
+	'# @return (-1:성공, 0:영구정지, n:해당일정지)
+	with objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = -2				
+		.commandText = "[B_MEMBER].[dbo].[JBN_JSON_signOn_Step2_BlockCheck_DDD]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CAST
+		.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+		.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput)	
+		.Parameters("@signId") = signId
+		.Parameters("@partnerCode") = partnerCode
+		.Parameters("@return") = cmdRtnCode
+		.execute()
+		cmdRtnCode = .parameters("@return")
+	End With
+	if err.number <> 0 then
+		call resultJsonSet("1","일시적인 오류로 서비스 점검중 입니다.")
+	end if		
+	Select Case (cmdRtnCode)		
+		Case -2
+			call resultJsonSet("1","일시적인 오류로 서비스 점검중 입니다.")
+		Case -1
+		Case 0
+			call resultJsonSet("E4","회원님은 운영정책에 위반되는 방송진행으로 영구정지 되셨습니다. 추가로 소명이 필요하신 부분이 있으시면 일대일문의를 부탁드립니다.")
+		Case Else
+			call resultJsonSet("E4","회원님은 운영정책에 위반되는 방송진행으로 " & cmdRtnCode & "일정지 되셨습니다. 정지기간 중 다른 계정으로 방송 시 영구정지가 될 수 있습니다.")
+	End select
+	'//
+
+	'--# 방송코드 존재확인 (true:존재, false:미존재) 
+	If Not castUseCheck(castCode) Then
+		call resultJsonSet("E5","방송이 존재하지 않습니다.")
+	End If
+	with objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = ""
+		.commandText = "[B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CTICAST2 
+		.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+		.Parameters("@signId") = cast_signId
+		.Parameters("@partnerCode") = cast_partnerCode
+		Set cmdRs = .execute()
+	End With
+	If cmdRs.eof Then
+		call resultJsonSet("1","방송이 존재하지 않습니다.")
+	Else
+		chatServerType = cmdRs("chatType")
+		castAddress = cmdRs("castAddress")
+		castAddressArr = Split(castAddress,"|")
+		'RTC 방송 시청 제한'
+		if left(castAddress, 4) <> "rtmp" and not(exePath = 3 or exePath = 7 or exePath = 15 or exePath = 17 or exePath = 18) then
+			'개발섭은 웹시청 허용'
+			If not(SERVER_NAME = TEST_SERVER_NAME and exePath = 5) Then
+				call resultJsonSet("1","이 방송은 안드로이드앱이나 아이폰 앱을 통해서만 시청가능합니다.")
+			end if
+		end if
+		If uBound(castAddressArr) = 2 Then
+			chatAddress = castAddressArr(2)			
+			if exePath = 5 or exePath = 6 then
+				castAddress = replace(castAddress, "rtmp", "http")
+			' pip 기능 추가건. 아이폰 App은 두개 영상 URL이 다 필요하여 추가
+			ElseIf exePath = 3 or exePath = 8 Or exePath = 15 or exePath = 16 then
+				castAddress = replace(castAddress, "rtmp", "http")				
+			end if
+			castAddress = getLIVEURLcast(castAddress, signId)
+
+			' pip 기능 추가건. rtmp://아이피로 변경
+			if exePath = 3 or exePath = 8 Or exePath = 15 or exePath = 16 then
+				castAddress = replace(castAddress, "http://", "rtmp://")
+			end if
+		End If
+		castCastType = CInt(cmdRs("castType"))
+		castisAdult = cmdRs("isAdult")
+		castcategory = cmdRs("category")
+		isJoint = cmdRs("isJoint")
+		If accountLevel < 1 then '일반 시청자 송출 제한 체크
+		if cmdRs("castListTarget") = "10" then
+			if partnerCode <> cast_partnerCode then
+				call resultJsonSet("1","본 방송은 시청하실 수 없습니다.")
+				end if
+			end if
+		end if
+	End If
+	Set cmdRs = Nothing
+
+	'--# 휴대폰인증 여부 확인(0:미인증, 1:인증)
+	'// 셀럽티비 제외
+	if castisAdult = true then
+		with objCmd
+			Call cmdPramDel(objCmd)
+			cmdRtnCode = ""
+			.commandText = "[B_MEMBER].[dbo].[JBN_JSON_isPhoneCheck]"
+			.commandType = &H0004
+			.activeConnection = nothing
+			.activeConnection = OLEDB_220
+			.Parameters.Append .CreateParameter("@signID", adVarChar, adParamInput, 25)
+			.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput,7)
+			.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 4)
+			.Parameters("@signID") = signId
+			.Parameters("@partnerCode") = partnerCode
+			.Parameters("@return") = 0
+			.execute()
+			cmdRtnCode = .parameters("@return")
+		End With
+		If Not cmdRtnCode = 1 Then
+			'call resultJsonSet("1","회원님의 휴대폰번호는 인증되지 않았습니다. 마이페이지 내정보수정에서 휴대폰번호변경(인증) 후 이용하세요.")
+			call resultJsonSet("A","휴대폰 미인증 회원입니다. 웹사이트 로그인 후 마이페이지>내정보수정 하단에서 휴대폰 인증 후 이용 가능합니다")			
+		End if
+	end if
+	'//
+	
+	'# 방송타입 확인
+	If Not castType = castCastType Then
+		call resultJsonSet("1","방송시청을 할 수 없습니다.[CT]")
+	End if
+	'//
+
+	'--# 비공개방송 비밀번호 확인
+	If accountLevel < 3 then
+		with objCmd
+			Call cmdPramDel(objCmd)
+			cmdRtnCode = ""
+			.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step5_PasswordCheck]"
+			.commandType = &H0004
+			.activeConnection = nothing
+			.activeConnection = OLEDB_CAST
+			.Parameters.Append .CreateParameter("@pk_castCode", adVarChar, adParamInput, 40)
+			.Parameters.Append .CreateParameter("@passwordKey", adVarChar, adParamInput,10)
+			.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 10)
+			.Parameters("@pk_castCode") = castCode
+			.Parameters("@passwordKey") = password
+			.Parameters("@return") = 0
+			.execute()
+			cmdRtnCode = .parameters("@return")
+		End with
+		If Not cmdRtnCode = 0 Then
+			call resultJsonSet("E1","비밀번호가 일치하지 않습니다.")
+		End If
+	End if
+	'// 
+
+	'--# 멀티방송 모바일시청 불가처리
+	If castType = 3 And exePath <> 4 Then
+		call resultJsonSet("1","멀티방송은 PC에서만 시청이 가능합니다.")
+	End If
+	'//
+
+	'--# 시청자 팬등급 설정 (0:최상위, 1:상위, 2:하위, 3:최하위, 4:없음)
+	with objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = ""
+		.commandText = "[B_MEMBER].[dbo].[SSM_fanGroup_memberSelect]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CAST5
+		.Parameters.Append .CreateParameter("@signid", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@fan_signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adChar, adParamInput,7)
+		.Parameters.Append .CreateParameter("@fan_partnerCode", adChar, adParamInput,7)
+		.Parameters("@signid") = cast_signId
+		.Parameters("@fan_signId") = signId
+		.Parameters("@partnerCode") = cast_PartnerCode
+		.Parameters("@fan_partnerCode") = partnerCode
+		Set cmdRs = .execute()
+	End with
+	If Not cmdRs.eof Then
+		fanLevel = cmdRs("fanLevel")
+	Else
+		fanLevel = 4
+	End If
+	Set cmdRs = Nothing	
+	'--# 팬설정정보 검색
+	with objCmd
+		Call cmdPramDel(objCmd)
+		.commandText = "[B_MEMBER].[dbo].[JBN_JSON_memberFanLevelSetupSearch]"
+		.commandType = &H0004
+		.activeConnection = OLEDB_CAST5
+		.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adChar, adParamInput,7)
+		.Parameters("@signId") = cast_signId
+		.Parameters("@partnerCode") = cast_PartnerCode
+		Set cmdRs = .execute()
+	End With
+	If not cmdRs.eof Then
+		groupLevelNm_0 = cmdRs("groupLevelNm_0")
+		groupLevelNm_1 = cmdRs("groupLevelNm_1")
+		groupLevelNm_2 = cmdRs("groupLevelNm_2")
+		groupLevelNm_3 = cmdRs("groupLevelNm_3")		
+	End If
+	Select Case fanLevel
+	Case 0
+		fanLevelName = groupLevelNm_0
+	Case 1
+		fanLevelName = groupLevelNm_1
+	Case 2
+		fanLevelName = groupLevelNm_2
+	Case 3
+		fanLevelName = groupLevelNm_3
+	Case else
+		fanLevelName = "등급없음"
+	End select
+	Set cmdRs = nothing
+	'//
+	
+	'--# 소유코인 확인
+	with objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = ""
+		.commandText = "[B_COIN].[dbo].[JBN_WEB_MyPage_coinMemberData]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CTICAST5
+		.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+		.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 4)
+		.Parameters("@signId") = signId
+		.Parameters("@partnerCode") = partnerCode
+		.Parameters("@return") = 0
+		Set cmdRs = .execute()
+	End With
+	If Not cmdRs.eof Then
+		coin = cmdRs("accountCoinValue")
+	End If
+	Set cmdRs = nothing 
+	'//
+
+	'--# 일반 시청자 처리
+	If accountLevel < 1 Then
+		'--# 방송시청 차단확인
+		call blockCheck()
+		'//
+		
+		'--# 팬방송 확인
+		If castType = 5 Then
+			'# 팬방송 등급정보
+			with objCmd
+				Call cmdPramDel(objCmd)
+				cmdRtnCode = ""
+				.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_fanLevel]"
+				.commandType = &H0004
+				.activeConnection = nothing
+				.activeConnection = OLEDB_CAST
+				.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@partnerCode", adChar, adParamInput,7)
+				.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 4)
+				.Parameters("@signId") = cast_signId
+				.Parameters("@partnerCode") = cast_partnerCode
+				.Parameters("@return") = 0
+				.execute()
+				castFanLevel = .parameters("@return")
+			End with
+			'# 팬방송 시청가능 확인
+			with objCmd
+				Call cmdPramDel(objCmd)
+				cmdRtnCode = ""
+				.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step4_GroupCheck]"
+				.commandType = &H0004
+				.activeConnection = nothing
+				.activeConnection = OLEDB_CAST5
+				.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@cast_PartnerCode", adVarChar, adParamInput, 7)
+				.Parameters.Append .CreateParameter("@watch_PartnerCode", adVarChar, adParamInput, 7)
+				.Parameters.Append .CreateParameter("@fanLevel", adSmallInt, adParamInput, 2)
+				.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 10)
+				.Parameters("@cast_signId") = cast_signId
+				.Parameters("@watch_signId") = signId
+				.Parameters("@cast_PartnerCode") = cast_PartnerCode
+				.Parameters("@watch_PartnerCode") = PartnerCode
+				.Parameters("@fanLevel") = castFanLevel
+				.Parameters("@return") = 0
+				.execute()
+				'# cmdRtnCode (0:시청가능, 1:시청 불가능)
+				cmdRtnCode = .parameters("@return")
+			End With
+			'# 팬방송 시청불가시
+			If cmdRtnCode = 1 Then
+				'--# 방송자 팬설정정보
+				Select Case castFanLevel
+				Case 0
+					groupLevelNm = groupLevelNm_0
+				Case 1
+					groupLevelNm = groupLevelNm_1
+				Case 2
+					groupLevelNm = groupLevelNm_2
+				Case 3
+					groupLevelNm = groupLevelNm_3
+				End Select
+				'//
+				'--# 팬방송 필요입장코인 처리
+				with objCmd
+					Call cmdPramDel(objCmd)
+					cmdRtnCode = ""
+					.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_fanCastCoin]"
+					.commandType = &H0004
+					.activeConnection = nothing
+					.activeConnection = OLEDB_CAST5
+					.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+					.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+					.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+					.Parameters.Append .CreateParameter("@watch_partnerCode", adVarChar, adParamInput, 7)
+					.Parameters.Append .CreateParameter("@cast_fanLevel", adSmallInt, adParamInput, 2)
+					.Parameters.Append .CreateParameter("@giftCoin", adInteger, adParamOutput, 4)
+					.Parameters("@signId") = cast_signId
+					.Parameters("@partnerCode") = cast_PartnerCode
+					.Parameters("@watch_signId") = signId
+					.Parameters("@watch_partnerCode") = PartnerCode
+					.Parameters("@cast_fanLevel") = castFanLevel
+					.Parameters("@giftCoin") = 0
+					.execute()
+					fanLevelGiftCoin = .parameters("@giftCoin")
+				End With
+				'//
+				'--# 그룹방송 시청불가 결과처리
+				If fanLevelGiftCoin <= 0 Then
+					call resultJsonSet("E7","회원님의 팬등급이 방송자에 의해 하향 조정되어 시청이 불가능 합니다.")
+				Else
+					needCoin = fanLevelGiftCoin
+						call resultJsonSet("A1","본 방송은 [" & groupLevelNm & "]팬클럽 방송이며 해당 팬클럽에 가입하려면 " & SERVICE_COIN_NAME & " [" & fanLevelGiftCoin & "]개가 필요합니다. 가입 후 시청하시겠습니까?")
+				End If
+				'//
+			End If
+		End If
+		'// 팬방송 확인
+
+		'--# 유료방송 확인
+		If castType = 7 Then
+			'--# 시청 코인지불 내역확인
+			with objCmd
+				Call cmdPramDel(objCmd)
+				cmdRtnCode = ""
+				.commandText = "[B_COIN].[dbo].[JBN_JSON_ticketCoinUseCheck]"
+				.commandType = &H0004
+				.activeConnection = nothing
+				.activeConnection = OLEDB_CTICAST5
+				.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@watch_PartnerCode", adVarChar, adParamInput,7)
+				.Parameters.Append .CreateParameter("@cast_PartnerCode", adVarChar, adParamInput,7)
+				.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput)
+				.Parameters("@watch_signId") = signId
+				.Parameters("@cast_signId") = cast_signId
+				.Parameters("@watch_PartnerCode") = partnerCode
+				.Parameters("@cast_PartnerCode") = cast_partnerCode
+				.Parameters("@return") = 0
+				.execute()
+				'# @return (0:내역존재, 1:내역없음)
+				cmdRtnCode = .parameters("@return")
+			End with
+			'//
+
+			'--# 시청 코인지불 내역없음
+			If Not cmdRtnCode = 0 Then	
+				'# 시청 코인금액 확인
+				with objCmd
+					Call cmdPramDel(objCmd)
+					.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castMemberSearch_DDD]"
+					.commandType = &H0004
+					.activeConnection = nothing
+					.activeConnection = OLEDB_CAST
+					.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+					.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+					.Parameters("@signId") = cast_signId
+					.Parameters("@partnerCode") = cast_partnerCode
+					Set cmdRs = .execute()
+				End With
+				If Not cmdRs.eof then
+					needCoin = cmdRs("tiketCoin")
+				Else
+					call resultJsonSet("1","JJCMS")
+				End If
+				Set cmdRs = nothing
+				'# 시청 코인금액 정보
+				call resultJsonSet("A3","본 방송은 유료방송이며, 입장료 " & SERVICE_COIN_NAME & " " & needCoin & "개가 소진됩니다. 시청하시겠습니까?")
+			End If
+			'// 
+		End if
+		'//
+
+		'--# 시청인원제한 확인
+		If accountLevel < 1 Then
+			with objCmd
+				Call cmdPramDel(objCmd)
+				cmdRtnCode = "0"
+				.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step3_MaxInCheck_DDD]"
+				.commandType = &H0004
+				.activeConnection = nothing
+				.activeConnection = OLEDB_CAST
+				.Parameters.Append .CreateParameter("@pk_castCode", adVarChar, adParamInput, 40)
+				.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+				.Parameters.Append .CreateParameter("@cast_partnerCode", adVarChar, adParamInput,7)
+				.Parameters.Append .CreateParameter("@watch_partnerCode", adVarChar, adParamInput,7)
+				.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 10)
+				.Parameters("@pk_castCode") = castCode
+				.Parameters("@cast_signId") = cast_signId
+				.Parameters("@watch_signId") = signId
+				.Parameters("@cast_partnerCode") = cast_partnerCode
+				.Parameters("@watch_partnerCode") = partnerCode
+				.Parameters("@return") = 0
+				.execute()
+				cmdRtnCode = .parameters("@return")
+			End With
+			'# @return (0:시청인원 가능, 1:시청인원 불가능)
+			If cmdRtnCode = 1 Then
+				if exePath = 8 Or exePath = 16 then
+					call resultJsonSet("A2","시청인원이 초과되어 시청이 불가능합니다. 아이템이 필요합니다.")
+				else
+					call resultJsonSet("A2","시청인원이 초과되어 시청이 불가능합니다. 풀방 입장 아이템을 구매하시겠습니까?")
+				end if
+			End If
+		End If
+		'// 
+
+	End if
+	'// 일반시청자 처리
+
+	'--# 매니저 시청자 처리
+	If accountLevel = 2 Then
+		'--# 방송시청 차단확인
+		call blockCheck()
+	End if
+	'//
+	'AOS player 체크'
+	playerType = getplayerType(exePath, androidStore)
+End if
+'// 시청신호처리
+'--# 방송시청 시작/종료 로그
+'with objCmd
+'	Call cmdPramDel(objCmd)
+'	cmdRtnCode = ""
+'	.commandText = "B_CASTDATA.JBN_JSON_castWatchLog_Insert2"
+'	.commandType = &H0004
+'	.activeConnection = nothing
+'	.activeConnection = OLEDB_171
+'	.Parameters.Append .CreateParameter("@castCode", adVarChar, adParamInput, 40)
+'	.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+'	.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput,25)
+'	.Parameters.Append .CreateParameter("@logDateCode", adVarChar, adParamInput,14)
+'	.Parameters.Append .CreateParameter("@watchType", adSmallInt, adParamInput, 2)
+'	.Parameters.Append .CreateParameter("@watchPath", adSmallInt, adParamInput, 2)
+'	.Parameters.Append .CreateParameter("@cast_partnerCode", adVarChar, adParamInput,7)
+'	.Parameters.Append .CreateParameter("@watch_partnerCode", adVarChar, adParamInput,7)
+'	.Parameters.Append .CreateParameter("@logType", adSmallInt, adParamInput, 2)
+'	.Parameters.Append .CreateParameter("@V_IP", adVarChar, adParamInput, 25)
+'	.Parameters("@castCode") = castCode
+'	.Parameters("@cast_signId") = cast_signId
+'	.Parameters("@watch_signId") = signId
+'	.Parameters("@logDateCode") = getDateTimeCode()
+'	.Parameters("@watchType") = castType
+'	.Parameters("@watchPath") = exePath
+'	.Parameters("@cast_partnerCode") = cast_partnerCode
+'	.Parameters("@watch_partnerCode") = partnerCode
+'	.Parameters("@logType") = commandType
+'	.Parameters("@V_IP") = REMOTE_ADDR
+'	.execute()
+'End with	
+'//
+
+'--# NODE 채팅서버 Request
+'# commandType (0:방송시청, 1:방송시청종료)
+'# chatServerType (A:wowza, B:node)
+If commandType = 0 And chatServerType = "B" Then
+	'--# 회원정보
+	With objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = 0
+		.commandText = "[B_MEMBER].[dbo].[JBN_WEB_memberPublicSearch]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CAST
+		.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+		.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput)	
+		.Parameters("@signId") = signId
+		.Parameters("@partnerCode") = partnerCode
+		.Parameters("@return") = 0
+		Set cmdRs = .execute()
+	End With
+	If cmdRs.eof Then
+		call resultJsonSet("E8","회원정보를 확인할 수 없어 방송을 시청할 수 없습니다.")
+	Else
+		memberSex = cmdRs("memberSex")
+		nickName = cmdRs("nickName")
+		isAdultCheck = cmdRs("isAdultCheck")
+		If memberSex Then
+			memberSex = "1"
+		else
+			memberSex = "0"
+		End If
+		If nickName = "" Or isNull(nickName) Then
+			nickName = Left(signId,8)
+		End if				
+		if castisAdult or cstr(castcategory) = "20" then
+			if not isAdultCheck then
+				call resultJsonSet("E9","19세 미만은 시청이 불가능합니다.")
+			end if
+		end if
+	End If
+	Set cmdRs = Nothing
+
+	dim vhImagFlnm, vhImagFlnmGIF
+	'--# 입장효과 설정 조회
+	With objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = 0
+		.commandText = "[B_ITEM].[dbo].[USP_Get_AQItemUsgstsChck_002]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CTICAST5
+		.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7)
+		.Parameters.Append .CreateParameter("@effectType", adInteger, adParamOutput)	
+		.Parameters.Append .CreateParameter("@vhImagFlnm", adVarChar, adParamOutput, 255)
+		.Parameters("@signId") = signId
+		.Parameters("@partnerCode") = partnerCode
+		.Parameters("@effectType") = 0
+		.execute()
+		'# @return (0:없음 , 1~:입장효과 코드)
+		cmdRtnCode = .parameters("@effectType")
+	End With
+	If cmdRtnCode <> 0 Then
+		if cmdRtnCode = 5 Then	'아바타 일경우			
+			vhImagFlnm = objCmd.parameters("@vhImagFlnm")
+			if vhImagFlnm <> "" then
+				vhImagFlnmGIF = split(vhImagFlnm, ".")(0)+".gif"
+				vhImagFlnm = "https://"& IMAGE_SERVER_URL & "/profile_thumb/"& partnerCode & "/" & Left(signId,1) & "/" & Left(signId,2) &"/"&vhImagFlnm
+				vhImagFlnmGIF = "https://"& IMAGE_SERVER_URL & "/profile_thumb/"& partnerCode & "/" & Left(signId,1) & "/" & Left(signId,2) &"/"&vhImagFlnmGIF
+			end if
+			itemlist = ", ""items"":[{""item"":""enterevt"", ""value"":"""& cmdRtnCode &""", ""avatarURL"":"""& vhImagFlnm &""", ""avatarGIFURL"":"""& vhImagFlnmGIF &""", ""to"":""room""}]"		
+		else
+			itemlist = ", ""items"":[{""item"":""enterevt"", ""value"":"""& cmdRtnCode &""", ""to"":""room""}]"		
+		end if
+	End If
+	vhImagFlnm = ""
+	vhImagFlnmGIF = ""
+	'--# 활성 아바타 조회
+	With objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = 0
+		.commandText = "[B_BOARD].[dbo].[USP_Get_AvtrPrflImag_001]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CAST4
+		.Parameters.Append .CreateParameter("@vchMmbri", adVarChar, adParamInput, 25, signId)
+		.Parameters.Append .CreateParameter("@chrPrtsCd", adVarChar, adParamInput, 7, partnerCode)			
+		Set cmdRs = .execute()
+	End With
+	If not cmdRs.eof Then
+		vhImagFlnm = cmdRs("attachFileName")
+		if vhImagFlnm <> "" then
+			vhImagFlnmGIF = split(vhImagFlnm, ".")(0)+".gif"
+			vhImagFlnm = "https://"& IMAGE_SERVER_URL & "/profile_thumb/"& partnerCode & "/" & Left(signId,1) & "/" & Left(signId,2) &"/"&vhImagFlnm
+			vhImagFlnmGIF = "https://"& IMAGE_SERVER_URL & "/profile_thumb/"& partnerCode & "/" & Left(signId,1) & "/" & Left(signId,2) &"/"&vhImagFlnmGIF
+		end if
+	end if
+	'--# 코인지불 내역확인
+	with objCmd
+		Call cmdPramDel(objCmd)
+		cmdRtnCode = ""
+		.commandText = "[B_COIN].[dbo].[LHY_JSON_coinUseCheck]"
+		.commandType = &H0004
+		.activeConnection = nothing
+		.activeConnection = OLEDB_CTICAST5
+		.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+		.Parameters.Append .CreateParameter("@watch_PartnerCode", adVarChar, adParamInput,7)
+		.Parameters.Append .CreateParameter("@cast_PartnerCode", adVarChar, adParamInput,7)
+		.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput)
+		.Parameters("@watch_signId") = signId
+		.Parameters("@cast_signId") = cast_signId
+		.Parameters("@watch_PartnerCode") = partnerCode
+		.Parameters("@cast_PartnerCode") = cast_partnerCode
+		.Parameters("@return") = 0
+		.execute()
+		'# @return (0:내역없음, 1:내역존재)
+		isGifter = .parameters("@return")
+	End with
+	'//	
+	
+	'# NODE request
+	If Not chatAddress = "" Then
+		Dim sSvcLevel : sSvcLevel = 1
+		dim SvcLevelViewYn : SvcLevelViewYn = "N"
+		dim chatBubbleCd
+		with objCmd
+			Call cmdPramDel(objCmd)
+			.commandText = "[B_MEMBER].[dbo].[USP_Get_BrdcrSvcLvlExp_002]"
+			.commandType = &H0004
+			.activeConnection = OLEDB_CAST
+			.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25, signId)
+			.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7, partnerCode)
+			.Parameters.Append .CreateParameter("@intLvlSeCd", adInteger, adParamInput, , 10002) '서비스 레벨
+			Set cmdRs = .execute()
+		End With
+		If Not cmdRs.eof Then
+			sSvcLevel = cmdRs("Lvl")
+			SvcLevelViewYn = cmdRs("SvcLvlExpsrYn")
+		End If
+		Set cmdRs = nothing
+		Dim sfanLevel : sfanLevel = 1
+		with objCmd
+			Call cmdPramDel(objCmd)
+			.commandText = "[B_MEMBER].[dbo].[USP_GetList_FanLvlExp]"
+			.commandType = &H0004
+			.activeConnection = OLEDB_CAST
+			.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25, signId)
+			.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7, partnerCode)
+			.Parameters.Append .CreateParameter("@vchBrdcrMmbri", adVarChar, adParamInput, 25, cast_signId)
+			.Parameters.Append .CreateParameter("@chrBrdcrPrtsCd", adVarChar, adParamInput, 7, cast_partnerCode)
+			Set cmdRs = .execute()
+		End With
+		If Not cmdRs.eof Then
+			sfanLevel = cmdRs("Lvl")
+		End If
+		Set cmdRs = nothing
+
+		with objCmd
+			Call cmdPramDel(objCmd)
+			.commandText = "[B_ITEM].[dbo].[USP_Get_ASItemUsgstsChck_002]"
+			.commandType = &H0004
+			.activeConnection = OLEDB_CTICAST5
+			.Parameters.Append .CreateParameter("@signId", adVarChar, adParamInput, 25, signId)
+			.Parameters.Append .CreateParameter("@partnerCode", adVarChar, adParamInput, 7, partnerCode)
+			Set cmdRs = .execute()
+		End With
+		If Not cmdRs.eof Then
+			chatBubbleCd = cmdRs("ItemCd")
+			if len(chatBubbleCd) > 4 then
+				chatBubbleCd = right(chatBubbleCd, 4)
+				if isnumeric(chatBubbleCd) then
+					chatBubbleCd = cint(chatBubbleCd)
+				end if
+			end if
+		End If
+		Set cmdRs = nothing	
+
+		dim oChatUtil
+		set oChatUtil = new chatUtil
+		oChatUtil.init()
+		call oChatUtil.castWatchOnOff(chatAddress, castCode, signId, nickName, memberSex, exePath, partnerCode, accountLevel, fanLevel, itemlist, isGifter, sSvcLevel, sfanLevel, SvcLevelViewYn, chatBubbleCd, isSecret, vhImagFlnm, vhImagFlnmGIF)
+		oChatUtil.destroy()
+		if oChatUtil.status <> "0" then
+			call resultJsonSet("1", oChatUtil.statusMsg)
+		end if
+	End if
+End if
+'//
+
+'--# ADO close
+Set objCmd = nothing
+'//
+
+'--# Success
+call resultJsonSet("0","SUCEESS")
+'//
+
+'--# [FUNCTION]
+Sub resultJsonSet(rstCode, rstMsg)
+	response.clear()
+	If Not rstCode = "0" Then
+		castAddress = ""
+	End if
+	dim errorCode
+	errorCode = ""
+	if len(rstCode) > 1 and left(rstCode, 1) = "E" then
+		errorCode = rstCode
+		rstCode = "1"
+	end if
+	dim strRst 
+	strRST = "{" & _
+		"""rst"":{""rstCode"" : """ & rstCode & """,""error"" : """ & errorCode & """,""rstMsg"" : """ & jsEncode(rstMsg) & """}," & _
+		"""castWatch"":{""accountLevel"":""" & accountLevel & """, ""fanLevel"":""" & fanLevel & """, ""fanLevelName"":""" & jsEncode(fanLevelName) & """, ""needCoin"":""" & needCoin & """, ""coin"":""" & coin & """, ""castAddress"":""" & jsEncode(castAddress) & """, ""isUpdate"":""" & isUpdate & """, ""vTK"":""" & vTK & """, ""isJoint"":""" & isJoint & """,""playerType"":""" & playerType & """,""category"":""" & castcategory & """}" & _
+	"}"
+
+	Response.Write(aesresult(strRST, aesver))
+	response.End()
+End Sub
+
+function blockCheck()
+	'--# 방송시청 차단확인
+		with objCmd
+			Call cmdPramDel(objCmd)
+			cmdRtnCode = ""
+			.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step2_BlockCheck]"
+			.commandType = &H0004
+			.activeConnection = nothing
+			.activeConnection = OLEDB_13
+			.Parameters.Append .CreateParameter("@cast_signId", adVarChar, adParamInput, 25)
+			.Parameters.Append .CreateParameter("@watch_signId", adVarChar, adParamInput, 25)
+			.Parameters.Append .CreateParameter("@cast_partnerCode", adVarChar, adParamInput,7)
+			.Parameters.Append .CreateParameter("@watch_partnerCode", adVarChar, adParamInput,7)
+			.Parameters.Append .CreateParameter("@return", adInteger, adParamOutput, 10)
+			.Parameters("@cast_signId") = cast_signId
+			.Parameters("@watch_signId") = signId
+			.Parameters("@cast_partnerCode") = cast_partnerCode
+			.Parameters("@watch_partnerCode") = partnerCode
+			.Parameters("@return") = 0
+			.execute()
+			'# @return (0:차단없음, 1:시청차단, 2:서비스차단, 3:방송자 차단)
+			cmdRtnCode = .parameters("@return")
+		End With
+		If Not cmdRtnCode = 0 then
+			Select Case cmdRtnCode
+			Case 1
+				call resultJsonSet("E6","해당 아이디는 방송시청 서비스가 정지되어 시청이 불가능 합니다.")
+			Case 2
+				call resultJsonSet("E6","해당 아이디는 서비스가 정지되어 시청이 불가능 합니다.")
+			Case 3
+				call resultJsonSet("E6","해당 아이디는 방송자에 의해 차단되어 시청이 불가능 합니다.")
+			Case Else
+				call resultJsonSet("E6","해당 아이디는 방송시청이 불가능 합니다.")
+			End Select
+		End If
+end function		
+'// [FUNCTION]
+%>
+
+
+
+
 https://devsys.popkontv.kr:9002/AS/member/registNickCheck.asp
  {"SC_NK":"프리미엄닉넴넴"}
  NicknameValidationResModel(rst=ResultModel(rstCode=0, rstMsg=사용 가능한 닉네임 입니다., pageNum=0, totalPageNum=0, totalListNum=0))

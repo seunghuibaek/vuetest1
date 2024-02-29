@@ -1,4 +1,10 @@
-�대� �쒕쾭 �ㅻ쪟媛� 諛쒖깮�덇린 �뚮Ц�� �섏씠吏�瑜� �쒖떆�� �� �놁뒿�덈떎.
+https://devsys.popkontv.kr:9002/AS/member/registNickCheck.asp
+ {"SC_NK":"프리미엄닉넴넴"}
+ NicknameValidationResModel(rst=ResultModel(rstCode=0, rstMsg=사용 가능한 닉네임 입니다., pageNum=0, totalPageNum=0, totalListNum=0))
+
+
+
+
 
 https://down.popcast.co.kr/beta/popkonTV_2.0_plus_v9.31.001.apk
 https://down.popcast.co.kr/beta/popkonTV_2.0_plus.apk

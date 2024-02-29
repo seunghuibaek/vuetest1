@@ -1,3 +1,30 @@
+rocket chat
+http://172.17.12.15:3000/home
+
+swagger
+https://127.0.0.1:8443/swagger-ui/index.html
+https://dev-api.popkontv.net/swagger-ui/index.html
+
+java 개발 가이드
+http://118.129.153.171:81/
+
+jenkins(DEV)
+http://114.141.29.144:15000/login?from=%2Fview%2FNext%2520API%2Fjob%2FNext%2520API%2520-%2520Popkon%2F
+enmadmin
+enmadmin123!@#
+
+
+쿠베서버
+https://service.whatap.io/account/login
+dev@theenm.com
+theenm12#
+
+pinpoint
+http://118.129.153.171/main/realtime/Next-api_dev@SPRING_BOOT
+
+
+
+
 
 
 https://devsys.popkontv.kr:9002/AS/member/registNickCheck.asp

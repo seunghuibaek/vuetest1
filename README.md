@@ -1,3 +1,17 @@
+3.12. 라이브 방송 추천 : castData/naCastRecommend.asp
+3.20. 방송 경고 castData/naCastWatchWarn.asp
+3.21. 외침권 사용메가폰 사용 castData/castClamor.asp
+4.6. VOD 추천 : recVod/mcVodRecmd.asp
+5.9. VOD - 댓글 추천 : castData/cateVodCommentRecommand.asp
+6.1. 코인선물/사용 : coin/naCoinUse.asp
+6.2. VOD 코인사용 : coin/vodCoinUse.asp
+11.4. 아이템 사용 : item/itemUse.asp
+
+위의 asp들이 사용하고 있는 sp를 적어주셈.
+예를 들어, castData/naCastRecommend.asp내에 실제로 추천을 플러스시키는 sp
+
+
+
 rocket chat
 http://172.17.12.15:3000/home
 

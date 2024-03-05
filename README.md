@@ -7,6 +7,13 @@
 6.2. VOD 코인사용 : coin/vodCoinUse.asp
 11.4. 아이템 사용 : item/itemUse.asp
 
+
+- 방송정보 확인 : 192.168.1.28 [B_CASTDATA].[dbo].[SSM_castOnData_codeSearch]
+    - 실행자 권한체크 : 192.168.1.28 [B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step1_LisenceCheck]
+    - 차단자 권한체크 : 192.168.1.28 [B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step1_LisenceCheck]
+    - 차단회원 닉네임 정보 : 192.168.1.28 [B_MEMBER].[dbo].[JBN_JSON_memberNickName]
+ 
+    - 
 위의 asp들이 사용하고 있는 sp를 적어주셈.
 예를 들어, castData/naCastRecommend.asp내에 실제로 추천을 플러스시키는 sp
 

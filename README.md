@@ -1,3 +1,9 @@
+https://devsys.popkontv.kr:9002/AS/member/naSignOn.asp
+{"SC_EP":7,"SC_PC":"P-00001","SC_SI":"popios5","SC_SK":"9fc3cb9b-e3b7-498c-b020-68a73fd29e27","SC_SP":"a123123"}
+data=rZGZuGT4KXtVW6r2Fhv0q3FeYnDA19VguFnL9JnX1RIf0bY6DFnEsDN56lyY6ScqH03lotFxCwEV%0APIbu1STgW3FLosCv33sLCVEk4kfYaYkwm7H5yUqqQMJc5cyOg8KhI3ksbHlxy%2FUTII0edZFI1N10%0Ay38CMxc%2FFMBxhBfxc80%3D%0A&key=781&v=2
+LoginResModel(rst=ResultModel(rstCode=1, rstMsg=아이디 또는 비밀번호를 다시 확인하세요., pageNum=0, totalPageNum=0, totalListNum=0), signOn=SignOn(memberSex=0, isAdult=0, nickName=, memberType=0, pFileName=, accountLevel=, pwdCode=, isNewBJ=0, isNameCheck=0, levelUp=0, svcLvl=0), memberBlockCheck=MemberBlockCheck(isBlock=0, isLoginBlock=0, blockRegDate=, blockDate=, blockMemo=))
+
+
 0x71B12A6C306E3B520569E7F14FD78661DA208F992AE7024DB1D74C3DFA81F623
 
 

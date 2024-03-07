@@ -1,3 +1,5 @@
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
 방송회원 B_MEMBER
 10.20.23.28
 USP_Mod_MmbrLoginProcess_002

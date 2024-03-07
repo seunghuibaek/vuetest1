@@ -1,3 +1,8 @@
+방송회원 B_MEMBER
+10.20.23.28
+USP_Mod_MmbrLoginProcess_002
+
+
 https://devsys.popkontv.kr:9002/AS/member/naSignOn.asp
 {"SC_EP":7,"SC_PC":"P-00001","SC_SI":"popios5","SC_SK":"9fc3cb9b-e3b7-498c-b020-68a73fd29e27","SC_SP":"a123123"}
 data=rZGZuGT4KXtVW6r2Fhv0q3FeYnDA19VguFnL9JnX1RIf0bY6DFnEsDN56lyY6ScqH03lotFxCwEV%0APIbu1STgW3FLosCv33sLCVEk4kfYaYkwm7H5yUqqQMJc5cyOg8KhI3ksbHlxy%2FUTII0edZFI1N10%0Ay38CMxc%2FFMBxhBfxc80%3D%0A&key=781&v=2

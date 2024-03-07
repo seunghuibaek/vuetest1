@@ -1,3 +1,6 @@
+0x71B12A6C306E3B520569E7F14FD78661DA208F992AE7024DB1D74C3DFA81F623
+
+
 https://devsys.popkontv.kr:9002/AS/member/naSignOn.asp
 {"SC_EP":7,"SC_PC":"P-00001","SC_SI":"popaos3","SC_SK":"a542f1f0-bb3b-4e90-a57b-c3ae282c8e13","SC_SP":"a123123"}
 LoginResModel(rst=ResultModel(rstCode=1, rstMsg=아이디 또는 비밀번호를 다시 확인하세요., pageNum=0, totalPageNum=0, totalListNum=0), signOn=SignOn(memberSex=0, isAdult=0, nickName=, memberType=0, pFileName=, accountLevel=, pwdCode=, isNewBJ=0, isNameCheck=0, levelUp=0, svcLvl=0), memberBlockCheck=MemberBlockCheck(isBlock=0, isLoginBlock=0, blockRegDate=, blockDate=, blockMemo=))

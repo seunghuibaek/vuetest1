@@ -1,3 +1,8 @@
+로그 추가 내용..
+sys1  api 호출시 -> (필수 : 시간, exepath, 기기, 방송자 id ),,(기타:전달받은 모든 파라메터)
+푸시 서버 api 호출시 -> (필수: 시간, exepath, 기기, 방송자 id), (기타 : 넘기는 모든 데이터)
+
+
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
 방송회원 B_MEMBER

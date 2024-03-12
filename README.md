@@ -1,3 +1,44 @@
+Function get_browser()
+
+ Dim browser_arr(3)
+ os = "known"
+ browser = "known"
+ device = "PC"
+ is_mobile = False
+
+ agent = request.ServerVariables("HTTP_USER_AGENT")
+
+ '//browser
+ if instr(agent,"Chrome") > 0 then
+  browser = "Chrome"
+ end if
+ if instr(agent,"MSIE") > 0 then
+  browser = "IE"
+ end if
+ if instr(agent,"rv:") > 0 then
+  browser = "IE"
+ end if
+ if instr(agent,"Android") > 0 then
+  browser = "android"
+ end if
+ if instr(agent,"iPhone") > 0 then
+  browser = "iphone"
+ end if
+
+ '//OS
+ if instr(agent,"Windows") > 0 then
+  os = "Windows"
+ end If
+ if instr(agent,"Linux") > 0 then
+  os = "Linux"
+ end If
+
+ '//device
+ if instr(agent,"Android") > 0 then
+  device = "android"
+ end if
+
+
 로그 추가 내용..
 sys1  api 호출시 -> (필수 : 시간, exepath, 기기, 방송자 id ),,(기타:전달받은 모든 파라메터)
 푸시 서버 api 호출시 -> (필수: 시간, exepath, 기기, 방송자 id), (기타 : 넘기는 모든 데이터)

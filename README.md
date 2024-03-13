@@ -1,3 +1,14 @@
+/home/theenm/.pm2/logs/pushAPI-out-74.log:5776:[2024/03/13 13:39:57] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-78.log:5587:[2024/03/13 10:37:38] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-80.log:5641:[2024/03/13 11:36:56] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-81.log:5767:[2024/03/13 11:23:09] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-81.log:5769:[2024/03/13 11:35:35] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-82.log:5601:[2024/03/13 10:54:25] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-82.log:5605:[2024/03/13 11:21:32] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+/home/theenm/.pm2/logs/pushAPI-out-83.log:5652:[2024/03/13 13:45:10] /home/theenm/pushpopkon/routes/push.js:48:8 ==## post : jeonger4303-20240313103648, jeonger4303, P-00001
+
+
+
 URL:https://devsys.popkontv.kr:9002/AS/member/pwdCheck.asp
  PARAMS:["SC_SI": "eirurhd", "SC_PC": "P-00001", "SC_SP": "qpwoeiruty1!"]
  

@@ -1,4 +1,10 @@
-angelgucci012
+URL:https://devsys.popkontv.kr:9002/AS/member/pwdCheck.asp
+ PARAMS:["SC_SI": "eirurhd", "SC_PC": "P-00001", "SC_SP": "qpwoeiruty1!"]
+ 
+URL:https://devsys.popkontv.kr:9002/AS/member/pwdCheck.asp
+ PARAMS:["SC_SI": "eirurhd", "SC_PC": "P-00001", "SC_SP": "qpwoeiruty1!"] 
+- Result -
+ {"rst":{"rstCode" : "1","rstMsg" : "안전하지 않은 비밀번호입니다."}}
 
 
 Function get_browser()

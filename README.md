@@ -1,5 +1,6 @@
 손세웅 <sw.son@theenm.com>
-
+"박남희A/팀장/모바일팀" <nh.park@theenm.com>
+"허재원/부장/기술개발부" <jw.huh@theenm.com>
 wjdgmdqo2
 
 

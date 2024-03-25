@@ -1,3 +1,34 @@
+class JasyptConfigTest {
+
+    @Test
+    void jasypt(){
+        String url = "jdbc:mysql://localhost:3306/test";
+        String username = "root";
+        String password = "1234";
+
+        String encryptUrl = jasyptEncrypt(url);
+        String encryptUsername = jasyptEncrypt(username);
+
+        System.out.println("encryptUrl : " + encryptUrl);
+        System.out.println("encryptUsername : " + encryptUsername);
+
+        Assertions.assertThat(url).isEqualTo(jasyptDecryt(encryptUrl));
+    }
+
+    private String jasyptEncrypt(String input) {
+        StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
+        return encryptor.encrypt(input);
+    }
+
+    private String jasyptDecryt(String input){
+        StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
+        return encryptor.decrypt(input);
+    }
+
+}
+
+
+
 import org.jasypt.encryption.StringEncryptor;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
 import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;

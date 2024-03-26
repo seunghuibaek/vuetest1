@@ -1,12 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+logback-spring.xml
 
+<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<settings>
-		<setting name="mapUnderscoreToCamelCase" value="true" />
-		<setting name="callSettersOnNulls" value="true"/>
-	</settings>
+<appender name="STDOUT"
+		  class="ch.qos.logback.core.ConsoleAppender">
+	<encoder>
+		<pattern>%boldMagenta(%d{MM-dd HH:mm:ss}) [%boldYellow(%-5level)] %cyan(%logger{5}.%M) - %msg %n</pattern>
+	</encoder>
+</appender>
+<logger name="jdbc" level="OFF" />
+<logger name="jdbc.sqlonly" level="INFO" />
+<logger name="jdbc.sqltiming" level="OFF" />
+<logger name="jdbc.audit" level="OFF" />
+<logger name="jdbc.resultset" level="OFF" />
+<logger name="jdbc.resultsettable" level="OFF" />
+<logger name="jdbc.connection" level="OFF" />
+<root level="INFO">
+	<appender-ref ref="STDOUT" />
+</root>
+
+<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+<include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+<root level="info">
+	<appender-ref ref="CONSOLE"/>
+</root>
 </configuration>
+출처: https://jangjjolkit.tistory.com/40 [장쫄깃 기술블로그:티스토리]
+
 
 import org.jasypt.encryption.StringEncryptor;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;

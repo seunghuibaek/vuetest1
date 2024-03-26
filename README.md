@@ -1,32 +1,45 @@
-logback-spring.xml
-
+TestMapper.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-<appender name="STDOUT"
-		  class="ch.qos.logback.core.ConsoleAppender">
-	<encoder>
-		<pattern>%boldMagenta(%d{MM-dd HH:mm:ss}) [%boldYellow(%-5level)] %cyan(%logger{5}.%M) - %msg %n</pattern>
-	</encoder>
-</appender>
-<logger name="jdbc" level="OFF" />
-<logger name="jdbc.sqlonly" level="INFO" />
-<logger name="jdbc.sqltiming" level="OFF" />
-<logger name="jdbc.audit" level="OFF" />
-<logger name="jdbc.resultset" level="OFF" />
-<logger name="jdbc.resultsettable" level="OFF" />
-<logger name="jdbc.connection" level="OFF" />
-<root level="INFO">
-	<appender-ref ref="STDOUT" />
-</root>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
-<include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+<mapper namespace="com.jdh.dsTest.model.dao.TestMapper">
+	<select id="selectTest" resultType="String">
+		select test_nm from test_table;
+	</select>
+</mapper>
 
-<root level="info">
-	<appender-ref ref="CONSOLE"/>
-</root>
-</configuration>
-출처: https://jangjjolkit.tistory.com/40 [장쫄깃 기술블로그:티스토리]
+
+
+TestMapper.java
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface TestMapper {
+	public String selectTest() throws Exception;
+}
+
+service
+@Service
+public class TestService {
+	@Autowired TestMapper testMapper;
+	
+	public String getTest() throws Exception {
+		return testMapper.selectTest();
+	}
+}
+
+
+controller
+@Slf4j
+@SpringBootTest
+public class TestController {
+	@Autowired TestService service;
+	
+	@Test
+	public void test() throws Exception {
+		log.info(service.getTest());
+	}
+}
 
 
 import org.jasypt.encryption.StringEncryptor;

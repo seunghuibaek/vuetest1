@@ -1,12 +1,11 @@
-TestMapper.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<mapper namespace="com.jdh.dsTest.model.dao.TestMapper">
-	<select id="selectTest" resultType="String">
-		select test_nm from test_table;
-	</select>
-</mapper>
+/AS/castData/naViewCastList.asp
+Select Case partnerCode 
+	' [방송공유 주] - 킹콩티비 [방송공유 이하] 강냉이티비 킹티비 96티비 99티비 포도티비 3040티비 77티비 여기티비' 인스타티비
+	case "P-00041", "P-00002", "P-00060", "P-00067", "P-00069", "P-00070", "P-00072", "P-00073", "P-00075", "P-00008"
+		cmdTxt = "EXEC [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_Kingkong_004] "
+	case else
+		cmdTxt = "EXEC [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] "
+	end select
 
 
 

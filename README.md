@@ -7,7 +7,15 @@ Select Case partnerCode
 		cmdTxt = "EXEC [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] "
 	end select
 
-
+exec USP_GetList_CastOnListSrchForAPI_004 0, '', 0, 0, 0, 'P-00001', 'Y', 'Y'
+0:전체목록, 1:방송제목+아이디+닉네임검색
+검색어
+카테고리 :: [0: 전체, 10:개인, 11:신인, 20:19+, 14:스포츠, 16:게임, 13:음악, 12:영화]  
+정렬타입 :: [0: 최신순, 1: 인기순, 2: 시청자순] 
+방송노출디바이스 :: [0:방송 목록 전체, 1:모바일, 2:PC]  
+파트너코드
+로그인_여부 :: [Y: YES N: NO]  
+성인_인증_여부 :: [Y: YES N: NO]  
 
 TestMapper.java
 import org.apache.ibatis.annotations.Mapper;

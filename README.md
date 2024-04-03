@@ -1,3 +1,5 @@
+https://github.com/seunghuibaek/02.redburn
+
 /AS/castData/naViewCastList.asp
 Select Case partnerCode 
 	' [방송공유 주] - 킹콩티비 [방송공유 이하] 강냉이티비 킹티비 96티비 99티비 포도티비 3040티비 77티비 여기티비' 인스타티비

@@ -1,3 +1,8 @@
+[B_CASTDATA].[dbo].[USP_GetList_CastOnListTopForWeb_003]
+[B_CASTDATA].[dbo].[USP_Get_CastOnCnt]
+[B_CASTDATA].[dbo].[USP_GetList_CastOnListForWeb_003]
+
+
 SC_STYP (0:최신순, 1:시청순, 2:추천순, 3:90일이내 랜덤 )
 192.168.1.14
 SC_STYP 값이 3인 경우

@@ -1,3 +1,11 @@
+SC_PN - 목록 페이지 넘버
+SC_GP - 카테고리 그룹코드(groupCode. 13: 셀럽전용)
+SC_IA - 성인 여부(1 : 성인, 0: 비성인)
+SC_STYP - 정렬 순서(0:최신순, 1:시청순, 2:추천순, 3:90일이내 랜덤)
+SC_SCTE - 검색 카테고리(0: 전체, 1: groupCode 13 일 경우 셀럽 전용: 나머지VOD, 2: groupCode 13 일 경우 셀럽 전용: I’m Celuv, 3: groupCode 13 일 경우 셀럽 전용: Celuv news)
+SC_PC - 실행프로그램 파트너사 코드
+
+
 URL:https://devsys.popkontv.kr:9002/AS/castData/cateGrpVodList.asp
  PARAMS:["SC_PN": "1", "SC_GP": "17", "SC_IA": "0", "SC_STYP": "0", "SC_SCTE": "0", "SC_PC": "P-00001"]
  

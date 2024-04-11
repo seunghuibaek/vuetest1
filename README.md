@@ -1,3 +1,7 @@
+URL:https://devsys.popkontv.kr:9002/AS/castData/cateGrpVodList.asp
+ PARAMS:["SC_PN": "1", "SC_GP": "17", "SC_IA": "0", "SC_STYP": "0", "SC_SCTE": "0", "SC_PC": "P-00001"]
+ 
+
 USP_GetList_CastOnListTopForWeb_003
 우선 순위 방송 갯수 조회	 USP_Get_CastOnCnt
 라이브 리스트  USP_GetList_CastOnListForWeb_003

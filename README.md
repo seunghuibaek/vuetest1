@@ -1,3 +1,11 @@
+SC_STYP (0:최신순, 1:시청순, 2:추천순, 3:90일이내 랜덤 )
+192.168.1.14
+SC_STYP 값이 3인 경우
+    [B_VOD].[dbo].[LHY_WEB_vodCategory_Listrandom]
+그 외
+    [B_VOD].[dbo].[LHY_cateGrpVodList] 
+    
+
 SC_PN - 목록 페이지 넘버
 SC_GP - 카테고리 그룹코드(groupCode. 13: 셀럽전용)
 SC_IA - 성인 여부(1 : 성인, 0: 비성인)

@@ -1,3 +1,7 @@
+{"SC_GP":1,"SC_IA":1,"SC_PC":"P-00001","SC_PN":1,"SC_SCTE":9,"SC_STYP":0}
+ https://devsys.popkontv.kr:9002/AS/castData/cateGrpVodList.asp
+ 
+
 [B_CASTDATA].[dbo].[USP_GetList_CastOnListTopForWeb_003]
 [B_CASTDATA].[dbo].[USP_Get_CastOnCnt]
 [B_CASTDATA].[dbo].[USP_GetList_CastOnListForWeb_003]

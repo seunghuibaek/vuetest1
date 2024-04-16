@@ -1,6 +1,14 @@
 ppknapisvcacc  Wfq3>Mmj5&!Adc4=
 ppknwebsvcacc   kMP\9?zxnU2th)GX
 
+ppknwebsvcacc : kMP\9?zxnU2th)GX
+ppknwebsvcacc 암호화 : ta3gDj0NGbuAGl/SlXshRSlTUH1F4dMJFVjhUwb87Vs=
+ppknwebsvcacc 복호화 : kMP\9?zxnU2th)GX
+
+ppknapisvcacc : Wfq3>Mmj5&!Adc4=
+ppknapisvcacc 암호화 : /jJLDoiDek/X7u8wLFfWf0Zkk1vz61eFZKrBrv55+gY=
+ppknapisvcacc 복호화 : Wfq3>Mmj5&!Adc4=
+
 {"SC_GP":1,"SC_IA":1,"SC_PC":"P-00001","SC_PN":1,"SC_SCTE":9,"SC_STYP":0}
  https://devsys.popkontv.kr:9002/AS/castData/cateGrpVodList.asp
  

@@ -1,5 +1,6 @@
 ppknapisvcacc  Wfq3>Mmj5&!Adc4=
 ppknwebsvcacc   kMP\9?zxnU2th)GX
+smsuser   mq92\ExdyL&b>Ds7
 
 ppknwebsvcacc : kMP\9?zxnU2th)GX
 ppknwebsvcacc 암호화 : ta3gDj0NGbuAGl/SlXshRSlTUH1F4dMJFVjhUwb87Vs=

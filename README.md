@@ -1,3 +1,7 @@
+{"SC_PC":"P-00001","SC_SI":"popaos6","SC_SP":"0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09"}
+https://devsys.popkontv.kr:9002/AS/castData/naListupItemCnt.asp
+
+
 sys1 [B_VOD].[dbo].[LHY_WEB_VodList_search]
 
 # Vue3 템플릿 with Webpack

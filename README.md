@@ -1,4 +1,8 @@
-https://gunnm.tistory.com/54
+CMD 
+ 
+경로 이동 :  c:\windows\system32\inetsrv\  
+ 
+appcmd list site > c:\sites.txt
 
 https://docs.google.com/spreadsheets/d/1GdL9EmI5g3sm8diL2TIBIoJiKJxXq-KOttANFIbxAkY/edit#gid=2063274356
 

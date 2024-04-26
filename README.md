@@ -1,3 +1,5 @@
+https://gunnm.tistory.com/54
+
 https://docs.google.com/spreadsheets/d/1GdL9EmI5g3sm8diL2TIBIoJiKJxXq-KOttANFIbxAkY/edit#gid=2063274356
 
 

@@ -1,4 +1,6 @@
-select top 100 * from bankBookSmsRecvLog with(nolock) where pk_code = 2209656
+http://news.mk.co.kr/cp/popcon/mbnstar.xml
+http://news.mk.co.kr/cp/popcon/sports.xml
+
 
 2209656
 [Web발신]KB606401**772 입출금통지수수료  2700 원 05.02 부과예정입니다 .

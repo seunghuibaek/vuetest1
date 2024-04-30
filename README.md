@@ -1,5 +1,7 @@
-[Web발신]신한04/26 11:20140-011-623907입금        100이은서 / 2024-04-26 11:21:05.267
+select top 100 * from bankBookSmsRecvLog with(nolock) where pk_code = 2209656
 
+2209656
+[Web발신]KB606401**772 입출금통지수수료  2700 원 05.02 부과예정입니다 .
 
 CMD 
  

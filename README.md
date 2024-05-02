@@ -1,4 +1,13 @@
 
+API Server IP : 114.141.29.118
+
+
+AS/push/getPushKeyInfo.asp |102|80004005|[DBNETLIB][ConnectionOpen_(Connect()).]SQL_Server가_없거나_액세스할_수_없습니다. 9001 - 192.168.1.41 - - 500 0 0 7 114.141.29.126
+/AS/push/getPushKeyInfo.asp |102|80004005|지정되지_않은_오류입니다. 9001 - 192.168.1.41 - - 500 0 0 8 114.141.29.126
+AS/push/getPushKeyInfo.asp |102|80004005|로그인_시간_제한이_만료되었습니다. 9001 - 192.168.1.34 - - 500 0 0 7 114.141.29.126
+AS/push/getPushKeyInfo.asp |102|80004005|[DBNETLIB][ConnectionOpen_(Connect()).]SQL_Server가_없거나_액세스할_수_없습니다. 9001 - 192.168.1.41 - - 500 0 0 7 114.141.29.126
+
+
 [B_PUSH].[dbo].[LJC_PUSH_pushKeyInfo_V2]
 192.168.1.221
 

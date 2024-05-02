@@ -1,3 +1,10 @@
+AS/push/getAnniversaryPushKeyInfo.asp
+AS/push/getPushKeyInfo.asp
+AS/push/getPushItemKeyInfo.asp
+SC_DT
+
+
+
 192.168.1.221
 [B_PUSH].[dbo].[LJC_PUSH_pushKeyInfo_V2]
 [B_PUSH].[dbo].[USP_GetList_PushKeySndngInfo_002]

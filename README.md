@@ -1,9 +1,4 @@
-AS/push/getAnniversaryPushKeyInfo.asp
-AS/push/getPushKeyInfo.asp
-AS/push/getPushItemKeyInfo.asp
-SC_DT
-
-
+https://www.youtube.com/watch?v=CCpibp_Re7g
 
 192.168.1.221
 [B_PUSH].[dbo].[LJC_PUSH_pushKeyInfo_V2]

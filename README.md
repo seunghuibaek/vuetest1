@@ -1,3 +1,10 @@
+/AS/push/getPushKeyInfo.asp
+
+{"statusCode":500,"body":"내부 서버 오류가 발생했기 때문에 페이지를 표시할 수 없습니다.","headers":{"cache-control":"no-cache,private","pragma":"no-cache","content-type":"text/html","expires":"Thu, 02 May 2024 01:57:26 GMT","server":"","x-aspnet-version":"","x-powered-by":"","date":"Thu, 02 May 2024 01:58:47 GMT","connection":"close","content-length":"87"},"request":{"uri":{"protocol":"http:","slashes":true,"auth":null,"host":"sys1.popkontv.kr:9001","port":"9001","hostname":"sys1.popkontv.kr","hash":null,"search":null,"query":null,"pathname":"/AS/push/getPushKeyInfo.asp","path":"/AS/push/getPushKeyInfo.asp","href":"http://sys1.popkontv.kr:9001/AS/push/getPushKeyInfo.asp"},"method":"POST","headers":{"content-type":"application/x-www-form-urlencoded","content-length":118}}}
+[2024/05/02 10:58:29] 
+
+
+
 http://news.mk.co.kr/cp/popcon/mbnstar.xml
 http://news.mk.co.kr/cp/popcon/sports.xml
 

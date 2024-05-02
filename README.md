@@ -1,3 +1,7 @@
+192.168.1.221
+[B_PUSH].[dbo].[LJC_PUSH_pushKeyInfo_V2]
+[B_PUSH].[dbo].[USP_GetList_PushKeySndngInfo_002]
+
 
 API Server IP : 114.141.29.118
 

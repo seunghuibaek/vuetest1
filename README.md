@@ -1,3 +1,8 @@
+/AS/paper/paperSend.asp
+  받는 사람 아이디를 확인해주세요
+
+  https://theenmgw.daouoffice.com/app/todo/13419/card/214366
+
 https://www.youtube.com/watch?v=CCpibp_Re7g
 
 192.168.1.221

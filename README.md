@@ -1,3 +1,5 @@
+https://docs.google.com/spreadsheets/d/1mAING65kdHJS6bMPXuTaaKA1IghjZyZFwL2029_D7Nc/edit#gid=0
+
 /AS/paper/paperSend.asp
   받는 사람 아이디를 확인해주세요
 

@@ -1,3 +1,6 @@
+C:\Users\{$사용자}\AppData\Local\Atlassian\SourceTree.exe_Url_4ir5kstrwxmih14qvtxzf3dqvbfexoj2\3.1.2.3027
+ Composition.cache 파일을 삭제
+
 '에러로그 파일에 기록..
 Dim Fso, LogPath, Sfile
 Set Fso=CreateObject("Scripting.FileSystemObject")

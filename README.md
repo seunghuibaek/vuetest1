@@ -1,3 +1,51 @@
+'에러로그 파일에 기록..
+Dim Fso, LogPath, Sfile
+Set Fso=CreateObject("Scripting.FileSystemObject")
+
+LogPath = Server.MapPath ("/ErrHandler/log/Err") & date & ".log"
+
+
+Set Sfile = Fso.OpenTextFile(LogPath,8,true)
+
+Sfile.WriteLine "Date : " & now()
+Sfile.WriteLine "Domain : " & Request.ServerVariables("HTTP_HOST")
+Sfile.WriteLine "Browser : " & Request.ServerVariables("HTTP_USER_AGENT")
+
+If Len(CStr(objError.ASPCode)) > 0 Then
+Sfile.WriteLine "IIS Error Number : " & objError.ASPCode
+End If
+
+If Len(CStr(objError.Number)) > 0 Then
+Sfile.WriteLine "COM Error Number : " & objError.Number & " (0x" & Hex(objError.Number) & ")"
+End If
+
+If Len(CStr(objError.Source)) > 0 Then
+Sfile.WriteLine "Error Source : " & objError.Source
+End If
+
+If Len(CStr(objError.File)) > 0 Then
+Sfile.WriteLine "File Name : " & objError.File
+End If
+
+If Len(CStr(objError.Line)) > 0 Then
+Sfile.WriteLine "Line Number : " & objError.Line
+End If
+
+If Len(CStr(objError.Description)) > 0 Then
+Sfile.WriteLine "Brief Description : " & objError.Description
+End If
+
+If Len(CStr(objError.ASPDescription)) > 0 Then
+Sfile.WriteLine "Full Description : " & objError.ASPDescription
+End If
+Sfile.WriteLine chr(13)
+
+
+Sfile.Close
+Set Fso=Nothing
+Set objError=Nothing
+
+
 https://docs.google.com/spreadsheets/d/1mAING65kdHJS6bMPXuTaaKA1IghjZyZFwL2029_D7Nc/edit#gid=0
 
 /AS/paper/paperSend.asp

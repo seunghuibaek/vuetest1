@@ -1,3 +1,19 @@
+https://devsys.popkontv.kr:9002/AS/member/levelFanData.asp
+
+----------- Response --------------------
+ URL:https://devsys.popkontv.kr:9002/AS/member/levelFanData.asp
+ PARAMS:["SC_SP": "", "SC_CSI": "popaos6", "SC_IE": "0", "SC_SI": "", "SC_PC": "P-00001", "SC_CPC": "P-00001"] 
+- Result -
+ {"rst":{"rstCode" : "1","rstMsg" : "SC_SI", "lvl":"1", "nowExp":"0", "lvlupExp":"0", "lvlPer":"0"}} 
+-----------------------------------------
+
+----------- Request ---------------------
+ URL:https://devsys.popkontv.kr:9002/AS/member/levelFanData.asp
+ PARAMS:["SC_SP": "", "SC_CSI": "popaos6", "SC_IE": "0", "SC_SI": "", "SC_PC": "P-00001", "SC_CPC": "P-00001"]
+-----------------------------------------
+
+
+
 C:\Users\{$사용자}\AppData\Local\Atlassian\SourceTree.exe_Url_4ir5kstrwxmih14qvtxzf3dqvbfexoj2\3.1.2.3027
  Composition.cache 파일을 삭제
 

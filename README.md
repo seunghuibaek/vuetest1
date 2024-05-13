@@ -1,3 +1,5 @@
+PUSH 발송자 조회중 오류 발생시  에러코드 :  1150001 반환하도록 하겠습니다.
+
 /AS/push/getPushKeyInfo.asp 
 /AS/push/getAnniversaryPushKeyInfo.asp
 /AS/push/getPushItemKeyInfo.asp

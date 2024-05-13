@@ -1,3 +1,8 @@
+/AS/push/getPushKeyInfo.asp 
+/AS/push/getAnniversaryPushKeyInfo.asp
+/AS/push/getPushItemKeyInfo.asp
+
+
 https://devsys.popkontv.kr:9002/AS/member/levelFanData.asp
 
 ----------- Response --------------------

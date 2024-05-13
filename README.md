@@ -1,3 +1,5 @@
+https://docs.google.com/spreadsheets/d/1tWB4-X1ul_tis2Ut-1iFxWBY2FGfP12l6LOZcs2QQRA/edit#gid=0
+
 PUSH 발송자 조회중 오류 발생시  에러코드 :  1150001 반환하도록 하겠습니다.
 
 /AS/push/getPushKeyInfo.asp 

@@ -1,3 +1,11 @@
+USP_GetList_ItemPushKeySndngInfo_002 'librestilo', 'P-00001', 3, 500
+
+
+.Parameters("@cast_signId") = cast_signId
+		.Parameters("@cast_partnerCode") = cast_partnerCode
+		.Parameters("@insDvcType") = insDvcType
+		.Parameters("@intRecordCnt") = intRecordCnt
+
 
 USP_GetList_ItemPushKeySndngInfo_002
 {

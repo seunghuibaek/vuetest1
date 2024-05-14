@@ -1,3 +1,30 @@
+{
+  "rst": {
+    "rstCode": "0",
+    "rstMsg": "SUCCESS"
+  },
+  "strRst": [
+    {
+      "pk_code": "96",
+      "pushKey": "eOUNgFWRUYw:APA91bF9nwT_J5VwDDxB_OPExxA9MR4DtltbbCl-mpjHiCiLHHfeEAGcmxUioYFyS-iLXagCU_mhvS8CPl3ttpdGwabnaZ2R0BjcF9ri-aSyp-zoKpiJmnL1hLy4oCKtu3HjMztr_Rh5",
+      "deviceType": "7",
+      "signId": "wocnd7333",
+      "partnerCode": "P-00001",
+      "offTimeStart": "2300",
+      "offTimeEnd": "0900",
+      "cast_signId": "qatest1019",
+      "cast_partnerCode": "P-00001"
+    }
+  ]
+}
+
+
+${apiUrl}/AS/push/getPushItemKeyInfo.asp
+librestilo
+P-00001
+3
+
+
 USP_GetList_PushKeySndngInfo_002
 USP_GetList_AnvrPushKeySndngInfo_002
 USP_GetList_ItemPushKeySndngInfo_002

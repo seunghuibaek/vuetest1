@@ -1,3 +1,6 @@
+/ssi/global/dbPwdCng.asp
+
+
 /AS/push/getPushKeyInfo.asp
 
 USP_GetList_ItemPushKeySndngInfo_002 'librestilo', 'P-00001', 3, 500

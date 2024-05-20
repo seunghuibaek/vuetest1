@@ -1,3 +1,10 @@
+----------- Response --------------------
+ URL:https://stagesys.popkontv.com:9002/AS/member/registExe.asp
+ PARAMS:["SC_PC": "P-00001", "SC_SCD": "0", "SC_AID": "2526526027", "SC_PN": "01071899608", "SC_NK": "닉네임입니다", "SC_SI": "", "SC_SP": "", "SC_EP": "15", "SC_ISA": "1"] 
+- Result -
+ {"rst":{"rstCode" : "1","rstMsg" : "사용할 수 없는 아이디 입니다.","signId" : "","signPwd" : ""}} 
+-----------------------------------------
+
 
 C:\Users\THE E&M\AppData\Roaming\npm
 /ssi/global/dbPwdCng.asp

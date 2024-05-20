@@ -1,3 +1,6 @@
+2024-05-13 03:44:07 192.168.1.124 POST /AS/push/getPushKeyInfo.asp |101|80004005|Transaction_(Process_ID_101)_was_deadlocked_on_lock_resources_with_another_process_and_has_been_chosen_as_the_deadlock_victim._Rerun_the_transaction. 9001 - 192.168.1.41 - - 500 0 0 5572 114.141.29.126
+
+
 10.20.23.221
 [B_PUSH].[dbo].[USP_GetList_PushKeySndngInfo_002]
 

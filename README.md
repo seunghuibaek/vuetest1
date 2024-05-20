@@ -1,3 +1,14 @@
+, @intPgSeCd  int    --// 결제대행사_구분_코드 :: [30001 : 케이지이니시스, 30002 : 케이지모빌리언스, 30003 : 다날, 30004 : 페이레터, 30005 : 헥토파이낸셜, 30006 : 갤럭시아머니트리]  
+ , @nvcPgStorIdnt nvarchar(30) --// 결제대행사_상점_아이디  
+ , @vchPgDelngNo  varchar(50)  --// 결제대행사_거래_번호  
+ , @nvcPgDelngStatCd nvarchar(50) --// 결제대행사_거래_상태_코드   
+ , @nvcPgRspnsCd  nvarchar(50) --// 결제대행사_응답_코드  
+ , @vchSvcSiteUrl varchar(2083) --// 서비스_사이트_URL  
+ 
+/AS/coin/buyCoin.asp
+/AS/item/buyItem.asp
+
+
 2024-05-13 03:44:07 192.168.1.124 POST /AS/push/getPushKeyInfo.asp |101|80004005|Transaction_(Process_ID_101)_was_deadlocked_on_lock_resources_with_another_process_and_has_been_chosen_as_the_deadlock_victim._Rerun_the_transaction. 9001 - 192.168.1.41 - - 500 0 0 5572 114.141.29.126
 
 

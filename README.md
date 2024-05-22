@@ -1,3 +1,6 @@
+/as/cache/exe/livemain.asp
+/as/cache/exe/castlistmakeone.asp
+
 192.168.1.80,9190
 오류 번호 : 3704
 내용 : 개체가 닫혀 있으면 작업이 허용되지 않습니다.

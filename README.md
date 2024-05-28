@@ -1,3 +1,8 @@
+PPKNBRDCCACH(11)
+[B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004]  기존 메인
+
+[B_CASTDATA].[dbo].[USP_GetList_BrdcListMainExpsr_001]  
+
 /as/cache/exe/livemain.asp
 /as/cache/exe/castlistmakeone.asp
 

@@ -1,3 +1,16 @@
+CASE PSGUD.BrdcType WHEN 0 THEN 'LIVE 방송'  
+    WHEN 1 THEN '일대일'  
+    WHEN 2 THEN '일대일'  
+    WHEN 3 THEN '중계'  
+    WHEN 4 THEN '녹화방송'  
+    WHEN 5 THEN '일대다 그룹'  
+    WHEN 6 THEN '일대다 일반'  
+    WHEN 7 THEN '일대다 유료방송'  
+    ELSE NULL END AS BrdcType  
+   , CASE WHEN IM.OnuseYn = 'Y' THEN '적용중'  
+    WHEN PSGUD.MngrRlsDt IS NOT NULL THEN '적용해제'
+    
+
 PPKNBRDCCACH(11)
 [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004]  기존 메인
 

@@ -1,3 +1,8 @@
+{"rst":{"rstCode" : "0","rstMsg" : "SUCCESS"}, "itemList":[{"itemCode":"", "iName":"", "Cnt":"0", "OnUse": ""}]}
+{"rst":{"rstCode" : "0","rstMsg" : "SUCCESS"}, "itemList":[{"itemcode": "AC-0009","iname": "LISTUP","cnt": 1,"onuse": "N"}]}
+
+
+
 우선_정렬_상품_수량 조회합니다
  USP_Get_PrioSortGudsQty_002
 

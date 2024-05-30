@@ -1,3 +1,10 @@
+우선_정렬_상품_수량 조회합니다
+ USP_Get_PrioSortGudsQty_002
+
+ 조회 내역이 없을 경우 
+ 기존 사용한 아이템의 OnUse 값이 필요
+ 
+
 CASE PSGUD.BrdcType WHEN 0 THEN 'LIVE 방송'  
     WHEN 1 THEN '일대일'  
     WHEN 2 THEN '일대일'  

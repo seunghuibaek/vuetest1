@@ -1,7 +1,9 @@
-  Declare @return int
- exec  USP_Mod_BrdcOnOff_005  'librestilo-20240603154620', 'librestilo', '20240603155111', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|librestilo_P-00001_20240603154620',
+   Declare @return int
+ exec  USP_Mod_BrdcOnOff_005  'librestilo-20240603172624', 'librestilo', 
+ '20240603172711', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|librestilo_P-00001_20240603172624',
  0, '', 'P-00001', 3,@return output, 0, '', 0, 'w1280h720e1', 'AC-0009'
  select @return
+
 
  메시지 515, 수준 16, 상태 2, 프로시저 USP_Mod_BrdcOnOff_005, 줄 404 [배치 시작 줄 30]
 테이블 'B_CASTDATA.dbo.BrdcPrioSortGudsUseStatus', 열 'GudsExprtnDt'에 NULL 값을 삽입할 수 없습니다. 열에는 NULL을 사용할 수 없습니다. INSERT이(가) 실패했습니다.

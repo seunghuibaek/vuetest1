@@ -1,3 +1,5 @@
+["SC_STYP": "2", "SC_DN": "1", "SC_PC": "P-00001", "SC_LYN": "0", "SC_LN": "", "SC_IA": "1"]
+
 {"SC_PCC":"librestilo-20240531092943","SC_SI":"librestilo","SC_PC":"P-00001","SC_BCT":"0","SC_PGT":"3"}
 
 

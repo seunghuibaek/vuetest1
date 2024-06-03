@@ -1,3 +1,19 @@
+
+{
+  "SC_PCC": "librestilo-20240603134454",
+  "SC_SI": "librestilo",
+  "SC_PC": "P-00001",
+  "SC_CST": "0",
+  "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|librestilo_P-00001_20240603134454",
+  "SC_SP": "0xBAB302587F78ABC13D93B96AF9E93695A81D0145BA9E377319856D708FBCC4F0",
+  "SC_CLN": "3",
+  "SC_CSQ": "",
+  "SC_WTM": "0",
+  "SC_CR": "w1280h720e1",
+  "SC_EB": "PCP32bit"
+}
+
+
 ["SC_IA": "N", "SC_DN": "1", "SC_PN": "1", "SC_LYN": "Y", "SC_STYP": "2", "SC_PS": "0", "SC_LN": "", "SC_PC": "P-00001"]
 
 https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp

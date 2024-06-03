@@ -1,3 +1,5 @@
+["SC_IA": "N", "SC_DN": "1", "SC_PN": "1", "SC_LYN": "Y", "SC_STYP": "2", "SC_PS": "0", "SC_LN": "", "SC_PC": "P-00001"]
+
 https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
 
 {

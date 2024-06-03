@@ -1,3 +1,6 @@
+/AS/castData/castOnData.asp
+/castData/castListUpUse.asp
+
 ["SC_DN": "1", "SC_PC": "P-00001", "SC_PN": "1", "SC_STYP": "2", "SC_PS": "10", "SC_LN": "", "SC_IA": "N", "SC_LYN": "Y"] 
 
 [B_CASTDATA].[dbo].[USP_Mod_BrdcOnOff_004]

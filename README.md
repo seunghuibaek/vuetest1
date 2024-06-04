@@ -1,3 +1,7 @@
+PARAMS:["SC_SI": "popaos6", "SC_CLN": "4", "SC_WTM": "0", "SC_CST": "0", "SC_PC": "P-00001", "SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09", "SC_PCC": "popaos6-20240604142216", "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|popaos6_P-00001_20240604142216", "SC_CR": "720x1280"]
+
+https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+
 https://devsys.popkontv.kr:9002/AS/castData/castListUpUse.asp {"SC_PCC":"popaos7-20240604113228","SC_SI":"popaos7","SC_PC":"P-00001","SC_BCT":"0","SC_PGT":3,"SC_VITC":"AC-0009"}
 
 [   Declare @return int

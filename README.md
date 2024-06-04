@@ -1,3 +1,14 @@
+[000004] [2024/06/04 17:54:13][INFR] : [__thread_CallPassThru][CALL API](start) CallPassThru > sURL : /AS/member/naSignOncast.asp, strParamJSON : {"SC_SI":"librestilo","SC_SP":"qnalvkqzhstv@13","SC_PC":"P-00095","SC_EP":9,"SC_SK":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89"}  
+[000006] [2024/06/04 17:54:13][INFR] : [CWebQuery::CallPassThru][CALL API](start) sURL : https://devsys.popkontv.kr:9002/AS/member/naSignOncast.asp  
+[000007] [2024/06/04 17:54:13][INFR] : [CWebQuery::CallPassThru][CALL API](finish) sURL : https://devsys.popkontv.kr:9002/AS/member/naSignOncast.asp  
+[000008] [2024/06/04 17:54:13][INFR] : [__thread_CallPassThru][CALL API](finish) CallPassThru > SUCCESS > sURL : /AS/member/naSignOncast.asp  
+[000009] [2024/06/04 17:54:13][INFG] : [__thread_CallPassThru] call JavaScript : getLoginData("eyJyc3QiOnsicnN0Q29kZSIgOiAiMSIsInJzdE1zZyIgOiAi7JWE7J2065SUIOuYkOuKlCDruYTrsIDrsojtmLjrpbwg64uk7IucIO2ZleyduO2VmOyEuOyalC4ifSwic2lnbk9uIiA6IHsibWVtYmVyU2V4IiA6ICIiLCJpc0FkdWx0IiA6ICIiLCJuaWNrTmFtZSIgOiAiIiwibWVtYmVyVHlwZSIgOiAiIiwicEZpbGVOYW1lIiA6ICIiLCJhY2NvdW50TGV2ZWwiIDogIiIsInB3ZENvZGUiIDogIiIsInBhcnRuZXJDb2RlIiA6ICJQLTAwMDk1IiwiaXNOZXdCSiIgOiAiMCIsImlzTmFtZUNoZWNrIiA6ICIwIiwibGV2ZWxVcCIgOiAiMCIsInN2Y0x2bCIgOiAiIn0sIm1lbWJlckJsb2NrQ2hlY2siIDogeyJpc0Jsb2NrIiA6ICIwIiwiaXNMb2dpbkJsb2NrIiA6ICIwIiwiYmxvY2tSZWdEYXRlIiA6ICIiLCJibG9ja0RhdGUiIDogIiIsImJsb2NrTWVtbyIgOiAiIn19",{"uuid":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89"})  
+[000014] [2024/06/04 17:54:13][LOG]  : [CPECLoginWebDelegate::PreTranslateMessage][CEF_QUERY_MESSAGE] text : login:result=1  
+[000015] [2024/06/04 17:54:13][LOG]  : [CPECLoginWebDelegate::PreTranslateMessage][CEF_QUERY_MESSAGE] text : outcome:outcome={"rst":{"rstCode":"1","rstMsg":"아이디 또는 비밀번호를 다시 확인하세요."},"signOn":{"memberSex":"","isAdult":"","nickName":"","memberType":"","pFileName":"","accountLevel":"","pwdCode":"","partnerCode":"P-00095","isNewBJ":"0","isNameCheck":"0","levelUp":"0","svcLvl":""},"memberBlockCheck":{"isBlock":"0","isLoginBlock":"0","blockRegDate":"","blockDate":"","blockMemo":""},"userinfo":{"id":"librestilo","uuid":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89","autologin":"0","savelogin":"0","basepw":"qnalvkqzhstv@13"}}  
+
+
+
+
 https://devsys.popkontv.kr:9002/AS/castData/naCastMainList.asp
  {"SC_DN":1,"SC_IA":1,"SC_LN":"","SC_LYN":"Y","SC_PC":"P-00001","SC_PN":1,"SC_PS":"15","SC_STYP":2}
 

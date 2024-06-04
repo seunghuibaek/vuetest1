@@ -1,8 +1,23 @@
-   Declare @return int
+[   Declare @return int
  exec  USP_Mod_BrdcOnOff_005  'librestilo-20240603172624', 'librestilo', 
  '20240603172711', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|librestilo_P-00001_20240603172624',
  0, '', 'P-00001', 3,@return output, 0, '', 0, 'w1280h720e1', 'AC-0009'
- select @return
+ select @return](https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+
+{
+  "SC_PCC": "librestilo-20240604090009",
+  "SC_SI": "librestilo",
+  "SC_PC": "P-00001",
+  "SC_CST": "0",
+  "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|librestilo_P-00001_20240604090009",
+  "SC_SP": "0xBAB302587F78ABC13D93B96AF9E93695A81D0145BA9E377319856D708FBCC4F0",
+  "SC_CLN": "3",
+  "SC_CSQ": "",
+  "SC_WTM": "0",
+  "SC_VITC": "AC-0009",
+  "SC_CR": "w1280h720e1",
+  "SC_EB": "PCP32bit"
+})
 
 
  메시지 515, 수준 16, 상태 2, 프로시저 USP_Mod_BrdcOnOff_005, 줄 404 [배치 시작 줄 30]

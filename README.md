@@ -1,3 +1,8 @@
+https://devsys.popkontv.kr:9002/AS/castData/naCastMainList.asp
+ {"SC_DN":1,"SC_IA":1,"SC_LN":"","SC_LYN":"Y","SC_PC":"P-00001","SC_PN":1,"SC_PS":"15","SC_STYP":2}
+
+
+ 
 URL:https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
  PARAMS:["SC_CR": "720x1280", "SC_CST": "0", "SC_PCC": "popios2-20240604161823", "SC_WTM": "0", "SC_CLN": "1", "SC_PC": "P-00001", "SC_SP": "0x269C2FE46D21EEB1278240D09F66A8748D89348EF4B34C363D1FC06C56D00DA1", "SC_SI": "popios2", "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|popios2_P-00001_20240604161823", "SC_VITC": ""]
 

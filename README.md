@@ -1,3 +1,5 @@
+https://devsys.popkontv.kr:9002/AS/castData/castListUpUse.asp {"SC_PCC":"popaos7-20240604113228","SC_SI":"popaos7","SC_PC":"P-00001","SC_BCT":"0","SC_PGT":3,"SC_VITC":"AC-0009"}
+
 [   Declare @return int
  exec  USP_Mod_BrdcOnOff_005  'librestilo-20240603172624', 'librestilo', 
  '20240603172711', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|librestilo_P-00001_20240603172624',

@@ -1,3 +1,8 @@
+[B_CASTDATA].[dbo].[USP_Mod_BrdcOnOff_005]
+[B_CASTDATA].[dbo].[USP_Mod_PrioSortGudsOnairUse_001]
+ReuseWaitTime
+
+
 [000004] [2024/06/04 17:54:13][INFR] : [__thread_CallPassThru][CALL API](start) CallPassThru > sURL : /AS/member/naSignOncast.asp, strParamJSON : {"SC_SI":"librestilo","SC_SP":"qnalvkqzhstv@13","SC_PC":"P-00095","SC_EP":9,"SC_SK":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89"}  
 [000006] [2024/06/04 17:54:13][INFR] : [CWebQuery::CallPassThru][CALL API](start) sURL : https://devsys.popkontv.kr:9002/AS/member/naSignOncast.asp  
 [000007] [2024/06/04 17:54:13][INFR] : [CWebQuery::CallPassThru][CALL API](finish) sURL : https://devsys.popkontv.kr:9002/AS/member/naSignOncast.asp  

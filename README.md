@@ -1,3 +1,7 @@
+URL:https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
+ PARAMS:["SC_SP": "0x269C2FE46D21EEB1278240D09F66A8748D89348EF4B34C363D1FC06C56D00DA1", "SC_ICS": "N", "SC_CAT": "ios2back", "SC_PC": "P-00001", "SC_CAPT": "3", "SC_CTE": "10", "SC_ADT": "0", "SC_SI": "popios2", "SC_CT": "1", "SC_LMN": "10", "SC_TKC": "", "SC_CLT": "0", "SC_CTYP": "0", "SC_COS": "iOS", "SC_FLV": "3", "SC_IPVT": "1", "SC_PK": "mm"]
+ 
+
 [B_CASTDATA].[dbo].[USP_Mod_BrdcOnOff_005]
 [B_CASTDATA].[dbo].[USP_Mod_PrioSortGudsOnairUse_001]
 ReuseWaitTime

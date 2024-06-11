@@ -1,3 +1,8 @@
+URL:https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
+ PARAMS:["SC_CT": "1", "SC_CTYP": "0", "SC_ADT": "0", "SC_SI": "popios3", "SC_PK": "kk", "SC_SP": "0xE9788AD338B5BD2728E39598ACFDBCAC02D9F42BC2BACF86DD4D8A418D4C9E17", "SC_CTE": "10", "SC_CAT": "ios", "SC_FLV": "3", "SC_IPVT": "1", "SC_COS": "iOS", "SC_LMN": "10", "SC_TKC": "", "SC_CAPT": "3", "SC_PC": "P-00001", "SC_CLT": "0", "SC_ICS": "N"]
+-----------------------------------------
+
+
 [B_CASTDATA].[dbo].[USP_Mod_PrioSortGudsOnairUse_001]
 [192.168.1.24,9190].B_ITEM.dbo.USP_Mod_PrioSortGudsUse_002 
 

@@ -1,3 +1,10 @@
+[B_CASTDATA].[dbo].[USP_Mod_PrioSortGudsOnairUse_001]
+[192.168.1.24,9190].B_ITEM.dbo.USP_Mod_PrioSortGudsUse_002 
+
+1160018 = 사용할 수 있는 아이템이 없습니다.  
+
+
+
 https://devsys.popkontv.kr:9002/AS/castData/castListUpUse.asp  
 {
   "SC_PCC": "librestilo-20240611164908",

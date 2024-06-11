@@ -1,21 +1,12 @@
-URL:https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
- PARAMS:["SC_SP": "0x269C2FE46D21EEB1278240D09F66A8748D89348EF4B34C363D1FC06C56D00DA1", "SC_ICS": "N", "SC_CAT": "ios2back", "SC_PC": "P-00001", "SC_CAPT": "3", "SC_CTE": "10", "SC_ADT": "0", "SC_SI": "popios2", "SC_CT": "1", "SC_LMN": "10", "SC_TKC": "", "SC_CLT": "0", "SC_CTYP": "0", "SC_COS": "iOS", "SC_FLV": "3", "SC_IPVT": "1", "SC_PK": "mm"]
- 
+----------- Response --------------------
+ URL:https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+ PARAMS:["SC_PC": "P-00001", "SC_CR": "720x1280", "SC_SI": "popaos6", "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|popaos6_P-00001_20240611161400", "SC_VITC": "AC-0009", "SC_WTM": "0", "SC_CLN": "3", "SC_PCC": "popaos6-20240611161400", "SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09", "SC_CST": "0"] 
+- Result -
+ {"castOnData":{"rstCode" : "SP","rstMsg" : "상품 설정에 오류가 있습니다.","chatServerUrl" : "https:\/\/dev.popkontv.kr:1920"}} 
+-----------------------------------------
 
-[B_CASTDATA].[dbo].[USP_Mod_BrdcOnOff_005]
-[B_CASTDATA].[dbo].[USP_Mod_PrioSortGudsOnairUse_001]
-ReuseWaitTime
-
-
-[000004] [2024/06/04 17:54:13][INFR] : [__thread_CallPassThru][CALL API](start) CallPassThru > sURL : /AS/member/naSignOncast.asp, strParamJSON : {"SC_SI":"librestilo","SC_SP":"qnalvkqzhstv@13","SC_PC":"P-00095","SC_EP":9,"SC_SK":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89"}  
-[000006] [2024/06/04 17:54:13][INFR] : [CWebQuery::CallPassThru][CALL API](start) sURL : https://devsys.popkontv.kr:9002/AS/member/naSignOncast.asp  
-[000007] [2024/06/04 17:54:13][INFR] : [CWebQuery::CallPassThru][CALL API](finish) sURL : https://devsys.popkontv.kr:9002/AS/member/naSignOncast.asp  
-[000008] [2024/06/04 17:54:13][INFR] : [__thread_CallPassThru][CALL API](finish) CallPassThru > SUCCESS > sURL : /AS/member/naSignOncast.asp  
-[000009] [2024/06/04 17:54:13][INFG] : [__thread_CallPassThru] call JavaScript : getLoginData("eyJyc3QiOnsicnN0Q29kZSIgOiAiMSIsInJzdE1zZyIgOiAi7JWE7J2065SUIOuYkOuKlCDruYTrsIDrsojtmLjrpbwg64uk7IucIO2ZleyduO2VmOyEuOyalC4ifSwic2lnbk9uIiA6IHsibWVtYmVyU2V4IiA6ICIiLCJpc0FkdWx0IiA6ICIiLCJuaWNrTmFtZSIgOiAiIiwibWVtYmVyVHlwZSIgOiAiIiwicEZpbGVOYW1lIiA6ICIiLCJhY2NvdW50TGV2ZWwiIDogIiIsInB3ZENvZGUiIDogIiIsInBhcnRuZXJDb2RlIiA6ICJQLTAwMDk1IiwiaXNOZXdCSiIgOiAiMCIsImlzTmFtZUNoZWNrIiA6ICIwIiwibGV2ZWxVcCIgOiAiMCIsInN2Y0x2bCIgOiAiIn0sIm1lbWJlckJsb2NrQ2hlY2siIDogeyJpc0Jsb2NrIiA6ICIwIiwiaXNMb2dpbkJsb2NrIiA6ICIwIiwiYmxvY2tSZWdEYXRlIiA6ICIiLCJibG9ja0RhdGUiIDogIiIsImJsb2NrTWVtbyIgOiAiIn19",{"uuid":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89"})  
-[000014] [2024/06/04 17:54:13][LOG]  : [CPECLoginWebDelegate::PreTranslateMessage][CEF_QUERY_MESSAGE] text : login:result=1  
-[000015] [2024/06/04 17:54:13][LOG]  : [CPECLoginWebDelegate::PreTranslateMessage][CEF_QUERY_MESSAGE] text : outcome:outcome={"rst":{"rstCode":"1","rstMsg":"아이디 또는 비밀번호를 다시 확인하세요."},"signOn":{"memberSex":"","isAdult":"","nickName":"","memberType":"","pFileName":"","accountLevel":"","pwdCode":"","partnerCode":"P-00095","isNewBJ":"0","isNameCheck":"0","levelUp":"0","svcLvl":""},"memberBlockCheck":{"isBlock":"0","isLoginBlock":"0","blockRegDate":"","blockDate":"","blockMemo":""},"userinfo":{"id":"librestilo","uuid":"2FD93EB0-B200-35E3-C032-0C3BF5A48B89","autologin":"0","savelogin":"0","basepw":"qnalvkqzhstv@13"}}  
-
-
+URL:https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+ PARAMS:["SC_PC": "P-00001", "SC_CR": "720x1280", "SC_SI": "popaos6", "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|popaos6_P-00001_20240611161400", "SC_VITC": "AC-0009", "SC_WTM": "0", "SC_CLN": "3", "SC_PCC": "popaos6-20240611161400", "SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09", "SC_CST": "0"]
 
 
 https://devsys.popkontv.kr:9002/AS/castData/naCastMainList.asp

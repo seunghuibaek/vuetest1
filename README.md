@@ -1,4 +1,18 @@
 ----------- Response --------------------
+ URL:https://devsys.popkontv.kr:9002/AS/castData/naListupItemCnt.asp
+ PARAMS:["SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09", "SC_SI": "popaos6", "SC_PC": "P-00001"] 
+- Result -
+ {"rst":{"rstCode" : "0","rstMsg" : "SUCCESS"}, "itemList":[{"itemcode": "AC-0009","iname": "LISTUP","cnt": 1,"onuse": "N"}]} 
+-----------------------------------------
+
+----------- Request ---------------------
+ URL:https://devsys.popkontv.kr:9002/AS/castData/naListupItemCnt.asp
+ PARAMS:["SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09", "SC_SI": "popaos6", "SC_PC": "P-00001"]
+-----------------------------------------
+
+
+
+----------- Response --------------------
  URL:https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
  PARAMS:["SC_PC": "P-00001", "SC_CR": "720x1280", "SC_SI": "popaos6", "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|popaos6_P-00001_20240611161400", "SC_VITC": "AC-0009", "SC_WTM": "0", "SC_CLN": "3", "SC_PCC": "popaos6-20240611161400", "SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09", "SC_CST": "0"] 
 - Result -

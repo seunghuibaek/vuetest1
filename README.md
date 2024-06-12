@@ -1,6 +1,31 @@
-URL:https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
- PARAMS:["SC_CT": "1", "SC_CTYP": "0", "SC_ADT": "0", "SC_SI": "popios3", "SC_PK": "kk", "SC_SP": "0xE9788AD338B5BD2728E39598ACFDBCAC02D9F42BC2BACF86DD4D8A418D4C9E17", "SC_CTE": "10", "SC_CAT": "ios", "SC_FLV": "3", "SC_IPVT": "1", "SC_COS": "iOS", "SC_LMN": "10", "SC_TKC": "", "SC_CAPT": "3", "SC_PC": "P-00001", "SC_CLT": "0", "SC_ICS": "N"]
------------------------------------------
+ declare @rtn int
+ exec USP_Mod_BrdcOnOff_005  'bluewar111-20240612091542', 'bluewar111'
+ , '20240612091911', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|bluewar111_P-00001_20240612091542'
+ , 0, '', 'P-00001', 3, @rtn output, 0, '', 0, '720x1280', 'AC-0009'
+ select @rtn
+
+1170067
+
+ SELECT TOP 1 castType
+  FROM dbo.castMemberData with(nolock)  
+  WHERE signId = 'bluewar111'  AND partnerCode = 'P-00001';  
+
+
+   DECLARE @dt2Rgstdt   DATETIME2(7)
+   declare @ret int
+    EXEC @ret = [192.168.1.24,9190].B_ITEM.dbo.USP_Mod_PrioSortGudsUse_002  
+     @vchItemCd = 'AC-0009'  
+     , @vchMmbri = 'bluewar111' 
+     , @chrPrtsCd = 'P-00001'  
+     , @vchBrdcCd  = 'bluewar111-20240612091542'
+     , @insBrdcType = 0  
+     , @dt2Rgstdt = @dt2Rgstdt output;  
+
+	 select @ret, @dt2Rgstdt
+
+     1160019
+
+     ----------
 
 
 [B_CASTDATA].[dbo].[USP_Mod_PrioSortGudsOnairUse_001]

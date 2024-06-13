@@ -1,3 +1,17 @@
+{
+  "SC_PCC": "librestilo-20240613092408",
+  "SC_SI": "librestilo",
+  "SC_PC": "P-00001",
+  "SC_CST": "2",
+  "SC_CAD": "",
+  "SC_SP": "123456",
+  "SC_CLN": "",
+  "SC_SEC": "1",
+  "SC_CET": "3"
+}
+
+ 
+ 
  declare @rtn int
  exec USP_Mod_BrdcOnOff_005  'bluewar111-20240612091542', 'bluewar111'
  , '20240612091911', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|bluewar111_P-00001_20240612091542'

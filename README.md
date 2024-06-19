@@ -2,6 +2,7 @@
 명일 개발기 배포 예정인 DB 서비스 계정 비번 공유드립니다.
 
 ppknapisvcacc  :  GUFzgx\7=h5rD24s
+ppknapisvcacc  :  GUFzgx\7=h5rD24s
 
 복사 완료 하시고 말씀주시면 대화 삭제 하겠습니다.
 

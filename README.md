@@ -1,3 +1,8 @@
+https://sys1.96tv.co.kr:9002/AS/castData/naViewCastList.asp 
+{"SC_CT":0,"SC_CLT":1,"SC_IAS":0,"SC_PC":"P-00067","SC_IA":1,"SC_SCT":"","SC_SCTE":0,"SC_EP":7,"SC_PN":1,"SC_STYP":1}
+
+
+
 안녕하세요. 
 명일 개발기 배포 예정인 DB 서비스 계정 비번 공유드립니다.
 

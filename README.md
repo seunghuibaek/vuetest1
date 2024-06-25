@@ -1,3 +1,28 @@
+{
+  "SC_PCC": "bluewar96tv-20240625134902",
+  "SC_SI": "bluewar96tv",
+  "SC_PC": "P-00067",
+  "SC_CST": "0",
+  "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|bluewar96tv_P-00067_20240625134902",
+  "SC_SP": "0x24AC6125195C85EE33FAD944F4A8DAB186200A0C2F27576481D5C45BAC18FA39",
+  "SC_CLN": "1",
+  "SC_CSQ": "",
+  "SC_WTM": "0",
+  "SC_VITC": "AC-0009",
+  "SC_CR": "w1280h720e1",
+  "SC_EB": "PCP32bit"
+}
+
+
+{
+  "castOnData": {
+    "rstCode": "SP",
+    "rstMsg": "방송이 차단되어 있습니다.",
+    "chatServerUrl": "https:\/\/dev.popkontv.kr:1920"
+  }
+}
+
+
 https://sys1.96tv.co.kr:9002/AS/castData/naViewCastList.asp 
 {"SC_CT":0,"SC_CLT":1,"SC_IAS":0,"SC_PC":"P-00067","SC_IA":1,"SC_SCT":"","SC_SCTE":0,"SC_EP":7,"SC_PN":1,"SC_STYP":1}
 

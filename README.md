@@ -1,3 +1,6 @@
+B_VOD.dbo.LHY_WEB_vodCategory_Listrandom
+118.129.153.91,9190
+
 declare @output int
  exec [B_CASTDATA].[dbo].[USP_Mod_BrdcOnOff_004] 'bluewar96tv-20240625134902', 'bluewar96tv', '20240625135511', 0, 'rtmp://live-popkontv.hscdn.com/pop_cast20|bluewar96tv_P-00067_20240625134902'
  , 0, '', 'P-00067', 1,       @output output, 0, '', 0, 'PCP32bit'

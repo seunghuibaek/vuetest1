@@ -1,3 +1,6 @@
+ppknapisvcacc 63 2812 저장 프로시저 'B_VOD.dbo.KJM_Content_commandExecute'을(를) 찾을 수 없습니다.
+ppknapisvcacc 70 2812 저장 프로시저 'B_VOD.dbo.LHY_WEB_vodCategory_Listrandom'을(를) 찾을 수 없습니다.
+
 B_VOD.dbo.LHY_WEB_vodCategory_Listrandom
 118.129.153.91,9190
 

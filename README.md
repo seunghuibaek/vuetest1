@@ -1,3 +1,52 @@
+https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
+
+{
+  "SC_CT": "1",
+  "SC_SI": "librestilo",
+  "SC_PC": "P-00001",
+  "SC_SP": "0xBAB302587F78ABC13D93B96AF9E93695A81D0145BA9E377319856D708FBCC4F0",
+  "SC_CAT": "아바타 테스트",
+  "SC_ADT": "0",
+  "SC_IPVT": "1",
+  "SC_PK": "asdf",
+  "SC_LMN": "426",
+  "SC_CTE": "10",
+  "SC_CAPT": "9",
+  "SC_CTYP": "5",
+  "SC_TKC": "0",
+  "SC_COS": "window",
+  "SC_CLT": "0",
+  "SC_IJ": "0",
+  "SC_ICS": "N"
+}
+
+{
+  "castMemberData": {
+    "rstCode": "1",
+    "rstMsg": "SC_FLV",
+    "signId": "librestilo",
+    "castTitle": "\uC544\uBC14\uD0C0 \uD14C\uC2A4\uD2B8",
+    "isAdult": "0",
+    "isPrivate": "1",
+    "limitNumber": "426",
+    "category": "10",
+    "castPath": "9",
+    "castType": "5",
+    "fanLevel": "",
+    "groupLevelNm_0": "",
+    "groupLevelNm_1": "",
+    "groupLevelNm_2": "",
+    "groupLevelNm_3": "",
+    "castListTarget": "0",
+    "maxWatchCnt": "1000",
+    "isJoint": "0",
+    "isCastShare": "N",
+    "passwordKey": "asdf",
+    "tiketCoin": "0"
+  }
+}
+
+
 https://docs.google.com/spreadsheets/d/1K6Y1xkoDaU14U_Qmo4MNrpz4zDZjE2u2kGdGRE6jjg0/edit?gid=0#gid=0
 
 http://118.129.153.153/funnyfig_api

@@ -1,3 +1,10 @@
+Case "0"
+				targetURL = "http://news.mk.co.kr/cp/popcon/mbnstar.xml"
+			Case "1"
+				targetURL = "http://news.mk.co.kr/cp/popcon/sports.xml"
+			Case Else
+				targetURL = "http://news.mk.co.kr/cp/popcon/sports.xml"
+
 {"SC_CT":0,"SC_SCT":"","SC_SCTE":"0","SC_PN":1,"SC_STYP":"2","SC_IA":"1","SC_EP":"9","SC_PC":"P-00001","SC_CLT":"0","SC_IAS":0} 
 파라미터입니다. 
 naViewCastList.asp

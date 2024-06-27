@@ -1,3 +1,8 @@
+{"SC_CT":0,"SC_SCT":"","SC_SCTE":"0","SC_PN":1,"SC_STYP":"2","SC_IA":"1","SC_EP":"9","SC_PC":"P-00001","SC_CLT":"0","SC_IAS":0} 
+파라미터입니다. 
+naViewCastList.asp
+https://bts.rink.kr/issues/12432
+
 https://devsys.popkontv.kr:9002/AS/castData/castMemberData.asp
 
 {

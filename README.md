@@ -1,3 +1,8 @@
+USP_Add_OauthMmbrRgst_002 : 셀럽티비 리뉴얼 배포시 비사용 처리(오브젝트 명세서 확인)
+USP_GetList_LvlALLAdm_002 : 파트너사_코드 매개변수 필요
+LHY_WEB_vodCategory_Listrandom : 클립 기능 배포시 비사용 처리(오브젝트 명세서 확인)
+
+
 Case "0"
 				targetURL = "http://news.mk.co.kr/cp/popcon/mbnstar.xml"
 			Case "1"

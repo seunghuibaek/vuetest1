@@ -1,3 +1,4 @@
+보유지 -> 나유에
 https://sys1.popkontv.kr:9002/AS/recVod/mcGrpVodList.asp
 
 {"SC_TP":"0","SC_PN":1,"SC_IAC":"1","SC_PC":"P-00001","SC_VSI":"zkfkapfzhs","SC_VPC":"P-00001"}

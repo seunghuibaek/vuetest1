@@ -1,3 +1,31 @@
+https://sys1.popkontv.kr:9002/AS/recVod/mcGrpVodList.asp
+
+{"SC_TP":"0","SC_PN":1,"SC_IAC":"1","SC_PC":"P-00001","SC_VSI":"zkfkapfzhs","SC_VPC":"P-00001"}
+
+{
+  "mcGrpVodListData": {
+    "rstCode": "0",
+    "pageNum": "1",
+    "totalPageNum": "4",
+    "totalListNum": "77",
+    "rstMsg": "SUCCESS"
+  },
+  "mcGrpVodList": [
+    {
+      "vodCode": "2104787",
+      "vSetDate": "20240624152314",
+      "vViewCnt": "970",
+      "vRecommendCnt": "4",
+      "vSignId": "zkfkapfzhs",
+      "vCastTitle": "\uD551\uD06C\uC0C9\uCCB4\uD06C\uAD50\uBCF5",
+      "vPartnerCode": "P-00001",
+      "vNickName": "\uB098\uC720\uC5D0",
+      "vPfileName": "https:\/\/pic.popkontv.com\/profile_thumb\/P-00001\/z\/zk\/zkfkapfzhs_P-00001_20200809192224.png"
+    },
+    ................
+  ]
+}
+
 USP_Add_OauthMmbrRgst_002 : 셀럽티비 리뉴얼 배포시 비사용 처리(오브젝트 명세서 확인)
 USP_GetList_LvlALLAdm_002 : 파트너사_코드 매개변수 필요
 LHY_WEB_vodCategory_Listrandom : 클립 기능 배포시 비사용 처리(오브젝트 명세서 확인)

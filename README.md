@@ -1,3 +1,6 @@
+exec USP_GetList_BrdcListUprExpsr_001 'P-00015', 10, 0, 'N', 'Y'
+
+
 {"SC_CLT":1,"SC_CT":0,"SC_EP":7,"SC_IA":0,"SC_IAS":1,"SC_PC":"P-00015","SC_PN":1,"SC_PS":"","SC
 _SCT":"","SC_SCTE":0,"SC_STYP":2}
 https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp

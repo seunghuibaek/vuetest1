@@ -1,3 +1,7 @@
+{"SC_AS":0,"SC_EP":7,"SC_PC":"P-00015"}
+https://devsys.popkontv.kr:9002/AS/program/naPGexe.asp
+
+
 보유지 -> 나유에
 https://sys1.popkontv.kr:9002/AS/recVod/mcGrpVodList.asp
 

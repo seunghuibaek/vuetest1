@@ -1,3 +1,6 @@
+[B_MEMBER].[dbo].[USP_GetListOAuthSvcSplr]
+
+
 회원 인증 서비스 목록
 
 SVC_SE_CD	SVC_NM

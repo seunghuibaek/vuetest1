@@ -1,3 +1,13 @@
+회원 인증 서비스 목록
+
+SVC_SE_CD	SVC_NM
+1	GOOGLE
+2	KAKAO
+3	NAVER
+4	FACEBOOK
+5	APPLE
+
+
 exec USP_GetList_BrdcListUprExpsr_001 'P-00015', 10, 0, 'N', 'Y'
 
 

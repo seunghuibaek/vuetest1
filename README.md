@@ -1,3 +1,9 @@
+"C:\Program Files (x86)\PopPlayer\P-00001\PopPlayerLauncher.exe" PopPlayer:site=devw.popkontv.com&language=popkon_kr&pcode=P-00001
+
+
+신규 배포된 SP =  방송목록 조회
+[B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] = 검색용도
+
 [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004]
 
 USP_GetList_BrdcListUprExpsr_001

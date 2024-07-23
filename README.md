@@ -1,3 +1,12 @@
+USP_GetList_BrdcListUprExpsr_001
+
+USP_GetList_BrdcListMainExpsr_001
+
+
+
+
+
+
 [B_MEMBER].[dbo].[USP_GetListOAuthSvcSplr]
 
 

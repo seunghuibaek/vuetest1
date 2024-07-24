@@ -1,3 +1,7 @@
+API Test URL : https://sys1.celuvtv.co.kr:9002/AS/member/registExe.asp / jsonString : {"SC_ANK":"","SC_PC":"P-00117","SC_AID":"190353027","SC_SI":"","SC_AEM":"kulman10@naver.com","SC_ISA":1,"SC_EM":"theenm_officr@naver.com","SC_EP":7,"SC_SCD":3,"SC_PN":"01024158202","SC_NK":"kulman","SC_SP":""} / result : {"rst":{"rstCode" : "0","rstMsg" : "회원가입이 정상적으로 처리되었습니다.","signId" : "n9573165627300240724","signPwd" : ""}}
+
+
+
 member/snsJoinChk.asp
 {"SC_PC":"P-00117","SC_SC":3,"SC_SK":"190353027"}
 {"rst":{"rstCode" : "0","rstMsg" : "로그인 처리 가능","signId" : "n6737175242320210427","signPwd" : "0xA524669C7B6605132A0C5122BD33BF4C367A68908AD7891537C3F916BCACA75B","isNickChgNeed" : "0"}}

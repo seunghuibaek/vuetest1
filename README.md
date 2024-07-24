@@ -1,3 +1,15 @@
+member/snsJoinChk.asp
+{"SC_PC":"P-00117","SC_SC":3,"SC_SK":"190353027"}
+{"rst":{"rstCode" : "0","rstMsg" : "로그인 처리 가능","signId" : "n6737175242320210427","signPwd" : "0xA524669C7B6605132A0C5122BD33BF4C367A68908AD7891537C3F916BCACA75B","isNickChgNeed" : "0"}}
+
+
+member/naSignOn.asp
+{"SC_EP":7,"SC_PC":"P-00117","SC_SI":"n6737175242320210427","SC_SK":"a59418f9-2cce-4b43-8bcd-fa6ed7185fdc","SC_SP":"0xA524669C7B6605132A0C5122BD33BF4C367A68908AD7891537C3F916BCACA75B"}
+{"rst":{"rstCode" : "1","rstMsg" : "아이디 또는 비밀번호를 다시 확인하세요."},"signOn" : {"memberSex" : "","isAdult" : "","nickName" : "","memberType" : "","pFileName" : "","accountLevel" : "","pwdCode" : "0xA524669C7B6605132A0C5122BD33BF4C367A68908AD7891537C3F916BCACA75B","isNameCheck" : "0","levelUp" : "0","svcLvl" : ""},"memberBlockCheck" : {"isBlock" : "0","isLoginBlock" : "0","blockRegDate" : "","blockDate" : "","blockMemo" : ""}}
+
+
+
+
 "C:\Program Files (x86)\PopPlayer\P-00001\PopPlayerLauncher.exe" PopPlayer:site=devw.popkontv.com&language=popkon_kr&pcode=P-00001
 
 

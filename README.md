@@ -1,3 +1,6 @@
+
+https://docs.google.com/document/d/1D5NOYQqjKlphWvWSAC4IoDD7bv_pHM9xuAJLRSPPOaU/edit
+
 https://bts.rink.kr/projects/potv-cetv/files
 
 API Test URL : https://sys1.celuvtv.co.kr:9002/AS/member/registExe.asp / jsonString : {"SC_ANK":"","SC_PC":"P-00117","SC_AID":"190353027","SC_SI":"","SC_AEM":"kulman10@naver.com","SC_ISA":1,"SC_EM":"theenm_officr@naver.com","SC_EP":7,"SC_SCD":3,"SC_PN":"01024158202","SC_NK":"kulman","SC_SP":""} / result : {"rst":{"rstCode" : "0","rstMsg" : "회원가입이 정상적으로 처리되었습니다.","signId" : "n9573165627300240724","signPwd" : ""}}

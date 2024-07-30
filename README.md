@@ -1,4 +1,15 @@
-
+SELECT 
+		DB_NAME(dbid) as DBName, 
+		COUNT(dbid) as NumberOfConnections,
+		loginame as LoginName
+	FROM
+		sys.sysprocesses
+	WHERE 
+		dbid > 0
+	GROUP BY 
+		dbid, loginame
+	ORDER BY  COUNT(dbid) DESC
+ 
 114.31.51.70
 114.31.51.71
 114.31.51.72

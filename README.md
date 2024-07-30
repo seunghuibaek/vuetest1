@@ -1,3 +1,6 @@
+https://learn.microsoft.com/en-us/previous-versions/ms810829(v=msdn.10)?redirectedfrom=MSDN#bkmk_ODBCConnectionPool
+
+
 SELECT 
 		DB_NAME(dbid) as DBName, 
 		COUNT(dbid) as NumberOfConnections,

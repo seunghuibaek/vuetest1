@@ -1,3 +1,13 @@
+SELECT
+    S.SPID AS '세션 ID', S.LOGINAME AS '로그인 이름', S.LOGIN_TIME AS '로그인 시간', S.LAST_BATCH AS '마지막 일괄 처리 시간', C.CLIENT_NET_ADDRESS AS '클라이언트 IP 주소'
+FROM
+    sys.sysprocesses S, sys.dm_exec_connections C
+WHERE
+    S.spid = C.SESSION_ID
+ORDER BY
+    S.LOGIN_TIME DESC;
+
+    
 192.168.1.91    B_VOD
 [B_VOD].[dbo].[KJM_WEB_vodCategory]
 

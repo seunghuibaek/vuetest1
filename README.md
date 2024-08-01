@@ -1,3 +1,7 @@
+192.168.1.91    B_VOD
+[B_VOD].[dbo].[KJM_WEB_vodCategory]
+
+
 string source = "Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=TEST;" +             "UID=sa;PWD=pass1234;" +            "OLE DB Services = -1;";
 ppknapisvcacc
 

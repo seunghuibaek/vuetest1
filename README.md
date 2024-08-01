@@ -1,4 +1,5 @@
 string source = "Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=TEST;" +             "UID=sa;PWD=pass1234;" +            "OLE DB Services = -1;";
+ppknapisvcacc
 
 SQLOLEDB (SQL Server native provider) : HKEY_CLASSES_ROOT\CLSID\{0C7FF16C-38E3-11d0-97AB-00C04FC2AD98} Microsoft.Jet.OLEDB.4.0 (Jet native provider) ": HKEY_CLASSES_ROOT\CLSID\{dee35070-506b-11cf-b1aa-00aa00b8de95} MSDAORA (Oracle native provider) : HKEY_CLASSES_ROOT\CLSID\{e8cc4cbe-fdff-11d0-b865-00a0c9081c1d} MSDASQL (OLE DB Provider for ODBC) : HKEY_CLASSES_ROOT\CLSID\{c8b522cb-5cf3-11ce-ade5-00aa0044773d} Wait Retry 의 경우 이 대기 시간의 전역 설정이라고 볼 수 있습니다. 아래의 값을 조정하게 되면 전체적으로 대기 하는 시간을 늘려 줄 수 있습니다.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataAccess\Session Pooling\Retry WaitHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataAccess\Session Pooling\ExpBackOff
 

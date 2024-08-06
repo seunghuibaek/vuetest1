@@ -1,3 +1,6 @@
+https://thumb.popcast.co.kr/POPCAST_THUMB/sys_Thumb/P-00117/14/9.jpg
+
+
 SELECT
     S.SPID AS '세션 ID', S.LOGINAME AS '로그인 이름', S.LOGIN_TIME AS '로그인 시간', S.LAST_BATCH AS '마지막 일괄 처리 시간', C.CLIENT_NET_ADDRESS AS '클라이언트 IP 주소'
 FROM

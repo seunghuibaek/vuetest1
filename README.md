@@ -1,3 +1,6 @@
+https://bts.rink.kr/issues/12516
+
+
 92.168.1.80,9190
 
 ppknwebsvcacc

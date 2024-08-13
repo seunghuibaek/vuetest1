@@ -1,3 +1,11 @@
+--2페이지
+EXEC @ret2 = B_CASTDATA.dbo.USP_GetList_BrdcListMainExpsr_002 'P-00001',15,2,2,'Y','Y',1,15,0
+
+--3페이지
+EXEC @ret3 = B_CASTDATA.dbo.USP_GetList_BrdcListMainExpsr_002 'P-00001',15,2,2,'Y','Y',2,30,15
+
+
+
 [B_CASTDATA].[dbo].[USP_GetList_BrdcListMainExpsr_002] 'P-00001', 15, 0, 0, 'Y', 'Y', 2, 15, 0
 
 

@@ -1,3 +1,10 @@
+118.129.153.138
+114.141.29.110
+114.31.50.114
+114.31.50.115
+180.182.60.206
+
+
 URL:https://stagesys.popkontv.com:9002/AS/castData/naViewCastList.asp
  PARAMS:["SC_IA": "1", "SC_PC": "P-00001", "SC_EP": "3", "SC_IAS": "0", "SC_CT": "0", "SC_SCTE": "0", "SC_PN": "1", "SC_STYP": "2", "SC_CLT": "1"]
  

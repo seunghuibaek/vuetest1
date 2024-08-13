@@ -1,3 +1,5 @@
+"C:\Program Files (x86)\PopPlayer\P-00001\PopPlayerLauncher.exe" PopPlayer:site=stagew.popkontv.com&language=popkon_kr&pcode=P-00001
+
 --2페이지
 EXEC @ret2 = B_CASTDATA.dbo.USP_GetList_BrdcListMainExpsr_002 'P-00001',15,2,2,'Y','Y',1,15,0
 

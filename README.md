@@ -1,3 +1,12 @@
+select P.spid, P.login_time, P.last_batch, C.client_net_address
+from sys.sysprocesses AS P INNER JOIN sys.dm_exec_connections AS C
+ON P.spid = C.session_id
+
+
+select P.spid, P.login_time, P.last_batch
+from sys.sysprocesses AS P
+
+
 "C:\Program Files (x86)\PopPlayer\P-00001\PopPlayerLauncher.exe" PopPlayer:site=stagew.popkontv.com&language=popkon_kr&pcode=P-00001
 
 --2페이지

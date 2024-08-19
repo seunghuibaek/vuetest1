@@ -1,3 +1,8 @@
+https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp
+{"SC_CLT":1,"SC_CT":1,"SC_EP":7,"SC_IA":0,"SC_IAS":1,"SC_PC":"P-00117","SC_PN":1,"SC_PS":"","SC_SCT":"celaos","SC_SCTE":0,"SC_STYP":2}
+
+
+
 select P.spid, P.login_time, P.last_batch, C.client_net_address
 from sys.sysprocesses AS P INNER JOIN sys.dm_exec_connections AS C
 ON P.spid = C.session_id

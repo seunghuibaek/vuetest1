@@ -1,3 +1,14 @@
+Sub closeRs(ByRef Rs)
+    If IsObject(Rs) Then
+        If Not Rs Is Nothing Then
+            If Rs.State = adStateOpen Then Rs.close
+            Set Rs = Nothing
+        End If
+    End If
+End Sub
+
+
+
 https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp
 {"SC_CLT":1,"SC_CT":1,"SC_EP":7,"SC_IA":0,"SC_IAS":1,"SC_PC":"P-00117","SC_PN":1,"SC_PS":"","SC_SCT":"celaos","SC_SCTE":0,"SC_STYP":2}
 

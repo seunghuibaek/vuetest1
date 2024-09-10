@@ -1,12 +1,5 @@
-Sub closeRs(ByRef Rs)
-    If IsObject(Rs) Then
-        If Not Rs Is Nothing Then
-            If Rs.State = adStateOpen Then Rs.close
-            Set Rs = Nothing
-        End If
-    End If
-End Sub
 
+ppknapisvcacc:  KTW)tHC\j9#gDzx8
 
 
 https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp

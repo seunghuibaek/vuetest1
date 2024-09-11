@@ -2,6 +2,7 @@
 ppknapisvcacc:  KTW)tHC\j9#gDzx8
 ppknwebsvcacc:    Vq6z7M?5n3(YHdZx
 smsuser:	gy3vjaU/p&huV)Zd
+smsuser 기존 비밀번호 hzaJrC2(5S$pT=B
 
 https://devsys.popkontv.kr:9002/AS/castData/naViewCastList.asp
 {"SC_CLT":1,"SC_CT":1,"SC_EP":7,"SC_IA":0,"SC_IAS":1,"SC_PC":"P-00117","SC_PN":1,"SC_PS":"","SC_SCT":"celaos","SC_SCTE":0,"SC_STYP":2}

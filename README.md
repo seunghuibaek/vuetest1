@@ -1,3 +1,9 @@
+{"SC_CT":"0","SC_SCT":"","SC_SCTE":"30","SC_PN":"1","SC_STYP":"2","SC_IA":"0","SC_EP":"9","SC_PC":"P-00117","SC_CLT":"0","SC_IAS":"1"}
+
+{"SC_CT":"0","SC_SCT":"","SC_SCTE":"14","SC_PN":"1","SC_STYP":"2","SC_IA":"0","SC_EP":"9","SC_PC":"P-00117","SC_CLT":"0","SC_IAS":"1"}
+
+castData/naViewCastList.asp
+
 
 ppknapisvcacc:  KTW)tHC\j9#gDzx8
 ppknwebsvcacc:    Vq6z7M?5n3(YHdZx

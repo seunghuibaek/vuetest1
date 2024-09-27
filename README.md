@@ -1,3 +1,4 @@
+https://bts.rink.kr/issues/12602
 
 10.20.23.11 방송목록캐싱(141)
 exec [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] 0, '', 13, 0, 0, 'P-00117', 'Y', 'N'

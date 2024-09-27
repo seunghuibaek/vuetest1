@@ -1,3 +1,9 @@
+
+10.20.23.11 방송목록캐싱(141)
+exec [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] 0, '', 13, 0, 0, 'P-00117', 'Y', 'N'
+
+
+
 {"SC_CT":"0","SC_SCT":"","SC_SCTE":"30","SC_PN":"1","SC_STYP":"2","SC_IA":"0","SC_EP":"9","SC_PC":"P-00117","SC_CLT":"0","SC_IAS":"1"}
 
 {"SC_CT":"0","SC_SCT":"","SC_SCTE":"14","SC_PN":"1","SC_STYP":"2","SC_IA":"0","SC_EP":"9","SC_PC":"P-00117","SC_CLT":"0","SC_IAS":"1"}

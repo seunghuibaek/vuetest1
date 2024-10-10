@@ -1,3 +1,52 @@
+select case exePath
+	case 9
+		result = result &_  		
+		"""categoryDivision"":[16],"&_
+		"""32bit"":{"&_
+			"""category0"":["&_
+				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
+				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
+				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
+			"],"&_
+			"""category16"":["&_
+				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
+				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
+				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
+			"]"&_
+		"},"&_
+		"""64bit"":{"&_
+			"""category0"":["&_
+				"{""name"":""1080p"",""resolution"":""1920x1080"",""bitrate"":3500},"&_
+				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
+				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
+				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
+			"],"&_
+			"""category16"":["&_
+				"{""name"":""1080p"",""resolution"":""1920x1080"",""bitrate"":3500},"&_
+				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
+				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
+				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
+			"]"&_
+		"}"
+	case 7
+		'"{""name"":""1080p"",""resolution"":""1080x1920"",""bitrate"":3000},"&_
+		result = result &_  
+		"""category0"":["&_			
+			"{""name"":""720p"",""resolution"":""720x1280"",""bitrate"":2000},"&_
+			"{""name"":""540p"", ""resolution"":""540x960"",""bitrate"":1500},"&_
+			"{""name"":""360p"",""resolution"":""360x640"",""bitrate"":800}"&_
+		"]"
+	case else
+		result = result &_  
+		"""category0"":["&_
+			"{""name"":""720p"",""resolution"":""720x1280"",""bitrate"":2000},"&_
+			"{""name"":""540p"", ""resolution"":""540x960"",""bitrate"":1500},"&_
+			"{""name"":""360p"",""resolution"":""360x640"",""bitrate"":800}"&_
+		"]"
+	end select
+	result = result &"}"
+ 
+
 https://bts.rink.kr/issues/12602
 
 10.20.23.11 방송목록캐싱(141)

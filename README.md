@@ -44,7 +44,6 @@ select case exePath
 			"{""name"":""360p"",""resolution"":""360x640"",""bitrate"":800}"&_
 		"]"
 	end select
-	result = result &"}"
  
 
 https://bts.rink.kr/issues/12602

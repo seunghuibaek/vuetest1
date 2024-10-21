@@ -1,56 +1,12 @@
-select case exePath
-	case 9
-		result = result &_  		
-		"""categoryDivision"":[16],"&_
-		"""32bit"":{"&_
-			"""category0"":["&_
-				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
-				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
-				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
-			"],"&_
-			"""category16"":["&_
-				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
-				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
-				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
-			"]"&_
-		"},"&_
-		"""64bit"":{"&_
-			"""category0"":["&_
-				"{""name"":""1080p"",""resolution"":""1920x1080"",""bitrate"":3500},"&_
-				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
-				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
-				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
-			"],"&_
-			"""category16"":["&_
-				"{""name"":""1080p"",""resolution"":""1920x1080"",""bitrate"":3500},"&_
-				"{""name"":""720p"",""resolution"":""1280x720"",""bitrate"":2000},"&_
-				"{""name"":""540p"",""resolution"":""960x540"",""bitrate"":1500},"&_
-				"{""name"":""360p"",""resolution"":""640x360"",""bitrate"":800}"&_
-			"]"&_
-		"}"
-	case 7
-		'"{""name"":""1080p"",""resolution"":""1080x1920"",""bitrate"":3000},"&_
-		result = result &_  
-		"""category0"":["&_			
-			"{""name"":""720p"",""resolution"":""720x1280"",""bitrate"":2000},"&_
-			"{""name"":""540p"", ""resolution"":""540x960"",""bitrate"":1500},"&_
-			"{""name"":""360p"",""resolution"":""360x640"",""bitrate"":800}"&_
-		"]"
-	case else
-		result = result &_  
-		"""category0"":["&_
-			"{""name"":""720p"",""resolution"":""720x1280"",""bitrate"":2000},"&_
-			"{""name"":""540p"", ""resolution"":""540x960"",""bitrate"":1500},"&_
-			"{""name"":""360p"",""resolution"":""360x640"",""bitrate"":800}"&_
-		"]"
-	end select
- 
+https://stagesys.popkontv.com:9002/AS/castData/naCastManager.asp
 
-https://bts.rink.kr/issues/12602
+{"SC_DT":0,"SC_IIU":0,"SC_MPC":"","SC_MSI":"gdhchchcyf","SC_PC":"P-00001","SC_PCC":"popaos6-20241021133725","SC_SI":"popaos6","SC_SP":"0x0E55B5D88FFD6DCDFE52A542F252D6F477037F2106401C08B1B3A7B7CB5AF616"}
+{"rst":{"rstCode" : "1","rstMsg" : "대상회원은 매니저 등록/해제를 할 수 없습니다.[MSS]"}}
 
-10.20.23.11 방송목록캐싱(141)
-exec [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] 0, '', 13, 0, 0, 'P-00117', 'Y', 'N'
+{"SC_DT":0,"SC_IIU":0,"SC_MPC":"","SC_MSI":"ㅗ렿초초펴","SC_PC":"P-00001","SC_PCC":"popaos6-20241021133725","SC_SI":"popaos6","SC_SP":"0x0E55B5D88FFD6DCDFE52A542F252D6F477037F2106401C08B1B3A7B7CB5AF616"}
+{"rst":{"rstCode" : "1","rstMsg" : "대상회원 아이디가 존재하지 않습니다."}}
 
+매니저 지정하는 api인데 지정할 아이디를 영어로 보낼때("SC_MSI":"gdhchchcyf") 한글로 보낼때 (""SC_MSI":"ㅗ렿초초펴") rstMsg가 서로 다른데 확인 가능할까요?
 
 
 {"SC_CT":"0","SC_SCT":"","SC_SCTE":"30","SC_PN":"1","SC_STYP":"2","SC_IA":"0","SC_EP":"9","SC_PC":"P-00117","SC_CLT":"0","SC_IAS":"1"}
@@ -58,6 +14,8 @@ exec [B_CASTDATA].[dbo].[USP_GetList_CastOnListSrchForAPI_004] 0, '', 13, 0, 0, 
 {"SC_CT":"0","SC_SCT":"","SC_SCTE":"14","SC_PN":"1","SC_STYP":"2","SC_IA":"0","SC_EP":"9","SC_PC":"P-00117","SC_CLT":"0","SC_IAS":"1"}
 
 castData/naViewCastList.asp
+
+매니저 지정하는 api인데 지정할 아이디를 영어로 보낼때("SC_MSI":"gdhchchcyf") 한글로 보낼때 (""SC_MSI":"ㅗ렿초초펴") rstMsg가 서로 다른데 확인 가능할까요?
 
 
 ppknapisvcacc:  KTW)tHC\j9#gDzx8

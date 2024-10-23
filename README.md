@@ -1,3 +1,23 @@
+<%
+    Dim objError, data
+    Set objError = Server.GetLastError()
+%>
+
+<%
+    '에러로그 등록
+    data = "IIS Error Number : " & objError.ASPCode & chr(13) &_
+            "COM Error Number : " & objError.Number & " (0x" & Hex(objError.Number) & ")"& chr(13) &_
+            "Error Source : " & objError.Source& chr(13) &_
+            "File Name : " & objError.File& chr(13) &_
+            "Line Number : " & objError.Line& chr(13) &_
+            "Brief Description : " & objError.Description& chr(13) &_
+            "Full Description : " & objError.ASPDescription& chr(13) &_
+            "Query String : " & Request.Servervariables("query_string")& chr(13) &_
+            "Post String : " & Request.Form& chr(13)
+    call setApiLoginsert("Error500", data, objError.File, objError.Description)    
+    
+    Set objError=Nothing
+%>
 USP_GetList_CastOnListSrchForAPI_005
 
 https://stagesys.popkontv.com:9002/AS/castData/naCastManager.asp

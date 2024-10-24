@@ -1,3 +1,8 @@
+https://stagesys.popkontv.com:9002/AS/member/naSignOnCast.asp
+2024-10-24 09:36:15.749  8443-8505  RetrofitUtil            com.social.media.broadcast.aospop.e  D  Retrofit Test createRequestBody jsonString {"SC_EP":7,"SC_PC":"P-00001","SC_SI":"popaos101","SC_SK":"cfd073dd-bbe0-4894-a427-d30f22276604","SC_SP":"a123123"}
+2024-10-24 09:36:15.811  8443-8505  UserReposi...asterLogin com.social.media.broadcast.aospop.e  D  Retrofit Test responseEmit callbackId: LOGIN_CAST / decodeString : {"rst":{"rstCode" : "1","rstMsg" : "아이디 또는 비밀번호를 다시 확인하세요."},"signOn" : {"memberSex" : "","isAdult" : "","nickName" : "","memberType" : "","pFileName" : "","accountLevel" : "","pwdCode" : "a123123","partnerCode" : "P-00001","isNewBJ" : "0","isNameCheck" : "0","levelUp" : "0","svcLvl" : ""},"memberBlockCheck" : {"isBlock" : "0","isLoginBlock" : "0","blockRegDate" : "","blockDate" : "","blockMemo" : ""}}
+
+
 <%
     Dim objError, data
     Set objError = Server.GetLastError()

@@ -1,3 +1,6 @@
+https://bts.rink.kr/issues/12715
+
+
 USP_Get_MmbrLoginPrtsCd_002
 10.20.23.220
 

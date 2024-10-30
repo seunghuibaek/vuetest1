@@ -1,3 +1,11 @@
+
+기존url
+https://pic.popkontv.com/images/common/coin/
+
+개발기url
+https://pic.popkontv.com/images/common/coin/dev
+
+
 https://bts.rink.kr/issues/12715
 
 

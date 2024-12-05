@@ -1,3 +1,8 @@
+192.168.1.16,9190
+[B_CASTDATA].[dbo].[USP_GetList_BkmkBrdcListForAPI_003]
+
+
+
 7doremifasolra7   
 
 AS/recVod/suspendRecordIFile.asp

@@ -1,3 +1,5 @@
+172.17.12.6
+
 192.168.1.16,9190
 [B_CASTDATA].[dbo].[USP_GetList_BkmkBrdcListForAPI_003]
 

@@ -1,3 +1,8 @@
+
+1. IP Address : 118.129.153.67
+2. Port : 60001
+3. Database : ShrtfrmDrama
+
 xY7h3nMXBc(2gF4r
 
 

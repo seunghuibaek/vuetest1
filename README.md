@@ -27,8 +27,22 @@
     9) 소비여부
 정보 전송 필요
 
-
-
+<insert id="insert2" parameterType="com.test.sample.vo.SamplePVO">
+    <selectKey keyProperty="sampleSeq" resultType="java.lang.String" order="BEFORE">
+        SELECT NEXTVAL(sq_sample_seq) FROM DUAL
+    </selectKey>
+    INSERT INTO TBL_SAMPLE
+    (
+        SAMPLE_SEQ,
+        SAMPLE_ID
+    )
+    VALUES
+    (
+           #{sampleSeq}
+         , #{sampleId}
+    )
+</insert>
+https://developer-heo.tistory.com/37
 a1234567/*
 
 https://velog.io/@hsh111366/Error%EB%A5%BC-%EB%AA%A8%EC%95%84%EB%B3%B4%EC%9E%90-Process-finished-with-exit-code-1-%ED%95%B4%EA%B2%B0%EB%B2%95

@@ -1,3 +1,5 @@
+shrtfrmpltfapisvc   /  YFknRe)=9\6$7*5d
+
 1. 로그인 체크
 
 2. 결제 상품 목록 정보(가격, 상품명 등)

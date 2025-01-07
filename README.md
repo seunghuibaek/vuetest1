@@ -1,3 +1,48 @@
+{
+  "svcPrvdSeCd": 60002,		-- 애플리케이션(APP)
+  "osSeCd": 70005,			-- 안드로이드(Andrd)
+  "appMrktCd": 71005			-- 구글플레이(Gglply)
+}
+
+{
+  "statusCd": "S0200",
+  "statusMsg": "SUCCESS",
+  "data": [
+    {
+      "saleGudsRgstCd": "RGS1000000001",
+      "appMrktRgstGudsCd": null,
+      "saleGudsNm": "500토큰",
+      "saleQty": 500,
+      "salePrc": 6900,
+      "bnsQty": 380
+    },
+    {
+      "saleGudsRgstCd": "RGS1000000002",
+      "appMrktRgstGudsCd": null,
+      "saleGudsNm": "1000토큰",
+      "saleQty": 1000,
+      "salePrc": 13900,
+      "bnsQty": 900
+    },
+    {
+      "saleGudsRgstCd": "RGS1000000003",
+      "appMrktRgstGudsCd": null,
+      "saleGudsNm": "2000토큰",
+      "saleQty": 2000,
+      "salePrc": 27900,
+      "bnsQty": 2200
+    },
+    {
+      "saleGudsRgstCd": "RGS1000000004",
+      "appMrktRgstGudsCd": null,
+      "saleGudsNm": "5000토큰",
+      "saleQty": 5000,
+      "salePrc": 68900,
+      "bnsQty": 7500
+    }
+  ]
+}
+
 shrtfrmpltfapisvc  /  W8tKmhf3ey@qHX?6
 
 1. 로그인 체크

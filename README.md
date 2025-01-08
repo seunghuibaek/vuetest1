@@ -1,3 +1,8 @@
+
+https://adapty.io/ko/blog/android-in-app-purchases-part-5-server-side-purchase-validation/
+https://developer.android.com/google/play/billing/rtdn-reference?hl=ko
+
+
 {
   "svcPrvdSeCd": 60002,		-- 애플리케이션(APP)
   "osSeCd": 70005,			-- 안드로이드(Andrd)

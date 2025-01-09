@@ -1,3 +1,5 @@
+https://console.developers.google.com/apis/api/androidpublisher.googleapis.com/overview?project=592815358292
+
 firebase-adminsdk
 
 https://shinheechul.tistory.com/75

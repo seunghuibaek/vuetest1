@@ -1,3 +1,5 @@
+firebase-adminsdk
+
 https://shinheechul.tistory.com/75
    <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
         <dependency>

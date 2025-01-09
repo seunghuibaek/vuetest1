@@ -1,3 +1,67 @@
+https://shinheechul.tistory.com/75
+   <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <!-- Google Play Developer API -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-androidpublisher</artifactId>
+            <version>v3-rev20230313-2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.auth</groupId>
+            <artifactId>google-auth-library-oauth2-http</artifactId>
+            <version>1.20.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.http-client/google-http-client-jackson2 -->
+        <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client-jackson2</artifactId>
+            <version>1.43.1</version>
+        </dependency>
+
+
+
+ -----------
+ /*구매 확정 호출 aos*/
+try {
+
+    ClassPathResource resource = new ClassPathResource("키파일_위치.json");
+    InputStream inputStream = resource.getInputStream();
+
+    GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream)
+            .createScoped(AndroidPublisherScopes.ANDROIDPUBLISHER);
+
+    AndroidPublisher publisher = new AndroidPublisher.Builder(
+            GoogleNetHttpTransport.newTrustedTransport(),
+            GsonFactory.getDefaultInstance(),
+            new HttpCredentialsAdapter(credentials)
+    ).setApplicationName("앱패키지 이름").build();
+
+    AccessToken accessToken = credentials.refreshAccessToken();
+
+    AndroidPublisher.Purchases.Subscriptions.Get get1 = publisher.purchases().subscriptions().get("패키지명", "구매상품아이디", "구매자 토큰값");
+    get1.setAccessToken(accessToken.getTokenValue());
+    SubscriptionPurchase subscriptionPurchase =  get1.execute();
+    log.info("subscriptionPurchase :: "+subscriptionPurchase);
+    /* 구매 확정 */
+    if(subscriptionPurchase != null && !"0".equals(subscriptionPurchase.getAcknowledgementState())){
+        AndroidPublisher.Purchases.Subscriptions.Acknowledge post = publisher.purchases().subscriptions().acknowledge("com.mobile.android", "구매상품아이디", "구매자 토큰값", new SubscriptionPurchasesAcknowledgeRequest());
+        post.setAccessToken(accessToken.getTokenValue());
+        post.execute();
+    }
+
+} catch (IOException e) {
+    log.error(e.toString());
+} catch (Exception e) {
+    log.error(e.toString());
+}
+---------
+
+
 firebase-adminsdk-uzx25@shotform-d95e8.iam.gserviceaccount.com
 
 

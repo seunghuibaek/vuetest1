@@ -1,3 +1,6 @@
+https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products?hl=ko
+
+
 https://console.developers.google.com/apis/api/androidpublisher.googleapis.com/overview?project=592815358292
 
 firebase-adminsdk

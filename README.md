@@ -1,6 +1,6 @@
-[https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/consume?hl=ko ](https://androidpublisher.googleapis.com/androidpublisher/v3/applications/com.jhoh.celuv.test/purchases/products/ac_0001/tokens/lafdcpnnimjbjpmipfeigcbf.AO-J1Ow2U_YEo4M1vLQ9NmhIaUxseq4iACzHxgcHoVK3t6VP-nORE9XlL6WyrMEpkNLoOL4Ke4mdfEfBp3Rp7qNEIlQYhIwnXw
+구매 정보가 유효한지 확인
+https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/get?hl=ko 
 
-https://minseok-study.tistory.com/entry/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B5%AC%EA%B8%80-%EC%9D%B8%EC%95%B1%EA%B2%B0%EC%A0%9C-%EC%98%81%EC%88%98%EC%A6%9D-%EA%B2%80%EC%A6%9D)
 
 POST https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:consume
 

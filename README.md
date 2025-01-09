@@ -1,3 +1,8 @@
+https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/consume?hl=ko
+
+
+
+
 https://velog.io/@givepro91/%EC%9D%B8%EC%95%B1%EA%B2%B0%EC%A0%9C-%EC%84%9C%EB%B2%84-%EA%B0%9C%EB%B0%9C
 
 

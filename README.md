@@ -1,3 +1,6 @@
+firebase-adminsdk-uzx25@shotform-d95e8.iam.gserviceaccount.com
+
+
 dependencies {
     compile 'com.google.api-client:google-api-client:1.21.0'
     compile 'com.google.apis:google-api-services-androidpublisher:v2-rev22-1.21.0'

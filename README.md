@@ -1,12 +1,21 @@
+https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/consume?hl=ko 
+
+POST https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:consume
+
+URL은 gRPC 트랜스코딩 구문을 사용합니다.
+
+packageName string
+인앱 제품이 판매된 애플리케이션의 패키지 이름입니다 (예: 'com.some.thing').
+productId   string
+인앱 상품 SKU (예: 'com.some.thing.inapp1')입니다.
+token   string
+인앱 상품을 구매할 때 사용자 기기에 제공된 토큰입니다.
+
+
+
+
 https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/consume?hl=ko
 
-
-
-
-https://velog.io/@givepro91/%EC%9D%B8%EC%95%B1%EA%B2%B0%EC%A0%9C-%EC%84%9C%EB%B2%84-%EA%B0%9C%EB%B0%9C
-
-
-https://velog.io/@stella6767/%EC%9D%B8%EC%95%B1-%EA%B5%AC%EB%8F%85-%EA%B2%B0%EC%A0%9C-In-App-Purchase-IAP-%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C-%EA%B2%80%EC%A6%9D-2-Android
 
 
 {"orderId":"GPA.3328-6916-1689-27322","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736388262230,"purchaseState":0,"purchaseToken":"lafdcpnnimjbjpmipfeigcbf.AO-J1Ow2U_YEo4M1vLQ9NmhIaUxseq4iACzHxgcHoVK3t6VP-nORE9XlL6WyrMEpkNLoOL4Ke4mdfEfBp3Rp7qNEIlQYhIwnXw","quantity":1,"acknowledged":false}]

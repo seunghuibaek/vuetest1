@@ -1,3 +1,6 @@
+https://velog.io/@stella6767/%EC%9D%B8%EC%95%B1-%EA%B5%AC%EB%8F%85-%EA%B2%B0%EC%A0%9C-In-App-Purchase-IAP-%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C-%EA%B2%80%EC%A6%9D-2-Android
+
+
 {"orderId":"GPA.3328-6916-1689-27322","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736388262230,"purchaseState":0,"purchaseToken":"lafdcpnnimjbjpmipfeigcbf.AO-J1Ow2U_YEo4M1vLQ9NmhIaUxseq4iACzHxgcHoVK3t6VP-nORE9XlL6WyrMEpkNLoOL4Ke4mdfEfBp3Rp7qNEIlQYhIwnXw","quantity":1,"acknowledged":false}]
 
 

@@ -1,6 +1,50 @@
 구매 정보가 유효한지 확인
 https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/get?hl=ko 
 
+전송되는 정보
+{
+  "kind": string,
+  "purchaseTimeMillis": string,
+  "purchaseState": integer,
+  "consumptionState": integer,
+  "developerPayload": string,
+  "orderId": string,
+  "purchaseType": integer,
+  "acknowledgementState": integer,
+  "purchaseToken": string,
+  "productId": string,
+  "quantity": integer,
+  "obfuscatedExternalAccountId": string,
+  "obfuscatedExternalProfileId": string,
+  "regionCode": string
+}
+
+가격정보 호출
+HTTP 요청
+https://developers.google.com/android-publisher/api-ref/rest/v3/inappproducts/list?hl=ko 
+
+GET https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{packageName}/inappproducts
+
+
+ 아이템 사용
+ https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/consume?hl=ko 
+
+POST https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:consume
+
+URL은 gRPC 트랜스코딩 구문을 사용합니다.
+
+경로 매개변수
+매개변수
+packageName	string
+인앱 제품이 판매된 애플리케이션의 패키지 이름입니다 (예: 'com.some.thing').
+productId	string
+인앱 상품 SKU (예: 'com.some.thing.inapp1')입니다.
+token	string
+인앱 상품을 구매할 때 사용자 기기에 제공된 토큰입니다.
+ 
+
+자 이제 위 API를 호출을 하고 나면 드디어 사용자는 인앱결제 -> 아이템 획득과 같은 flow를 거칠 수 있게 됩니다!
+-------------------
 
 POST https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:consume
 

@@ -1,3 +1,58 @@
+dependencies {
+    compile 'com.google.api-client:google-api-client:1.21.0'
+    compile 'com.google.apis:google-api-services-androidpublisher:v2-rev22-1.21.0'
+}
+
+// oathu
+String emailAddress = "my-new-service-account@api-project-000000.iam.gserviceaccount.com";
+
+JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
+HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
+GoogleCredential credential = new GoogleCredential.Builder()
+     .setTransport(httpTransport)
+     .setJsonFactory(JSON_FACTORY)
+     .setServiceAccountId(emailAddress)
+     .setServiceAccountPrivateKeyFromP12File(new File("src/GooglePlayAndroidDeveloperPrivateKey.p12"))
+     .setServiceAccountScopes(Collections.singleton("https://www.googleapis.com/auth/androidpublisher"))
+     .build();
+
+// 주문정보 호출
+String packageName = "pe.kr.theeye.trivialdrive";
+String productId = "gas";
+String purchaseToken = "njnbhmfid...AuSkyASqY";
+
+AndroidPublisher publisher = new AndroidPublisher.Builder(httpTransport, JSON_FACTORY, credential)
+	.setApplicationName(packageName)
+	.build();
+
+AndroidPublisher.Purchases.Products.Get get = publisher.purchases().products().get(packageName, productId, purchaseToken);
+ProductPurchase productPurchase = get.execute();
+System.out.println(productPurchase.toPrettyString());
+
+// 인앱 상품의 소비 상태. 0 아직 소비 안됨(Yet to be consumed) / 1 소비됨(Consumed)
+Integer consumptionState = productPurchase.getConsumptionState();
+
+// 개발자가 지정한 임의 문자열 정보
+String developerPayload = productPurchase.getDeveloperPayload();
+
+// 구매 상태. 0 구매완료 / 1 취소됨
+Integer purchaseState = productPurchase.getPurchaseState();
+
+// 상품이 구매된 시각. 타임스탬프 형태
+Long purchaseTimeMillis = productPurchase.getPurchaseTimeMillis();
+
+---------------------------------------------------------------------
+
+{
+  "consumptionState" : 1,	// 0 아직 컨슘 안됨, 1 컨슘됨
+  "developerPayload" : "",
+  "kind" : "androidpublisher#productPurchase",
+  "purchaseState" : 0,	// 0 구매완료, 1 취소
+  "purchaseTimeMillis" : "1454502702978"
+}
+
+
+     
 http://theeye.pe.kr/archives/tag/purchasestate
 
 

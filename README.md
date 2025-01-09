@@ -1,3 +1,5 @@
+{"orderId":"GPA.3328-6916-1689-27322","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736388262230,"purchaseState":0,"purchaseToken":"lafdcpnnimjbjpmipfeigcbf.AO-J1Ow2U_YEo4M1vLQ9NmhIaUxseq4iACzHxgcHoVK3t6VP-nORE9XlL6WyrMEpkNLoOL4Ke4mdfEfBp3Rp7qNEIlQYhIwnXw","quantity":1,"acknowledged":false}]
+
 
 https://adapty.io/ko/blog/android-in-app-purchases-part-5-server-side-purchase-validation/
 https://developer.android.com/google/play/billing/rtdn-reference?hl=ko

@@ -1,4 +1,6 @@
 
+implementation 'com.google.apis:google-api-services-androidpublisher:v3-rev20250102-2.0.0'
+
 google-api-client
 google-api-services-androidpublisher
 google-auth-library-oauth2-http

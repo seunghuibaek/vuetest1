@@ -1,3 +1,6 @@
+서비스 계정 생성
+https://developers.google.com/android-publisher/getting_started?hl=ko#service-account
+
 https://minseok-study.tistory.com/entry/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B5%AC%EA%B8%80-%EC%9D%B8%EC%95%B1%EA%B2%B0%EC%A0%9C-%EC%98%81%EC%88%98%EC%A6%9D-%EA%B2%80%EC%A6%9D
 implementation 'com.google.apis:google-api-services-androidpublisher:v3-rev20250102-2.0.0'
 

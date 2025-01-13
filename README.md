@@ -1,3 +1,8 @@
+가격 정보
+https://developers.google.com/android-publisher/api-ref/rest/v3/inappproducts?hl=ko  -- 구글 설명
+
+설정
+https://minseok-study.tistory.com/entry/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B5%AC%EA%B8%80-%EC%9D%B8%EC%95%B1%EA%B2%B0%EC%A0%9C-%EC%98%81%EC%88%98%EC%A6%9D-%EA%B2%80%EC%A6%9D
 인앱결제 
 https://daco2020.tistory.com/786
 서비스 계정 생성

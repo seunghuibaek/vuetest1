@@ -1,3 +1,5 @@
+인앱결제 
+https://daco2020.tistory.com/786
 서비스 계정 생성
 https://developers.google.com/android-publisher/getting_started?hl=ko#service-account
 

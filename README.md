@@ -1,3 +1,6 @@
+실시간 개발자 알림
+https://developer.android.com/google/play/billing/rtdn-reference?hl=ko
+
 가격 정보
 https://developers.google.com/android-publisher/api-ref/rest/v3/inappproducts?hl=ko  -- 구글 설명
 

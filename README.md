@@ -1,5 +1,7 @@
 구글 RTDN 설정
 https://choi-seunghwan.tistory.com/entry/Google-Play-%EC%9D%B8%EC%95%B1-%EA%B5%AC%EB%8F%85-%EC%83%81%ED%92%88-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%83%81%ED%83%9C-%EC%B6%94%EC%A0%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-RTDN-Real-Time-Develop-Notification
+	구매처리
+	https://developer.android.com/google/play/billing/lifecycle/one-time?hl=ko&_gl=1*d58mxy*_up*MQ..*_ga*MTg2Nzg2MjU2NS4xNzM2ODE5MzE0*_ga_6HH9YJMN9M*MTczNjgxOTMxNC4xLjAuMTczNjgxOTMxNC4wLjAuMTM2MTcyMjI5Mg..
 
 실시간 개발자 알림
 https://developer.android.com/google/play/billing/rtdn-reference?hl=ko

@@ -1,6 +1,5 @@
 [Purchase. Json: {"orderId":"GPA.3365-2109-3509-14619","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736905672787,"purchaseState":0,"purchaseToken":"difgmjijkfppejnkhfhdflic.AO-J1OzFwbUh-0lFpF1HkZfB7XhKymDcGYHN6jqfWZ1I83ZMgAXqp9HGyVilkkvsdc9Kkpt_Mlz-7OXGWonqTvsqzcjz8ZJVSQ","quantity":1,"acknowledged":false}]
 
-    
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -24,26 +23,32 @@ public class RTDNController {
                 return ResponseEntity.badRequest().body("No data field found under message.");
             }
 
-            // message 아래의 data 값을 가져오기
+            // message.data 추출 및 디코딩
             String dataBase64 = messageNode.path("data").asText();
-
-            // Base64 디코딩
             byte[] decodedBytes = Base64.getDecoder().decode(dataBase64);
             String decodedJson = new String(decodedBytes);
 
             // 디코딩된 JSON 파싱
             JsonNode decodedNode = objectMapper.readTree(decodedJson);
 
-            // 파싱된 JSON 데이터 반환 (또는 다른 로직 처리 가능)
-            return ResponseEntity.ok(decodedNode.toString());
+            // oneTimeProductNotification 데이터 추출
+            JsonNode oneTimeProductNode = decodedNode.path("oneTimeProductNotification");
+            if (oneTimeProductNode.isMissingNode()) {
+                return ResponseEntity.badRequest().body("No oneTimeProductNotification found in the data.");
+            }
+
+            String orderId = oneTimeProductNode.path("order_id").asText();
+            String productId = oneTimeProductNode.path("product_id").asText();
+
+            // 로그 출력 또는 비즈니스 로직 처리
+            String responseMessage = String.format("Order ID: %s, Product ID: %s", orderId, productId);
+            return ResponseEntity.ok(responseMessage);
 
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error processing RTDN: " + e.getMessage());
         }
     }
 }
-
-
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'

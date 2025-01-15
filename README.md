@@ -1,3 +1,37 @@
+/*구매 확정 호출 aos*/
+try {
+
+    ClassPathResource resource = new ClassPathResource("키파일_위치.json");
+    InputStream inputStream = resource.getInputStream();
+
+    GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream)
+            .createScoped(AndroidPublisherScopes.ANDROIDPUBLISHER);
+
+    AndroidPublisher publisher = new AndroidPublisher.Builder(
+            GoogleNetHttpTransport.newTrustedTransport(),
+            GsonFactory.getDefaultInstance(),
+            new HttpCredentialsAdapter(credentials)
+    ).setApplicationName("앱패키지 이름").build();
+
+    AccessToken accessToken = credentials.refreshAccessToken();
+
+    AndroidPublisher.Purchases.Subscriptions.Get get1 = publisher.purchases().subscriptions().get("패키지명", "구매상품아이디", "구매자 토큰값");
+    get1.setAccessToken(accessToken.getTokenValue());
+    SubscriptionPurchase subscriptionPurchase =  get1.execute();
+    log.info("subscriptionPurchase :: "+subscriptionPurchase);
+    /* 구매 확정 */
+    if(subscriptionPurchase != null && !"0".equals(subscriptionPurchase.getAcknowledgementState())){
+        AndroidPublisher.Purchases.Subscriptions.Acknowledge post = publisher.purchases().subscriptions().acknowledge("com.mobile.android", "구매상품아이디", "구매자 토큰값", new SubscriptionPurchasesAcknowledgeRequest());
+        post.setAccessToken(accessToken.getTokenValue());
+        post.execute();
+    }
+
+} catch (IOException e) {
+    log.error(e.toString());
+} catch (Exception e) {
+    log.error(e.toString());
+}
+
 [Purchase. Json: {"orderId":"GPA.3365-2109-3509-14619","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736905672787,"purchaseState":0,"purchaseToken":"difgmjijkfppejnkhfhdflic.AO-J1OzFwbUh-0lFpF1HkZfB7XhKymDcGYHN6jqfWZ1I83ZMgAXqp9HGyVilkkvsdc9Kkpt_Mlz-7OXGWonqTvsqzcjz8ZJVSQ","quantity":1,"acknowledged":false}]
 
 import org.springframework.web.bind.annotation.*;

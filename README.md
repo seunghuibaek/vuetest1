@@ -1,3 +1,47 @@
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.Base64;
+
+@RestController
+@RequestMapping("/google/rtdn")
+public class RTDNController {
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    @PostMapping
+    public ResponseEntity<String> handleRTDN(@RequestBody String requestBody) {
+        try {
+            // 요청 본문을 JSON으로 파싱
+            JsonNode rootNode = objectMapper.readTree(requestBody);
+            JsonNode messageNode = rootNode.path("message");
+
+            if (!messageNode.has("data")) {
+                return ResponseEntity.badRequest().body("No data field found under message.");
+            }
+
+            // message 아래의 data 값을 가져오기
+            String dataBase64 = messageNode.path("data").asText();
+
+            // Base64 디코딩
+            byte[] decodedBytes = Base64.getDecoder().decode(dataBase64);
+            String decodedJson = new String(decodedBytes);
+
+            // 디코딩된 JSON 파싱
+            JsonNode decodedNode = objectMapper.readTree(decodedJson);
+
+            // 파싱된 JSON 데이터 반환 (또는 다른 로직 처리 가능)
+            return ResponseEntity.ok(decodedNode.toString());
+
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Error processing RTDN: " + e.getMessage());
+        }
+    }
+}
+
+
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.fasterxml.jackson.core:jackson-databind'

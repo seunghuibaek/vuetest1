@@ -1,3 +1,19 @@
+2025-01-16 10:23:02 [ERROR] PaymentService.getReqAndroidTransactionId(309): errorText - com.google.api.client.googleapis.json.GoogleJsonResponseException: 401 Unauthorized
+GET https://androidpublisher.googleapis.com/androidpublisher/v3/applications/com.jhoh.celuv.test/purchases/products/ac_0001/tokens/cnndfobkopgaacacpmdkbbaa.AO-J1Oyr7rFDINq5Fl1nq39JXp6iyPcH1rl2RblHym_FlBzmdqsUN83E2MV1UljFxRHGE0AGvw5hMPz7WPKgEpC-YC68WhNoyw
+{
+  "code": 401,
+  "errors": [
+    {
+      "domain": "androidpublisher",
+      "message": "The current user has insufficient permissions to perform the requested operation.",
+      "reason": "permissionDenied"
+    }
+  ],
+  "message": "The current user has insufficient permissions to perform the requested operation."
+}
+
+products().get(
+
 Purchase. Json: {"orderId":"GPA.3348-9297-3116-55339","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736989662823,"purchaseState":0,"purchaseToken":"cnndfobkopgaacacpmdkbbaa.AO-J1Oyr7rFDINq5Fl1nq39JXp6iyPcH1rl2RblHym_FlBzmdqsUN83E2MV1UljFxRHGE0AGvw5hMPz7WPKgEpC-YC68WhNoyw","quantity":1,"acknowledged":false}]
 
 {"orderId":"GPA.3353-6501-1685-47077","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736987261344,"purchaseState":0,"purchaseToken":"nhnieamcfcgijmdoahefjfja.AO-J1Oyoe9aiz_GcB-b6Yg82RNvjlawfJlnA-mpbTN9BKwYvyQEchCN_yVMu5nDXNY5FHKUeEkevwvqzFXiC2yMjwHAIeHDSlg","quantity":1,"acknowledged":false}]

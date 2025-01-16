@@ -1,5 +1,5 @@
-"purchaseToken":"knplcjjfjpopfjmnlmibnkbl.AO-J1OyDLs9schIPk3RAGB28oq1Yj441xNQym05bOjdSWKnObw7eMXu8BQH-tm8ZZc4pP8vzf3uB7WYhQYSJDrzoxFazvo7cYA","quantity":1,"acknowledged":false}]
-2025-01-16 13:16:38.531 27595-27800 BillingUse...umeProduct com.jhoh.celuv.test                  D  InApp Test BillingUseCase consumeProduct consumeResult ConsumeResult(billingResult=Response Code: OK, Debug Message: , purchaseToken=knplcjjfjpopfjmnlmibnkbl.AO-J1OyDLs9schIPk3RAGB28oq1Yj441xNQym05bOjdSWKnObw7eMXu8BQH-tm8ZZc4pP8vzf3uB7WYhQYSJDrzoxFazvo7cYA)
+{"orderId":"GPA.3377-1874-0552-92222","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1737001075449,"purchaseState":0,"purchaseToken":"ncbemmpnepmldklmgnjfflma.AO-J1Oyp-Q69PgI5X643GmqMmGOkC9phTg_NUbBELu2EZ8XkPIvbQmnK0NCWaHmDTX_LHiPS2meHXJFarYGy399bBoleEDHfxw","quantity":1,"acknowledged":false}]
+2025-01-16 13:18:00.115 27595-27800 BillingUse...umeProduct com.jhoh.celuv.test                  D  InApp Test BillingUseCase consumeProduct consumeResult ConsumeResult(billingResult=Response Code: OK, Debug Message: , purchaseToken=ncbemmpnepmldklmgnjfflma.AO-J1Oyp-Q69PgI5X643GmqMmGOkC9phTg_NUbBELu2EZ8XkPIvbQmnK0NCWaHmDTX_LHiPS2meHXJFarYGy399bBoleEDHfxw)
 
 
 

@@ -1,3 +1,8 @@
+"purchaseToken":"knplcjjfjpopfjmnlmibnkbl.AO-J1OyDLs9schIPk3RAGB28oq1Yj441xNQym05bOjdSWKnObw7eMXu8BQH-tm8ZZc4pP8vzf3uB7WYhQYSJDrzoxFazvo7cYA","quantity":1,"acknowledged":false}]
+2025-01-16 13:16:38.531 27595-27800 BillingUse...umeProduct com.jhoh.celuv.test                  D  InApp Test BillingUseCase consumeProduct consumeResult ConsumeResult(billingResult=Response Code: OK, Debug Message: , purchaseToken=knplcjjfjpopfjmnlmibnkbl.AO-J1OyDLs9schIPk3RAGB28oq1Yj441xNQym05bOjdSWKnObw7eMXu8BQH-tm8ZZc4pP8vzf3uB7WYhQYSJDrzoxFazvo7cYA)
+
+
+
 2025-01-16 10:23:02 [ERROR] PaymentService.getReqAndroidTransactionId(309): errorText - com.google.api.client.googleapis.json.GoogleJsonResponseException: 401 Unauthorized
 GET https://androidpublisher.googleapis.com/androidpublisher/v3/applications/com.jhoh.celuv.test/purchases/products/ac_0001/tokens/cnndfobkopgaacacpmdkbbaa.AO-J1Oyr7rFDINq5Fl1nq39JXp6iyPcH1rl2RblHym_FlBzmdqsUN83E2MV1UljFxRHGE0AGvw5hMPz7WPKgEpC-YC68WhNoyw
 {

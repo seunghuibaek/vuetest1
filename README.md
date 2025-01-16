@@ -1,5 +1,33 @@
-{"orderId":"GPA.3377-1874-0552-92222","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1737001075449,"purchaseState":0,"purchaseToken":"ncbemmpnepmldklmgnjfflma.AO-J1Oyp-Q69PgI5X643GmqMmGOkC9phTg_NUbBELu2EZ8XkPIvbQmnK0NCWaHmDTX_LHiPS2meHXJFarYGy399bBoleEDHfxw","quantity":1,"acknowledged":false}]
-2025-01-16 13:18:00.115 27595-27800 BillingUse...umeProduct com.jhoh.celuv.test                  D  InApp Test BillingUseCase consumeProduct consumeResult ConsumeResult(billingResult=Response Code: OK, Debug Message: , purchaseToken=ncbemmpnepmldklmgnjfflma.AO-J1Oyp-Q69PgI5X643GmqMmGOkC9phTg_NUbBELu2EZ8XkPIvbQmnK0NCWaHmDTX_LHiPS2meHXJFarYGy399bBoleEDHfxw)
+2025-01-16 13:19:15 [CONFIG] LoggingByteArrayOutputStream.close(103): Total: 1,083 bytes
+2025-01-16 13:19:15 [CONFIG] LoggingByteArrayOutputStream.close(107): {"access_token":"ya29.c.c0ASRK0GaLKyQO6PE1AL_S1rAa4SaJxWKVPhoug3sqLI72OTzbPxPlhu8WL26ZYhill5fyZQWg33dEj7Oa4bvWjMrxCdwbxpIQqM2r14LGNDLI5agE1txBORnKsEFB-cZjpxT55zRPoHeMie5v84F77rfZkVhp2TDvHAmmGqMGOcYBzES1WPCQ0q9S0m-MF7NZOhDmDL0mXaO1gVZuO0qu7FfjOHuVIrK_O_GXNdcOiuyVgZL3uydwgdPXhVhpieICnH-sRwbU7wsTEGts6KRG0ttFfNkwuo7BqM2Dl9Wy7RXtaVsMnqYkP6dsUxQv6o87SZMjEandZ8zX1pkhd7vcfCzJz70_BnRf__scLc3hwBRpoVSKUeK3ydfgE385PS4S_g7WiXu79R6izosVWdW6RV8Qoi6pb0RJZrB9_IyX9-rjlqn5OeSMfhRkfYuR9UfucMXRmirujef0bJW3Xmlc7QyfIiZaJfk73U4h0Z2tJVY7zvkzV6-IbiVzZxpatVxlhZm-gyX9oFR2d1lRof1_rYWeIriQS3BrQQy5OMsumZlBO6oXp-vYv-nOwy8FcJt3s1g0J3q_qo3BSvWikek4coje72Rw2guXjQFOlSvYtnx7v55--b9q1u4feYrI0ex-OX63ZehyS9FbZ9Feih1poIvg13-Zpa87hqXg5FnBm-_9axnB7w_Jvc6k22OaJSp7B_3gF0hmt9dcacr_eaXp-WwOOjbWhq070chU5aUljRgFklj0_jfnoS-7abv9RSaRo-Q1s-_4FsmjtlkVmiom4X31jRiesj3pckOnX4umW7SmohnaSiSgniQ-5o7xbgvxdMXrhZeprhi-2_MgRn5VMh67MZtsRa8U1ZbnBoi2l5Wlviti1kp4zficp7owB63cWdjaby2uowep7iJ4bMRg4eZ6z9dFcWrSRrof4B0V47pug1RYwuJmwodfkwwmWXelf5sBYQ6pv3JItJUSlBQXqtIyV25wF9OFWqaJaxzWk1--sl11jyQxxkJ","expires_in":3599,"token_type":"Bearer"}
+2025-01-16 13:19:15 [CONFIG] LoggingByteArrayOutputStream.close(103): Total: 355 bytes
+2025-01-16 13:19:15 [CONFIG] LoggingByteArrayOutputStream.close(107): {
+  "error": {
+    "code": 401,
+    "message": "The current user has insufficient permissions to perform the requested operation.",
+    "errors": [
+      {
+        "message": "The current user has insufficient permissions to perform the requested operation.",
+        "domain": "androidpublisher",
+        "reason": "permissionDenied"
+      }
+    ]
+  }
+}
+
+2025-01-16 13:19:15 [ERROR] PaymentService.getReqAndroidTransactionId(309): errorText - com.google.api.client.googleapis.json.GoogleJsonResponseException: 401 Unauthorized
+GET https://androidpublisher.googleapis.com/androidpublisher/v3/applications/com.jhoh.celuv.test/purchases/products/ac_0001/tokens/ncbemmpnepmldklmgnjfflma.AO-J1Oyp-Q69PgI5X643GmqMmGOkC9phTg_NUbBELu2EZ8XkPIvbQmnK0NCWaHmDTX_LHiPS2meHXJFarYGy399bBoleEDHfxw
+{
+  "code": 401,
+  "errors": [
+    {
+      "domain": "androidpublisher",
+      "message": "The current user has insufficient permissions to perform the requested operation.",
+      "reason": "permissionDenied"
+    }
+  ],
+  "message": "The current user has insufficient permissions to perform the requested operation."
+}
 
 
 

@@ -1,3 +1,6 @@
+{"orderId":"GPA.3353-6501-1685-47077","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736987261344,"purchaseState":0,"purchaseToken":"nhnieamcfcgijmdoahefjfja.AO-J1Oyoe9aiz_GcB-b6Yg82RNvjlawfJlnA-mpbTN9BKwYvyQEchCN_yVMu5nDXNY5FHKUeEkevwvqzFXiC2yMjwHAIeHDSlg","quantity":1,"acknowledged":false}]
+
+
 /*구매 확정 호출 aos*/
 try {
 

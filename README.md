@@ -1,3 +1,29 @@
+@Service
+public class InAppPurchaseService {
+	...
+    
+	private fianl GoogleCredentialsConfig googleCredentialsConfig;
+	
+    ... 의존성 생략 ...
+    
+    public boolean googleInAppPurchaseVerify(GoogleInAppPurchaseRequest receiptRequest) throws GeneralSecurityException, IOException {
+
+      AndroidPublisher publisher = googleCredentialsConfig.androidPublisher();
+
+      AndroidPublisher.Purchases.Products.Get get = publisher.purchases().products().
+              get(receiptRequest.getPackageName(), receiptRequest.getProductId(), receiptRequest.getPurchaseToken());
+      ProductPurchase purchase = get.execute();
+
+      // 검증하는데 취소된 결제건인 경우
+      if (purchase.getPurchaseState() == 1) {
+      	// 결제완료 주문인 경우 해당 주문번호 조회 후 환불 처리           
+        throw new IllegalArgumentException("purchase_canceled");
+      }
+      return true;
+  }
+}
+
+
 {"orderId":"GPA.3353-6501-1685-47077","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1736987261344,"purchaseState":0,"purchaseToken":"nhnieamcfcgijmdoahefjfja.AO-J1Oyoe9aiz_GcB-b6Yg82RNvjlawfJlnA-mpbTN9BKwYvyQEchCN_yVMu5nDXNY5FHKUeEkevwvqzFXiC2yMjwHAIeHDSlg","quantity":1,"acknowledged":false}]
 
 

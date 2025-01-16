@@ -1,3 +1,16 @@
+InputStream inputStream = new ClassPathResource(privateKey).getInputStream();
+
+        GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream).createScoped(
+            AndroidPublisherScopes.ANDROIDPUBLISHER);
+
+        return new AndroidPublisher.Builder(
+            GoogleNetHttpTransport.newTrustedTransport(),
+            GsonFactory.getDefaultInstance(),
+            new HttpCredentialsAdapter(credentials)
+        ).setApplicationName(DramaConstants.AND_BUNDLEID).build();
+
+ 
+
 Get get = publisher.purchases().products().get(
                 packageId, productId, pToken
             );

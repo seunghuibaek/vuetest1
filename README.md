@@ -1,3 +1,7 @@
+Get get = publisher.purchases().products().get(
+                packageId, productId, pToken
+            );
+	    
 [Purchase. Json: {"orderId":"GPA.3302-0738-0285-11646","packageName":"com.jhoh.celuv.test","productId":"ac_0001","purchaseTime":1737002818057,"purchaseState":0,"purchaseToken":"fbbjhbiiknhcnhnjhdlpkmjh.AO-J1OzVHpQVZ5-7uy6SmmYDgjkl-I5Ilo0nm1ApSd7wIN072ZAZl80uiBKNJ8vwc22AgXxGjIak7fP44WrupButFD4xWoSnng","quantity":1,"acknowledged":false}]
 
 

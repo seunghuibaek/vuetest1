@@ -1,3 +1,5 @@
+developerPayLoad = c0b1b258-036b-4afe-마켓구분(4자리)-회원번호(12자리)
+
 InputStream inputStream = new ClassPathResource(privateKey).getInputStream();
 
         GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream).createScoped(

@@ -1,5 +1,6 @@
+pdnlpcbjmglmgddmlpkfjkea.AO-J1OxutMEqnHyNyvAm6I76sgczrnr9cMYCQqulJKkUTTlC6XumUuJO2hQeQklLiIMTofxLek0rsRnqfrL3ERbXRzswxEQByg
 
-findpngojddiblhgannhnaak.AO-J1OwOmgEiE1aWzp0I2bschFmmR7WP2YNTF2yO4ptoWqyLGVhNeSJfmljyFCKyJcxroKD9oTPqR1VmdH69GUYIUd_SPZSNPA
+
 try {
 
     ClassPathResource resource = new ClassPathResource("키파일_위치.json");

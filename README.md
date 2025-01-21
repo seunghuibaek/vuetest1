@@ -1,6 +1,40 @@
 gjjcehbnnbbipmkhhhdkgooj.AO-J1OzXkBdaHfrTUnuUAPs1o4Lkpu4f6nyLIiosXFQs6202BoMCDuqOY3Ysl60mApCGlPcTXWJjiN7JDHis3pI-8ztC0wwMBQ
 
 
+try {
+
+    ClassPathResource resource = new ClassPathResource("키파일_위치.json");
+    InputStream inputStream = resource.getInputStream();
+
+    GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream)
+            .createScoped(AndroidPublisherScopes.ANDROIDPUBLISHER);
+
+    AndroidPublisher publisher = new AndroidPublisher.Builder(
+            GoogleNetHttpTransport.newTrustedTransport(),
+            GsonFactory.getDefaultInstance(),
+            new HttpCredentialsAdapter(credentials)
+    ).setApplicationName("앱패키지 이름").build();
+
+    AccessToken accessToken = credentials.refreshAccessToken();
+
+    AndroidPublisher.Purchases.Subscriptions.Get get1 = publisher.purchases().subscriptions().get("패키지명", "구매상품아이디", "구매자 토큰값");
+    get1.setAccessToken(accessToken.getTokenValue());
+    SubscriptionPurchase subscriptionPurchase =  get1.execute();
+    log.info("subscriptionPurchase :: "+subscriptionPurchase);
+    /* 구매 확정 */
+    if(subscriptionPurchase != null && !"0".equals(subscriptionPurchase.getAcknowledgementState())){
+        AndroidPublisher.Purchases.Subscriptions.Acknowledge post = publisher.purchases().subscriptions().acknowledge("com.mobile.android", "구매상품아이디", "구매자 토큰값", new SubscriptionPurchasesAcknowledgeRequest());
+        post.setAccessToken(accessToken.getTokenValue());
+        post.execute();
+    }
+
+} catch (IOException e) {
+    log.error(e.toString());
+} catch (Exception e) {
+    log.error(e.toString());
+}
+
+
 decpbgpikmanlopklkkdnofa.AO-J1OzAE7WwJBHGQBhQI84cGh4CA8SK3CZ9jJHTE8BvzBlgfrokKSqP_vZsBXGhug8g_YXAtNthg9nf5wWixPthIrKuGwPQYQ
 "9378d0b1-2a89-4b13-1004-001000000001"
 

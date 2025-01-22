@@ -1,5 +1,9 @@
 // 환불리스트
 https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list?hl=ko
+
+https://github.com/googleapis/google-api-java-client-services/blob/main/clients/google-api-services-androidpublisher/v3/2.0.0/com/google/api/services/androidpublisher/AndroidPublisherRequest.java
+
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;

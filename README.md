@@ -1,6 +1,6 @@
 // 환불리스트
 https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list?hl=ko
-
+https://blog.eomsh.com/210
 
 ipnglibkaajacmhanmfacehp.AO-J1OxSSstLX2y5GjcrWhmNjuygT0pjK1HmSDmGOw1Z8KTDoxBQ9lhdjqz410wyFcLAHzN1rtm3ir2p8e_qP1l4rPBQcfTvyg
 

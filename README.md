@@ -1,6 +1,129 @@
 // 환불리스트
 https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list?hl=ko
-https://blog.eomsh.com/210
+import com.google.api.client.auth.oauth2.Credential;
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.services.androidpublisher.AndroidPublisher;
+import com.google.api.services.androidpublisher.AndroidPublisherScopes;
+import com.google.api.services.androidpublisher.model.VoidedPurchasesListResponse;
+import lombok.extern.slf4j.Slf4j;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.GeneralSecurityException;
+import java.util.Collections;
+
+/**
+ * 구글 스토어에 유저가 구매 취소한 리스트를 조회하는 API 사용 샘플 소스
+ * - Lists the purchases that were canceled, refunded or charged-back
+ *
+ * @author
+ */
+@Slf4j
+public class GoogleVoidedpurchasesListSample {
+
+    /**
+     * API 호출할때의 어플리케이션 명. 자체 정의해서 사용
+     */
+    public static final String APPLICATION_NAME = "TEST-VoidedpurchasesListSample";
+
+    /**
+     * 테스트대상 구글앱의 패키지명
+     */
+    public static final String PACKAGE_NAME = "입력필요";
+
+    /**
+     * 인증을 위한 인증파일
+     * - 프로토타이핑 중에 임시로 코드저장소외 외부환경 요소로 파일 저장 후 사용, 보안을 위해서 GIT과 같은 VCS에 올라가면 안되며, 라이브환경에서는 AWS Secrets Manager 등을 활용
+     */
+    public static final String AUTH_FILE_PATH = "인증용 json파일 경로. 구글 Cloud 콘솔에서 다운로드";
+
+    private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
+    private static HttpTransport HTTP_TRANSPORT;
+
+    static {
+        try {
+            HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        } catch (GeneralSecurityException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 실행 메소드
+     * - 구글 API 정의서: https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list?=en
+     *
+     * @param args
+     * @throws IOException
+     */
+    public static void main(String[] args) throws IOException {
+
+        final AndroidPublisher apiClient = getApiClient(AUTH_FILE_PATH, APPLICATION_NAME);
+
+
+        AndroidPublisher.Purchases.Voidedpurchases.List listRequest = apiClient.purchases().voidedpurchases().list(PACKAGE_NAME);
+
+        //추가 조회 필터링 조건들 설정
+        listRequest.setMaxResults(2L);
+        //listRequest.setToken("넥스트페이징 토큰");
+        VoidedPurchasesListResponse voidedpurchasesList = listRequest.execute(); //실행
+
+        //구글 응답 필드들 참고
+        // 1) https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list#response-body
+        // 2) https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases#VoidedPurchase
+        log.info("voidedpurchasesList : {}", voidedpurchasesList);
+
+        //응답 결과 중 voidedSource와 voidedReason 등을 참고해서 스토어 취소 악용한 유저에 대해서 블럭과 같은 이용제한 기능을 구현하면 됨
+
+
+    }
+
+    /**
+     * 구글 인증 후 API를 바로 사용 가능한 클라이언트 객체를 리턴
+     *
+     * @param authFilePath
+     * @param applicationName
+     * @return
+     * @throws IOException
+     */
+    public static AndroidPublisher getApiClient(String authFilePath, String applicationName) throws IOException {
+
+        // Authorization.
+        final Credential credential = authorizeWithServiceAccount(authFilePath);
+
+        log.debug("credential : {}", credential);
+
+        // Set up and return API client.
+        return new AndroidPublisher.Builder(HTTP_TRANSPORT, JSON_FACTORY, credential).setApplicationName(applicationName).build();
+    }
+
+    /**
+     * 구글 Android Publisher 인증
+     *
+     * @param apiAuthFilePath
+     * @return
+     * @throws IOException
+     */
+    public static Credential authorizeWithServiceAccount(String apiAuthFilePath)
+            throws IOException {
+
+        InputStream inputStream = new FileInputStream(apiAuthFilePath);
+
+        GoogleCredential credential = GoogleCredential.fromStream(inputStream, HTTP_TRANSPORT,
+                JSON_FACTORY);
+        credential = credential.createScoped(Collections.singleton(AndroidPublisherScopes.ANDROIDPUBLISHER));
+
+        return credential;
+    }
+
+}
+--------
 
 ipnglibkaajacmhanmfacehp.AO-J1OxSSstLX2y5GjcrWhmNjuygT0pjK1HmSDmGOw1Z8KTDoxBQ9lhdjqz410wyFcLAHzN1rtm3ir2p8e_qP1l4rPBQcfTvyg
 

@@ -1,6 +1,6 @@
-gnpfljlodbpjlcdjefojhcmb.AO-J1OwRDu3tsavO0YUX_UjB3qeYdfHNXHVsW-bkxFrxOEVQGvE6z9Pa7TlRjMCT2hf_eefXXqudONmXdKntFhkoa5g2WoLJqw
 
-https://daco2020.tistory.com/786
+jfjmppbcjjpioiobhnhghjhc.AO-J1OzF5pf4pyCPTT4N0MAQHktNOInejqry4G-55pMz_zti8Fp4tFjPA4-Me3LUfjdld_T5ftWq4G8aWxZyRNv5e4gfkNLepg
+
 
 // 환불리스트
 https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list?hl=ko

@@ -1,5 +1,34 @@
+
 stagesys.popkontv.com
 deploysys.popkontv.net
+
+
+stageaspw.popkontv.com
+stagew.popkontv.com
+stageceluvw.celuvtv.co.kr
+stageaspm.popkontv.com
+stageceluvm.celuvtv.co.kr
+stagem.popkontv.com
+stageplayer.popcast.co.kr
+stagecast.popcast.co.kr
+deployw.popkontv.com
+deploym.popkontv.com
+deployaspw.popkontv.com
+deployaspm.popkontv.com
+deployw.celuvtv.co.kr
+deploym.celuvtv.co.kr
+stagechm0.popkontv.com
+stagechm1.popkontv.com
+stagechw0.popkontv.com
+stagechw1.popkontv.com
+deployplayer.popcast.co.kr
+deploycast.popcast.co.kr
+stageasp2w.popkontv.net
+stageasp2m.popkontv.net
+deployasp2w.popkontv.net
+deployasp2m.popkontv.net
+stageasp2chw.popkontv.net
+stageasp2chm.popkontv.net
 
 jfjmppbcjjpioiobhnhghjhc.AO-J1OzF5pf4pyCPTT4N0MAQHktNOInejqry4G-55pMz_zti8Fp4tFjPA4-Me3LUfjdld_T5ftWq4G8aWxZyRNv5e4gfkNLepg
 

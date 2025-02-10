@@ -1,9 +1,4 @@
-kfdbljbheafookkhjbabenjd.AO-J1OywIX7y3qANld4iB2S3ApTrktB4bGqo4Pw_bdtYv6bjb5e60EoQW-XEKJ4XzcwE-DjiyqVbEGSi3reUQzBWok-vnYeyRw
-
-
-9378d0b1-2a89-4b13-1004-001000000001
-
-hlaganafdiimmcfkajngfcei.AO-J1OzA3x15LXgJSKW__B2JDJuG8LaEVVEModb_RFTxFVdx4V7TV237S24yyvVBdnxmCz1InKERlLd5OIoLm0wlDWgKU2bfDw
+76ce0b20-60e2-453a-9a8f-502c8144bae2-1005-001000000021
 
 
 stagesys.popkontv.com

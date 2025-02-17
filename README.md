@@ -1,3 +1,6 @@
+팝콘 개발기 DB 서비스 계정 비번 공유 드립니다.
+ppknapisvcacc:    TW5u6+!7J%PCBzg
+
 thumb.popkontv.kr
 
 

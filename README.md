@@ -1,3 +1,9 @@
+개발기는 변경 사항 없지만,  다음주 상용DB에 배포될 아래 계정도 공유 드려요.
+
+smsuser:   t9\HQKP;qj(<#L)!
+
+
+
 팝콘 개발기 DB 서비스 계정 비번 공유 드립니다.
 ppknapisvcacc:    TW5u6+!7J%PCBzg
 

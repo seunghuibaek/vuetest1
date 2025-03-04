@@ -1,4 +1,4 @@
-eodhhhcdpbkfajbalbioojal.AO-J1Oz5hBWaDkaOlkXqBiEB61mnLYg15nhkNAqf7MT-SVggk2e8Pvl5vNBv9-pFvcQVEnlaVZK2Uh7zEDMj2peNcwyWLa_81g
+imkceadbalnnlfddoieejcec.AO-J1Ox2303UBgPHYpyalVuxUhMnX-o9CSV4HPlphoB_6B4HeACv2cUtBYFkL_wpyU6qw0-Bu-nZFUUnd2fBIAKBh0V8Tf9cPA
 
 개발기는 변경 사항 없지만,  다음주 상용DB에 배포될 아래 계정도 공유 드려요.
 

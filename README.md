@@ -1,10 +1,4 @@
-pcgmmmdifncbankhnajgpdln.AO-J1OwnPwcbz2JhVnoEGDNPyK89Sz8dptwyVuNBiB8C0NoOrLQ5ONelHbkU3VGTUKL3_5N9cCZQjlLcvGd_AwmjFrCZ6E-2xQ
-
-
-
-개발기는 변경 사항 없지만,  다음주 상용DB에 배포될 아래 계정도 공유 드려요.
-
-smsuser:   t9\HQKP+qj(<#L)!
+114.141.28.24(192.168.1.53)
 
 
 

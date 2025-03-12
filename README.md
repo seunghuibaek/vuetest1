@@ -1,6 +1,15 @@
 /AS/member/meminfoNotiTarget.asp
 "SC_PS":"1"}
 
+Seq       --// 발송_일련번호  
+Mmbri       --// 회원아이디  
+PrtsCd       --// 파트너사코드  
+Mblpno       --//휴대전화번호  
+Rgstdt       --// 큐_등록일시  
+SITE_COMPANY_SERVICETITLE  --// 파트너사_서비스명  
+SITE_PC_URL      --// 파트너사_PC_URL  
+SITE_MOBILE_URL     --// 파트너사_모바일_URL  
+SMS_TEL_FROM     --// 파트너사_발송_번호  
 
 
 114.141.28.24(192.168.1.53)

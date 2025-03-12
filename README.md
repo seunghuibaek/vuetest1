@@ -1,3 +1,8 @@
+/AS/member/meminfoNotiTarget.asp
+"SC_PS":"1"}
+
+
+
 114.141.28.24(192.168.1.53)
 
 

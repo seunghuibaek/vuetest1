@@ -1,3 +1,7 @@
+안녕하세요 어제 20:14 ~ 23:04 까지 
+114.141.28.18 서버 CPU 사용량이 많다고 알람이 왔었는데
+
+
 /AS/member/meminfoNotiTarget.asp
 "SC_PS":"1"}
 

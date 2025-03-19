@@ -1,3 +1,16 @@
+<resultMap type="com.awse.domain.CompanyVO" id="companyMap">
+		<id property="id" column="id" />
+		<result property="id" column="id" />
+		<result property="name" column="company_name" />
+		<result property="address" column="company_address" />
+		//<collection property="employeeList" column="id" select="com.awse.mapper.EmployeeMapper.getByCompanyId" />
+	</resultMap>
+
+	<select id="getList" resultMap="companyMap" resultType="com.awse.domain.CompanyVO">
+		select * from company 
+	</select>
+
+ 
 private static double parseStringToDouble(String value) {
     return value == null || value.isEmpty() ? Double.NaN : Double.parseDouble(value);
 }

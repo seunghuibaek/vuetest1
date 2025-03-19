@@ -1,4 +1,6 @@
-qHeJyievkdcExwKzYkXutZ4wSgXfLuLppECpHrh4CRUTPNtMwqSsssPopx0k1pKi
+
+114.31.51.70    영상 삭제정보 로그파일 삭제
+114.31.51.71    영상 삭제정보 로그파일 삭제
 
 @Pattern(regexp = "^[0-9]$", message = "숫자만 입력할 수 있습니다.")
 

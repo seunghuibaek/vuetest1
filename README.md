@@ -1,3 +1,7 @@
+private static double parseStringToDouble(String value) {
+    return value == null || value.isEmpty() ? Double.NaN : Double.parseDouble(value);
+}
+
 [B_CASTDATA].[dbo].[JBN_JSON_liveServerCastUrl]
 
 

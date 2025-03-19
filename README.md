@@ -1,3 +1,6 @@
+@Pattern(regexp = "^[0-9]$", message = "숫자만 입력할 수 있습니다.")
+
+
 <resultMap type="com.awse.domain.CompanyVO" id="companyMap">
 		<id property="id" column="id" />
 		<result property="id" column="id" />

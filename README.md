@@ -1,3 +1,9 @@
+exe-info 에 androidStore 는 안드로이드 스토어 코드 [0: GooglePlay, 1: OneStore]
+login-partner 에 inyAppSe 는 
+어플리케이션 구분
+1: RINK
+2: RINK PLUS
+
 안녕하세요. /program/exe-info api 응답값 adexeimgdata에 방송자의 파트너코드도 추가되어야 할거 같습니다.
 linkparam 으로 들어 오는지
 

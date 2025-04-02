@@ -1,3 +1,6 @@
+isCast
+isNomalUserCast
+
 isCastLinkMarket
 json_isSsl
 

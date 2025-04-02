@@ -1,4 +1,7 @@
-	import java.time.LocalDateTime;
+isCastLinkMarket
+json_isSsl
+
+ import java.time.LocalDateTime;
 	import java.time.format.DateTimeFormatter;
 
 	public class CurrentDateTime {

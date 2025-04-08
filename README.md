@@ -1,3 +1,5 @@
+clist14, P-00117 
+
 exec USP_Get_AnvrPushInfo_002 'plist15', 'P-00001'
 
 https://bts.rink.kr/issues/12912

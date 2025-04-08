@@ -1,3 +1,5 @@
+exec USP_Get_AnvrPushInfo_002 'plist15', 'P-00001'
+
 https://bts.rink.kr/issues/12912
 USP_GetList_PrsninfoUseDtlsNotiSndngTgt
 

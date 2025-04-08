@@ -1,3 +1,7 @@
+https://bts.rink.kr/issues/12912
+USP_GetList_PrsninfoUseDtlsNotiSndngTgt
+
+
 연구원님 안녕하세요
 
 이번에 팬/유료방송 정책 변경 작업하면서

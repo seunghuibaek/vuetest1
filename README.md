@@ -1,3 +1,14 @@
+USP_Get_AnvrPushInfo_002 발송대상인사람확인
+LJC_PUSH_AnniversaryInfo_Temp 발송대상등록
+USP_GetList_AnvrPushKeySndgInfo_002 발송대상 호출
+
+연구원님. 위 sp가 호출되는데 등록될때  디바이스값과 호출될 때 디바이스값 확인해봐야 할 것 같습니다. push쪽 디바이스 구분값을 저희쪽에서 정의하고 있지 않아서요.
+오후 04:19
+
+류혜련
+어제 테스트된거보니 444 이더라구요. 
+
+
 asdqwe222
 
 {"SC_SI":"oshp00001a","SC_PC":"P-00001"}	PushAnniversaryInfo	395	2025-04-09 09:06:35.994

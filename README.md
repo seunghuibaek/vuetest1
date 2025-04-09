@@ -1,3 +1,7 @@
+AS/push/getPushAnniversaryInfoTemp.asp
+librestilo
+444
+123123
 USP_Get_AnvrPushInfo_002 발송대상인사람확인
 LJC_PUSH_AnniversaryInfo_Temp 발송대상등록
 USP_GetList_AnvrPushKeySndgInfo_002 발송대상 호출

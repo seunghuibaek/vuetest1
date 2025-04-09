@@ -1,3 +1,7 @@
+{"SC_SI":"oshp00001a","SC_PC":"P-00001"}	PushAnniversaryInfo	395	2025-04-09 09:06:35.994
+
+
+
 clist14, P-00117 
 
 exec USP_Get_AnvrPushInfo_002 'plist15', 'P-00001'

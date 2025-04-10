@@ -1,3 +1,8 @@
+/AS/push/getPushKeyInfo.asp
+/AS/push/getAnniversaryPushKeyInfo.asp
+/AS/push/getPushItemKeyInfo.asp
+
+
 AS/push/getPushAnniversaryInfoTemp.asp
 librestilo
 444

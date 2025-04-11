@@ -1,3 +1,6 @@
+LJC_PUSH_Login_Set
+
+
 /AS/push/getPushKeyInfo.asp
 /AS/push/getAnniversaryPushKeyInfo.asp
 /AS/push/getPushItemKeyInfo.asp

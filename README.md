@@ -1,3 +1,15 @@
+^[[33m[2025/04/14 14:25:59]     at /data/theenm/pushpopkonsend/routes/push.js:1418: ==## push start : plist14-20250414142516, plist14, P-00001^[[0m
+^[[33m[2025/04/14 14:25:59] /data/theenm/pushpopkonsend/routes/push.js:1331:8 ==## {"rst":{"rstCode":"0","rstMsg":"SUCCESS","anniversaryName":"day","dayCnt":"100"}}^[[0m
+
+
+^[[33m[2025/04/14 14:29:39]     at /data/theenm/pushpopkonsend/routes/push.js:1418: ==## push start : plist15-20250414142855, plist15, P-00001^[[0m
+^[[33m[2025/04/14 14:29:39] /data/theenm/pushpopkonsend/routes/push.js:1331:8 ==## {"rst":{"rstCode":"0","rstMsg":"SUCCESS","anniversaryName":"","dayCnt":"366"}}^[[0m
+
+
+
+-------
+
+
 AS/push/getAnniversaryPushKeyInfo.asp
 
 

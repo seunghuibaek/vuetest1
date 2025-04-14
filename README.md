@@ -1,3 +1,5 @@
+USP_Get_AnvrPushInfo_002
+
 ^[[33m[2025/04/14 14:25:59]     at /data/theenm/pushpopkonsend/routes/push.js:1418: ==## push start : plist14-20250414142516, plist14, P-00001^[[0m
 ^[[33m[2025/04/14 14:25:59] /data/theenm/pushpopkonsend/routes/push.js:1331:8 ==## {"rst":{"rstCode":"0","rstMsg":"SUCCESS","anniversaryName":"day","dayCnt":"100"}}^[[0m
 

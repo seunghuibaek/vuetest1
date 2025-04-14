@@ -1,3 +1,7 @@
+anniversaryPushKeyInfo_temp
+/AS/push/getPushAnniversaryInfoTemp.asp
+
+
 USP_Get_AnvrPushInfo_002
 
 ^[[33m[2025/04/14 14:25:59]     at /data/theenm/pushpopkonsend/routes/push.js:1418: ==## push start : plist14-20250414142516, plist14, P-00001^[[0m

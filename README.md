@@ -1,3 +1,15 @@
+[B_PUSH].[dbo].[USP_GetList_PushKeySndngInfo_002]
+
+{"SC_CSI":"popaos7","SC_CPC":"P-00001","SC_DT":3}
+cast_signId : popaos7
+cast_partnerCode : P-00001
+insDvcType : 
+	- 3, 7 데이터 있음
+ 	- 8, 15, 16, 17, 18, 19, 20
+
+{ "pk_code" : "526045490", "pushKey" : "dIlGDhxMnETSni4K8EO7F6:APA91bFn44iSJqRwjdpkLUXGn9Xx0AzL_ftaiVx8yfDQqg3-AI5NY9Iz0zgX5IL2YCQ2JN_2mSadtpAKWndyYvb8VJzcXukdPk4hQk5DMewiwQY9Gxm9PKc", "deviceType" : "3", "signId" : "popios2", "partnerCode" : "P-00001", "offTimeStart" : "0000", "offTimeEnd" : "0000", "cast_signId" : "popaos7", "cast_partnerCode" : "P-00001"}
+
+
 anniversaryPushKeyInfo_temp
 /AS/push/getPushAnniversaryInfoTemp.asp
 

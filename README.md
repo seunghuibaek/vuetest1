@@ -1,3 +1,10 @@
+[B_PUSH].[dbo].[USP_GetList_AnvrPushKeySndngInfo_002]
+cast_signId : blist5
+cast_partnerCode : P-00074
+insDvcType : 
+	- 3, 18, 7, 8, 15 데이터 있음
+ 	- 16, 17, 19, 20 데이터 없음
+
 [B_PUSH].[dbo].[USP_GetList_PushKeySndngInfo_002]
 
 {"SC_CSI":"popaos7","SC_CPC":"P-00001","SC_DT":3}

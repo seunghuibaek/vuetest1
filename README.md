@@ -1,3 +1,9 @@
+2.26 level/service
+하고 있는데요.
+🔵 POST Response (https://dev-sys2.rink.kr:443/v1/level/service):
+{"statusCd":"S0200","statusMsg":"SUCCESS","data":{"lvl":0,"nowExp":0.0,"lvlPer":0,"levelUpExp":0.0}}
+
+
 [B_PUSH].[dbo].[USP_GetList_AnvrPushKeySndngInfo_002]
 cast_signId : blist5
 cast_partnerCode : P-00074

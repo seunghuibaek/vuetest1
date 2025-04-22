@@ -1,3 +1,7 @@
+118.129.153.80
+B_CASTDATA.USP_GetList_RealTimeCastRankForAPI_003
+@chrLoginYn
+ 
  POST Response (https://dev-sys2.rink.kr:443/v1/level/service):
 {"statusCd":"S0200","statusMsg":"SUCCESS","data":{"lvl":6,"nowExp":4200.3,"lvlPer":0,"levelUpExp":5600.0}}):
 ["partnerCode": "P-00001", "intLvlSeCd": 10002, "signId": "poohcz1", "isExp": 1]

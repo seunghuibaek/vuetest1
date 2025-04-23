@@ -1,3 +1,21 @@
+첫방송 관련 미사용 오브젝트 확인 부탁드립니다.
+
+-errmsg
+저장 프로시저 'B_CASTDATA.dbo.PJH_CAST_BEGIN_DAY_INFO'을(를) 찾을 수 없습니다.
+
+-dtbsnm
+B_CASTDATA
+
+-usrid
+ppknapisvcacc
+
+-clnthostnm
+next-api-popkon-deployment-prod-765bdcc649-4pjxj
+
+-max_errdt
+2025-04-23 13:12:30.3430000
+
+
 118.129.153.80
 B_CASTDATA.USP_GetList_RealTimeCastRankForAPI_003
 @chrLoginYn  -- sp상에 해당 값 비교하는 구문 없음

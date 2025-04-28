@@ -3,6 +3,23 @@ public interface VodMapper {
     VodDeleteCommentForm toVodDeleteCommentForm(VodDeleteCommentSysForm form);
 }
 
+public class VodMapperImpl implements VodMapper {
+    @Override
+    public VodDeleteCommentForm toVodDeleteCommentForm(VodDeleteCommentSysForm form) {
+        if ( form == null ) {
+            return null;
+        }
+
+        CommonForm.CommonFormBuilder<?, ?> vodDeleteCommentForm = CommonForm.builder();
+
+        vodDeleteCommentForm.signId( form.getSignId() );
+        vodDeleteCommentForm.partnerCode( form.getPartnerCode() );
+
+        return vodDeleteCommentForm.build();
+    }
+}
+
+
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class VodDeleteCommentForm extends CommonForm {

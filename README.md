@@ -1,3 +1,23 @@
+public ResponseEntity<VodDeleteCommentDto> vodCommentDelete(
+        @ApiParam(value = "Authorization", required = true, defaultValue = "Bearer ") @RequestHeader(value = "Authorization") String tokenStr,
+        @ApiParam(value = "version", defaultValue = "1") @PathVariable("version") String version,
+        @Valid @RequestBody VodDeleteCommentSysForm param) {
+        if ("1".equals(version)) {
+
+            String rst = vodService.deleteComment(VodMapper.INSTANCE.toVodDeleteCommentForm(param));
+
+            if ("POLICE_ID".equals(rst)) {
+                return new ResponseEntity(ApiSysResponse.res().code(ApiResponseCodes.POLICE_ID).build(), HttpStatus.OK);
+            } else if ("FAILED".equals(rst)) {
+                return new ResponseEntity(ApiSysResponse.res().code(ApiResponseCodes.VOD_DELETE_FAILED).build(), HttpStatus.OK);
+            } else {
+                return new ResponseEntity(ApiSysResponse.res().code(ApiResponseCodes.SUCCESS).build(), HttpStatus.OK);
+            }
+        }
+
+        return new ResponseEntity(ApiSysResponse.res().code(ApiResponseCodes.URL_NOT_FOUND).build(), HttpStatus.OK);
+    }
+    
 @Mapper(unmappedTargetPolicy = ReportingPolicy.WARN)
 public interface VodMapper {
     VodDeleteCommentForm toVodDeleteCommentForm(VodDeleteCommentSysForm form);

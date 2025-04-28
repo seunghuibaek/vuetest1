@@ -1,3 +1,34 @@
+@Mapper(unmappedTargetPolicy = ReportingPolicy.WARN)
+public interface VodMapper {
+    VodDeleteCommentForm toVodDeleteCommentForm(VodDeleteCommentSysForm form);
+}
+
+@Data
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class VodDeleteCommentForm extends CommonForm {
+
+    @ApiModelProperty(value = "댓글의 pk code", example = "0", required = true)
+    @PositiveOrZero(message = "{positiveorzero.number.check#E4123}")
+    private int pkCode;
+
+}
+
+@ApiModel(description = "vod 댓글 삭제 form")
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class VodDeleteCommentSysForm extends CommonForm {
+
+    @Serial
+    private static final long serialVersionUID = 23216234882376027L;
+
+    @ApiModelProperty(value = "댓글의 pk code", example = "0", required = true)
+    @PositiveOrZero(message = "{sys.params.size#E9999$#pkCode}")
+    private int pkCode;
+}
+
+
 ,{"identifier":{"id":"eamodio.gitlens"},"version":"17.0.3","location":{"$mid":1,"fsPath":"c:\\Users\\THE E&M\\.vscode\\extensions\\eamodio.gitlens-17.0.3","_sep":1,"external":"file:///c%3A/Users/THE%20E%26M/.vscode/extensions/eamodio.gitlens-17.0.3","path":"/c:/Users/THE E&M/.vscode/extensions/eamodio.gitlens-17.0.3","scheme":"file"},"relativeLocation":"eamodio.gitlens-17.0.3","metadata":{"installedTimestamp":1745382323366,"pinned":false,"source":"gallery","id":"4de763bd-505d-4978-9575-2b7696ecf94e","publisherId":"678d198b-9b2e-49d3-96ff-6d801c9575df","publisherDisplayName":"GitKraken","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}}
 
 첫방송 관련 미사용 오브젝트 확인 부탁드립니다.

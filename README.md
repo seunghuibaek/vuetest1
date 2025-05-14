@@ -1,3 +1,5 @@
+https://dev-sys2.rink.kr:443/v1/program/exe-info
+ClientKey: Client FpAhe6mh8Qtz116OENBmRddbYVirNKasktdXQiuHfm88zRaFydTsFy63tzkdZY0u
 Content-Type: application/json
 
 implementation 'org.apache.httpcomponents:httpclient:4.5.14'

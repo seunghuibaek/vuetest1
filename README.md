@@ -1,3 +1,5 @@
+Content-Type: application/json
+
 implementation 'org.apache.httpcomponents:httpclient:4.5.14'
 
 http://114.31.42.8/users/aid12345popkon-20250429104102

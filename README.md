@@ -1,3 +1,6 @@
+
+114.31.50.106
+
 chrome-extension://aejoelaoggembcahagimdiliamlcdmfm/index.html#requests
 
 https://dev-sys2.rink.kr:443/v1/program/exe-info

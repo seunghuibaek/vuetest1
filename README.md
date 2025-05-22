@@ -1,3 +1,7 @@
+"iconImg": "https://pic.popkontv.com/bAD/popkontv/CATEICON/fn_20180803115202.jpg",
+"defaultImg": false,
+
+
 https://bts.rink.kr/issues/12355
 
 해당일감 로그인한상태에서 로그상으로는 true 로 주는데

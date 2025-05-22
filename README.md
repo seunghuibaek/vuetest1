@@ -1,10 +1,13 @@
-🔵 POST Request PARAM (https://dev-sys2.rink.kr:443/v1/message/to-message):
-["receive_signId": "shsfgfvvbgcxc", "isSendKeep": 0, "partnerCode": "P-00001", "ntext": "ㅋ", "signId": "poohcz1"]
-🔵 POST Response (https://dev-sys2.rink.kr:443/v1/message/to-message):
-{"statusCd":"E5000","statusMsg":"Cannot invoke \"String.trim()\" because the return value of \"com.enm.api.rest.sys.message.model.param.NoteSendExecSysForm.getText()\" is null","data":null}
-보낸메세지 응답 데이터: BaseResponse<MessageSendModel>(statusCd: PopkonAir.ResultCode.wrongRequest, statusMsg: "Cannot invoke \"String.trim()\" because the return value of \"com.enm.api.rest.sys.message.model.param.NoteSendExecSysForm.getText()\" is null", data: nil)
+🔵 POST Request PARAM (https://dev-sys2.rink.kr:443/v1/message/messages):
+["cmdCode": 1, "partnerCode": "P-00001", "pageSize": 20, "signId": "poohcz1", "pageNum": 1]
+🔵 POST Response (https://dev-sys2.rink.kr:443/v1/message/messages):
+{"statusCd":"S0200","statusMsg":"SUCCESS","data":{"pageNum":1,"pageSize":20,"totalCnt":14,"totalPage":1,"noteReceiveSysDtoList":[{"send_signId":"poohcz1","accountLevel":"0","sendDate":"20250522175152590","receiveDate":"","pk_code":3712074,"ntext":"ㅋ","isReceiveView":0,"isreport":0,"receive_signId":"popaos1"}
 
-일단 응답값이 이렇게 오고 있어서 statusMsg가
+🔵 POST Request PARAM (https://dev-sys2.rink.kr:443/v1/message/to-message):
+["regCode": "3712074", "signId": "poohcz1", "deleteType": 0, "partnerCode": "P-00001"]
+🔵 POST Response (https://dev-sys2.rink.kr:443/v1/message/to-message):
+{"statusCd":"E0002","statusMsg":"조회 데이터가 없습니다.","data":null}
+받은메세지삭제 응답 데이터: BaseResponse<MessageDeleteModel>(statusCd: PopkonAir.ResultCode.notDefinedError, statusMsg: "조회 데이터가 없습니다.", data: nil)
 
 
 "iconImg": "https://pic.popkontv.com/bAD/popkontv/CATEICON/fn_20180803115202.jpg",

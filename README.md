@@ -1,3 +1,12 @@
+🔵 POST Request PARAM (https://dev-sys2.rink.kr:443/v1/message/to-message):
+["receive_signId": "shsfgfvvbgcxc", "isSendKeep": 0, "partnerCode": "P-00001", "ntext": "ㅋ", "signId": "poohcz1"]
+🔵 POST Response (https://dev-sys2.rink.kr:443/v1/message/to-message):
+{"statusCd":"E5000","statusMsg":"Cannot invoke \"String.trim()\" because the return value of \"com.enm.api.rest.sys.message.model.param.NoteSendExecSysForm.getText()\" is null","data":null}
+보낸메세지 응답 데이터: BaseResponse<MessageSendModel>(statusCd: PopkonAir.ResultCode.wrongRequest, statusMsg: "Cannot invoke \"String.trim()\" because the return value of \"com.enm.api.rest.sys.message.model.param.NoteSendExecSysForm.getText()\" is null", data: nil)
+
+일단 응답값이 이렇게 오고 있어서 statusMsg가
+
+
 "iconImg": "https://pic.popkontv.com/bAD/popkontv/CATEICON/fn_20180803115202.jpg",
 "defaultImg": false,
 

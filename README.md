@@ -1,59 +1,7 @@
+https://bts.rink.kr/issues/12355
 
-114.31.50.106
-
-chrome-extension://aejoelaoggembcahagimdiliamlcdmfm/index.html#requests
-
-https://dev-sys2.rink.kr:443/v1/program/exe-info
-ClientKey: Client FpAhe6mh8Qtz116OENBmRddbYVirNKasktdXQiuHfm88zRaFydTsFy63tzkdZY0u
-Content-Type: application/json
-
-implementation 'org.apache.httpcomponents:httpclient:4.5.14'
-
-http://114.31.42.8/users/aid12345popkon-20250429104102
-
-,{"identifier":{"id":"eamodio.gitlens"},"version":"17.0.3","location":{"$mid":1,"fsPath":"c:\\Users\\THE E&M\\.vscode\\extensions\\eamodio.gitlens-17.0.3","_sep":1,"external":"file:///c%3A/Users/THE%20E%26M/.vscode/extensions/eamodio.gitlens-17.0.3","path":"/c:/Users/THE E&M/.vscode/extensions/eamodio.gitlens-17.0.3","scheme":"file"},"relativeLocation":"eamodio.gitlens-17.0.3","metadata":{"installedTimestamp":1745382323366,"pinned":false,"source":"gallery","id":"4de763bd-505d-4978-9575-2b7696ecf94e","publisherId":"678d198b-9b2e-49d3-96ff-6d801c9575df","publisherDisplayName":"GitKraken","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}}
-
-첫방송 관련 미사용 오브젝트 확인 부탁드립니다.
-
--errmsg
-저장 프로시저 'B_CASTDATA.dbo.PJH_CAST_BEGIN_DAY_INFO'을(를) 찾을 수 없습니다.
-
--dtbsnm
-B_CASTDATA
-
--usrid
-ppknapisvcacc
-
--clnthostnm
-next-api-popkon-deployment-prod-765bdcc649-4pjxj
-
--max_errdt
-2025-04-23 13:12:30.3430000
-
-
-118.129.153.80
-B_CASTDATA.USP_GetList_RealTimeCastRankForAPI_003
-@chrLoginYn  -- sp상에 해당 값 비교하는 구문 없음
- 
- POST Response (https://dev-sys2.rink.kr:443/v1/level/service):
-{"statusCd":"S0200","statusMsg":"SUCCESS","data":{"lvl":6,"nowExp":4200.3,"lvlPer":0,"levelUpExp":5600.0}}):
-["partnerCode": "P-00001", "intLvlSeCd": 10002, "signId": "poohcz1", "isExp": 1]
-
-
-
-2.26 level/service
-하고 있는데요.
-🔵 POST Response (https://dev-sys2.rink.kr:443/v1/level/service):
-{"statusCd":"S0200","statusMsg":"SUCCESS","data":{"lvl":0,"nowExp":0.0,"lvlPer":0,"levelUpExp":0.0}}
-
-
-[B_PUSH].[dbo].[USP_GetList_AnvrPushKeySndngInfo_002]
-cast_signId : blist5
-cast_partnerCode : P-00074
-insDvcType : 
-	- 3, 18, 7, 8, 15 데이터 있음
- 	- 16, 17, 19, 20 데이터 없음
-
+해당일감 로그인한상태에서 로그상으로는 true 로 주는데
+sakim9292 / rlsrls0310@ 계정으로 다시한번 확인해 주실수 있으신가요
 [B_PUSH].[dbo].[USP_GetList_PushKeySndngInfo_002]
 
 {"SC_CSI":"popaos7","SC_CPC":"P-00001","SC_DT":3}

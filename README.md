@@ -1,3 +1,5 @@
+네이티브 aos원스토어 버전
+
 🔵 POST Request PARAM (https://dev-sys2.rink.kr:443/v1/message/messages):
 ["cmdCode": 1, "partnerCode": "P-00001", "pageSize": 20, "signId": "poohcz1", "pageNum": 1]
 🔵 POST Response (https://dev-sys2.rink.kr:443/v1/message/messages):

@@ -1,3 +1,20 @@
+{
+  "SC_CT": 0,
+  "SC_EP": 7,
+  "SC_IA": 0,
+  "SC_IAS": 0,
+  "SC_PC": "P-00001",
+  "SC_PN": 1,
+  "SC_SI": "popaos1",
+  "SC_SP": "0xFF794AFC2C094ADD967B34E4E062D1D3419B8EB2301C6596B7B90A83D1A85709",
+  "SC_ST": 0,
+  "SC_STR": "",
+  "SC_STYP": 2
+}
+
+오후 05:35
+
+
 네이티브 aos원스토어 버전
 
 🔵 POST Request PARAM (https://dev-sys2.rink.kr:443/v1/message/messages):

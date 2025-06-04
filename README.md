@@ -1,4 +1,34 @@
 {
+  "api": {
+    "request": {
+      "url": "/api/joinRoom?data=PT1RZmlJaU9pd2tVVlpVU0hKWFkwRm1kaEpDSXNJaUkKNklDVFNWbGNoUlhZMkZtSWd3aUl3SWlPaVFYWnlOV1pUTlhhaUFDTGlJaU9pUTJRbHhtWWlWblEwRkdhakpDSXNJU1dpb2pJCnVsMWRsbG1Wc1ZtZGx4MFkyTmxJZ3dpSTNBVE1pb2pJc1ZtZGx4MFkyTjFjaUFDTGlFakk2SUNibFpYWk01V1lHTm5JZ3dpSQp3SWlPaUlYWjBaV2FITlhhaUFDTGR0bE9pUTNjcHhrYmhabUlnd2lJaW9qSTA1MllyMW1ZaUFDTGlRakk2SUNibFpYWk01V1kKbUpDSXNJQ01pb2pJc1ZtZGx4RWR1VjNiak5XWWlBQ0xpa0RNd0FETXRBbEk2SVNaazkyUXlWbWIwSlhZd0pDSXNJeU5pb2pJCm9SWFlRNTJacE5uSWd3aUl4SWlPaWdYWlRKWFppMVdadEpDSXNJQ00zZ3pRMXhWTXpNa1ExeGxJNklTWnRGbVRyTldhdUpDSQpzSVNNd1FYZTFsMmJpb2pJa2xrYm5sMmNpQUNMaWdUTjBJek54UURNMkFUTnlBak10Y3pjdkZHY3ZCbkk2SVNaazkyWWpKeWU=",
+      "data": {
+        "ccode": "popaos7-20250604172458",
+        "signId": "oiuyt01",
+        "nickName": "백조",
+        "memberSex": "1",
+        "signPath": "7",
+        "partnerCode": "P-00009",
+        "accountLevel": "0",
+        "fanLevel": "4",
+        "bmkcnt": "",
+        "fanList": [ ],
+        "isGifter": "0",
+        "sFanLevel": "1",
+        "sSvcLevel": "107",
+        "SvcLevelViewYn": "Y",
+        "chatBubbleCd": "",
+        "isSecret": "0",
+        "avatarURL": "",
+        "avatarGIFURL": ""
+      },
+      "time": "2025-06-04 17:25:45.039"
+    }
+  }
+}
+
+
+{
   "SC_CT": 0,
   "SC_EP": 7,
   "SC_IA": 0,

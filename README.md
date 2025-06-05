@@ -1,3 +1,6 @@
+10.20.23.24,9190
+B_ITEM.USP_GetList_ItemOnuseList_002 
+
 말풍선(AS) 아이템_사용상태_체크
 10.20.23.24,9190
 B_ITEM.USP_Get_ASItemUsgstsChck_002
@@ -14,7 +17,24 @@ ItemEftUseHist - 아이템_효과_사용_이력
 USP_Get_ASItemUsgstsChck_002
 
 채팅방 입장시 회원 정보 sp
+[B_MEMBER].[dbo].[JBN_WEB_memberPublicSearch] -- JBN_WEB_memberPublicSearch  -- 회원정보
+[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step1_LisenceCheck] -- 방송시청 권한 설정
+[B_MEMBER].[dbo].[JBN_JSON_signOn_Step2_BlockCheck_DDD]  -- 로그인 차단확인
+[B_CASTDATA].[dbo].[USP_GetList_CastInfoForAPI_003]  -- 방송코드 존재 확인
+castAddress 방송주소, castCode 방송코드(request), 
+chatAddress, castCode, signId, nickName, memberSex, exePath, partnerCode, accountLevel, fanLevel, itemlist, isGifter, sSvcLevel, sfanLevel, SvcLevelViewYn, chatBubbleCd, isSecret, vhImagFlnm, vhImagFlnmGIF
+chatBubbleCd  -- 말풍선 체크(값 없음)
+
+[B_MEMBER].[dbo].[JBN_JSON_isPhoneCheck]  -- 휴대폰인증 여부 확인
+[B_CASTDATA].[dbo].[JBN_JSON_castWatchOn_Step5_PasswordCheck]  -- 비공개방송 비밀번호 확인
+[B_MEMBER].[dbo].[SSM_fanGroup_memberSelect]  -- 시청자 팬등급 
+[B_MEMBER].[dbo].[JBN_JSON_memberFanLevelSetupSearch]  -- 팬설정정보 조회
+[B_COIN].[dbo].[JBN_WEB_MyPage_coinMemberData]  -- 소유코인 확인
+[B_ITEM].[dbo].[USP_Get_AQItemUsgstsChck_002]  -- 입장효과 설정 조회
+[B_COIN].[dbo].[LHY_JSON_coinUseCheck]  -- 코인지불 내역 확인
+
 말풍선 sp
+[B_ITEM].[dbo].[USP_Get_ASItemUsgstsChck_002]  -- 말풍선 체크 ItemCd 값 없음
 
 
 api/joinRoom?

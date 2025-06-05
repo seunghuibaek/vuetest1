@@ -2,6 +2,12 @@
 B_ITEM.USP_Get_ASItemUsgstsChck_002
 회원아이디 : oiuyt01
 회원사코드 : P-00009
+ItemEftUseHist - 아이템_효과_사용_이력
+조회조건 : 사용기간이 현재 시간으로 설정
+2025-01-25 21:21:41.713	
+2025-02-24 21:21:41.713
+현재 시간이 위 시간대에 없어 조회 되지 않음
+
 
 채팅
 USP_Get_ASItemUsgstsChck_002

@@ -1,5 +1,7 @@
 10.20.23.24,9190
 B_ITEM.USP_Get_ASItemUsgstsChck_002
+회원아이디 : oiuyt01
+회원사코드 : P-00009
 
 채팅
 USP_Get_ASItemUsgstsChck_002

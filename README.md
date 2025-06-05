@@ -1,3 +1,4 @@
+말풍선(AS) 아이템_사용상태_체크
 10.20.23.24,9190
 B_ITEM.USP_Get_ASItemUsgstsChck_002
 회원아이디 : oiuyt01

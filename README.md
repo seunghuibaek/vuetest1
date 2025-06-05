@@ -1,3 +1,9 @@
+10.20.23.24,9190
+B_ITEM.USP_Get_ASItemUsgstsChck_002
+
+채팅
+USP_Get_ASItemUsgstsChck_002
+
 채팅방 입장시 회원 정보 sp
 말풍선 sp
 

@@ -1,3 +1,7 @@
+B_ITEM.USP_GetList_ItemOnuseList_002   -- 사용중인 아이템
+B_ITEM.USP_GetList_ItemGudsRmndDtl_002  -- 내 아이템 목록 조회
+
+
 10.20.23.24,9190
 B_ITEM.USP_GetList_ItemOnuseList_002 
 

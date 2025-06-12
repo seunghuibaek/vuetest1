@@ -1,3 +1,18 @@
+
+Stage Logs (gradle step)
+ Use a tool from a predefined Tool Installation -- gradle (self time 14ms)
+ Fetches the environment variables for a given tool in a list of 'FOO=bar' strings suitable for the withEnv step. (self time 15ms)
+ Shell Script -- chmod +x ./gradlew (self time 267ms)
+ Print Message -- ########### dbPass ############### ${DEV_DB_PASS} (self time 7ms)
+ Shell Script -- ./gradlew clean build -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true -Dorg.gradle.caching=true -Dspring.profiles.active=prod -PappName=popkon -DappName=popkon -Denmframework.db_pass='${DEV_DB_PASS}' -Denmframework.sms_db_pass='${SMS_DB_PASS}' -Denmframework.log_db_pass='${LOG_DB_PASS}' (self time 18s)
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [LOG_DB_PASS, DEV_DB_PASS, SMS_DB_PASS, PROD_DB_PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ ./gradlew clean build -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true -Dorg.gradle.caching=true -Dspring.profiles.active=prod -PappName=popkon -DappName=popkon -Denmframework.db_pass=**** -Denmframework.sms_db_pass=**** -Denmframework.log_db_pass=****
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+
+
 B_ITEM.USP_GetList_ItemOnuseList_002   -- 사용중인 아이템
 B_ITEM.USP_GetList_ItemGudsRmndDtl_002  -- 내 아이템 목록 조회
 

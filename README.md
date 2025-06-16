@@ -1,4 +1,4 @@
-
+smsuser :   UjEh=%^+7PAzFH5#
 
 Stage Logs (gradle step)
  Use a tool from a predefined Tool Installation -- gradle (self time 14ms)

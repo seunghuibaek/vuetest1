@@ -1,3 +1,20 @@
+{
+  "SC_SI": "devtest3",
+  "SC_SP": "0xCB58601ABD5CCBD646DF3CEC40FC96049F05122F155D9D2CD39AC4127C421489",
+  "SC_PC": "P-00001",
+  "SC_CSI": "librestilo",
+  "SC_CPC": "P-00001",
+  "SC_CT": "0",
+  "SC_PCC": "librestilo-20250619114205",
+  "SC_CTYP": "5",
+  "SC_EP": "9",
+  "SC_PK": "",
+  "SC_VER": "1.12.6.0"
+}
+
+https://devsys.popkontv.kr:9002/AS/castData/naCastWatchOnOff.asp
+
+
 smsuser :   UjEh>%^+7PAzFH5#
 
 Stage Logs (gradle step)

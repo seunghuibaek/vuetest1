@@ -1,4 +1,7 @@
 09:30 ~ 14:30 
+smsuser :   UjEh>%^+7PAzFH5#
+ppknapisvcacc :   s#EJdTvR!5UtA+H3
+ppknwebsvcacc :   d)p%D(ZcS<rv+G5t 로 변경 되었습니다
 
 {
   "SC_SI": "devtest3",

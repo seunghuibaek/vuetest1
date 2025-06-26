@@ -1,5 +1,13 @@
 https://velog.io/@jhkim31/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9D%B8%ED%94%84%EB%9D%BC-%EA%B5%AC%EC%B6%95-1.-docker-swarm-%EC%84%B8%ED%8C%85
 
+sudo apt update
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+cd /media/$USER/VBox_GAs_*/  # 또는 /run/media/USERNAME/VBox_GAs_*/
+sudo ./VBoxLinuxAdditions.run
+
+
+
+
 # Vue3 템플릿 with Webpack
 
 ## Versions

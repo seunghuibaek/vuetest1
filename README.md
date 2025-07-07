@@ -1,3 +1,13 @@
+WP_DEBUG to false in your wp-config.php
+define('WP_DEBUG', false);
+
+아래는 추가 설정
+ini_set('display_errors','Off');
+ini_set('error_reporting', E_ALL );
+define('WP_DEBUG', false);
+define('WP_DEBUG_DISPLAY', false);
+
+-----------
 wp-config.php 아래 코드 추가
 define('FS_METHOD', 'direct');
 ------------------------

@@ -1,3 +1,47 @@
+wp-config.php 아래 코드 추가
+define('FS_METHOD', 'direct');
+------------------------
+.htaccess
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+----------------
+etc/httpd/httpd.conf 수정
+Listen 80
+<VirtualHost *:8080>
+    ServerName localhost
+    DocumentRoot "/var/www/html/theenm"
+    <Directory "/var/www/html/theenm">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog logs/site1-error_log
+    CustomLog logs/site1-access_log combined
+</VirtualHost>
+
+Listen 81
+<VirtualHost *:81>
+    ServerName wordpress
+    DocumentRoot "/var/www/html/wordpress"
+    <Directory "/var/www/html/wordpress">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    ErrorLog logs/site2-error_log
+    CustomLog logs/site2-access_log combined
+</VirtualHost>
+-=-------------------
+
 https://roykeum1998.tistory.com/181
 
 서버 설치

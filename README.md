@@ -1,3 +1,181 @@
+https://roykeum1998.tistory.com/181
+
+서버 설치
+sudo yum install php mysql-server
+service mysqld start -- 시작해야 mysql 접속 가능
+gd 라이브러리 설치
+sudo yum install php-gd
+
+mysql db, user 생성
+    sudo mysql -uroot
+
+
+
+    # mydatabase, myuser, mypassword는 상황에 맞게 수정하세요
+    CREATE DATABASE mydatabase;
+    CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypassword';
+    GRANT ALL PRIVILEGES ON mydatabase.* TO 'myuser'@'localhost';
+
+mysql 시작
+sudo systemctl start mysqld
+자동 시작 설정
+sudo systemctl enable mysqld
+보안설정
+sudo mysql_secure_installation
+
+아파치 설치
+yum install httpd
+
+아파치 시작
+systemctl start httpd
+
+아파치 자동 시작
+systemctl enable httpd
+
+아파치 상태 확인
+systemctl status httpd
+
+웹 안뜨는 경우 
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+
+data 디렉토리의 퍼미션을 707로 변경하여 주십시오.
+아래 실행 후 진행
+# setenforce 0
+
+짧은 주소
+etc/httpd   httpd.conf 수정
+<Directory "/var/www/html">
+아래에 AllowOverride none 를 All로 변경 -> 재시작
+
+모니터링 툴 설치
+https://velog.io/@suk13574/Promehteus-prometheus-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0-%EC%84%A4%EC%B9%98-%EA%B5%AC%EC%84%B1-%EC%8B%A4%ED%96%89
+
+https://tikus.tistory.com/5
+wget 설치 필요
+yum install wget
+
+--   prometheus 설정
+
+cmd> vi conf/prometheus.yml
+---
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["192.168.56.112:9090"]
+
+cmd> vi startPrometheus.sh
+./bin/prometheus \
+  --config.file=/monitoring/prometheus/prometheus-2.41.0.linux-amd64/conf/prometheus.yml \
+  --storage.tsdb.path=/monitoring/prometheus/prometheus-2.41.0.linux-amd64/data &
+
+cmd> vi stopPrometheus.sh
+ps -ef | grep prometheus | grep 2.41.0 | awk {'print "kill -9 " $2'} | sh -x
+
+cmd> chmod 750 *.sh
+
+-- 실행
+cmd> ./startPrometheus.sh
+
+-- 데몬 등록
+cmd> sudo vi /etc/systemd/system/prometheus.service
+[Unit]
+Description=Prometheus Server
+Documentation=https://prometheus.io/docs/introduction/overview/
+After=network-online.target
+
+[Service]
+User=grafana
+Restart=on-failure
+ExecStart=/monitoring/prometheus/prometheus-2.41.0.linux-amd64/bin/prometheus \
+  --config.file=/monitoring/prometheus/prometheus-2.41.0.linux-amd64/conf/prometheus.yml \
+  --storage.tsdb.path=/monitoring/prometheus/prometheus-2.41.0.linux-amd64/data
+
+[Install]
+WantedBy=multi-user.target
+
+cmd> sudo systemctl daemon-reload
+cmd> sudo systemctl enable prometheus --now
+
+cmd> ./stopPrometheus.sh
+cmd> sudo systemctl restart prometheus
+
+cmd> curl -X GET http://192.168.56.112:9090
+<a href="/graph">Found</a>.
+
+grafana 설치
+sudo yum install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-12.0.2-1.x86_64.rpm
+
+grafana 데몬 등록
+cmd> sudo vi /etc/systemd/system/grafana.service
+[Unit]
+Description=Grafana Server
+Documentation= https://grafana.com/docs/grafana/latest/
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=grafana
+Group=grafana
+Type=simple
+Restart=on-failure
+WorkingDirectory=/monitoring/grafana/grafana-9.3.2
+ExecStart=/monitoring/grafana/grafana-9.3.2/bin/grafana-server
+
+[Install]
+WantedBy=multi-user.target
+
+cmd> sudo systemctl daemon-reload
+cmd> sudo systemctl enable grafana --now
+
+cmd> ./stopGrafana.sh
+cmd> sudo systemctl restart grafana
+
+cmd> curl -X GET http://192.168.56.111:3000
+INFO [01-25|16:25:48] Request Completed
+                        logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=192.168.56.111 time_ms=0 duration=266.603µs size=29 referer= handler=/
+<a href="/login">Found</a>.
+
+
+
+-- 워드 프로세스 설치
+https://comnrose.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%84%9C%EB%B2%84%EC%97%90-%EC%9B%8C%EB%93%9C%ED%94%84%EB%A0%88%EC%8A%A4wordpress-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%8E%B8
+
+
+wordpress
+theenm / as1234
+
+테마 추가하기 시 오류 발생
+Warning: wp_update_themes(): 예상하지 않은 오류가 발생했습니다.
+
+ssh 연결 정보 확인
+curl https://api.wordpress.org/
+
+해결
+sudo setenforce 0
+
+
+wp-content/plugins 폴더 및 하위 파일들의 권한을 확인
+폴더: 일반적으로 755
+파일: 일반적으로 644
+----------------------------------------------------------------
+
+
+
+
+
+
+
 https://velog.io/@jhkim31/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9D%B8%ED%94%84%EB%9D%BC-%EA%B5%AC%EC%B6%95-1.-docker-swarm-%EC%84%B8%ED%8C%85
 
 sudo apt update

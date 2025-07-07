@@ -42,8 +42,6 @@ Listen 81
 </VirtualHost>
 -=-------------------
 
-https://roykeum1998.tistory.com/181
-
 서버 설치
 sudo yum install php mysql-server
 service mysqld start -- 시작해야 mysql 접속 가능
@@ -64,8 +62,8 @@ mysql 시작
 sudo systemctl start mysqld
 자동 시작 설정
 sudo systemctl enable mysqld
-보안설정
-sudo mysql_secure_installation
+--보안설정
+--sudo mysql_secure_installation
 
 아파치 설치
 yum install httpd

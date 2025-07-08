@@ -1,3 +1,8 @@
+개인계정에서 theenm계정으로 전환하신다음에 
+theenm 계정에서 작업하셔야 해요
+sudo su - theenm
+201928+IcytWvR^@%&
+-------------
 https://roykeum1998.tistory.com/181
 
 서버 설치

@@ -1,16 +1,29 @@
- [theenm@PKGUNT ~]$ systemctl start php-fpm httpd
-==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
-'php-fpm.service' 서비스 유닛을 시작하려면 인증이 필요합니다.
-Authenticating as: gg.kim
-Password:
-polkit-agent-helper-1: pam_authenticate failed: Permission denied
-==== AUTHENTICATION FAILED ====
-Failed to start php-fpm.service: Access denied
-See system logs and 'systemctl status php-fpm.service' for details.
-==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
-'httpd.service' 서비스 유닛을 시작하려면 인증이 필요합니다.
-Authenticating as: gg.kim
+Listen 80
+<VirtualHost *:8080>
+    ServerName localhost
+    DocumentRoot "/var/www/html/theenm"
+    <Directory "/var/www/html/theenm">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
 
+    ErrorLog logs/site1-error_log
+    CustomLog logs/site1-access_log combined
+</VirtualHost>
+
+Listen 81
+<VirtualHost *:81>
+    ServerName wordpress
+    DocumentRoot "/var/www/html/wordpress"
+    <Directory "/var/www/html/wordpress">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    ErrorLog logs/site2-error_log
+    CustomLog logs/site2-access_log combined
+</VirtualHost>
 
 
  

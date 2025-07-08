@@ -1,3 +1,5 @@
+define('FS_METHOD', 'direct');
+
 Listen 80
 <VirtualHost *:8080>
     ServerName localhost

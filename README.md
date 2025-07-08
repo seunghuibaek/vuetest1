@@ -1,4 +1,18 @@
- 175.196.87.168
+ [theenm@PKGUNT ~]$ systemctl start php-fpm httpd
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
+'php-fpm.service' 서비스 유닛을 시작하려면 인증이 필요합니다.
+Authenticating as: gg.kim
+Password:
+polkit-agent-helper-1: pam_authenticate failed: Permission denied
+==== AUTHENTICATION FAILED ====
+Failed to start php-fpm.service: Access denied
+See system logs and 'systemctl status php-fpm.service' for details.
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
+'httpd.service' 서비스 유닛을 시작하려면 인증이 필요합니다.
+Authenticating as: gg.kim
+
+
+
  
 개인계정에서 theenm계정으로 전환하신다음에 
 theenm 계정에서 작업하셔야 해요

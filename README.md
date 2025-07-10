@@ -1,3 +1,6 @@
+https://plugins.jetbrains.com/plugin/8321-free-mybatis-plugin
+
+
 define('FS_METHOD', 'direct');
 
 Listen 80

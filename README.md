@@ -1,3 +1,6 @@
+[B_MEMBER].[dbo].[USP_Get_MmbrLoginPrtsCd_002]
+
+
 오지훈
 /member/snsJoinChk.asp
 {

@@ -1,4 +1,65 @@
-https://plugins.jetbrains.com/plugin/8321-free-mybatis-plugin
+오지훈
+/member/snsJoinChk.asp
+{
+  "SC_SC": "2",
+  "SC_SK": "2753391535",
+  "SC_PC": "P-00001"
+}
+
+
+{
+  "rst": {
+    "rstCode": "0",
+    "rstMsg": "로그인 처리 가능",
+    "signId": "k2613164109630231004",
+    "signPwd": "0xFDD5561C206703B3891DC1F391D7844CB2B66741AC856F93CFB6EA7929A5E670",
+    "isNickChgNeed": "0"
+  }
+}
+
+
+
+
+/member/naSignOnCast.asp
+{
+  "SC_SI": "k2613164109630231004",
+  "SC_SP": "0xFDD5561C206703B3891DC1F391D7844CB2B66741AC856F93CFB6EA7929A5E670",
+  "SC_PC": "P-00001",
+  "SC_EP": "7",
+  "SC_SK": "7538c524-669c-4c85-8d7b-37ec93be9b4d"
+}
+
+
+{
+  "rst": {
+    "rstCode": "1",
+    "rstMsg": "아이디 또는 비밀번호를 다시 확인하세요."
+  },
+  "signOn": {
+    "memberSex": "",
+    "isAdult": "",
+    "nickName": "",
+    "memberType": "",
+    "pFileName": "",
+    "accountLevel": "",
+    "pwdCode": "0xFDD5561C206703B3891DC1F391D7844CB2B66741AC856F93CFB6EA7929A5E670",
+    "partnerCode": "P-00001",
+    "isNewBJ": "0",
+    "isNameCheck": "0",
+    "levelUp": "0",
+    "svcLvl": ""
+  },
+  "memberBlockCheck": {
+    "isBlock": "0",
+    "isLoginBlock": "0",
+    "blockRegDate": "",
+    "blockDate": "",
+    "blockMemo": ""
+  }
+}
+--------------------------
+
+ttps://plugins.jetbrains.com/plugin/8321-free-mybatis-plugin
 
 
 define('FS_METHOD', 'direct');

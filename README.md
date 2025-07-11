@@ -1,3 +1,5 @@
+[B_MEMBER].[dbo].[USP_Get_OauthMmbrYnChck_002]
+
 [B_MEMBER].[dbo].[USP_Get_MmbrLoginPrtsCd_002]
 [B_MEMBER].[dbo].[USP_Mod_MmbrLoginProcess_002]
 

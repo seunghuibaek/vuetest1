@@ -1,3 +1,13 @@
+[B_MEMBER].[dbo].[USP_Get_OauthMmbrYnChck_002]
+여기서 조회된 아이디와 비밀번호로 로그인 신청을 하거든요
+
+
+암호화된 비밀번호로 OUTPUT 받으셨으면.
+
+B_MEMBER.dbo.USP_Mod_MmbrLoginProcessEncpt_002 로 로그인 되어야 합니다.
+USP_Mod_MmbrLoginProcess_002 는 평문 비밀번호 로그인시 사용
+
+
 더 확인이 필요하겠지만, 결국 ,
 오픈인증 가입회원
  - USP_Mod_MmbrLoginProcessEncpt_002

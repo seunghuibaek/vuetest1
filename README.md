@@ -1,3 +1,9 @@
+비밀번호 조회 : [B_MEMBER].[dbo].[USP_Get_OauthMmbrYnChck_002]
+@inySvcSeCd : 3
+@vchOauthUsri : 2010572411
+@vchPartnerCode : P-00001
+
+로그인 sp : [B_MEMBER].[dbo].[USP_Mod_MmbrLoginProcessEncpt_002]
 signId = 'n9130115249020231114' AND partnerCode = 'P-00001'
 
 URL:https://stagesys.popkontv.com:9002/AS/member/naSignOn.asp

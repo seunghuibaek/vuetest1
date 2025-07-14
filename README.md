@@ -1,3 +1,13 @@
+com.enm.api.rest.sys.level.controller.LevelSysController.getMcLevel(LevelSysController.java:108), com.enm.api.common.filter.CommonFilter.doFilter(CommonFilter.java:34), :Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.InvalidClassException: com.enm.api.rest.basement.member.model.dto.MemberLevelDto; incompatible types for field lvlPer
+^[[30m2025-07-10 09:15:22^[[m ^[[32m[INFO ]^[[m ^[[1;33mEnmHandleInterceptor.logHandle(260)^[[m:
+[{/v1/level/cast} RES] :
+{
+  "statusCd" : "E5000",
+  "statusMsg" : "Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.InvalidClassException: com.enm.api.rest.basement.member.model.dto.MemberLevelDto; incompatible types for field lvlPer",
+  "data" : null
+}
+
+
 [B_MEMBER].[dbo].[USP_Get_OauthMmbrYnChck_002]
 여기서 조회된 아이디와 비밀번호로 로그인 신청을 하거든요
 

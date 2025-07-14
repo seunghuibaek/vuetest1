@@ -1,3 +1,10 @@
+URL:https://stagesys.popkontv.com:9002/AS/member/naSignOn.asp
+ PARAMS:["SC_SP": "0x4012171FA6B1699E9DB91E9E0373F8D2A0AA17BFD00E75B8D27A0056AF11B026", "SC_SK": "0B8DB7E0-052C-4687-B174-FA2C2992988A", "SC_SI": "n9130115249020231114", "SC_PC": "P-00001", "SC_EP": "3"] 
+- Result -
+ {"rst":{"rstCode" : "1","rstMsg" : "로그인이 실패하였습니다.[SSP]"},"signOn" : {"memberSex" : "","isAdult" : "","nickName" : "","memberType" : "","pFileName" : "","accountLevel" : "","pwdCode" : "0x4012171FA6B1699E9DB91E9E0373F8D2A0AA17BFD00E75B8D27A0056AF11B026","isNameCheck" : "0","levelUp" : "0","svcLvl" : ""},"memberBlockCheck" : {"isBlock" : "0","isLoginBlock" : "0","blockRegDate" : "","blockDate" : "","blockMemo" : ""}} 
+-----------------------------------------
+
+
 com.enm.api.rest.sys.level.controller.LevelSysController.getMcLevel(LevelSysController.java:108), com.enm.api.common.filter.CommonFilter.doFilter(CommonFilter.java:34), :Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.InvalidClassException: com.enm.api.rest.basement.member.model.dto.MemberLevelDto; incompatible types for field lvlPer
 ^[[30m2025-07-10 09:15:22^[[m ^[[32m[INFO ]^[[m ^[[1;33mEnmHandleInterceptor.logHandle(260)^[[m:
 [{/v1/level/cast} RES] :

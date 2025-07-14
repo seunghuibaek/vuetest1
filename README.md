@@ -1,3 +1,10 @@
+더 확인이 필요하겠지만, 결국 ,
+오픈인증 가입회원
+ - USP_Mod_MmbrLoginProcessEncpt_002
+일반 회원
+ - USP_Mod_MmbrLoginProcess_002
+   
+
 [B_MEMBER].[dbo].[USP_Get_OauthMmbrYnChck_002]
 
 [B_MEMBER].[dbo].[USP_Get_MmbrLoginPrtsCd_002]

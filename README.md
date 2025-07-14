@@ -1,3 +1,5 @@
+k5247170844903230127
+
 비밀번호 조회 : [B_MEMBER].[dbo].[USP_Get_OauthMmbrYnChck_002]
 @inySvcSeCd : 3
 @vchOauthUsri : 2010572411

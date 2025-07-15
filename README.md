@@ -1,3 +1,51 @@
+${apiUrl}/AS/member/meminfoNotiTarget.asp
+/v{version}/member/memInfoNotiTarget  여기 있는거 같아요
+{
+  "result": true,
+  "data": {
+    "statusCd": "S0200",
+    "statusMsg": "SUCCESS",
+    "data": [
+      {
+        "seq": 92835,
+        "mmbri": "n5054044231837200710",
+        "prtsCd": "P-00001",
+        "mblpno": "01031345013",
+        "rgstdt": "2025-07-11 00:00:00.0000000",
+        "SITE_COMPANY_SERVICETITLE": null,
+        "SITE_PC_URL": null,
+        "SITE_MOBILE_URL": null,
+        "SMS_TEL_FROM": null
+      },
+      {
+        "seq": 92836,
+        "mmbri": "lion999",
+        "prtsCd": "P-00072",
+        "mblpno": "01099661682",
+        "rgstdt": "2025-07-11 00:00:00.0000000",
+        "SITE_COMPANY_SERVICETITLE": null,
+        "SITE_PC_URL": null,
+        "SITE_MOBILE_URL": null,
+        "SMS_TEL_FROM": null
+      },
+      {
+        "seq": 92837,
+        "mmbri": "k5473043745700200710",
+        "prtsCd": "P-00001",
+        "mblpno": "01021188543",
+        "rgstdt": "2025-07-11 00:00:00.0000000",
+        "SITE_COMPANY_SERVICETITLE": null,
+        "SITE_PC_URL": null,
+        "SITE_MOBILE_URL": null,
+        "SMS_TEL_FROM": null
+      }
+    ]
+  }
+}
+--------------------
+
+
+
 USP_GetList_CastOnListSrchForAPI_005
 
 MMBRI :n8358061328313230127

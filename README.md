@@ -1,3 +1,5 @@
+[B_MEMBER].[dbo].[USP_GetList_PrsninfoUseDtlsNotiSndngTgt]
+
 ${apiUrl}/AS/member/meminfoNotiTarget.asp
 /v{version}/member/memInfoNotiTarget  여기 있는거 같아요
 {

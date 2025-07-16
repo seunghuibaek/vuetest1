@@ -1,5 +1,9 @@
 "statusMsg": "Cache 'getBrdcrsvclvlCache' does not allow 'null' values. Avoid storing null via '@Cacheable(unless=\"#result == null\")' or configure RedisCache to allow 'null' via RedisCacheConfiguration.",
 
+@Cacheable(value = "getBrdcrsvclvlCache", key = "#yourKey", unless = "#result == null")
+public YourReturnType yourMethod(String yourKey) {
+    // your logic
+}
 
 
 USP_GetList_CastOnListSrchForAPI_005

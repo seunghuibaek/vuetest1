@@ -1,3 +1,6 @@
+redis-cli monitor
+
+
 175.196.87.168
 bluewar / as1234
 

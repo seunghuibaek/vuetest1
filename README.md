@@ -1,3 +1,5 @@
+http://175.196.87.168:82/
+
 https://bluewar.ivyro.net/
 bluewar111@nate.com / as1234
 

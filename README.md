@@ -1,3 +1,7 @@
+
+2025-07-31 17:02:22.780 30594-30806 okhttp.OkHttpClient     com.social.media.broadcast.aospop.e  I  --> POST https://devsys.popkontv.kr:9002/AS/castData/castWaitData.asp
+2025-07-31 17:02:29.968 30594-30806 okhttp.OkHttpClient     com.social.media.broadcast.aospop.e  I  <-- 200 https://devsys.popkontv.kr:9002/AS/castData/castWaitData.asp (7187ms)
+
 http://175.196.87.168:82/
 
  .pwa-install-app

@@ -1,3 +1,12 @@
+https://bluewar.ivyro.net/
+bluewar111@nate.com / as1234
+
+PC 설치 : 주소줄에서 우측 모니터 모양 클릭
+Andorid : Chrome 브라우저에서 사이트 접속 > 주소 표시줄 오른쪽의 점 세개 모양(더보기 메뉴) 클릭 > 홈 화면에 추가 선택
+IOS : safari 브라우저에서 사이트 접속 > 하단의 화살표 모양(공유 버튼) 클릭 > 홈 화면에 추가 선택
+
+
+
 https://devsys.popkontv.kr:9002/dev/
 
 redis-cli monitor

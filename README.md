@@ -1,3 +1,5 @@
+https://devsys.popkontv.kr:9002/dev/
+
 redis-cli monitor
 
 

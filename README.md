@@ -1,5 +1,7 @@
 http://175.196.87.168:82/
 
+ .pwa-install-app
+ 
 https://bluewar.ivyro.net/
 bluewar111@nate.com / as1234
 

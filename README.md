@@ -1,11 +1,36 @@
-
+[
 2025-07-31 17:02:22.780 30594-30806 okhttp.OkHttpClient     com.social.media.broadcast.aospop.e  I  --> POST https://devsys.popkontv.kr:9002/AS/castData/castWaitData.asp
 2025-07-31 17:02:29.968 30594-30806 okhttp.OkHttpClient     com.social.media.broadcast.aospop.e  I  <-- 200 https://devsys.popkontv.kr:9002/AS/castData/castWaitData.asp (7187ms)
 
 http://175.196.87.168:82/
 
- .pwa-install-app
- 
+ .pwa-install-app](https://devsys.popkontv.kr:9002/AS/castData/castOnData.asp
+{
+  "SC_CAD": "rtmp://live-popkontv.hscdn.com/pop_cast20|popaos6_P-00001_20250804095121",
+  "SC_CET": 0,
+  "SC_CLN": 1,
+  "SC_CR": "360x640",
+  "SC_CSQ": "",
+  "SC_CST": 0,
+  "SC_PC": "P-00001",
+  "SC_PCC": "popaos6-20250804095121",
+  "SC_SI": "popaos6",
+  "SC_SP": "0xFB03C61F91D6ABA7F47514A48B3C1072E97BFC88AB1C6393E942C1AEC8CB0B09",
+  "SC_VITC": "",
+  "SC_WTM": 0
+}
+
+
+{
+  "castOnData": {
+    "rstCode": "1",
+    "rstMsg": "일시적인 장애가 발생했습니다. 잠시후 다시 시도 해주세요.",
+    "chatServerUrl": "https://dev.popkontv.kr:1920"
+  }
+}
+
+)
+ -------
 https://bluewar.ivyro.net/
 bluewar111@nate.com / as1234
 

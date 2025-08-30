@@ -1,4 +1,6 @@
 https://service.whatap.io/account/login
+http://114.141.28.23:3000/d/edyqhs82gmvb4c/sys1?orgId=1&refresh=10s
+
 
 {
   "statusCd": "E5000",

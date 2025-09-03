@@ -1,3 +1,15 @@
+호출해야 하는 SP는
+JBN_JSON_castRecordFile_Delete 이고
+DelVodAdm.asp 로 생성해주시면 될 것 같습니다
+오후 01:21
+
+황대형
+사용자가 삭제한 대화입니다.
+오후 01:22
+
+황대형
+DelVodAdm.asp 로 생성해주시면 될 것 같습니다 > 뒤에 Adm 으로만 붙여주시면 될 것 같습니다
+
 https://service.whatap.io/account/login
 http://114.141.28.23:3000/d/edyqhs82gmvb4c/sys1?orgId=1&refresh=10s
 

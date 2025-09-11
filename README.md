@@ -1,6 +1,13 @@
 
 implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics
+        
+
 GET http://localhost:8080/actuator/metrics/hikaricp.connections.active
 GET http://localhost:8080/actuator/metrics/hikaricp.connections.idle
 GET http://localhost:8080/actuator/metrics/hikaricp.connections.pending

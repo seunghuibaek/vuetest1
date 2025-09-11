@@ -1,4 +1,23 @@
+Set rs = conn.Execute("SELECT CASE WHEN SESSIONPROPERTY('ARITHABORT') = 1 THEN 'ON' ELSE 'OFF' END AS arithabort")
+Response.Write "ARITHABORT = " & rs("arithabort")
 
+Set rs = conn.Execute("
+  SELECT 
+    @@OPTIONS AS options_mask,
+    CASE WHEN (@@OPTIONS & 64) = 64 THEN 'ON' ELSE 'OFF' END AS arithabort
+")
+Response.Write "ARITHABORT = " & rs("arithabort") & " (mask=" & rs("options_mask") & ")"
+
+Set rs = conn.Execute("
+  SELECT 
+    @@SPID AS spid,
+    set_options,
+    CASE WHEN (set_options & 64) = 64 THEN 'ON' ELSE 'OFF' END AS arithabort
+  FROM sys.dm_exec_sessions
+  WHERE session_id = @@SPID
+")
+Response.Write "SPID=" & rs("spid") & " / ARITHABORT=" & rs("arithabort")
+------------
 SQLOLEDB 대신 MSOLEDBSQL
 
 strSQL = "SELECT @@VERSION AS SQLVersion"

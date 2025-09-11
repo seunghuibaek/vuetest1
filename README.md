@@ -1,3 +1,9 @@
+
+SQLOLEDB 대신 MSOLEDBSQL
+
+strSQL = "SELECT @@VERSION AS SQLVersion"
+  Set rs = conn.Execute(strSQL)
+  
 <connectionStrings>
   <add name="MyDB"
        connectionString="Data Source=서버명;Initial Catalog=DB명;Integrated Security=True;ArithAbort=True;" 

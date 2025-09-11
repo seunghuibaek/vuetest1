@@ -1,3 +1,17 @@
+with objCmd
+	Call cmdPramDel(objCmd)
+	cmdRtnCode = ""
+	.commandText = "[B_CASTDATA].[dbo].[JBN_JSON_castRecordFile_Delete]"
+	.commandType = &H0004
+    .activeConnection = OLEDB_CTICAST8
+    .Parameters.Append .CreateParameter("@pk_code", adBigInt, adParamInput, 0)
+    .Parameters("@pk_code") = CLng(pk_code)
+	.execute()
+	.activeConnection = nothing
+End With
+
+
+
 conn.Execute "SET ANSI_WARNINGS ON; SET ARITHABORT ON;";
 ' 확인
 Set rs = conn.Execute("SELECT SESSIONPROPERTY('ARITHABORT') AS v")

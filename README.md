@@ -1,3 +1,11 @@
+
+implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+GET http://localhost:8080/actuator/metrics/hikaricp.connections.active
+GET http://localhost:8080/actuator/metrics/hikaricp.connections.idle
+GET http://localhost:8080/actuator/metrics/hikaricp.connections.pending
+
+
 SELECT TOP 100
        [Object_Name] = object_name(st.objectid),
        creation_time,

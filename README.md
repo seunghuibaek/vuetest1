@@ -1,3 +1,12 @@
+Provider=MSOLEDBSQL.1;Password=6w^=Lm>TvB\Y}W%j;Persist Security Info=True;User ID=sadmusr;Initial Catalog=TEMPDEFAULT;Data Source=118.129.153.82,9190;Max Pool Size=90;ArithAbort=True;
+
+Dim objCmd, cmdRs
+Dim objCon, cmdTxt, objRs
+Set objCmd = server.createObject("ADODB.COMMAND")
+Set objCon = server.createObject("ADODB.CONNECTION")
+Set objRs = server.createObject("ADODB.RECORDSET")
+
+
 Set rs = conn.Execute("SELECT CASE WHEN SESSIONPROPERTY('ARITHABORT') = 1 THEN 'ON' ELSE 'OFF' END AS arithabort")
 Response.Write "ARITHABORT = " & rs("arithabort")
 

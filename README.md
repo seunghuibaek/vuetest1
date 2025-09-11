@@ -1,4 +1,7 @@
-Provider=MSOLEDBSQL.1;Password=6w^=Lm>TvB\Y}W%j;Persist Security Info=True;User ID=sadmusr;Initial Catalog=TEMPDEFAULT;Data Source=118.129.153.82,9190;Max Pool Size=90;ArithAbort=True;
+conn.Execute "SET ANSI_WARNINGS ON; SET ARITHABORT ON;";
+' 확인
+Set rs = conn.Execute("SELECT SESSIONPROPERTY('ARITHABORT') AS v")
+Response.Write "ARITHABORT=" & rs("v") ' 1 이면 ON
 
 Dim objCmd, cmdRs
 Dim objCon, cmdTxt, objRs

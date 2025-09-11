@@ -1,3 +1,20 @@
+Set rs = conn.Execute("DBCC USEROPTIONS")
+Do Until rs.EOF
+  Response.Write rs(0) & " = " & rs(1) & "<br>"
+  rs.MoveNext
+Loop
+rs.Close
+Set rs = Nothing
+
+Set conn = Server.CreateObject("ADODB.Connection")
+
+' SQLOLEDB.1 사용
+conn.Open "Provider=SQLOLEDB.1;Data Source=서버명;Initial Catalog=DB명;User ID=계정;Password=암호;"
+
+' 세션 옵션 강제
+conn.Execute "SET ARITHABORT ON"
+---------------------
+
 ARITHABORT 옵션이 OFF 설정된 클라이언트 연결의 경우, 최적의 실행계획을 부여 받지 못하여 쿼리 실행 시간이 현저히 지연될 수 있습니다.
 
 DBMS 연결 시, ARITHABORT = ON 설정 확인 요청 드립니다.

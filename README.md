@@ -1,3 +1,13 @@
+Set conn = Server.CreateObject("ADODB.Connection")
+
+' SQLOLEDB.1 사용
+conn.Open "Provider=SQLOLEDB.1;Data Source=서버명;Initial Catalog=DB명;User ID=계정;Password=암호;"
+
+' 세션 옵션 강제
+conn.Execute "SET ARITHABORT ON"
+-------------
+
+
 Set rs = conn.Execute("DBCC USEROPTIONS")
 Do Until rs.EOF
   Response.Write rs(0) & " = " & rs(1) & "<br>"

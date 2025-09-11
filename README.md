@@ -1,3 +1,10 @@
+<connectionStrings>
+  <add name="MyDB"
+       connectionString="Data Source=서버명;Initial Catalog=DB명;Integrated Security=True;ArithAbort=True;" 
+       providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+
 Set conn = Server.CreateObject("ADODB.Connection")
 
 ' SQLOLEDB.1 사용

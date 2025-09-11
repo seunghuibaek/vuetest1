@@ -1,17 +1,8 @@
+ARITHABORT 옵션이 OFF 설정된 클라이언트 연결의 경우, 최적의 실행계획을 부여 받지 못하여 쿼리 실행 시간이 현저히 지연될 수 있습니다.
 
-implementation 'org.springframework.boot:spring-boot-starter-actuator'
+DBMS 연결 시, ARITHABORT = ON 설정 확인 요청 드립니다.
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, metrics
-        
-
-GET http://localhost:8080/actuator/metrics/hikaricp.connections.active
-GET http://localhost:8080/actuator/metrics/hikaricp.connections.idle
-GET http://localhost:8080/actuator/metrics/hikaricp.connections.pending
-
+연결 설정 변경은 반드시 정기점검 시 진행 바랍니다.
 
 SELECT TOP 100
        [Object_Name] = object_name(st.objectid),

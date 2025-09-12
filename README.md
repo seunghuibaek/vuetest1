@@ -1,3 +1,22 @@
+'********************************************************************************
+'* RecordSet 개체 소멸
+'********************************************************************************
+Function rsClose()
+	If isObject(rs) Then
+		Set rs = Nothing
+	End If
+	rs = Null
+End Function
+
+If VarType(db) = vbString Then
+		If db.state Then
+		   db.Close
+		End If
+		Set db = Nothing
+	End If
+
+	db = Null
+
 OLEDB_CTICAST8.Execute "SET ANSI_WARNINGS ON; SET ARITHABORT ON;"
 
 ExecuteNonQuery

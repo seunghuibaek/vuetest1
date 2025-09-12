@@ -1,5 +1,7 @@
 OLEDB_CTICAST8.Execute "SET ANSI_WARNINGS ON; SET ARITHABORT ON;"
 
+ExecuteNonQuery
+
 With objCmd
     Call cmdPramDel(objCmd)
     cmdRtnCode = ""

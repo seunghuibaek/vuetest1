@@ -1,39 +1,60 @@
-DECLARE @options INT
-SELECT @options = @@OPTIONS
+<%
+' 공통: 커넥션 열고 ARITHABORT ON 보장
+Function OpenSqlConn(connStr)
+  Dim cn
+  Set cn = Server.CreateObject("ADODB.Connection")
+  cn.Open connStr
+  ' 세션 옵션은 커넥션에 유지됨. 풀링 대비해서 항상 명시
+  cn.Execute "SET ARITHABORT ON"
+  Set OpenSqlConn = cn
+End Function
 
-PRINT @options --아래 참고문서의 값을 모두 합한 값
+' 예: 서로 다른 DB 두 개에 접속
+Dim cs1, cs2
+cs1 = "Provider=MSOLEDBSQL;Server=SRV1;Database=DB1;UID=xxx;PWD=yyy;"
+cs2 = "Provider=MSOLEDBSQL;Server=SRV2;Database=DB2;UID=aaa;PWD=bbb;"
 
-IF ( (1 & @options) = 1 ) PRINT 'DISABLE_DEF_CNST_CHK 1'
+Dim cn1, cn2
+Set cn1 = OpenSqlConn(cs1)
+Set cn2 = OpenSqlConn(cs2)
 
-IF ( (2 & @options) = 2 ) PRINT 'IMPLICIT_TRANSACTIONS 2'
+' 재사용 가능한 SP 호출 헬퍼(매번 같은 방식으로 호출 가능)
+Function ExecSp(cn, spName, paramsArray)
+  Dim cmd, i
+  Set cmd = Server.CreateObject("ADODB.Command")
+  Set cmd.ActiveConnection = cn
+  cmd.CommandType = 4 ' adCmdStoredProc
+  cmd.CommandText = spName
 
-IF ( (4 & @options) = 4 ) PRINT 'CURSOR_CLOSE_ON_COMMIT 4'
+  ' 파라미터가 필요하면 paramsArray = Array(Array(name, type, dir, size, value), ...)
+  If IsArray(paramsArray) Then
+    For i = 0 To UBound(paramsArray)
+      Dim p
+      p = paramsArray(i)
+      cmd.Parameters.Append cmd.CreateParameter(p(0), p(1), p(2), p(3), p(4))
+    Next
+  End If
 
-IF ( (8 & @options) = 8 ) PRINT 'ANSI_WARNINGS 8 '
+  Set ExecSp = cmd.Execute
+End Function
 
-IF ( (16 & @options) = 16 ) PRINT 'ANSI_PADDING 16'
+' 사용 예시 1: DB1의 SP 실행
+' ADO 상수: adVarChar=200, adParamInput=1 등은 상수 선언부 있으면 사용
+Const adVarChar = 200, adInteger = 3, adParamInput = 1
+Call ExecSp(cn1, "dbo.usp_DoSomethingInDB1", Array( _
+  Array("@UserId", adInteger, adParamInput, 0, 123) _
+))
 
-IF ( (32 & @options) = 32 ) PRINT 'ANSI_NULLS 32'
+' 사용 예시 2: DB2의 SP 실행
+Call ExecSp(cn2, "dbo.usp_DoAnotherThingInDB2", Array( _
+  Array("@Code", adVarChar, adParamInput, 20, "ABC") _
+))
 
-IF ( (64 & @options) = 64 ) PRINT 'ARITHABORT 64'
+' 마무리
+cn1.Close : Set cn1 = Nothing
+cn2.Close : Set cn2 = Nothing
+%>
 
-IF ( (128 & @options) = 128 ) PRINT 'ARITHIGNORE 128'
-
-IF ( (256 & @options) = 256 ) PRINT 'QUOTED_IDENTIFIER 256'
-
-IF ( (512 & @options) = 512 ) PRINT 'NOCOUNT 512'
-
-IF ( (1024 & @options) = 1024 ) PRINT 'ANSI_NULL_DFLT_ON 1024'
-
-IF ( (2048 & @options) = 2048 ) PRINT 'ANSI_NULL_DFLT_OFF 2048'
-
-IF ( (4096 & @options) = 4096 ) PRINT 'CONCAT_NULL_YIELDS_NULL 4096'
-
-IF ( (8192 & @options) = 8192 ) PRINT 'NUMERIC_ROUNDABORT 8192'
-
-IF ( (16384 & @options) = 16384 ) PRINT 'XACT_ABORT 16384'
-
-GO
 -------
 
 

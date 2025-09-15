@@ -1,3 +1,42 @@
+DECLARE @options INT
+SELECT @options = @@OPTIONS
+
+PRINT @options --아래 참고문서의 값을 모두 합한 값
+
+IF ( (1 & @options) = 1 ) PRINT 'DISABLE_DEF_CNST_CHK 1'
+
+IF ( (2 & @options) = 2 ) PRINT 'IMPLICIT_TRANSACTIONS 2'
+
+IF ( (4 & @options) = 4 ) PRINT 'CURSOR_CLOSE_ON_COMMIT 4'
+
+IF ( (8 & @options) = 8 ) PRINT 'ANSI_WARNINGS 8 '
+
+IF ( (16 & @options) = 16 ) PRINT 'ANSI_PADDING 16'
+
+IF ( (32 & @options) = 32 ) PRINT 'ANSI_NULLS 32'
+
+IF ( (64 & @options) = 64 ) PRINT 'ARITHABORT 64'
+
+IF ( (128 & @options) = 128 ) PRINT 'ARITHIGNORE 128'
+
+IF ( (256 & @options) = 256 ) PRINT 'QUOTED_IDENTIFIER 256'
+
+IF ( (512 & @options) = 512 ) PRINT 'NOCOUNT 512'
+
+IF ( (1024 & @options) = 1024 ) PRINT 'ANSI_NULL_DFLT_ON 1024'
+
+IF ( (2048 & @options) = 2048 ) PRINT 'ANSI_NULL_DFLT_OFF 2048'
+
+IF ( (4096 & @options) = 4096 ) PRINT 'CONCAT_NULL_YIELDS_NULL 4096'
+
+IF ( (8192 & @options) = 8192 ) PRINT 'NUMERIC_ROUNDABORT 8192'
+
+IF ( (16384 & @options) = 16384 ) PRINT 'XACT_ABORT 16384'
+
+GO
+-------
+
+
 If Rs.State = adStateClosed Then Set Rs.Source = Nothing
         Set Rs.ActiveConnection = Nothing
 		

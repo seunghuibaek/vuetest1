@@ -1,3 +1,17 @@
+' ######################################################################
+    '   매개변수(Array) 생성
+    ' ######################################################################
+    Public Function makeParam(ByVal pName, ByVal pType, ByVal pDirection, ByVal pSize, ByVal pValue)
+        If VarType(pSize) = 10 Then ' VarType 10 : adError
+            Select Case pType
+                Case adChar, adVarChar, adLongVarChar, adWChar, adVarWChar, adLongVarWChar
+                    pSize = getCharSize(pValue)
+            End Select
+        End If
+
+        makeParam = Array(pName, pType, pDirection, pSize, pValue)
+    End Function
+	
 arrParams = Array(_
                         Db.makeParam("@pageSize", adInteger, adParamInput, 4, 4), _
                         Db.makeParam("@pageNo", adInteger, adParamInput, 4, 1), _

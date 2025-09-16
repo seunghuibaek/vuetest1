@@ -1,3 +1,17 @@
+arrParams = Array(_
+                        Db.makeParam("@pageSize", adInteger, adParamInput, 4, 4), _
+                        Db.makeParam("@pageNo", adInteger, adParamInput, 4, 1), _
+                        Db.makeParam("@grp", adUnsignedTinyInt, adParamInput, 4, 1), _
+                        Db.makeParam("@notice", adWChar, adParamInput, 1, "Y"), _
+                        Db.makeParam("@isView", adWChar, adParamInput, 1, ""), _
+                        Db.makeParam("@skey", adVarWChar, adParamInput, 20, ""), _
+                        Db.makeParam("@sword", adVarWChar, adParamInput, 30, ""), _
+                        Db.makeParam("@totalCnt",  adInteger, adParamOutput, 4, 0)_
+                    )
+                    Set RsNotice = Db.execRs("SP_BOARD_LIST", DB_CMDTYPE_SP, arrParams, Nothing)
+                    If Not RsNotice.bof And Not RsNotice.eof Then
+                        Do Until RsNotice.Eof
+						
 Public Function execRs(ByVal sql, ByVal cmdType, ByRef arrParams, ByRef Db)
         Dim f
         Dim Cmd, Rs

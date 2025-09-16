@@ -1,3 +1,44 @@
+Public Function execRs(ByVal sql, ByVal cmdType, ByRef arrParams, ByRef Db)
+        Dim f
+        Dim Cmd, Rs
+
+        Call addDebug(sql)
+
+        Call connect(Db)
+
+        Set Cmd = Server.CreateObject("ADODB.Command")
+        Set Rs = Server.CreateObject("ADODB.RecordSet")
+
+        Cmd.ActiveConnection = Db
+        Cmd.CommandText = sql
+        Cmd.CommandType = cmdType
+        Set Cmd = collectParams(Cmd, arrParams)
+
+        Rs.CursorLocation = adUseClient
+        Rs.Open Cmd, ,adOpenStatic, adLockReadOnly
+
+        If cmdType = adCmdStoredProc Then
+            For f = 0 To Cmd.Parameters.Count - 1
+                If Cmd.Parameters(f).Direction = adParamOutput Or Cmd.Parameters(f).Direction = adParamInputOutput Or Cmd.Parameters(f).Direction = adParamReturnValue Then
+                    If IsArray(arrParams) Then
+                        arrParams(f)(4) = Cmd.Parameters(f).Value
+                    Else
+                        Exit For
+                    End If
+                End If
+            Next
+        End If
+
+        Set Cmd.ActiveConnection = Nothing
+        Set Cmd = Nothing
+
+        If Rs.State = adStateClosed Then Set Rs.Source = Nothing
+        Set Rs.ActiveConnection = Nothing
+
+        Set execRs = Rs
+        Set Rs = Nothing
+    End Function
+
 <%
 ' 공통: 커넥션 열고 ARITHABORT ON 보장
 Function OpenSqlConn(connStr)

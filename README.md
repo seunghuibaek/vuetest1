@@ -1,3 +1,5 @@
+Beelink SER6 Pro
+
 https://www.pqi.kr/application/lecturelist
 ' ######################################################################
     '   매개변수(Array) 생성

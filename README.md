@@ -1,3 +1,16 @@
+보안 부팅이 '꺼짐'으로 표시되는 경우, BIOS/UEFI 설정에서 직접 활성화해야 합니다. 이 과정은 PC 제조사나 마더보드 모델에 따라 다르므로, 각 제조사의 지침을 따르는 것이 중요합니다.
+
+BIOS/UEFI 진입: PC를 재부팅하고 부팅 로고가 나타날 때 Delete 또는 F2 키를 반복해서 누릅니다. 🔑 (일부 제조사는 F10, F12, Esc 키를 사용하기도 합니다.)
+
+'Secure Boot' 메뉴 찾기: BIOS/UEFI 설정 메뉴에서 'Boot', 'Security', 또는 **'Authentication'**과 같은 탭을 찾아 들어갑니다.
+
+옵션 변경: 'Secure Boot' 옵션을 Enabled 또는 **On**으로 변경합니다.
+
+UEFI 모드 설정: 만약 '보안 부팅 상태'를 변경할 수 없다면, 'BIOS 모드' 또는 **'OS Type'**을 'UEFI' 또는 **'Windows UEFI mode'**로 변경해야 할 수 있습니다.
+
+변경 사항 저장 및 재시작: F10 키를 눌러 변경 사항을 저장하고 PC를 다시 시작합니다.
+
+
 Beelink SER6 Pro
 
 175.196.87.168

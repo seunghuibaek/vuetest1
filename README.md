@@ -1,3 +1,4 @@
+docuone ip : 172.17.12.6
 BNG7W-CCTQ9-HP93Q-TJWT7-G6PKM
 
 reg query “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform” /v BackupProductKeyDefault

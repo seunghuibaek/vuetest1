@@ -1,3 +1,6 @@
+reg query “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform” /v BackupProductKeyDefault
+
+
 보안 부팅 켜짐으로 설정
 
 컴퓨터에서 Chrome을 엽니다.

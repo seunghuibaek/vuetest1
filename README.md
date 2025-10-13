@@ -1,4 +1,18 @@
-https://ksr930.tistory.com/350
+
+<code class="language-shell hljs" lang="shell" data-highlighted="yes"><span class="hljs-meta prompt_"># </span><span class="language-bash">Via scoop</span>
+scoop install k9s
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Via chocolatey</span>
+choco install k9s
+</code>
+
+
+<code class="language-shell hljs" lang="shell" data-highlighted="yes"><span class="hljs-meta prompt_"># </span><span class="language-bash">Via LinuxBrew</span>
+brew install derailed/k9s/k9s
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Via PacMan</span>
+pacman -S k9s
+</code>
 
 
 ip 정보

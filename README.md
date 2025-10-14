@@ -1,3 +1,9 @@
+ppknapisvcacc : K)a>ZMdFU6Eb432N
+smsuser : qh7w;YP=?a3n+b!2
+
+% smsuser 는 상용만
+
+
 https://kubernetes.io/ko/docs/tasks/tools/install-kubectl-windows/
 https://nice-engineer.tistory.com/entry/Kubernetes-Kubeconfig-%ED%8C%8C%EC%9D%BC
 <code class="language-shell hljs" lang="shell" data-highlighted="yes"><span class="hljs-meta prompt_"># </span><span class="language-bash">Via scoop</span>

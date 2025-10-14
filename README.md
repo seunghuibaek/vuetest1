@@ -1,5 +1,6 @@
 ppknapisvcacc : K)a>ZMdFU6Eb432N
 smsuser : qh7w;YP=?a3n+b!2
+qh7w(YP=?a3n+b!2
 
 % smsuser 는 상용만
 

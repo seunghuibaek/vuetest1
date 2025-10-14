@@ -1,3 +1,4 @@
+https://kubernetes.io/ko/docs/tasks/tools/install-kubectl-windows/
 
 <code class="language-shell hljs" lang="shell" data-highlighted="yes"><span class="hljs-meta prompt_"># </span><span class="language-bash">Via scoop</span>
 scoop install k9s

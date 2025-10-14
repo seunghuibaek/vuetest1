@@ -1,5 +1,5 @@
 https://kubernetes.io/ko/docs/tasks/tools/install-kubectl-windows/
-
+https://nice-engineer.tistory.com/entry/Kubernetes-Kubeconfig-%ED%8C%8C%EC%9D%BC
 <code class="language-shell hljs" lang="shell" data-highlighted="yes"><span class="hljs-meta prompt_"># </span><span class="language-bash">Via scoop</span>
 scoop install k9s
 <span class="hljs-meta prompt_">

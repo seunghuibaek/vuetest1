@@ -1,3 +1,7 @@
+sudo su - theenm
+201928+IcytWvR^@%&
+
+
 192.168.1.9
 [B_MANAGER].[dbo].[USP_Mod_ChtnDclr_001]  -- 신고 문구 등록
 [B_MANAGER].[dbo].[USP_GetList_BrdcChtnDclrList_002]  -- 신고문구 조회

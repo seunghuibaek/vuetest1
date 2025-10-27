@@ -1,3 +1,4 @@
+sh.back은(는) sudoers 설정 파일에 없습니다.
 sudo su - theenm
 201928+IcytWvR^@%&
 

@@ -1,3 +1,5 @@
+https://m.blog.naver.com/rayhaha/222998973867
+
 ALTER LOGIN '아이디' ENABLE ;
 GO
 ALTER LOGIN sa WITH PASSWORD = '비번' ;

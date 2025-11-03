@@ -1,3 +1,17 @@
+ALTER LOGIN '아이디' ENABLE ;
+GO
+ALTER LOGIN sa WITH PASSWORD = '비번' ;
+GO
+-----------------------------------------------------------------------------
+
+2번 
+-----------------------------------------------------------------------------
+ALTER LOGIN '아이디' 
+WITH PASSWORD = '비번' UNLOCK,
+CHECK_POLICY = OFF,
+CHECK_EXPIRATION = OFF
+
+
 114.141.29.116 ~ 118 (PKMASTER1 ~ 3)
 114.141.29.119 ~ 121 (PKNODE1 ~ 3)
 sh.back

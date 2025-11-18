@@ -1,3 +1,11 @@
+https://prod-sys2.rink.kr:443/v1/program/exe-castinfo
+
+
+https://prod-sys2.rink.kr:443/v1/program/exe-castinfo
+req : {"partnerCode":"P-00001"}
+ res : {"statusCd":"S0200","statusMsg":"SUCCESS","data":{"ver":{"updateVer":"","androidVer":"","isAosUpdate":"0","iphoneVer":"","isIosUpdate":null,"isForceUpdate":0,"pcCastVer":"4.0.1.0"},"svcAddr":{"updateApp":"","wtcAppUrl":"","wtcAppName":"","pcCastURL":"https://down.popcast.co.kr/popcast/ext/PopCasterPC_Installer.exe"},"vodCateList":[{"cateName":"핫이슈","groupCode":1,"cateCode":9},{"cateName":"방송 꿀팁","groupCode":1,"cateCode":10}],"timeTxt":""}}  
+ 
+
 https://m.blog.naver.com/rayhaha/222998973867
 
 ALTER LOGIN '아이디' ENABLE ;

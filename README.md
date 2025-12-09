@@ -1,3 +1,5 @@
+[B_ITEM].[dbo].[JBN_JSON_recordFileItemCheck]
+
 https://prod-sys2.rink.kr:443/v1/program/exe-castinfo
 
 

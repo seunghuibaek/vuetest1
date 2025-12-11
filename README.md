@@ -1,3 +1,8 @@
+ID : systems98
+- 결제일자 :  2025-12-10 15:40:44
+- 결제수단 : 신용카드 결제
+- 데이터코드 : M-20251210153940697-2abd675c
+
 [B_ITEM].[dbo].[JBN_JSON_recordFileItemCheck]
 
 https://prod-sys2.rink.kr:443/v1/program/exe-castinfo

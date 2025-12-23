@@ -1,3 +1,5 @@
+https://apps.samsung.com/appquery/appDetail.as?appId=com.theenm.android.popkontv
+
 https://devsys.popkontv.kr:9002/dev/
 
 {"data":"GkwI73OcefUQTfDLBHq7mvCehIgvoJDoJ9WRaH29jQs2UT6SXDJtoYoSUT7KDmc30Sw35FLv1DQ+xE6fGLbx9mlUocVPpKgshmKO3pPIjOTJb0VEgyxVcNzneLY4rCtXqVnPwPJQueDbueMfSJ6mUDUXtJy6i8BOgyV0KvMHawE=","key":813, "v":2}

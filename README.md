@@ -1,3 +1,23 @@
+안녕하세요. 연구원님
+팝콘티비 Plus 앱에서 버전 업데이트 버튼 클릭시에
+웹앱 페이지로 넘어간다고 하더라구요
+
+오후 1:03
+
+
+
+
+
+
+
+api에서 앱 다운로드 경로를 넘기지 않아서
+front에서 혹시 설정을 하는지 문의 드림니다.
+
+앱 다운로드 페이지는 
+https://apps.samsung.com/appquery/appDetail.as?appId=com.theenm.android.popkontv
+이걸로 나오고 있어요
+----------
+
 https://apps.samsung.com/appquery/appDetail.as?appId=com.theenm.android.popkontv
 https://galaxystore.samsung.com/detail/com.theenm.android.popkontv
 

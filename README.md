@@ -1,4 +1,5 @@
 https://apps.samsung.com/appquery/appDetail.as?appId=com.theenm.android.popkontv
+https://galaxystore.samsung.com/detail/com.theenm.android.popkontv
 
 https://devsys.popkontv.kr:9002/dev/
 

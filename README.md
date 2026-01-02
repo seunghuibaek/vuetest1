@@ -1,9 +1,4 @@
-안녕하세요. 연구원님
-팝콘티비 Plus 앱에서 버전 업데이트 버튼 클릭시에
-웹앱 페이지로 넘어간다고 하더라구요
-
-오후 1:03
-
+DISM /Online /Cleanup-Image /RestoreHealth
 
 
 

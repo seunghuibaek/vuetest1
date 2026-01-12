@@ -2,6 +2,36 @@
 SSM_memberPaper_listCmd
 exec [SSM_memberPaper_listCmd] 0, '', '', '', 'celaos7', 'P-00117', '', ''
 
+쿼리 실행해보면 send_signID 값이 master 로 나오는대
+accountLevel 값은 0으로 나와서요 
+오전 09:51
+저희쪽에서는 accountLevel 이 0인 경우 일반 회원이고 
+1인 경우 관리자로 되있는대 왜 0이 나오는지 문의 드림니다
+오전 09:53
+
+류혜련
+안녕하세요
+네 확인해보겠습니다. 
+오전 09:53
+감사합니다
+오전 09:53
+
+류혜련
+개발기에서 master 계정의 파트너사코드가 P-00017로 잡혀서 그런것 같습니다. 
+오전 10:23
+그럼 팝콘을 제외한 asp 사이트들은 모두 send_signid가 관리자 아이디라도 accountLevel 이 0으로 오는건가요?
+오전 10:25
+여기까지 읽으셨습니다
+
+
+류혜련
+회원정보에 send_signid, send_partnercode 가 관리자나 운영자로 등록이 안되어있으면 acccountlevel은 0으로 들어옵니다. 
+
+
+개발서버 118.129.153.93
+SSM_memberPaper_listCmd
+exec [SSM_memberPaper_listCmd] 0, '', '', '', 'celaos7', 'P-00117', '', ''
+
 
 DISM /Online /Cleanup-Image /RestoreHealth
 

@@ -1,3 +1,8 @@
+개발서버 118.129.153.93
+SSM_memberPaper_listCmd
+exec [SSM_memberPaper_listCmd] 0, '', '', '', 'celaos7', 'P-00117', '', ''
+
+
 DISM /Online /Cleanup-Image /RestoreHealth
 
 

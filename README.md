@@ -1,3 +1,7 @@
+ppknapisvcacc :   VFnhYTM925W(4Q>p
+smsuser :   T2(E#4kF&hbgWt^<
+
+
 send_signid 가 master인 회원정보는 patercode가 P-00001 인데 P-00017 로 발송이되어서 null 값으로 처리되어 accountLevel 값이 0입니다. 
 
 개발서버 118.129.153.93

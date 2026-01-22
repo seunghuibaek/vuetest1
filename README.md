@@ -1,3 +1,6 @@
+www.mbn.co.kr/rss/sports/
+www.mbn.co.kr/rss/enter/
+
 https://www.yonhapnewstv.co.kr/add/rss
 
 http://www.celuvmedia.com/

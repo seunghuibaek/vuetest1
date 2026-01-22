@@ -1,4 +1,4 @@
-
+https://www.yonhapnewstv.co.kr/add/rss
 
 쿼리 실행해보면 send_signID 값이 master 로 나오는대
 accountLevel 값은 0으로 나와서요 

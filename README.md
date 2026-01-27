@@ -1,3 +1,11 @@
+devtest9    P-00001 개발관리자   메ㅏㅔ가메가메가    0   2026-01-27 12:58:55.350 NULL
+devtest9    P-00001 개발관리자   메가메가메가메가    0   2026-01-27 12:56:23.843 NULL
+qas51   P-00001 닉네임여덟글자용    ajajajajsjfzkskdkzd 0   2026-01-27 12:55:02.193 NULL
+qas52   P-00001 안녕하이    te  0   2026-01-27 12:54:07.540 NULL
+qas52   P-00001 안녕하이    1111    0   2026-01-27 12:53:33.233 NULL
+qas50   P-00001 프리링모몸프리링    sksjjdjjdjnsnxjjcnsnndmcknsn    0   2026-01-27 12:29:24.800 NULL
+
+
 https://stage-sys2.rink.kr:443/v1/broadcast/clamo api 확인 부탁 드립니다. api 호출은 성공 했는데, db에 들어 가지 않는 것 같습니다.
 
 www.mbn.co.kr/rss/sports/

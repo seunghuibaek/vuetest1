@@ -1,3 +1,5 @@
+JBN_JSON_clamorSendSearch_V2
+
 0:대기, 1:승인, 2:전송, 3:반려
 
 devtest9    P-00001 개발관리자   메ㅏㅔ가메가메가    0   2026-01-27 12:58:55.350 NULL

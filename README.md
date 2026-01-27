@@ -1,3 +1,5 @@
+https://stage-sys2.rink.kr:443/v1/broadcast/clamo api 확인 부탁 드립니다. api 호출은 성공 했는데, db에 들어 가지 않는 것 같습니다.
+
 www.mbn.co.kr/rss/sports/
 www.mbn.co.kr/rss/enter/
 

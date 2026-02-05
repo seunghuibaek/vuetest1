@@ -3,7 +3,7 @@ AS/recVod/itemLimitRecordList.asp  -- 아이템 용량 제한 녹화 파일 목�
 AS/recVod/outMemberRecordFile.asp  -- 탈퇴 회원 녹화파일 목록
 AS/recVod/recordFileDel.asp  -- 녹화파일 삭제
 AS/recVod/suspendRecordIFile.asp  --  영구정지 회원 다시보기 영상목록
-
+AS/recVod/recVodList.asp  -- vod 리스트
 
 
 JBN_JSON_clamorSendSearch_V2

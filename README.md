@@ -1,6 +1,6 @@
 https://thumb.popkontv.kr/recVod/recVodCopy.asp?vCode=" + recCode + "&si=" + signIdEnc + "&pc=" + partnerCodeEnc + "&visAdultSet=" + vIsAdultSet  -- 게시
 https://thumb.popkontv.kr/recVod/recVodServiceDel.asp?vCode=" + recCode + "&si=" + signIdEnc + "&pc=" + partnerCodeEnc  -- 비게시
-
+https://thumb.popkontv.kr/recVod/recVodDelfile.asp -- 파일삭제
 
 AS/recVod/exPeriodRecordList.asp  -- 보관 기간 초과한 녹화 파일 목록
 AS/recVod/itemLimitRecordList.asp  -- 아이템 용량 제한 녹화 파일 목록

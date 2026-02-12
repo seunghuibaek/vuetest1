@@ -1,3 +1,4 @@
+
 https://thumb.popkontv.kr/recVod/recVodCopy.asp?vCode=" + recCode + "&si=" + signIdEnc + "&pc=" + partnerCodeEnc + "&visAdultSet=" + vIsAdultSet  -- 게시
 https://thumb.popkontv.kr/recVod/recVodServiceDel.asp?vCode=" + recCode + "&si=" + signIdEnc + "&pc=" + partnerCodeEnc  -- 비게시
 https://thumb.popkontv.kr/recVod/recVodDelfile.asp -- 파일삭제
@@ -21,7 +22,7 @@ qas52   P-00001 안녕하이    te  0   2026-01-27 12:54:07.540 NULL
 qas52   P-00001 안녕하이    1111    0   2026-01-27 12:53:33.233 NULL
 qas50   P-00001 프리링모몸프리링    sksjjdjjdjnsnxjjcnsnndmcknsn    0   2026-01-27 12:29:24.800 NULL
 
-
+Jb4842310!!
 https://stage-sys2.rink.kr:443/v1/broadcast/clamo api 확인 부탁 드립니다. api 호출은 성공 했는데, db에 들어 가지 않는 것 같습니다.
 
 www.mbn.co.kr/rss/sports/

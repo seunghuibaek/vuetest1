@@ -1,3 +1,4 @@
+Error 2627, Level 14, State 1, Procedure B_MEMBER.dbo.USP_Get_LoginAftrSvcLvl, Line 68, Message: PRIMARY KEY 제약 조건 'PK_LoginExpCmpnstnChck'을(를) 위반했습니다. 개체 'dbo.LoginExpCmpnstnChck'에 중복 키를 삽입할 수 없습니다. 중복 키 값은 (bts9876, P-00082, 2026-02-10)입니다.
 
 https://thumb.popkontv.kr/recVod/recVodCopy.asp?vCode=" + recCode + "&si=" + signIdEnc + "&pc=" + partnerCodeEnc + "&visAdultSet=" + vIsAdultSet  -- 게시
 https://thumb.popkontv.kr/recVod/recVodServiceDel.asp?vCode=" + recCode + "&si=" + signIdEnc + "&pc=" + partnerCodeEnc  -- 비게시

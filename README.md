@@ -1,3 +1,4 @@
+@inySortType  tinyint   = 0   --// 정렬타입 :: [0: 최신순, 1: 인기순, 2: 시청자순]  
 USP_GetList_CastOnListSrchForAPI_005
 
 USP_GetList_BrdcListUprExpsr_002  --> USP_GetList_BrdcListUprExpsr_001
